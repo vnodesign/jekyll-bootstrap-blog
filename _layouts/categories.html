@@ -13,7 +13,13 @@ permalink: "/categories.html"
 {% if post.title != null %}
 {% if group == null or group == post.group %}
 {% include postbox.html %}
-{% include pagination.html %}
+<!-- Pagination -->
+<div class="bottompagination">
+    <div class="pointerup"><i class="fa fa-caret-up"></i></div>
+    <span class="navigation" role="navigation">
+        {% include pagination.html %}
+    </span>
+</div>
 {% endif %}
 {% endif %}
 {% endfor %}
