@@ -40,7 +40,11 @@
     <div class="container pr-0">
     <!-- Begin Logo -->
     <a class="navbar-brand" href="{{ site.baseurl }}/" title="{{ site.name }}">
+    {% if site.lazyimages == "enabled" %}
+    <img class="lazyimg"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}" />
+    {% else %}
     <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}" />
+    {% endif %}
     </a>
     <!-- End Logo -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,7 +86,7 @@
 </div>
 </div>
 <!-- Categories Jumbotron  -->
-<div class="jumbotron fortags">
+<!-- <div class="jumbotron fortags">
 	<div class="d-md-flex h-100">
 		<div class="col-md-4 transpdark align-self-center text-center h-100">
             <div class="d-md-flex align-items-center justify-content-center h-100">
@@ -103,7 +107,7 @@
             {% assign categories_list = nil %}
 		</div>
 	</div>
-</div>
+</div> -->
 <!-- Begin Footer-->
 <footer class="footer">
     <div class="container">
@@ -112,7 +116,7 @@
                 Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
             </div>
             <div class="col-md-6 col-sm-6 text-center text-lg-right">    
-                <a target="_blank" href="https://www.wowthemes.net/mediumish-free-jekyll-template/">Mediumish Jekyll Theme</a> by WowThemes.net
+                Design by <a target="_blank" href="https://www.wowthemes.net/">WowThemes.net</a>
             </div>
         </div>
     </div>
@@ -121,6 +125,7 @@
 </div>
 <!-- /.site-content -->
 {% if site.fanpage-chat %}
+<link rel="preload" href="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" as="script" />
 <!-- Messenger Plugin chat -->
 <div id="fb-root"></div>
 <script>
@@ -138,10 +143,7 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 </script>
-<div class="fb-customerchat"
-  attribution="biz_inbox"
-  page_id="{{site.fanpage-chat}}">
-</div>
+<div class="fb-customerchat" attribution="biz_inbox" page_id="{{site.fanpage-chat}}"></div>
 {% endif %}
 <!-- Scripts -->
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" as="script" />
