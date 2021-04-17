@@ -13,6 +13,7 @@ permalink: "/categories.html"
 {% if post.title != null %}
 {% if group == null or group == post.group %}
 {% include postbox.html %}
+{% include pagination.html %}
 {% endif %}
 {% endif %}
 {% endfor %}
