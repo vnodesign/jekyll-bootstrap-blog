@@ -68,16 +68,16 @@
 <link rel="preconnect" href="https://disqus.com" />
 {% endif %}
 <!-- Style -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" async />
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.min.css" async />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" async />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" async="1" />
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.min.css" async="1" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" async="1" />
 <!-- Script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
-<script src="{{ site.baseurl }}/assets/js/lunr.js" defer></script>
-<script src="{{ site.baseurl }}/assets/js/lunrsearchengine.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer="1"></script>
+<script src="{{ site.baseurl }}/assets/js/lunr.js" defer="1"></script>
+<script src="{{ site.baseurl }}/assets/js/lunrsearchengine.js" defer="1"></script>
 {% if jekyll.environment == 'production' %}
 <!-- change your GA id in _config.yml -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ga-lite/2.1.0/ga-lite.min.js" async></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ga-lite/2.1.0/ga-lite.min.js" async="1"></script>
 <script>var galite=galite||{};galite.UA='{{site.google_analytics}}';</script>
 {% endif %}
 </head>
@@ -182,15 +182,15 @@
 <script>window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};function td_customerchat(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_customerchat,!1):window.attachEvent?window.attachEvent("onload",td_customerchat):window.onload=td_customerchat;</script>
 {% endif %}
 <script>WebFontConfig={google:{families:['Righteous','Merriweather:300,300i,400,400i,700,700i&display=swap']}};function td_webfonts(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_webfonts,!1):window.attachEvent?window.attachEvent("onload",td_webfonts):window.onload=td_webfonts;</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" async></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js" async></script>
-<script src="{{ site.baseurl }}/assets/js/mediumish.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" async="1"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js" async="1"></script>
+<script src="{{ site.baseurl }}/assets/js/mediumish.js" async="1"></script>
 {% if site.lazyimages == "enabled" %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async="1"></script>
 {% endif %}
-<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js" async></script> 
+<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js" async="1"></script> 
 {% if page.layout == 'post' %}
-<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js" async></script>
+<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js" async="1"></script>
 {% endif %}
 </body>
 </html>
