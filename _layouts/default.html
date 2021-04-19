@@ -1,1 +1,179 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><link rel="icon" href="{{ site.url}}/assets/images/logo.png" />{% seo %}<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" as="style" /><link rel="preload" href="{{ site.url}}/assets/css/style.min.css" as="style" /><link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" as="script" /><link rel="preload" href="{{ site.url}}/assets/js/lunr.js" as="script" /><link rel="preload" href="{{ site.url}}/assets/js/lunrsearchengine.js" as="script" />{% if site.fanpage-chat %}<link rel="preload" href="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" as="script" /><link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png" as="image" /><link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png" as="image" />{% endif %}<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" as="script" /><link rel="preload" href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i&display=swap" as="style" /><link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" as="style" /><link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="{{ site.url}}/{{ site.logo}}" as="image" />{% if jekyll.environment=='production' %}<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/ga-lite/2.1.0/ga-lite.min.js" as="script" />{% endif %}<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" as="script" /><link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js" as="script" /><link rel="preload" href="{{ site.url}}/assets/js/mediumish.js" as="script" />{% if site.lazyimages=="enabled" %}<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" as="script" />{% endif %}<link rel="preload" href="{{ site.url}}/assets/js/ie10-viewport-bug-workaround.js" as="script" />{% if page.layout=='post' %}<link rel="preload" href="//{{site.disqus}}.disqus.com/count.js" as="script" />{% endif %}<link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />{% if site.fanpage-chat %}<link rel="dns-prefetch" href="//connect.facebook.net" /><link rel="dns-prefetch" href="//www.facebook.com" /><link rel="dns-prefetch" href="//graph.facebook.com" /><link rel="dns-prefetch" href="//static.xx.fbcdn.net" /><link rel="dns-prefetch" href="//staticxx.facebook.com" />{% endif %}<link rel="dns-prefetch" href="//fonts.googleapis.com" /><link rel="dns-prefetch" href="//fonts.gstatic.com" />{% if page.layout=='post' %}<link rel="dns-prefetch" href="//{{site.disqus}}.disqus.com" /><link rel="dns-prefetch" href="//disqus.com" />{% endif %}<link rel="preconnect" href="https://cdnjs.cloudflare.com" />{% if site.fanpage-chat %}<link rel="preconnect" href="https://connect.facebook.net" /><link rel="preconnect" href="https://www.facebook.com" /><link rel="preconnect" href="https://graph.facebook.com" /><link rel="preconnect" href="https://static.xx.fbcdn.net" /><link rel="preconnect" href="https://staticxx.facebook.com" />{% endif %}<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" />{% if page.layout=='post' %}<link rel="preconnect" href="https://{{site.disqus}}.disqus.com" /><link rel="preconnect" href="https://disqus.com" />{% endif %}<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" async /><link rel="stylesheet" href="{{ site.url}}/assets/css/style.min.css" async /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" async /><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script><script src="{{ site.url}}/assets/js/lunr.js" defer></script><script src="{{ site.url}}/assets/js/lunrsearchengine.js" defer></script>{% if jekyll.environment=='production' %}<script src="https://cdnjs.cloudflare.com/ajax/libs/ga-lite/2.1.0/ga-lite.min.js" async></script><script>var galite=galite||{};galite.UA='{{site.google_analytics}}';</script>{% endif %}</head>{% capture layout %}{% if page.layout %}layout-{{ page.layout}}{% endif %}{% endcapture %}<body class="{{layout}}">{% if site.fanpage-chat %}<div id="fb-root"></div><div class="fb-customerchat" attribution="biz_inbox" page_id="{{site.fanpage-chat}}"></div>{% endif %}<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down"><div class="container pr-0"><a class="navbar-brand" href="{{ site.url}}/" title="{{ site.name}}">{% if site.lazyimages=="enabled" %} <img class="lazyload" src="{{ site.url}}/{{ site.logo}}" alt="{{ site.name}}" loading="lazy" />{% else %} <img src="{{ site.url}}/{{ site.logo}}" alt="{{ site.name}}" />{% endif %} </a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarMediumish"><ul class="navbar-nav ml-auto">{% if page.url=="/" %} <li class="nav-item active">{% else %} <li class="nav-item">{% endif %} <a class="nav-link" href="{{ site.url}}/" title="Home">Home</a></li>{% if page.url=="/categories.html" %} <li class="nav-item active">{% else %} <li class="nav-item">{% endif %} <a class="nav-link" href="{{ site.url}}/categories.html" title="Categories">Categories</a></li>{% if page.url=="/tags.html" %} <li class="nav-item active">{% else %} <li class="nav-item">{% endif %} <a class="nav-link" href="{{ site.url}}/tags.html" title="Tags">Tags</a></li><li class="nav-item"><a class="nav-link" href="https://about.tuanducdesign.com/" title="About">About</a></li>{% include search-lunr.html %} </ul></div></div></nav><div class="site-content"><div class="container"><div class="main-content">{{ content}}</div></div><footer class="footer"><div class="container"><div class="row"><div class="col-md-6 col-sm-6 text-center text-lg-left">Copyright ©{{ site.time | date: "%Y"}}{{ site.name}} </div><div class="col-md-6 col-sm-6 text-center text-lg-right">Design by <a target="_blank" href="https://www.wowthemes.net/">WowThemes.net</a></div></div></div></footer></div>{% if site.fanpage-chat %}<script>window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};function td_customerchat(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_customerchat,!1):window.attachEvent?window.attachEvent("onload",td_customerchat):window.onload=td_customerchat;</script>{% endif %}<script>WebFontConfig={google:{families:['Righteous','Merriweather:300,300i,400,400i,700,700i&display=swap']}};function td_webfonts(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_webfonts,!1):window.attachEvent?window.attachEvent("onload",td_webfonts):window.onload=td_webfonts;</script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" async></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js" async></script><script src="{{ site.url}}/assets/js/mediumish.js" async></script>{% if site.lazyimages=="enabled" %}<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>{% endif %}<script src="{{ site.url}}/assets/js/ie10-viewport-bug-workaround.js" async></script>{% if page.layout=='post' %}<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js" async></script>{% endif %}</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta tag seo -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link rel="icon" href="{{ site.url }}/assets/images/logo.png" />
+{% seo %}
+<!-- Preload file -->
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" as="style" />
+<link rel="preload" href="{{ site.url }}/assets/css/style.min.css" as="style" />
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" as="script" /> 
+<link rel="preload" href="{{ site.url }}/assets/js/lunr.js" as="script" />
+<link rel="preload" href="{{ site.url }}/assets/js/lunrsearchengine.js" as="script" />
+{% if site.fanpage-chat %}
+<link rel="preload" href="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" as="script" />
+<link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png" as="image" />
+<link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png" as="image" />
+{% endif %}
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" as="script" />
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i&display=swap" as="style" />
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" as="style" />
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="{{ site.url }}/{{ site.logo }}" as="image" />
+{% if jekyll.environment == 'production' %}
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/ga-lite/2.1.0/ga-lite.min.js" as="script" />
+{% endif %}
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" as="script" />
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js" as="script" />
+<link rel="preload" href="{{ site.url }}/assets/js/mediumish.js" as="script" />
+{% if site.lazyimages == "enabled" %}
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" as="script" />
+{% endif %}
+<link rel="preload" href="{{ site.url }}/assets/js/ie10-viewport-bug-workaround.js" as="script" />
+{% if page.layout == 'post' %}
+<link rel="preload" href="//{{site.disqus}}.disqus.com/count.js" as="script" />
+{% endif %}
+<!-- Prefetch Domain -->
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+{% if site.fanpage-chat %}
+<link rel="dns-prefetch" href="//connect.facebook.net" />
+<link rel="dns-prefetch" href="//www.facebook.com" />
+<link rel="dns-prefetch" href="//graph.facebook.com" />
+<link rel="dns-prefetch" href="//static.xx.fbcdn.net" />
+<link rel="dns-prefetch" href="//staticxx.facebook.com" />
+{% endif %}
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//fonts.gstatic.com" />
+{% if page.layout == 'post' %}
+<link rel="dns-prefetch" href="//{{site.disqus}}.disqus.com" />
+<link rel="dns-prefetch" href="//disqus.com" />
+{% endif %}
+<!-- Preconnect Domain -->
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+{% if site.fanpage-chat %}
+<link rel="preconnect" href="https://connect.facebook.net" />
+<link rel="preconnect" href="https://www.facebook.com" />
+<link rel="preconnect" href="https://graph.facebook.com" />
+<link rel="preconnect" href="https://static.xx.fbcdn.net" />
+<link rel="preconnect" href="https://staticxx.facebook.com" />
+{% endif %}
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+{% if page.layout == 'post' %}
+<link rel="preconnect" href="https://{{site.disqus}}.disqus.com" />
+<link rel="preconnect" href="https://disqus.com" />
+{% endif %}
+<!-- Style -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" async />
+<link rel="stylesheet" href="{{ site.url }}/assets/css/style.min.css" async />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" async />
+<!-- Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+<script src="{{ site.url }}/assets/js/lunr.js" defer></script>
+<script src="{{ site.url }}/assets/js/lunrsearchengine.js" defer></script>
+{% if jekyll.environment == 'production' %}
+<!-- change your GA id in _config.yml -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ga-lite/2.1.0/ga-lite.min.js" async></script>
+<script>var galite=galite||{};galite.UA='{{site.google_analytics}}';</script>
+{% endif %}
+</head>
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+<body class="{{layout}}">
+{% if site.fanpage-chat %}
+<!-- Messenger Plugin chat -->
+<div id="fb-root"></div>
+<div class="fb-customerchat" attribution="biz_inbox" page_id="{{site.fanpage-chat}}"></div>
+{% endif %}
+<!-- Begin Menu Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+    <div class="container pr-0">
+        <!-- Begin Logo -->
+        <a class="navbar-brand" href="{{ site.url }}/" title="{{ site.name }}">
+        {% if site.lazyimages == "enabled" %}
+        <img class="lazyload" src="{{ site.url }}/{{ site.logo }}" alt="{{ site.name }}" loading="lazy" />
+        {% else %}
+        <img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.name }}" />
+        {% endif %}
+        </a>
+        <!-- End Logo -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+            <!-- Begin Menu -->
+                <ul class="navbar-nav ml-auto">
+                    {% if page.url == "/" %}
+                    <li class="nav-item active">
+                    {% else %}
+                    <li class="nav-item">
+                    {% endif %}
+                    <a class="nav-link" href="{{ site.url }}/" title="Home">Home</a>
+                    </li>
+                    {% if page.url == "/categories.html" %}
+                    <li class="nav-item active">
+                    {% else %}
+                    <li class="nav-item">
+                    {% endif %}
+                    <a class="nav-link" href="{{ site.url }}/categories.html" title="Categories">Categories</a>
+                    </li>
+                    {% if page.url == "/tags.html" %}
+                    <li class="nav-item active">
+                    {% else %}
+                    <li class="nav-item">
+                    {% endif %}
+                    <a class="nav-link" href="{{ site.url }}/tags.html" title="Tags">Tags</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="https://about.tuanducdesign.com/" title="About">About</a>
+                    </li>
+                    {% include search-lunr.html %}
+                </ul>
+            <!-- End Menu -->
+        </div>
+        </div>
+</nav>
+<!-- End Navigation  -->
+<div class="site-content">
+<div class="container">
+<!-- Content  -->
+<div class="main-content">
+    {{ content }}
+</div>
+</div>
+<!-- Begin Footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                Design by <a target="_blank" href="https://www.wowthemes.net/">WowThemes.net</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+</div>
+<!-- /.site-content -->
+<!-- Scripts -->
+{% if site.fanpage-chat %}
+<script>window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};function td_customerchat(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_customerchat,!1):window.attachEvent?window.attachEvent("onload",td_customerchat):window.onload=td_customerchat;</script>
+{% endif %}
+<script>WebFontConfig={google:{families:['Righteous','Merriweather:300,300i,400,400i,700,700i&display=swap']}};function td_webfonts(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_webfonts,!1):window.attachEvent?window.attachEvent("onload",td_webfonts):window.onload=td_webfonts;</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" async></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js" async></script>
+<script src="{{ site.url }}/assets/js/mediumish.js" async></script>
+{% if site.lazyimages == "enabled" %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
+{% endif %}
+<script src="{{ site.url }}/assets/js/ie10-viewport-bug-workaround.js" async></script> 
+{% if page.layout == 'post' %}
+<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js" async></script>
+{% endif %}
+</body>
+</html>
