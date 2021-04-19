@@ -2,14 +2,14 @@
 name: "Tuan Duc Design"
 title: "Tuan Duc Design"
 description: "Specialist page sharing knowledge related to VPS development and Website optimization."
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
+logo: 'static/tuanducdesign.jpg'
+favicon: 'static/tuanducdesign.jpg'
 baseurl:
 google_analytics: 'UA-46278016-1'
 disqus: 'tuanducdesign'
 fanpage-chat: '121349286117840'
 include: ["_pages"]
-permalink: /article/:title/
+permalink: /:year/:month/:title.html/
 
 # Authors
 authors:
@@ -39,7 +39,7 @@ jekyll-archives:
     category: '/category/:name/'
     
 # Pagination 
-paginate: 12
+paginate: 5
 paginate_path: /page/:num/
     
 # Other
