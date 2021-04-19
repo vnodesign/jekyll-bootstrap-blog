@@ -3,5 +3,8 @@
 # Change this file for any custom CSS.
 ---
 
-.post-excerpt p{display:inline;}
-@import "syntax","starsnonscss";
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+	"syntax",
+    "starsnonscss"
+;
