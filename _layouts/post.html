@@ -21,16 +21,16 @@ post_class: post-template
                     <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
                         {% if site.lazyimages == "enabled" %}
                         {% if author.avatar %}
-                        <link rel="preload" href="{{site.baseurl}}/{{ author.avatar }}" as="image" />
-                        <img class="author-thumb lazyload" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}" loading="lazy" />
+                        <link rel="preload" href="{{ site.url }}/{{ author.avatar }}" as="image" />
+                        <img class="author-thumb lazyload" src="{{ site.url }}/{{ author.avatar }}" alt="{{ author.display_name }}" loading="lazy" />
                         {% else %}
                         <link rel="preload" href="{{ author.photo }}" as="image" />
                         <img class="author-thumb lazyload" src="{{ author.photo }}" alt="{{ author.display_name }}" loading="lazy" />
                         {% endif %}
                         {% else %}
                         {% if author.avatar %}
-                        <link rel="preload" href="{{site.baseurl}}/{{ author.avatar }}" as="image" />
-                        <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}" />
+                        <link rel="preload" href="{{ site.url }}/{{ author.avatar }}" as="image" />
+                        <img class="author-thumb" src="{{ site.url }}/{{ author.avatar }}" alt="{{ author.display_name }}" />
                         {% else %}
                         <link rel="preload" href="{{ author.photo }}" as="image" />
                         <img class="author-thumb" src="{{ author.photo }}" alt="{{ author.display_name }}" />
@@ -53,11 +53,11 @@ post_class: post-template
             <!-- End Adsense -->
             <!-- Post Featured Image -->
             {% if page.image %}
-            <link rel="preload" href="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" as="image" />
+            <link rel="preload" href="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.url }}/{{ page.image }}{% endif %}" as="image" />
             {% if site.lazyimages == "enabled" %}
-            <img class="featured-image img-fluid lazyload" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}" loading="lazy" itemprop="image" />
+            <img class="featured-image img-fluid lazyload" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.url }}/{{ page.image }}{% endif %}" alt="{{ page.title }}" loading="lazy" itemprop="image" />
             {% else %}
-            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}" itemprop="image" />
+            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.url }}/{{ page.image }}{% endif %}" alt="{{ page.title }}" itemprop="image" />
             {% endif %}
             {% endif %}
             <!-- End Featured Image -->
@@ -97,7 +97,7 @@ post_class: post-template
                     {% assign sortedCategories = page.categories | sort %}
                     {% for category in sortedCategories %}
                     <li>
-                        <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}" title="{{ category }}">{{ category }}</a>
+                        <a class="smoothscroll" href="{{ site.url }}/categories#{{ category | replace: " ","-" }}" title="{{ category }}">{{ category }}</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -109,7 +109,7 @@ post_class: post-template
                     {% assign sortedTags = page.tags | sort %}
                     {% for tag in sortedTags %}
                     <li>
-                        <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}" title="#{{ tag }}">#{{ tag }}</a>
+                        <a class="smoothscroll" href="{{ site.url }}/tags#{{ tag | replace: " ","-" }}" title="#{{ tag }}">#{{ tag }}</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -118,10 +118,10 @@ post_class: post-template
             <!-- Prev/Next -->
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             {% if page.previous.url %}
-            <a class="prev d-block col-md-6" href="{{ site.baseurl }}/{{page.previous.url}}" title="{{page.previous.title}}"> &laquo; {{page.previous.title}}</a>
+            <a class="prev d-block col-md-6" href="{{ site.url }}/{{page.previous.url}}" title="{{page.previous.title}}"> &laquo; {{page.previous.title}}</a>
             {% endif %}
             {% if page.next.url %}
-            <a class="next d-block col-md-6 text-lg-right" href="{{ site.baseurl }}/{{page.next.url}}" title="{{page.next.title}}">{{page.next.title}} &raquo; </a>
+            <a class="next d-block col-md-6 text-lg-right" href="{{ site.url }}/{{page.next.url}}" title="{{page.next.title}}">{{page.next.title}} &raquo; </a>
             {% endif %}
             <div class="clearfix"></div>
             </div>
