@@ -36,16 +36,20 @@
                                 {% if post.author %}
                                 <span class="meta-footer-thumb">
                                     {% if site.lazyimages == "enabled" %}
-                                    {% if author.avatar %}
-                                    <img class="author-thumb lazyload" src="{{ site.url }}/{{ author.avatar }}" alt="{{ author.display_name }}" loading="lazy" />
+                                    {% if author.photo %}
+                                    <link rel="preload" href="{{ author.photo }}" as="image" />
+                                    <img class="author-thumb lazyload" src="{{ author.photo }}" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" />
                                     {% else %}
-                                    <img class="author-thumb lazyload" src="{{ author.photo }}" alt="{{ author.display_name }}" loading="lazy" />
+                                    <link rel="preload" href="https://graph.facebook.com/100003178356978/picture" as="image" />
+                                    <img class="author-thumb lazyload" src="https://graph.facebook.com/100003178356978/picture" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" />
                                     {% endif %}
                                     {% else %}
-                                    {% if author.avatar %}
-                                    <img class="author-thumb" src="{{ site.url }}/{{ author.avatar }}" alt="{{ author.display_name }}" />
+                                    {% if author.photo %}
+                                    <link rel="preload" href="{{ author.photo }}" as="image" />
+                                    <img class="author-thumb" src="{{ author.photo }}" width="72" height="72" alt="{{ author.display_name }}" />
                                     {% else %}
-                                    <img class="author-thumb" src="{{ author.photo }}" alt="{{ author.display_name }}" />
+                                    <link rel="preload" href="https://graph.facebook.com/100003178356978/picture" as="image" />
+                                    <img class="author-thumb" src="https://graph.facebook.com/100003178356978/picture" width="72" height="72" alt="{{ author.display_name }}" />
                                     {% endif %}
                                     {% endif %}
                                 </span>

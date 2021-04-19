@@ -17,34 +17,43 @@ post_class: post-template
             <div class="mainheading">
                 <!-- Author Box -->
                 {% if page.author %}
-                <div class="row post-top-meta">
-                    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+                <div class="row post-top-meta hidden-md-down">
+                    <div class="col-md-2 col-xs-12">
                         {% if site.lazyimages == "enabled" %}
-                        {% if author.avatar %}
-                        <link rel="preload" href="{{ site.url }}/{{ author.avatar }}" as="image" />
-                        <img class="author-thumb lazyload" src="{{ site.url }}/{{ author.avatar }}" alt="{{ author.display_name }}" loading="lazy" />
-                        {% else %}
+                        {% if author.photo %}
                         <link rel="preload" href="{{ author.photo }}" as="image" />
-                        <img class="author-thumb lazyload" src="{{ author.photo }}" alt="{{ author.display_name }}" loading="lazy" />
+                        <img class="author-thumb lazyload" src="{{ author.photo }}" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" />
+                        {% else %}
+                        <link rel="preload" href="https://graph.facebook.com/100003178356978/picture" as="image" />
+                        <img class="author-thumb lazyload" src="https://graph.facebook.com/100003178356978/picture" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" />
                         {% endif %}
                         {% else %}
-                        {% if author.avatar %}
-                        <link rel="preload" href="{{ site.url }}/{{ author.avatar }}" as="image" />
-                        <img class="author-thumb" src="{{ site.url }}/{{ author.avatar }}" alt="{{ author.display_name }}" />
-                        {% else %}
+                        {% if author.photo %}
                         <link rel="preload" href="{{ author.photo }}" as="image" />
-                        <img class="author-thumb" src="{{ author.photo }}" alt="{{ author.display_name }}" />
+                        <img class="author-thumb" src="{{ author.photo }}" width="72" height="72" alt="{{ author.display_name }}" />
+                        {% else %}
+                        <link rel="preload" href="https://graph.facebook.com/100003178356978/picture" as="image" />
+                        <img class="author-thumb" src="https://graph.facebook.com/100003178356978/picture" width="72" height="72" alt="{{ author.display_name }}" />
                         {% endif %}
                         {% endif %}
                     </div>
-                    <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
-                        <a target="_blank" class="link-dark" href="{{ author.web }}" title="{{ author.display_name }}">{{ author.display_name }} <span class="btn follow">Follow</span></a>
+                    <div class="col-md-10 col-xs-12">
+                        <a target="_blank" class="link-dark" href="https://www.facebook.com/{{ author.facebook }}" title="{{ author.display_name }}">{{ author.display_name }} <span class="btn follow">Follow</span></a>
                         <span class="author-description d-block">{{ author.description }}</span>
                     </div>
                 </div>
                 {% endif %}
                 <!-- Post Title -->
                 <h1 class="posttitle" itemprop="name">{{ page.title }}</h1>
+                <!-- Post Date -->
+                <p>
+                <small>
+                    <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                    {% if page.last_modified_at %}
+                    (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                    {% endif %}
+                    </small>
+                </p>
             </div>
             <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
             {% if site.adsense == "enabled" %}
@@ -82,15 +91,6 @@ post_class: post-template
                 <strong class="mr-1">Rating:</strong> {% include star_rating.html %}
             </div>
             {% endif %}
-            <!-- Post Date -->
-            <p>
-            <small>
-                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
-                {% if page.last_modified_at %}
-                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
-                {% endif %}
-                </small>
-            </p>
             <!-- Post Categories -->
             <div class="after-post-cats">
                 <ul class="tags mb-4">
