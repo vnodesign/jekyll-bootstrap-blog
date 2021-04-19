@@ -38,10 +38,10 @@
                                     {% if site.lazyimages == "enabled" %}
                                     {% if author.photo %}
                                     <link rel="preload" href="{{ author.photo }}" as="image" />
-                                    <img class="author-thumb lazyload" src="{{ author.photo }}" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" />
+                                    <img class="author-thumb fade" data-src="{{ author.photo }}" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" />
                                     {% else %}
                                     <link rel="preload" href="https://graph.facebook.com/100003178356978/picture" as="image" />
-                                    <img class="author-thumb lazyload" src="https://graph.facebook.com/100003178356978/picture" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" />
+                                    <img class="author-thumb fade" data-src="https://graph.facebook.com/100003178356978/picture" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" />
                                     {% endif %}
                                     {% else %}
                                     {% if author.photo %}
@@ -54,7 +54,7 @@
                                     {% endif %}
                                 </span>
                                 <span class="author-meta">
-                                <span class="post-name"><a target="_blank" href="{{ author.web }}" title="{{ author.display_name }}">{{ author.display_name }}</a></span><br/>
+                                <span class="post-name"><a target="_blank" href="https://www.facebook.com/{{ author.facebook }}" title="{{ author.display_name }}">{{ author.display_name }}</a></span><br/>
                                 {% endif %}
                                 <span class="post-date">{{ post.date | date_to_string }}</span>
                                 </span>

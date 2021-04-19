@@ -22,10 +22,10 @@ post_class: post-template
                         {% if site.lazyimages == "enabled" %}
                         {% if author.photo %}
                         <link rel="preload" href="{{ author.photo }}" as="image" />
-                        <img class="author-thumb lazyload" src="{{ author.photo }}" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" />
+                        <img class="author-thumb fade" data-src="{{ author.photo }}" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" />
                         {% else %}
                         <link rel="preload" href="https://graph.facebook.com/100003178356978/picture" as="image" />
-                        <img class="author-thumb lazyload" src="https://graph.facebook.com/100003178356978/picture" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" />
+                        <img class="author-thumb fade" data-src="https://graph.facebook.com/100003178356978/picture" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" />
                         {% endif %}
                         {% else %}
                         {% if author.photo %}
@@ -52,7 +52,7 @@ post_class: post-template
                     {% if page.last_modified_at %}
                     (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
                     {% endif %}
-                    </small>
+                </small>
                 </p>
             </div>
             <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
@@ -64,7 +64,7 @@ post_class: post-template
             {% if page.image %}
             <link rel="preload" href="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.url }}/{{ page.image }}{% endif %}" as="image" />
             {% if site.lazyimages == "enabled" %}
-            <img class="featured-image img-fluid lazyload" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.url }}/{{ page.image }}{% endif %}" alt="{{ page.title }}" loading="lazy" itemprop="image" />
+            <img class="featured-image img-fluid fade" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.url }}/{{ page.image }}{% endif %}" alt="{{ page.title }}" loading="lazy" itemprop="image" />
             {% else %}
             <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.url }}/{{ page.image }}{% endif %}" alt="{{ page.title }}" itemprop="image" />
             {% endif %}
