@@ -5,7 +5,7 @@ archive: false
 post_class: post-template
 ---
 <!-- Begin Article -->
-<div class="container">
+<article class="container" itemscope itemtype="https://schema.org/Article">
     <div class="row">
         <!-- Post Share -->
         <div class="col-md-2 pl-0">
@@ -38,13 +38,13 @@ post_class: post-template
                         {% endif %}
                     </div>
                     <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
-                        <a target="_blank" class="link-dark" href="{{ author.web }}" title="{{ author.display_name }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow" title="Follow {{ author.display_name }}">Follow</a>
+                        <a target="_blank" class="link-dark" href="{{ author.web }}" title="{{ author.display_name }}">{{ author.display_name }} <span class="btn follow">Follow</span></a>
                         <span class="author-description">{{ author.description }}</span>
                     </div>
                 </div>
                 {% endif %}
                 <!-- Post Title -->
-                <h1 class="posttitle">{{ page.title }}</h1>
+                <h1 class="posttitle" itemprop="name">{{ page.title }}</h1>
             </div>
             <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
             {% if site.adsense == "enabled" %}
@@ -55,14 +55,14 @@ post_class: post-template
             {% if page.image %}
             <link rel="preload" href="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" as="image" />
             {% if site.lazyimages == "enabled" %}
-            <img class="featured-image img-fluid lazyload" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}" loading="lazy" />
+            <img class="featured-image img-fluid lazyload" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}" loading="lazy" itemprop="image" />
             {% else %}
-            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}" />
+            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}" itemprop="image" />
             {% endif %}
             {% endif %}
             <!-- End Featured Image -->
             <!-- Post Content -->
-            <div class="article-post">
+            <div class="article-post" itemprop="articleBody">
                 <!-- Toc if any -->
                 {% if page.toc %}
                     {% if page.beforetoc %}
@@ -129,7 +129,7 @@ post_class: post-template
         </div>
         <!-- End Post -->
     </div>
-</div>
+</article>
 <!-- End Article -->
 <!-- Begin Comments -->
 {% if page.comments != false %}

@@ -3,6 +3,11 @@ layout: default
 title: Home
 ---
 {% if page.url == "/" %}
+<!-- Site Title -->
+<div class="mainheading">
+    <h1 class="sitetitle" itemprop="name">{{ site.name }}</h1>
+    <p class="lead" itemprop="description">{{ site.description }}</p>
+</div>
 <!-- Featured  -->
 <section class="featured-posts">
     <div class="section-title">
