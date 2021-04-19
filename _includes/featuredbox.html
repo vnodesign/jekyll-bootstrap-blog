@@ -1,13 +1,6 @@
 <!-- begin post -->
 {% assign author = site.authors[post.author] %}
 <link rel="preload" href="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}" as="image" />
-{% if post.author %}
-{% if author.avatar %}
-<link rel="preload" href="{{site.baseurl}}/{{ author.avatar }}" as="image" />
-{% else %}
-<link rel="preload" href="{{ author.photo }}" as="image" />
-{% endif %}
-{% endif %}
 <div class="col-md-6 mb-30px">
     <div class="listfeaturedtag h-100">
         <div class="row h-100">
