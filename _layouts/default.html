@@ -182,7 +182,6 @@
 <script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');</script>
 <script>var base='https://cdnjs.cloudflare.com/ajax/libs';Defer.css(base + '/font-awesome/5.15.3/css/all.min.css','fa5-css');</script>
 {% if site.lazyimages == "enabled" %}<script>Defer.dom('img.fade', 200, 'loaded');</script><style>img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}</style>{% endif %}
-<script>$(function(){$("article").each(function(){const n=$(this);n.readingTime({readingTimeTarget:n.find(".eta"),success:function(e){console.log(e)},error:function(e){n.find(".eta").remove()}})})});</script>
 <script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="deferjs" src="{{ site.url }}/assets/js/lunr.js"></script>
 <script type="deferjs" src="{{ site.url }}/assets/js/lunrsearchengine.js"></script>
@@ -202,5 +201,6 @@
 {% endif %}
 <script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js"></script>
 <script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js"></script>
+<script>$(function(){$("article").each(function(){const n=$(this);n.readingTime({readingTimeTarget:n.find(".eta"),success:function(e){console.log(e)},error:function(e){n.find(".eta").remove()}})})});</script>
 </body>
 </html>
