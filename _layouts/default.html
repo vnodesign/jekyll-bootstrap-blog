@@ -27,7 +27,7 @@
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preload" href="{{ site.url }}/{{ site.logo }}" as="image" />
 {% if jekyll.environment == 'production' %}
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/ga-lite/2.1.0/ga-lite.min.js" as="script" />
+<link rel="preload" href="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}" as="script" />
 {% endif %}
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" as="script" />
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js" as="script" />
@@ -46,6 +46,9 @@
 <link rel="dns-prefetch" href="//static.xx.fbcdn.net" />
 <link rel="dns-prefetch" href="//staticxx.facebook.com" />
 {% endif %}
+{% if jekyll.environment == 'production' %}
+<link rel="dns-prefetch" href="//www.googletagmanager.com" />
+{% endif %}
 <link rel="dns-prefetch" href="//fonts.googleapis.com" />
 <link rel="dns-prefetch" href="//fonts.gstatic.com" />
 {% if page.layout == 'post' %}
@@ -62,6 +65,9 @@
 <link rel="preconnect" href="https://static.xx.fbcdn.net" />
 <link rel="preconnect" href="https://staticxx.facebook.com" />
 {% endif %}
+{% if jekyll.environment == 'production' %}
+<link rel="preconnect" href="https://www.googletagmanager.com" />
+{% endif %}
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" />
 {% if page.layout == 'post' %}
@@ -70,11 +76,12 @@
 {% endif %}
 <link rel="Preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" async />
 <link rel="stylesheet" href="{{ site.url }}/assets/css/style.min.css" async />
 <!-- Script -->
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
 <script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');</script>
-<script>var base = 'https://cdnjs.cloudflare.com/ajax/libs';Defer.css(base + '/twitter-bootstrap/4.1.3/css/bootstrap.min.css','bs5-css');Defer.css(base + '/font-awesome/5.15.3/css/all.min.css','fa5-css');</script>
+<script>var base='https://cdnjs.cloudflare.com/ajax/libs';Defer.css(base + '/font-awesome/5.15.3/css/all.min.css','fa5-css');</script>
 {% if site.lazyimages == "enabled" %}<script>Defer.dom('img.fade', 200, 'loaded');</script><style>img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}</style>{% endif %}
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
@@ -109,14 +116,14 @@
                     {% endif %}
                     <a class="nav-link" href="{{ site.url }}/" title="Home">Home</a>
                     </li>
-                    {% if page.url == "/categories.html" %}
+                    {% if page.url == "/categories" %}
                     <li class="nav-item active">
                     {% else %}
                     <li class="nav-item">
                     {% endif %}
                     <a class="nav-link" href="{{ site.url }}/categories/" title="Categories">Categories</a>
                     </li>
-                    {% if page.url == "/tags.html" %}
+                    {% if page.url == "/tags" %}
                     <li class="nav-item active">
                     {% else %}
                     <li class="nav-item">
@@ -162,14 +169,12 @@
 <script type="deferjs" src="{{ site.url }}/assets/js/lunrsearchengine.js"></script>
 {% if jekyll.environment == 'production' %}
 <!-- change your GA id in _config.yml -->
-<script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/ga-lite/2.1.0/ga-lite.min.js"></script>
-<script type="deferjs">var galite=galite||{};galite.UA='{{site.google_analytics}}';</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{site.google_analytics}}');function td_gtag(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_gtag,!1):window.attachEvent?window.attachEvent("onload",td_gtag):window.onload=td_gtag;</script>
 {% endif %}
 {% if site.fanpage-chat %}
-<script type="deferjs">
-window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};function td_customerchat(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_customerchat,!1):window.attachEvent?window.attachEvent("onload",td_customerchat):window.onload=td_customerchat;</script>
+<script>window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};function td_customerchat(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_customerchat,!1):window.attachEvent?window.attachEvent("onload",td_customerchat):window.onload=td_customerchat;</script>
 {% endif %}
-<script type="deferjs">WebFontConfig={google:{families:['Righteous','Merriweather:300,300i,400,400i,700,700i&display=swap']}};function td_webfonts(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_webfonts,!1):window.attachEvent?window.attachEvent("onload",td_webfonts):window.onload=td_webfonts;</script>
+<script>WebFontConfig={google:{families:['Righteous','Merriweather:300,300i,400,400i,700,700i&display=swap']}};function td_webfonts(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_webfonts,!1):window.attachEvent?window.attachEvent("onload",td_webfonts):window.onload=td_webfonts;</script>
 <script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 <script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
 <script type="deferjs" src="{{ site.url }}/assets/js/mediumish.js"></script>
