@@ -4,6 +4,7 @@ disqus: false
 archive: false
 post_class: post-template
 ---
+<script>$('article').readingTime();</script>
 <!-- Begin Article -->
 <article class="container" itemscope itemtype="https://schema.org/Article">
     <div class="row">
@@ -54,6 +55,8 @@ post_class: post-template
                     {% endif %}
                 </small>
                 </p>
+                <div class="eta"></div>
+                <div class="word-count"></div>
             </div>
             <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
             {% if site.adsense == "enabled" %}
