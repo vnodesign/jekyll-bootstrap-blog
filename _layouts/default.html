@@ -112,12 +112,12 @@
                     {% endif %}
                     <a class="nav-link" href="{{ site.url }}/" title="Home">Home</a>
                     </li>
-                    {% if page.url == "/categories" %}
+                    {% if page.url == "/category" %}
                     <li class="nav-item active">
                     {% else %}
                     <li class="nav-item">
                     {% endif %}
-                    <a class="nav-link" href="{{ site.url }}/categories/" title="Categories">Categories</a>
+                    <a class="nav-link" href="{{ site.url }}/category/" title="Category">Category</a>
                     </li>
                     {% if page.url == "/tags" %}
                     <li class="nav-item active">
@@ -125,6 +125,20 @@
                     <li class="nav-item">
                     {% endif %}
                     <a class="nav-link" href="{{ site.url }}/tags/" title="Tags">Tags</a>
+                    </li>
+                    {% if page.url == "/series.html" %}
+                    <li class="nav-item active">
+                    {% else %}
+                    <li class="nav-item">
+                    {% endif %}
+                    <a class="nav-link" href="{{ site.url }}/series.html/" title="Series">Series</a>
+                    </li>
+                    {% if page.url == "/series-nextdns.html" %}
+                    <li class="nav-item active">
+                    {% else %}
+                    <li class="nav-item">
+                    {% endif %}
+                    <a class="nav-link" href="{{ site.url }}/series-nextdns.html/" title="Series NextDNS">Series NextDNS</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="https://about.tuanducdesign.com/" title="About">About</a>
