@@ -10,6 +10,20 @@ disqus: 'tuanducdesign'
 fanpage-chat: '121349286117840'
 include: ["_pages"]
 permalink: /:year/:month/:title.html/
+twitter:
+  username: tuanducdesign
+  card: summary
+facebook:
+  app_id: 294587991860787
+  publisher: 121349286117840
+  admins: 100005485267478
+social:
+  name: Tuan Duc Design
+  links:
+    - https://twitter.com/tuanducdesign
+    - https://www.facebook.com/tuanduc.support
+    - https://www.instagram.com/mi.profile.56
+    - https://github.com/tuanducdesign
 
 # Authors
 authors:
