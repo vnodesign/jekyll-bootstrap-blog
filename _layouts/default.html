@@ -75,12 +75,6 @@
 <link rel="Preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
 <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css" async />
-<!-- Script -->
-<script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
-<script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');</script>
-<script>var base='https://cdnjs.cloudflare.com/ajax/libs';Defer.css(base + '/font-awesome/5.15.3/css/all.min.css','fa5-css');</script>
-{% if site.lazyimages == "enabled" %}<script>Defer.dom('img.fade', 200, 'loaded');</script><style>img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}</style>{% endif %}
-<script>$('article').readingTime();</script>
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}">
@@ -183,6 +177,11 @@
 </div>
 <!-- /.site-content -->
 <!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
+<script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');</script>
+<script>var base='https://cdnjs.cloudflare.com/ajax/libs';Defer.css(base + '/font-awesome/5.15.3/css/all.min.css','fa5-css');</script>
+{% if site.lazyimages == "enabled" %}<script>Defer.dom('img.fade', 200, 'loaded');</script><style>img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}</style>{% endif %}
+<script>$('article').readingTime();</script>
 <script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="deferjs" src="{{ site.url }}/assets/js/lunr.js"></script>
 <script type="deferjs" src="{{ site.url }}/assets/js/lunrsearchengine.js"></script>
