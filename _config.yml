@@ -5,7 +5,7 @@ description: "Specialist page sharing knowledge related to VPS development and W
 logo: 'static/tuanducdesign.jpg'
 favicon: 'static/tuanducdesign.jpg'
 baseurl:
-google_analytics: 'UA-46278016-1'
+google_analytics: 'UA-175649416-1'
 disqus: 'tuanducdesign'
 fanpage-chat: '121349286117840'
 include: ["_pages"]
