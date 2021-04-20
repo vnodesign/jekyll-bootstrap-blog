@@ -33,6 +33,7 @@
 {% if page.layout == 'post' %}
 <link rel="preload" href="//{{site.disqus}}.disqus.com/count.js" as="script" />
 {% endif %}
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" as="script" />
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js" as="script" />
 <!-- Prefetch Domain -->
 <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
@@ -198,5 +199,6 @@
 {% if page.layout == 'post' %}
 <script id="dsq-count-scr" type="deferjs" src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
+<script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js"></script>
 </body>
 </html>
