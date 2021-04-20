@@ -9,11 +9,12 @@ image: static/media/chuc-nang-theo-doi-tren-nextdns-co-y-nghia-gi.png
 description: "Với chức năng theo dõi trên NextDNS, thì bạn có thể theo dõi được các hoạt động đang diễn ra trên các trình chặn quảng cáo mà bạn đã thêm."
 ---
 
+Với chức năng theo dõi trên NextDNS, thì bạn có thể theo dõi được các hoạt động đang diễn ra trên các trình chặn quảng cáo mà bạn đã thêm.
+
 Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS](https://tuanducdesign.com/series-nextdns.html)
 
 ## Nội dung bài viết
 
-- [Nội dung bài viết](#nội-dung-bài-viết)
 - [Các chức năng theo dõi trên NextDNS](#các-chức-năng-theo-dõi-trên-nextdns)
 - [Queries](#queries)
 - [Resolved Domains](#resolved-domains)
@@ -27,8 +28,6 @@ Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần 
 - [DNSSEC](#dnssec)
 - [Traffic Destination](#traffic-destination)
 - [Kết](#kết)
-
-Với chức năng theo dõi trên NextDNS, thì bạn có thể theo dõi được các hoạt động đang diễn ra trên các trình chặn quảng cáo mà bạn đã thêm.
 
 ## Các chức năng theo dõi trên NextDNS
 

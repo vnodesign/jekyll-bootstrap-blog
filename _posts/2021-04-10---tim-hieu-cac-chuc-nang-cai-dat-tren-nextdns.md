@@ -9,11 +9,13 @@ image: static/media/tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.png
 description: "Để tăng thêm mức độ bảo mật cho tài khoản và mạng của mình, thì bạn cần phải tìm hiểu thêm về các chức năng cài đặt trên NextDNS."
 ---
 
+Để tăng thêm mức độ bảo mật cho tài khoản và mạng của mình, thì bạn cần phải tìm hiểu thêm về các chức năng cài đặt trên NextDNS.
+
+
 Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS](https://tuanducdesign.com/series-nextdns.html)
 
 ## Nội dung bài viết
 
-- [Nội dung bài viết](#nội-dung-bài-viết)
 - [Các chức năng cài đặt trên NextDNS](#các-chức-năng-cài-đặt-trên-NextDNS)
 - [Name](#name)
 - [Logs](#logs)
@@ -28,8 +30,6 @@ Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần 
 - [Handshake](#handshake)
 - [Rewrites](#rewrites)
 - [Kết](#kết)
-
-Để tăng thêm mức độ bảo mật cho tài khoản và mạng của mình, thì bạn cần phải tìm hiểu thêm về các chức năng cài đặt trên NextDNS.
 
 ![Tìm hiểu các chức năng cài đặt trên NextDNS]({{ site.url }}/static/media/tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.png)
 

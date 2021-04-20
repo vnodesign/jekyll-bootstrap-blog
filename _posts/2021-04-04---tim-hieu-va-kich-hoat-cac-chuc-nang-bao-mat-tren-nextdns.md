@@ -9,11 +9,12 @@ image: static/media/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.png
 description: "Ở bài viết trước mình đã hướng dẫn các bạn cấu hình và sử dụng NextDNS trên Modem, ở bài viết kế tiếp này chúng ta cùng tìm hiểu và kích hoạt các chức năng bảo mật trên NextDNS nhé."
 ---
 
+Ở bài viết trước mình đã hướng dẫn các bạn cấu hình và sử dụng NextDNS trên Modem, ở bài viết kế tiếp này chúng ta cùng tìm hiểu và kích hoạt các chức năng bảo mật trên NextDNS nhé.
+
 Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS](https://tuanducdesign.com/series-nextdns.html)
 
 ## Nội dung bài viết
 
-- [Nội dung bài viết](#nội-dung-bài-viết)
 - [Các chức năng bảo mật trên NextDNS](#các-chức-năng-bảo-mật-trên-nextdns)
 - [Threat Intelligence Feeds](#threat-intelligence-feeds)
 - [Google Safe Browsing](#google-safe-browsing)
@@ -28,8 +29,6 @@ Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần 
 - [Block Child Sexual Abuse Material](#block-child-sexual-abuse-material)
 - [Kích hoạt các chức năng bảo mật](#kích-hoạt-các-chức-năng-bảo-mật)
 - [Kết](#kết)
-
-Ở bài viết trước mình đã hướng dẫn các bạn cấu hình và sử dụng NextDNS trên Modem, ở bài viết kế tiếp này chúng ta cùng tìm hiểu và kích hoạt các chức năng bảo mật trên NextDNS nhé.
 
 ![Tìm hiểu và kích hoạt các chức năng bảo mật trên NextDNS]({{ site.url }}/static/media/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.png)
 

@@ -110,38 +110,45 @@
                     {% else %}
                     <li class="nav-item">
                     {% endif %}
-                    <a class="nav-link" href="{{ site.url }}/" title="Home">Home</a>
+                        <a class="nav-link" href="{{ site.url }}/" title="Home">Home</a>
                     </li>
-                    {% if page.url == "/category" %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://about.tuanducdesign.com/" title="About">About</a>
+                    </li>
+                    {% if page.url == "/pages/my-customer" %}
                     <li class="nav-item active">
                     {% else %}
                     <li class="nav-item">
                     {% endif %}
-                    <a class="nav-link" href="{{ site.url }}/category/" title="Category">Category</a>
+                        <a class="nav-link" href="{{ site.url }}/pages/my-customer/" title="My customer">My customer</a>
                     </li>
-                    {% if page.url == "/tags" %}
+                    {% if page.url == "/pages/contacts" %}
                     <li class="nav-item active">
                     {% else %}
                     <li class="nav-item">
                     {% endif %}
-                    <a class="nav-link" href="{{ site.url }}/tags/" title="Tags">Tags</a>
+                        <a class="nav-link" href="{{ site.url }}/pages/contacts/" title="Contacts">Contacts</a>
                     </li>
                     {% if page.url == "/series.html" %}
                     <li class="nav-item active">
                     {% else %}
                     <li class="nav-item">
                     {% endif %}
-                    <a class="nav-link" href="{{ site.url }}/series.html/" title="Series">Series</a>
+                        <a class="nav-link" href="{{ site.url }}/series.html/" title="Series">Series</a>
                     </li>
-                    {% if page.url == "/series-nextdns.html" %}
+                    {% if page.url == "/category" %}
                     <li class="nav-item active">
                     {% else %}
                     <li class="nav-item">
                     {% endif %}
-                    <a class="nav-link" href="{{ site.url }}/series-nextdns.html/" title="Series NextDNS">Series NextDNS</a>
+                        <a class="nav-link" href="{{ site.url }}/category/" title="Category">Category</a>
                     </li>
+                    {% if page.url == "/tags" %}
+                    <li class="nav-item active">
+                    {% else %}
                     <li class="nav-item">
-                    <a class="nav-link" href="https://about.tuanducdesign.com/" title="About">About</a>
+                    {% endif %}
+                        <a class="nav-link" href="{{ site.url }}/tags/" title="Tags">Tags</a>
                     </li>
                     {% include search-lunr.html %}
                 </ul>

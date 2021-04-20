@@ -8,9 +8,10 @@ image: static/media/lazyload-youtube-va-responsive-video.jpg
 description: "Ở các bài viết trước mình đã hướng dẫn các bạn lazyload các script, ở bài này mình sẽ hướng dẫn cách lazyload Youtube và responsive video."
 ---
 
+Ở các bài viết trước mình đã hướng dẫn các bạn lazyload các script, ở bài này mình sẽ hướng dẫn cách lazyload Youtube và responsive video
+
 ## Nội dung bài viết
 
-- [Nội dung bài viết](#nội-dung-bài-viết)
 - [Làm thế nào để nhúng video Youtube vào Website](#làm-thế-nào-để-nhúng-video-youtube-vào-website)
 - [Vấn đề xảy ra khi nhúng video từ Youtube vào Website](#vấn-đề-xảy-ra-khi-nhúng-video-từ-youtube-vào-website)
 - [Bắt đầu cài đặt Lazyload](#bắt-đầu-cài-đặt-lazyload)

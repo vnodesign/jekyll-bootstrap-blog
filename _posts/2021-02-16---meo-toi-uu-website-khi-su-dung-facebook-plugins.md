@@ -8,14 +8,13 @@ image: static/media/meo-toi-uu-website-khi-su-dung-facebook-plugins.jpg
 description: "Ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Facebook plugins."
 ---
 
+Ở các bài viết trước mình đã hướng dẫn các bạn cách lazyload các scripts bên ba, ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Facebook plugins.
+
 ## Nội dung bài viết
 
-- [Nội dung bài viết](#nội-dung-bài-viết)
 - [Truy cập vào đường dẫn tới file JS của Facebook](#truy-cập-vào-đường-dẫn-tới-file-js-của-facebook)
 - [Các thành phần cần quan tâm](#các-thành-phần-cần-quan-tâm)
 - [Sử dụng link rel preload và link rel dns-prefetch](#sử-dụng-link-rel-preload-và-link-rel-dns-prefetch)
-
-Ở các bài viết trước mình đã hướng dẫn các bạn cách lazyload các scripts bên ba, ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Facebook plugins.
 
 ![Mẹo Tối Ưu Website Khi Sử Dụng Facebook Plugins]({{ site.url }}/static/media/meo-toi-uu-website-khi-su-dung-facebook-plugins.jpg)
 

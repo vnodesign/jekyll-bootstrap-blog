@@ -8,14 +8,13 @@ image: static/media/tai-sao-theme-tren-wordpress-khong-duoc-toi-uu-san.jpg
 description: "Có thể nói mã nguồn WordPress giờ quá phổ biến với người dùng từ các dự án từ bé đến lớn như bán hàng, blog, dịch vụ, công ty."
 ---
 
+Có thể nói mã nguồn WordPress giờ quá phổ biến với người dùng từ các dự án từ bé đến lớn như bán hàng, blog, dịch vụ, công ty.
+
 ## Nội dung bài viết
 
-- [Nội dung bài viết](#nội-dung-bài-viết)
 - [Code chuẩn](#code-chuẩn)
 - [Nhiều CSS và Javascript](#nhiều-css-và-javascript)
 - [Cách đơn giản nhất để tối ưu](#cách-đơn-giản-nhất-để-tối-ưu)
-
-Có thể nói mã nguồn WordPress giờ quá phổ biến với người dùng từ các dự án từ bé đến lớn như bán hàng, blog, dịch vụ, công ty. Nhưng bên cạnh đó nó vẫn còn một số thứ khiến người dùng chưa hài lòng đó chính là tốc độ. Bài viết ngày hôm nay mình sẽ nói cho các bạn biết lý do tại vì sao mà các theme hiện nay trên WordPress không được tối ưu sẵn bởi các lập trình viên.
 
 ![Tại sao theme trên WordPress không được tối ưu sẵn]({{ site.url }}/static/media/tai-sao-theme-tren-wordpress-khong-duoc-toi-uu-san.jpg)
 

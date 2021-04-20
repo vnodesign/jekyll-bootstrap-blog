@@ -8,20 +8,19 @@ image: static/media/install-module-page-speed-on-server-nginx.jpg
 description: "ngx_pagespeed tăng tốc website của bạn và giảm thời gian load đáng kể bằng cách tự động áp dụng các kỹ thuật tối ưu hóa page và các thành phần tĩnh."
 ---
 
+ngx_pagespeed tăng tốc website của bạn và giảm thời gian load đáng kể bằng cách tự động áp dụng các kỹ thuật tối ưu hóa page và các thành phần tĩnh như CSS, Javascript và Image.
+
 ## Nội dung bài viết
 
-- [Nội dung bài viết](#nội-dung-bài-viết)
 - [Đăng nhập vào SSH](#đăng-nhập-vào-ssh)
 - [Chạy các lệnh cơ bản để kiểm tra hệ thống](#chạy-các-lệnh-cơ-bản-để-kiểm-tra-hệ-thống)
 - [Tiến hành cài đặt Server, Nginx và Module PageSpeed](#tiến-hành-cài-đặt-server-nginx-và-module-pagespeed)
-
-ngx_pagespeed tăng tốc website của bạn và giảm thời gian load đáng kể bằng cách tự động áp dụng các kỹ thuật tối ưu hóa page và các thành phần tĩnh như CSS, Javascript và Image.
 
 ![Cài đặt Module PageSpeed lên máy chủ Nginx]({{ site.url }}/static/media/install-module-page-speed-on-server-nginx.jpg)
 
 Để hiểu rõ hơn về Module PageSpeed các bạn tìm hiểu tại trang sau : [https://developers.google.com/speed/pagespeed/module](https://developers.google.com/speed/pagespeed/module)
 
-Trước khi cài đặt Module PageSpeed trên máy chủ Nginx thì các bạn cần phải chuẩn bị những thứ sau đây :
+Trước khi cài đặt Module PageSpeed trên máy chủ Nginx thì các bạn cần phải chuẩn bị những thứ sau đây:
 
 - VPS mới tinh
 - 1GB RAM trở lên

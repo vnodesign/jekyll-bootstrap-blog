@@ -8,14 +8,13 @@ image: static/media/cach-kiem-tra-xem-co-bao-nhieu-requests-tren-website.jpg
 description: "Về vấn đề dùng nhiều scripts bên ba thì bạn sẽ không tránh khỏi được có nhiều requests được tải cùng website."
 ---
 
+Về vấn đề dùng nhiều scripts bên ba thì bạn sẽ không tránh khỏi được có nhiều requests được tải cùng website, Bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách kiểm tra xem có bao nhiêu requests trên Website.
+
 ## Nội dung bài viết
 
-- [Nội dung bài viết](#nội-dung-bài-viết)
 - [Requests là gì](#requests-là-gì)
 - [Cách kiểm tra xem có bao nhiêu requests đang hoạt động](#cách-kiểm-tra-xem-có-bao-nhiêu-requests-đang-hoạt-động)
 - [Tìm kiếm và tối ưu các requests](#tìm-kiếm-và-tối-ưu-các-requests)
-
-Về vấn đề dùng nhiều scripts bên ba thì bạn sẽ không tránh khỏi được có nhiều requests được tải cùng website, Bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách kiểm tra xem có bao nhiêu requests trên Website.
 
 ![Cách Kiểm Tra Xem Có Bao Nhiêu Requests Trên Website]({{ site.url }}/static/media/cach-kiem-tra-xem-co-bao-nhieu-requests-tren-website.jpg)
 

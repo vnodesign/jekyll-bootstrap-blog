@@ -8,14 +8,13 @@ image: static/media/meo-toi-uu-website-khi-su-dung-zalo-plugins.jpg
 description: "Ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Zalo plugins."
 ---
 
+Ở bài viết trước mình đã hướng dẫn các bạn cách tối ưu website khi sử dụng Facebook Plugins, ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Zalo plugins.
+
 ## Nội dung bài viết
 
-- [Nội dung bài viết](#nội-dung-bài-viết)
 - [Truy cập vào đường dẫn tới file JS của Zalo](#truy-cập-vào-đường-dẫn-tới-file-js-của-zalo)
 - [Các thành phần cần quan tâm](#các-thành-phần-cần-quan-tâm)
 - [Sử dụng link rel preload và link rel dns-prefetch](#sử-dụng-link-rel-preload-và-link-rel-dns-prefetch)
-
-Ở bài viết trước mình đã hướng dẫn các bạn cách tối ưu website khi sử dụng Facebook Plugins, ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Zalo plugins.
 
 ![Mẹo Tối Ưu Website Khi Sử Dụng Zalo Plugins]({{ site.url }}/static/media/meo-toi-uu-website-khi-su-dung-zalo-plugins.jpg)
 

@@ -9,11 +9,12 @@ image: static/media/cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.png
 description: "Thêm một chức năng nữa mà mình muốn nhắc đến đối với các bậc làm, làm mẹ đó chính là chức năng kiểm soát của cha mẹ. Chức năng này sẽ giúp bạn quản lý con cái dễ dàng hơn."
 ---
 
+Thêm một chức năng nữa mà mình muốn nhắc đến đối với các bậc làm, làm mẹ đó chính là chức năng kiểm soát của cha mẹ. Chức năng này sẽ giúp bạn quản lý con cái dễ dàng hơn.
+
 Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS](https://tuanducdesign.com/series-nextdns.html)
 
 ## Nội dung bài viết
 
-- [Nội dung bài viết](#nội-dung-bài-viết)
 - [Các chức năng kiểm soát của cha mẹ trên NextDNS](#các-chức-năng-kiểm-soát-của-cha-mẹ-trên-nextdns)
 - [Websites, Apps & Games](#websites-apps-games)
 - [Categories](#categories)
@@ -29,8 +30,6 @@ Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần 
 - [Chức năng của YouTube Restricted Mode](#chức-năng-của-youtube-restricted-mode)
 - [Chức năng của Block Bypass Methods](#chức-năng-của-block-bypass-methods)
 - [Kết](#kết)
-
-Thêm một chức năng nữa mà mình muốn nhắc đến đối với các bậc làm, làm mẹ đó chính là chức năng kiểm soát của cha mẹ. Chức năng này sẽ giúp bạn quản lý con cái dễ dàng hơn.
 
 ![Cấu hình chức năng kiểm soát của cha mẹ trên NextDNS]({{ site.url }}/static/media/cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.png)
 

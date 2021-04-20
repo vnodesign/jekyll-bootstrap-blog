@@ -8,6 +8,8 @@ image: static/media/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.jpg
 description: "Bài viết ngày hôm nay mình sẽ tổng hợp bộ ba thư viện thần thánh giúp website của bạn tối ưu hơn."
 ---
 
+Bài viết ngày hôm nay mình sẽ tổng hợp bộ ba thư viện thần thành giúp website của bạn tối ưu hơn. Vậy các công cụ mà mình muốn nhắc đến là gì? Hãy cùng mình theo dõi hết bài viết ngày hôm nay nhé.
+
 ## Danh sách bộ ba thư viện thần thánh giúp website tối ưu
 
 - [DeferJS](https://github.com/shinsenter/defer.js/)
@@ -27,8 +29,6 @@ description: "Bài viết ngày hôm nay mình sẽ tổng hợp bộ ba thư vi
 - [Thư viện hỗ trợ Lazyload các script của mình](#thư-viện-hỗ-trợ-lazyload-các-script-của-mình)
 - [Vài dòng về thư viện hỗ trợ Lazyload các script của mình](#vài-dòng-về-thư-viện-hỗ-trợ-lazyload-các-script-của-mình)
 - [Cách sử dụng thư viện hỗ trợ lazyload các script của mình](#cách-sử-dụng-thư-viện-hỗ-trợ-lazyload-các-script-của-mình)
-
-Bài viết ngày hôm nay mình sẽ tổng hợp bộ ba thư viện thần thành giúp website của bạn tối ưu hơn. Vậy các công cụ mà mình muốn nhắc đến là gì? Hãy cùng mình theo dõi hết bài viết ngày hôm nay nhé.
 
 ![Bộ Ba Thư Viện Thần Thánh Giúp Website Tối Ưu]({{ site.url }}/static/media/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.jpg)
 

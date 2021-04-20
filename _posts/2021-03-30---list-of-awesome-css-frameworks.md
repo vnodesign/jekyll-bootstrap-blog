@@ -11,6 +11,8 @@ hidden: true
 rating: 5
 ---
 
+In this article I would like to share with you the list of CSS Frameworks that support Website design.
+
 ## Table of contents
 
 - [Base / Reset / Normalize](#base--reset--normalize)
@@ -22,8 +24,6 @@ rating: 5
 - [Specialized](#specialized)
 - [Toolkits](#toolkits)
 - [Stalled Development](#stalled-development)
-
-In this article I would like to share with you the list of CSS Frameworks that support Website design.
 
 ![List of awesome CSS frameworks]({{ site.url }}/static/media/css-frameworks.jpg)
 

@@ -8,14 +8,13 @@ image: static/media/tang-toc-website-bang-cach-su-dung-staticaly.jpg
 description: "Staticaly là một trang hoàn toàn miễn phí nó giúp bạn đẩy các file tĩnh như ảnh,font,css và js của bạn thông qua URL cdn của họ."
 ---
 
+Theo mình tìm hiểu thì Staticaly khá hay khi sử dụng nó bạn sẽ cảm thấy website của mình nhanh hơn
+
 ## Nội dung bài viết
 
-- [Nội dung bài viết](#nội-dung-bài-viết)
 - [Staticaly là gì](#staticaly-là-gì)
 - [Cách ứng dụng Staticaly vào Website](#cách-ứng-dụng-staticaly-vào-website)
 - [Tận hưởng thành quả mà Staticaly đem lại](#tận-hưởng-thành-quả-mà-staticaly-đem-lại)
-
-Theo mình tìm hiểu thì Staticaly khá hay khi sử dụng nó bạn sẽ cảm thấy website của mình nhanh hơn
 
 ![Tăng Tốc Website Bằng Cách Sử Dụng Staticaly]({{ site.url }}/static/media/tang-toc-website-bang-cach-su-dung-staticaly.jpg)
 

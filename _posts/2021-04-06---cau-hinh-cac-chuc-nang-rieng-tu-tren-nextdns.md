@@ -9,11 +9,12 @@ image: static/media/cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns.png
 description: "Ở bài viết trước chúng ta đã biết cách kích hoạt các chức năng bảo mật cần thiết trên NextDNS, trong bài viết này mình sẽ hướng dẫn các bạn cách cấu hình các chức năng riêng tư trên NextDNS."
 ---
 
+Ở bài viết trước chúng ta đã biết cách kích hoạt các chức năng bảo mật cần thiết trên NextDNS, trong bài viết này mình sẽ hướng dẫn các bạn cách cấu hình các chức năng riêng tư trên NextDNS
+
 Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS](https://tuanducdesign.com/series-nextdns.html)
 
 ## Nội dung bài viết
 
-- [Nội dung bài viết](#nội-dung-bài-viết)
 - [Các chức năng riêng tư trên NextDNS](#các-chức-năng-riêng-tư-trên-nextdns)
 - [Blocklists](#blocklists)
 - [Native Tracking Protection](#native-tracking-protection)
@@ -25,8 +26,6 @@ Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần 
 - [Chức năng của Block Disguised Third-Party Trackers](#chức-năng-của-block-disguised-third--party-trackers)
 - [Chức năng của Allow Affiliate & Tracking Links](#chức-năng-của-allow-affiliate-tracking-links)
 - [Kết](#kết)
-
-Ở bài viết trước chúng ta đã biết cách kích hoạt các chức năng bảo mật cần thiết trên NextDNS, trong bài viết này mình sẽ hướng dẫn các bạn cách cấu hình các chức năng riêng tư trên NextDNS
 
 ![Cấu hình các chức năng riêng tư trên NextDNS]({{ site.url }}/static/media/cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns.png)
 

@@ -9,15 +9,14 @@ image: static/media/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg
 description: "NextDNS là sự lựa chọn hoàn hảo để thay thế DNS Cloudflare, Khi sử dụng NextDNS thì bạn sẽ được bảo vệ toàn diện từ các chức năng nổi bật của NextDNS."
 ---
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS](https://tuanducdesign.com/series-nextdns.html)
-
 Mình vừa tìm được một dịch vụ DNS khá hay, nên trước khi viết bài này mình cũng đã thử áp dụng và đã thành công. Dịch vụ mà mình muốn nhắc đến ở đây đó là [NextDNS](https://nextdns.io/).
+
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS](https://tuanducdesign.com/series-nextdns.html)
 
 ![Hướng dẫn cấu hình và sử dụng NextDNS trên Modem]({{ site.url }}/static/media/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg)
 
 ## Nội dung bài viết
 
-- [Nội dung bài viết](#nội-dung-bài-viết)
 - [NextDNS là gì](#nextdns-là-gì)
 - [Các tính năng nổi bật trên NextDNS](#các-tính-năng-nổi-bật-trên-nextdns)
 - [Bảo vệ](#bảo-vệ)
