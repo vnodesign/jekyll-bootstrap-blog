@@ -11,16 +11,13 @@
 <meta name="geo.position" content="20.816391;105.33418" />
 <meta name="ICBM" content="20.816391, 105.33418">
 <!-- Preload file -->
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" as="style" />
-<link rel="preload" href="{{ site.url }}/assets/css/style.min.css" as="style" />
+<link rel="preload" href="{{ site.url }}/assets/css/main.css" as="style" />
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" as="script" /> 
 <link rel="preload" href="{{ site.url }}/assets/js/lunr.js" as="script" />
 <link rel="preload" href="{{ site.url }}/assets/js/lunrsearchengine.js" as="script" />
 {% if site.fanpage-chat %}
 <link rel="preload" href="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" as="script" />
 {% endif %}
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" as="script" />
-<link rel="preload" href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i&display=swap" as="style" />
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" as="style" />
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin />
@@ -76,8 +73,7 @@
 {% endif %}
 <link rel="Preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" async />
-<link rel="stylesheet" href="{{ site.url }}/assets/css/style.min.css" async />
+<link rel="stylesheet" href="{{ site.url }}/assets/css/main.css" async />
 <!-- Script -->
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
 <script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');</script>
@@ -169,12 +165,11 @@
 <script type="deferjs" src="{{ site.url }}/assets/js/lunrsearchengine.js"></script>
 {% if jekyll.environment == 'production' %}
 <!-- change your GA id in _config.yml -->
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{site.google_analytics}}');function td_gtag(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_gtag,!1):window.attachEvent?window.attachEvent("onload",td_gtag):window.onload=td_gtag;</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{site.google_analytics}}');Defer.js('https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}','gtag');</script>
 {% endif %}
 {% if site.fanpage-chat %}
-<script>window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};function td_customerchat(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_customerchat,!1):window.attachEvent?window.attachEvent("onload",td_customerchat):window.onload=td_customerchat;</script>
+<script>window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat');</script>
 {% endif %}
-<script>WebFontConfig={google:{families:['Righteous','Merriweather:300,300i,400,400i,700,700i&display=swap']}};function td_webfonts(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_webfonts,!1):window.attachEvent?window.attachEvent("onload",td_webfonts):window.onload=td_webfonts;</script>
 <script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 <script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
 <script type="deferjs" src="{{ site.url }}/assets/js/mediumish.js"></script>
