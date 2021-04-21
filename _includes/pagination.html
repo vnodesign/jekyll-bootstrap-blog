@@ -12,7 +12,7 @@
   {% endif %}
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
-      <span class="ml-1 mr-1">{{ page }}</span>
+      <span class="ml-1 mr-1 active">{{ page }}</span>
     {% elsif page == 1 %}
       <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="{{ page }}">{{ page }}</a>
     {% else %}
