@@ -13,22 +13,6 @@ Với chức năng theo dõi trên NextDNS, thì bạn có thể theo dõi đư�
 
 Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS](https://tuanducdesign.com/series-nextdns.html)
 
-## Nội dung bài viết
-
-- [Các chức năng theo dõi trên NextDNS](#các-chức-năng-theo-dõi-trên-nextdns)
-- [Queries](#queries)
-- [Resolved Domains](#resolved-domains)
-- [Blocked Domains](#blocked-domains)
-- [Blocked Reasons](#blocked-reasons)
-- [Devices](#devices)
-- [Ips](#ips)
-- [Root Domains](#root-domains)
-- [GAFAM Dominance](#gafam-dominace)
-- [Encrypted DNS](#encrypted-dns)
-- [DNSSEC](#dnssec)
-- [Traffic Destination](#traffic-destination)
-- [Kết](#kết)
-
 ## Các chức năng theo dõi trên NextDNS
 
 ![Chức năng theo dõi trên NextDNS có ý nghĩa gì]({{ site.url }}/static/media/chuc-nang-theo-doi-tren-nextdns-co-y-nghia-gi.png)

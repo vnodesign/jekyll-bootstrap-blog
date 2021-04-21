@@ -10,13 +10,6 @@ description: "Ở các bài trước mình đã hướng dẫn các bạn lazylo
 
 Ở các bài trước mình đã hướng dẫn các bạn lazyload các script, ở bài này mình sẽ hướng dẫn cách lazyload image và iframe.
 
-## Nội dung bài viết
-
-- [Sử dụng Jquery](#sử-dụng-jquery)
-- [Bắt đầu cài đặt Lazyload](#bắt-đầu-cài-đặt-lazyload)
-- [Chèn vào mã nguồn](#chèn-vào-mã-nguồn)
-- [Thêm class lazyload cho image và iframe](#thêm-class-lazyload-cho-image-và-iframe)
-
 ![Lazyload Image Và Iframe]({{ site.url }}/static/media/lazyload-image-va-iframe.jpg)
 
 ## Sử dụng Jquery

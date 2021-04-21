@@ -13,18 +13,6 @@ rating: 5
 
 In this article I would like to share with you the list of CSS Frameworks that support Website design.
 
-## Table of contents
-
-- [Base / Reset / Normalize](#base--reset--normalize)
-- [Class-less](#class-less)
-- [Very Lightweight](#very-lightweight)
-- [General Purpose](#general-purpose)
-- [Material Design](#material-design)
-- [Utility-based](#utility-based)
-- [Specialized](#specialized)
-- [Toolkits](#toolkits)
-- [Stalled Development](#stalled-development)
-
 ![List of awesome CSS frameworks]({{ site.url }}/static/media/css-frameworks.jpg)
 
 ## Base / Reset / Normalize

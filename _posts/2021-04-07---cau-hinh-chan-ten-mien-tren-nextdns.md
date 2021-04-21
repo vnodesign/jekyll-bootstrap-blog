@@ -13,11 +13,6 @@ NextDNS ngày càng trở nên phổ biến hơn đặc biết là hỗ trợ kh
 
 Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS](https://tuanducdesign.com/series-nextdns.html)
 
-## Nội dung bài viết
-
-- [Cấu hình chặn tên miền](#cấu-hình-chặn-tên-miền)
-- [Kết](#kết)
-
 ## Cấu hình chặn tên miền
 
 Nhập tên miền mà bạn muốn chặn vào khung Denylist như hình dưới đây, sau đó bấm phím Enter để tạo.

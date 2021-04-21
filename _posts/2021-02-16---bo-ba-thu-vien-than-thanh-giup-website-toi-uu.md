@@ -10,26 +10,6 @@ description: "Bài viết ngày hôm nay mình sẽ tổng hợp bộ ba thư vi
 
 Bài viết ngày hôm nay mình sẽ tổng hợp bộ ba thư viện thần thành giúp website của bạn tối ưu hơn. Vậy các công cụ mà mình muốn nhắc đến là gì? Hãy cùng mình theo dõi hết bài viết ngày hôm nay nhé.
 
-## Danh sách bộ ba thư viện thần thánh giúp website tối ưu
-
-- [DeferJS](https://github.com/shinsenter/defer.js/)
-- [Lazysizes](https://github.com/aFarkas/lazysizes/)
-- [Thư viện Lazyload các script của mình](https://tuanducdesign.com/tag/lazyload/)
-
-## Nội dung bài viết
-
-- [Danh sách bộ ba thư viện thần thánh giúp website tối ưu](#danh-sách-bộ-ba-thư-viện-thần-thánh-giúp-website-tối-ưu)
-- [Nội dung bài viết](#nội-dung-bài-viết)
-- [DeferJS của tác giả Mai Nhựt Tân](#deferjs-của-tác-giả-mai-nhựt-tân)
-- [Vài dòng về thư viện DeferJS](#vài-dòng-về-thư-viện-deferjs)
-- [Cách sử dụng thư viện DeferJS](#cách-sử-dụng-thư-viện-deferjs)
-- [Lazysizes của tác giả aFarkas](#lazysizes-của-tác-giả-afarkas)
-- [Vài dòng về thư viện Lazysizes](#vài-dòng-về-thư-viện-lazysizes)
-- [Cách sử dụng thư viện Lazysizes](#cách-sử-dụng-thư-viện-lazysizes)
-- [Thư viện hỗ trợ Lazyload các script của mình](#thư-viện-hỗ-trợ-lazyload-các-script-của-mình)
-- [Vài dòng về thư viện hỗ trợ Lazyload các script của mình](#vài-dòng-về-thư-viện-hỗ-trợ-lazyload-các-script-của-mình)
-- [Cách sử dụng thư viện hỗ trợ lazyload các script của mình](#cách-sử-dụng-thư-viện-hỗ-trợ-lazyload-các-script-của-mình)
-
 ![Bộ Ba Thư Viện Thần Thánh Giúp Website Tối Ưu]({{ site.url }}/static/media/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.jpg)
 
 ## DeferJS của tác giả Mai Nhựt Tân

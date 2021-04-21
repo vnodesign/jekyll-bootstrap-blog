@@ -5,16 +5,10 @@ author: tuanducdesign
 categories: [ Javascript ]
 tags: [Lazyload, Google, Map, Requests]
 image: static/media/google-maps-logo.png
-description: "Google Map có thể nói là cái quan trọng nhất với mọi người, không chỉ tìm kiếm vị trí, mà nó còn là cái giúp mọi người tìm kiếm đến doanh nghiệp của bạn"
+description: "Google Map có thể nói là cái quan trọng nhất với mọi người, không chỉ tìm kiếm vị trí, mà nó còn là cái giúp mọi người tìm kiếm đến doanh nghiệp của bạn."
 ---
 
-Google Map có thể nói là cái quan trọng nhất với mọi người, không chỉ tìm kiếm vị trí, mà nó còn là cái giúp mọi người tìm kiếm đến doanh nghiệp của bạn
-
-## Nội dung bài viết
-
-- [Làm thế nào để lazyload Google Map?](#làm-thế-nào-để-lazyload-google-map)
-- [Chỉnh sửa code nhúng Google Map](#chỉnh-sửa-code-nhúng-google-map)
-- [Chèn CSS cho Google Map](#chèn-css-cho-google-map)
+Google Map có thể nói là cái quan trọng nhất với mọi người, không chỉ tìm kiếm vị trí, mà nó còn là cái giúp mọi người tìm kiếm đến doanh nghiệp của bạn.
 
 ![Lazyload Google Map]({{ site.url }}/static/media/google-maps-logo.png)
 

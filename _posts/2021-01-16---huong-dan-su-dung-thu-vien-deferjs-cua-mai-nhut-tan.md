@@ -11,13 +11,7 @@ hidden: true
 rating: 5
 ---
 
-Tình cờ mình tìm được một thư viện khá hay của bác Mai Nhựt Tân trên GitHub. Trong bài viết ngày hôm nay mình sẽ hướng dẫn các bạn sử dụng thư viện này trên Website của bạn
-
-## Nội dung bài viết
-
-- [Bắt đầu](#bắt-đầu)
-- [Chuyển type="text/javascript" sang type="deferjs"](#chuyển-typetextjavascript-sang-typedeferjs)
-- [Tiến hành lazyload ảnh và video](#tiến-hành-lazyload-ảnh-và-video)
+Tình cờ mình tìm được một thư viện khá hay của bác Mai Nhựt Tân trên GitHub. Trong bài viết ngày hôm nay mình sẽ hướng dẫn các bạn sử dụng thư viện này trên Website của bạn.
 
 ![Hướng Dẫn Sử Dụng Thư Viện DeferJS của Mai Nhựt Tân]({{ site.url }}/static/media/user-guide-for-deferjs-library-by-mai-nhut-tan.jpg)
 

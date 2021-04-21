@@ -11,25 +11,7 @@ description: "Để tăng thêm mức độ bảo mật cho tài khoản và m�
 
 Để tăng thêm mức độ bảo mật cho tài khoản và mạng của mình, thì bạn cần phải tìm hiểu thêm về các chức năng cài đặt trên NextDNS.
 
-
 Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS](https://tuanducdesign.com/series-nextdns.html)
-
-## Nội dung bài viết
-
-- [Các chức năng cài đặt trên NextDNS](#các-chức-năng-cài-đặt-trên-NextDNS)
-- [Name](#name)
-- [Logs](#logs)
-- [Privacy adjustments](#privacy-adjustments)
-- [Retention](#retention)
-- [Storage location](#storage-location)
-- [Block Page](#block-page)
-- [Performance](#performance)
-- [Anonymized EDNS Client Subnet](#anonymized-edns-client-subnet)
-- [Cache Boost](#cache-boost)
-- [CNAME Flattening](#cname-flattening)
-- [Handshake](#handshake)
-- [Rewrites](#rewrites)
-- [Kết](#kết)
 
 ![Tìm hiểu các chức năng cài đặt trên NextDNS]({{ site.url }}/static/media/tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.png)
 

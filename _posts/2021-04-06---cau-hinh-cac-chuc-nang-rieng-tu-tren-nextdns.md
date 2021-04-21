@@ -13,20 +13,6 @@ description: "Ở bài viết trước chúng ta đã biết cách kích hoạt 
 
 Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS](https://tuanducdesign.com/series-nextdns.html)
 
-## Nội dung bài viết
-
-- [Các chức năng riêng tư trên NextDNS](#các-chức-năng-riêng-tư-trên-nextdns)
-- [Blocklists](#blocklists)
-- [Native Tracking Protection](#native-tracking-protection)
-- [Block Disguised Third-Party Trackers](#block-disguised-third--party-trackers)
-- [Allow Affiliate & Tracking Links](#allow-affiliate-tracking-links)
-- [Cấu hình danh sách chặn](#cấu-hình-danh-sách-chặn)
-- [Khuyên dùng](#khuyên-dùng)
-- [Chức năng của Native Tracking Protection](#chức-năng-của-native-tracking-protection)
-- [Chức năng của Block Disguised Third-Party Trackers](#chức-năng-của-block-disguised-third--party-trackers)
-- [Chức năng của Allow Affiliate & Tracking Links](#chức-năng-của-allow-affiliate-tracking-links)
-- [Kết](#kết)
-
 ![Cấu hình các chức năng riêng tư trên NextDNS]({{ site.url }}/static/media/cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns.png)
 
 ## Các chức năng riêng tư trên NextDNS

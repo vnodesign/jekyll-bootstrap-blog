@@ -13,24 +13,6 @@ Thêm một chức năng nữa mà mình muốn nhắc đến đối với các 
 
 Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS](https://tuanducdesign.com/series-nextdns.html)
 
-## Nội dung bài viết
-
-- [Các chức năng kiểm soát của cha mẹ trên NextDNS](#các-chức-năng-kiểm-soát-của-cha-mẹ-trên-nextdns)
-- [Websites, Apps & Games](#websites-apps-games)
-- [Categories](#categories)
-- [Recreation Time](#recreation-time)
-- [SafeSearch](#safesearch)
-- [YouTube Restricted Mode](#youtube-restricted-mode)
-- [Block Bypass Methods](#block-bypass-methods)
-- [Cấu hình các chức năng kiểm soát của cha mẹ trên NextDNS](#cấu-hình-các-chức-năng-kiểm-soát-của-cha-mẹ-trên-nextdns)
-- [Chức năng của Websites, Apps & Games](#chức-năng-của-websites-apps-games)
-- [Chức năng của Categories](#chức-năng-của-categories)
-- [Chức năng của Recreation Time](#chức-năng-của-recreation-time)
-- [Chức năng của SafeSearch](#chức-năng-của-safesearch)
-- [Chức năng của YouTube Restricted Mode](#chức-năng-của-youtube-restricted-mode)
-- [Chức năng của Block Bypass Methods](#chức-năng-của-block-bypass-methods)
-- [Kết](#kết)
-
 ![Cấu hình chức năng kiểm soát của cha mẹ trên NextDNS]({{ site.url }}/static/media/cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.png)
 
 ## Các chức năng kiểm soát của cha mẹ trên NextDNS

@@ -13,23 +13,6 @@ description: "Ở bài viết trước mình đã hướng dẫn các bạn cấ
 
 Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS](https://tuanducdesign.com/series-nextdns.html)
 
-## Nội dung bài viết
-
-- [Các chức năng bảo mật trên NextDNS](#các-chức-năng-bảo-mật-trên-nextdns)
-- [Threat Intelligence Feeds](#threat-intelligence-feeds)
-- [Google Safe Browsing](#google-safe-browsing)
-- [Cryptojacking Protection](#cryptojacking-protection)
-- [DNS Rebinding Protection](#dns-debinding-protection)
-- [IDN Homograph Attacks Protection](#idn-homograph-attacks-protection)
-- [Typosquatting Protection](#typosquatting-protection)
-- [Domain Generation Algorithms (DGAs) Protection](#domain-generation-algorithms-dgas-protection)
-- [Block Newly Registered Domains (NRDs)](#block-newly-registered-domains-nrds)
-- [Block Parked Domains](#block-parked-domains)
-- [Block Top-Level Domains (TLDs)](#block-top--level-domains-tlds)
-- [Block Child Sexual Abuse Material](#block-child-sexual-abuse-material)
-- [Kích hoạt các chức năng bảo mật](#kích-hoạt-các-chức-năng-bảo-mật)
-- [Kết](#kết)
-
 ![Tìm hiểu và kích hoạt các chức năng bảo mật trên NextDNS]({{ site.url }}/static/media/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.png)
 
 ## Các chức năng bảo mật trên NextDNS

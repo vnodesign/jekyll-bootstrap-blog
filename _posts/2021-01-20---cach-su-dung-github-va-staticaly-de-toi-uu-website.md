@@ -10,14 +10,6 @@ description: "Ở bài trước mình đã hướng dẫn các bạn tăng tốc
 
 Ở bài trước mình đã hướng dẫn các bạn tăng tốc Website bằng cách sử dụng Staticaly nhưng ở mức độ cơ bản, Bài viết ngày hôm nay mình sẽ hướng dẫn cách tạo và cấu hình Github để sử dụng Staticaly.
 
-## Nội dung bài viết
-
-- [Github là gì](#github-là-gì)
-- [Tạo tài khoản và cấu hình Github](#tạo-tài-khoản-và-cấu-hình-github)
-- [Tải ứng dụng Github Desktop](#tải-ứng-dụng-github-desktop)
-- [Tạo folder và file để sử dụng Staticaly](#tạo-folder-và-file-để-sử-dụng-staticaly)
-- [Nên sử dụng URL trong production hay trong developement](#nên-sử-dụng-url-trong-production-hay-trong-developement)
-
 ![Cách Sử Dụng Github và Staticaly Để Tối Ưu Website]({{ site.url }}/static/media/cach-su-dung-github-va-staticaly-de-toi-uu-website.jpg)
 
 ## Github là gì

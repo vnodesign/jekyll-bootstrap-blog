@@ -10,12 +10,6 @@ description: "ngx_pagespeed tăng tốc website của bạn và giảm thời gi
 
 ngx_pagespeed tăng tốc website của bạn và giảm thời gian load đáng kể bằng cách tự động áp dụng các kỹ thuật tối ưu hóa page và các thành phần tĩnh như CSS, Javascript và Image.
 
-## Nội dung bài viết
-
-- [Đăng nhập vào SSH](#đăng-nhập-vào-ssh)
-- [Chạy các lệnh cơ bản để kiểm tra hệ thống](#chạy-các-lệnh-cơ-bản-để-kiểm-tra-hệ-thống)
-- [Tiến hành cài đặt Server, Nginx và Module PageSpeed](#tiến-hành-cài-đặt-server-nginx-và-module-pagespeed)
-
 ![Cài đặt Module PageSpeed lên máy chủ Nginx]({{ site.url }}/static/media/install-module-page-speed-on-server-nginx.jpg)
 
 Để hiểu rõ hơn về Module PageSpeed các bạn tìm hiểu tại trang sau : [https://developers.google.com/speed/pagespeed/module](https://developers.google.com/speed/pagespeed/module)

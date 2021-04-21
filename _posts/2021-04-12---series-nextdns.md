@@ -14,18 +14,6 @@ rating: 5
 
 Đây là danh sách các series hướng dẫn sử dụng NextDNS có trên [Tuan Duc Design](https://tuanducdesign.com/). Từ cài đặt NextDNS đến cấu hình NextDNS và cuối cùng là bảo vệ gia đình bằng NextDNS.
 
-## Nội dung bài viết
-
-- [Cài đặt và cấu hình NextDNS](#cài-đặt-và-cấu-hình-nextdns)
-- [Tìm hiểu và kích hoạt các chức năng bảo mật](#tìm-hiểu-và-kích-hoạt-các-chức-năng-bảo-mật)
-- [Cấu hình các chức năng riêng tư](#cấu-hình-các-chức-năng-riêng-tư)
-- [Cấu hình chức năng kiểm soát của cha mẹ](#cấu-hình-chức-năng-kiểm-soát-của-cha-mẹ)
-- [Cấu hình chức năng chặn tên miền](#cấu-hình-chức-năng-chặn-tên-miền)
-- [Cấu hình chức năng cho phép tên miền](#cấu-hình-chức-năng-cho-phép-tên-miền)
-- [Chức năng theo dõi](#chức-năng-theo-dõi)
-- [Cách theo dõi nhật ký](#cách-theo-dõi-nhật-ký)
-- [Tìm hiểu các chức năng cài đặt](#tìm-hiểu-các-chức-năng-cài-đặt)
-
 ## Hướng dẫn cấu hình và sử dụng NextDNS
 
 ![Hướng dẫn cấu hình và sử dụng NextDNS]({{ site.url }}/static/media/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg)
