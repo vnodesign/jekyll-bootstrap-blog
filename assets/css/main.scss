@@ -18,6 +18,24 @@
 		margin-right: 3px;
 	}
   }
+  .card-body {
+	  .card-text {
+		  a {
+			  color: #4c5267 !important;
+			  &:focus, &:hover {
+				color: #fe2c55 !important;
+			}
+		  }
+	  }
+  }
+  .article-post {
+	  a {
+		  color: #fe2c55!important;
+		  &:focus, &:hover {
+			  color: #fe9c55!important;
+		  }
+	  }
+  }
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"styles",
