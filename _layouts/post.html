@@ -7,59 +7,35 @@ post_class: post-template
 <!-- Begin Article -->
 <article class="container" itemscope itemtype="https://schema.org/Article">
     <div class="row">
-        <!-- Post Share -->
-        <div class="col-md-2 pl-0">
-            {% include share.html %}
-        </div>
         <!-- Post -->
         {% assign author = site.authors[page.author] %}
-        <div class="col-md-9 flex-first flex-md-unordered">
-            <div class="mainheading">
-                <!-- Author Box -->
-                {% if page.author %}
-                <div class="row post-top-meta hidden-md-down">
-                    <div class="col-md-2 col-xs-12">
-                        {% if site.lazyimages == "enabled" %}
-                        {% if author.photo %}
-                        <link rel="preload" href="{{ author.photo }}" as="image" />
-                        <img class="author-thumb fade" data-src="{{ author.photo }}" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" />
-                        {% else %}
-                        <link rel="preload" href="https://graph.facebook.com/100003178356978/picture" as="image" />
-                        <img class="author-thumb fade" data-src="https://graph.facebook.com/100003178356978/picture" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" />
-                        {% endif %}
-                        {% else %}
-                        {% if author.photo %}
-                        <link rel="preload" href="{{ author.photo }}" as="image" />
-                        <img class="author-thumb" src="{{ author.photo }}" width="72" height="72" alt="{{ author.display_name }}" />
-                        {% else %}
-                        <link rel="preload" href="https://graph.facebook.com/100003178356978/picture" as="image" />
-                        <img class="author-thumb" src="https://graph.facebook.com/100003178356978/picture" width="72" height="72" alt="{{ author.display_name }}" />
-                        {% endif %}
-                        {% endif %}
-                    </div>
-                    <div class="col-md-10 col-xs-12">
-                        <a target="_blank" class="link-dark" href="https://www.facebook.com/{{ author.facebook }}" title="{{ author.display_name }}" rel="nofollow noopener">{{ author.display_name }} <span class="btn follow">Follow</span></a>
-                        <span class="author-description d-block">{{ author.description }}</span>
-                    </div>
-                </div>
-                {% endif %}
+        <div class="col-md-12 flex-first flex-md-unordered">
+            <div class="mainheading text-center">
                 <!-- Post Title -->
                 <h1 class="posttitle" itemprop="name">{{ page.title }}</h1>
-                <!-- Post Date -->
                 <p>
-                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                <!-- Post Author -->
+                {% if page.author %}
+                <span class="post-author"><a target="_blank" class="link-dark" href="https://www.facebook.com/{{ author.facebook }}" title="{{ author.display_name }}" rel="nofollow noopener">{{ author.display_name }}</a></span>
+                {% endif %}
+                <span class="dot"></span>
+                <!-- Post Date -->
+                <span class="post-date"><time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
                 {% if page.last_modified_at %}
+                <span class="dot"></span>
+                <!-- Post Updated -->
                 (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
                 {% endif %}
                 <span class="dot"></span>
-                <span class="eta"></span>
+                <!-- Post Read -->
+                <span class="post-read eta"></span>
                 </p>
             </div>
-            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
             {% if site.adsense == "enabled" %}
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
                 {% include adsense-under-header.html %}
-            {% endif %}
             <!-- End Adsense -->
+            {% endif %}
             <!-- Post Featured Image -->
             <!--{% if page.image %}
             <link rel="preload" href="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.url }}/{{ page.image }}{% endif %}" as="image" />
