@@ -75,7 +75,7 @@
 {% endif %}
 <link rel="Preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
-<link rel="stylesheet" href="{{ site.url }}/assets/css/main.css" async />
+<link rel="stylesheet" href="{{ site.url }}/assets/css/main.css" />
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
 <script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');</script>
@@ -193,15 +193,15 @@
 {% if site.fanpage-chat %}
 <script>window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat');</script>
 {% endif %}
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
-<script async src="{{ site.url }}/assets/js/mediumish.js"></script>
-<script async src="{{ site.url }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="{{ site.url }}/assets/js/mediumish.js"></script>
+<script src="{{ site.url }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
 {% if page.layout == 'post' %}
-<script async id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
+<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js"></script>
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js"></script>
 <script>$(function(){$("article").each(function(){const n=$(this);n.readingTime({readingTimeTarget:n.find(".eta"),success:function(e){console.log(e)},error:function(e){n.find(".eta").remove()}})})});</script>
 </body>
 </html>
