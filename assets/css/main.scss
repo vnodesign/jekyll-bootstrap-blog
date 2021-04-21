@@ -19,7 +19,7 @@
 	}
   }
   .card-body {
-	  .card-text {
+	  .card-title {
 		  a {
 			  color: #4c5267 !important;
 			  &:focus, &:hover {
@@ -36,6 +36,7 @@
 		  }
 	  }
   }
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"styles",
