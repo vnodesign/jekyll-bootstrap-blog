@@ -73,12 +73,17 @@ post_class: post-template
             <!-- Post Content -->
             <div class="article-post" itemprop="articleBody">
                 <!-- Toc if any -->
+                    {% if page.toc %}
+                    {% if page.beforetoc %}
+                        <p><em>{{page.beforetoc}}</em></p>
+                    {% endif %}
                     <div class="toc mt-4 mb-4 lead">
                         <h3 class="font-weight-bold">Table of contents</h3>
-                        {% include toc.html %}
+                        {% include toc.html html=content %}
                     </div>
+                    {% endif %}
                 <!-- End Toc -->
-                {% include anchor_headings.html anchorBody="#" %}
+                {% include anchor_headings.html html=content anchorBody="#" %}
                 {{content}}
             </div>
             <!-- Rating -->
