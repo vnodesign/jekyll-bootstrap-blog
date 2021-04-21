@@ -353,31 +353,38 @@
   }
   
   .h1, h1 {
-    font-size: 2.5rem;
+    font-size: 1.8125rem;
+    line-height: 2.53125rem;
   }
   
   .h2, h2 {
-    font-size: 2rem;
+    font-size: 1.5293rem;
+    line-height: 2.53125rem;
   }
   
   .h3, h3 {
-    font-size: 1.75rem;
+    font-size: 1.24609rem;
+    line-height: 1.6875rem;
   }
   
   .h4, h4 {
-    font-size: 1.5rem;
+    font-size: 1.0875rem;
+    line-height: 1.6875rem;
   }
   
   .h5, h5 {
-    font-size: 1.25rem;
+    font-size: .90625rem;
+    line-height: 1.6875rem;
   }
   
   .h6, h6 {
-    font-size: 1rem;
+    font-size: .90625rem;
+    line-height: 1.6875rem;
   }
   
   .lead {
-    font-size: 1.25rem;
+    font-size: 1.01953rem;
+    line-height: 1.89844rem;
     font-weight: 300;
   }
   
@@ -10379,8 +10386,8 @@
   
   .article-post {
     font-family: inherit;
-    font-size: 1.1rem;
-    line-height: 1.84;
+    font-size: 1.01953rem;
+    line-height: 1.89844rem;
     color: rgba(0, 0, 0, 0.8);
   }
   
@@ -10389,12 +10396,6 @@
     padding: 0 20px;
     font-style: italic;
     color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .article-post {
-    p, blockquote {
-      margin: 0 0 1.5rem 0;
-    }
   }
   
   .featured-image {
@@ -10753,37 +10754,40 @@
   
   .bottompagination span.navigation {
     display: block;
-    font-size: 0.93rem;
-    padding: 15px 0 0 0;
+    font-size: .93rem;
+    padding: 15px 0;
     text-align: center;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
+    margin-top: 20px;
+    border-top: 1px solid #efefef;
     color: #999;
-    border-top: 1px solid #ddd;
-  }
-  
-  .pointerup {
-    margin-bottom: -17px;
-    margin-left: 49%;
-    font-size: 30px;
-  
-    i.fa {
-      color: #eaeaea;
-    }
-  }
-  
-  .bottompagination span.navigation i {
-    display: inline-block;
-  }
-  
-  span.navigation {
-    display: inline-block;
-    font-size: 0.93rem;
-    font-weight: 700;
-    text-align: center;
   }
   
   .pagination {
     display: block;
+    span,a {
+      display: inline-block;
+      list-style: none;
+      margin: 0 2px;
+      padding: 0 20px;
+      border-radius: 2px;
+      font-size: 14px;
+      position: relative;
+      color: #999;
+    }
+    .active {
+      color: #fe2c55;
+      font-weight: 700;
+      &::after {
+        content: "";
+        background-color: #fe2c55;
+        height: 1px;
+        position: absolute;
+        top: -17px;
+        left: 0;
+        right: 0;
+      }
+    }
   }
   
   iframe {
