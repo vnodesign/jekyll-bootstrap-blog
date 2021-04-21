@@ -62,14 +62,14 @@ post_class: post-template
             {% endif %}
             <!-- End Adsense -->
             <!-- Post Featured Image -->
-            {% if page.image %}
+            <!--{% if page.image %}
             <link rel="preload" href="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.url }}/{{ page.image }}{% endif %}" as="image" />
             {% if site.lazyimages == "enabled" %}
             <img class="featured-image img-fluid fade" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.url }}/{{ page.image }}{% endif %}" alt="{{ page.title }}" loading="lazy" itemprop="image" />
             {% else %}
             <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.url }}/{{ page.image }}{% endif %}" alt="{{ page.title }}" itemprop="image" />
             {% endif %}
-            {% endif %}
+            {% endif %}-->
             <!-- End Featured Image -->
             <!-- Post Content -->
             <div class="article-post" itemprop="articleBody">
