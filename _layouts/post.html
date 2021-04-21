@@ -75,10 +75,10 @@ post_class: post-template
                 <!-- Toc if any -->
                     <div class="toc mt-4 mb-4 lead">
                         <h3 class="font-weight-bold">Table of contents</h3>
-                        {% include toc.html html=content %}
+                        {% include toc.html %}
                     </div>
                 <!-- End Toc -->
-                {% include anchor_headings.html html=content anchorBody="#" %}
+                {% include anchor_headings.html anchorBody="#" %}
                 {{content}}
             </div>
             <!-- Rating -->
