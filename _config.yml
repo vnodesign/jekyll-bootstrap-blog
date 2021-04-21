@@ -1,8 +1,6 @@
 # Site
 name: "Tuan Duc Design"
 title: "Tuan Duc Design"
-title_prefix: Tuan Duc Design
-tagline: "Tuan Duc Design"
 description: "Specialist page sharing knowledge related to VPS development and Website optimization."
 logo: 'static/tuanducdesign.jpg'
 favicon: 'static/tuanducdesign.jpg'
