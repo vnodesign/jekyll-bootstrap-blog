@@ -35,6 +35,7 @@
 <link rel="preload" href="//{{site.disqus}}.disqus.com/count.js" as="script" />
 {% endif %}
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" as="script" />
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js" as="script" />
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js" as="script" />
 <!-- Prefetch Domain -->
 <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
@@ -81,9 +82,6 @@
 <script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');</script>
 <script>var base='https://cdnjs.cloudflare.com/ajax/libs';Defer.css(base + '/font-awesome/5.15.3/css/all.min.css','fa5-css');</script>
 {% if site.lazyimages == "enabled" %}<script>Defer.dom('img.fade', 200, 'loaded');</script><style>img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}</style>{% endif %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="{{ site.url }}/assets/js/lunr.js"></script>
-<script src="{{ site.url }}/assets/js/lunrsearchengine.js"></script>
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}">
@@ -188,20 +186,23 @@
 <!-- Scripts -->
 {% if site.google_analytics %}
 <!-- change your GA id in _config.yml -->
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{site.google_analytics}}');Defer.js('https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}','gtag');</script>
+<script type="deferjs">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{site.google_analytics}}');Defer.js('https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}','gtag');</script>
 {% endif %}
 {% if site.fanpage-chat %}
-<script>window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat');</script>
+<script type="deferjs">window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat');</script>
 {% endif %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
-<script src="{{ site.url }}/assets/js/mediumish.js"></script>
-<script src="{{ site.url }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
+<script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="deferjs" src="{{ site.url }}/assets/js/lunr.js"></script>
+<script type="deferjs" src="{{ site.url }}/assets/js/lunrsearchengine.js"></script>
+<script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script type="deferjs" src="{{ site.url }}/assets/js/mediumish.js"></script>
+<script type="deferjs" src="{{ site.url }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
 {% if page.layout == 'post' %}
-<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
+<script type="deferjs" id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js"></script>
-<script>$(function(){$("article").each(function(){const n=$(this);n.readingTime({readingTimeTarget:n.find(".eta"),success:function(e){console.log(e)},error:function(e){n.find(".eta").remove()}})})});</script>
+<script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js"></script>
+<script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js"></script>
+<script type="deferjs">$(function(){$("article").each(function(){const n=$(this);n.readingTime({readingTimeTarget:n.find(".eta"),success:function(e){console.log(e)},error:function(e){n.find(".eta").remove()}})})});</script>
 </body>
 </html>
