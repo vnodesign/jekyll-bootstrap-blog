@@ -7,7 +7,7 @@
 <link rel="icon" href="{{ site.url }}/{{ site.favicon }}" />
 <title>{% if page.url == "/" %}{{site.name}}{% else %}{{ page.title }} | {{site.name}}{% endif %}</title>
 {% feed_meta %}
-{% seo title=false generator=false %}
+{% seo title=false %}
 <meta name="geo.region" content="VN-14" />
 <meta name="geo.placename" content="Hoa Binh City" />
 <meta name="geo.position" content="20.816391;105.33418" />
@@ -80,15 +80,13 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
 {% capture main %}
-{% include main.min.css %}
+{% include main.scss %}
 {% endcapture %}
 <style>{{ main | scssify }}</style>
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
 <script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');var cdnjs='https://cdnjs.cloudflare.com/ajax/libs';Defer.css(cdnjs + '/font-awesome/5.15.3/css/all.min.css','fa5-css');</script>
-{% if page.layout == 'post' %}
-<script>Defer.css(cdnjs + '/animate.css/3.5.2/animate.min.css','animate-css');</script>
-{% endif %}
+{% if page.layout == 'post' %}<script>Defer.css(cdnjs + '/animate.css/3.5.2/animate.min.css','animate-css');</script>{% endif %}
 {% if site.lazyimages == "enabled" %}<script>Defer.dom('img.fade', 200, 'loaded');</script><style>img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}</style>{% endif %}
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
