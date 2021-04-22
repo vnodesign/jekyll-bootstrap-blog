@@ -169,6 +169,14 @@
 	  background-color: #fe2c55;
 	}
   }
+  .post-author {
+	  a {
+		  color:#fe2c55;
+		  &:focus, &:hover {
+			  color:#fe9c55;
+		  }
+	  }
+  }
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"styles",
