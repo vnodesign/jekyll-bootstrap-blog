@@ -3,11 +3,11 @@
 <head itemscope="itemscope" itemtype="https://schema.org/WebSite">
 <!-- Meta tag seo -->
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" href="{{ site.url }}/{{ site.favicon }}" />
 <title>{% if page.url == "/" %}{{site.name}}{% else %}{{ page.title }} | {{site.name}}{% endif %}</title>
 {% feed_meta %}
-{% seo title=false %}
+{% seo title=false generator=false %}
 <meta name="geo.region" content="VN-14" />
 <meta name="geo.placename" content="Hoa Binh City" />
 <meta name="geo.position" content="20.816391;105.33418" />
