@@ -80,6 +80,10 @@
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
 <script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');var cdnjs='https://cdnjs.cloudflare.com/ajax/libs';Defer.css(cdnjs + '/font-awesome/5.15.3/css/all.min.css','fa5-css');</script>
+{% if page.layout == 'post' %}
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" as="style" />
+<script>Defer.css(cdnjs + '/animate.css/3.5.2/animate.min.css','animate-css');</script>
+{% endif %}
 {% if site.lazyimages == "enabled" %}<script>Defer.dom('img.fade', 200, 'loaded');</script><style>img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}</style>{% endif %}
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
@@ -198,7 +202,7 @@
 <script src="{{ site.url }}/assets/js/mediumish.js"></script>
 <script src="{{ site.url }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
 {% if page.layout == 'post' %}
-<script" id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
+<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js"></script>
