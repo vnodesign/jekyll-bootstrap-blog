@@ -36,7 +36,117 @@
 		  }
 	  }
   }
-
+  .share-wrapper {
+	position: fixed;
+	z-index: 999;
+	left: 0;
+	bottom: 0px;
+  
+	a {
+	  position: relative;
+	  margin: 20px 10px;
+	  text-align: left;
+	  width: 40px;
+	  height: 40px;
+	}
+  
+	i {
+	  width: 40px;
+	  height: 40px;
+	  background: #fe2c55;
+	  color: #fff;
+	  border-radius: 100%;
+	  font-size: 20px;
+	  text-align: center;
+	  line-height: 1.9;
+	  position: relative;
+	  z-index: 999;
+	}
+  
+	a {
+	  span {
+		border-radius: 2px;
+		text-align: center;
+		background: #fe2c55;
+		padding: 9px;
+		display: none;
+		width: 180px;
+		margin-left: 10px;
+		position: absolute;
+		color: #ffffff;
+		z-index: 999;
+		top: 0px;
+		left: 40px;
+		transition: all 0.2s ease-in-out 0s;
+		-moz-animation: headerAnimation 0.7s 1;
+		-webkit-animation: headerAnimation 0.7s 1;
+		-o-animation: headerAnimation 0.7s 1;
+		animation: headerAnimation 0.7s 1;
+	  }
+  
+	  &:hover span {
+		display: block;
+	  }
+  
+	  display: block;
+  
+	  span:before {
+		content: "";
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 10px 10px 10px 0;
+		border-color: transparent #fe2c55 transparent transparent;
+		position: absolute;
+		left: -10px;
+		top: 10px;
+	  }
+	}
+  }
+  
+  .share-circle-fill {
+	width: 60px;
+	height: 60px;
+	top: -10px;
+	position: absolute;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	border: 2px solid transparent;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	background-color: #fe2c55;
+	opacity: .75;
+	right: -10px;
+  }
+  
+  .share-circle {
+	width: 50px;
+	height: 50px;
+	top: -5px;
+	right: -5px;
+	position: absolute;
+	background-color: transparent;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	border: 2px solid #fe2c55;
+	opacity: .1;
+  }
+  
+  .share-wrapper .btn-share {
+	cursor: pointer;
+  }
+  .layout-post .main-content {
+	max-width: 66.875rem;
+  }
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"styles",
