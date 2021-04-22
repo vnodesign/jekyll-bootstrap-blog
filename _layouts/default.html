@@ -4,7 +4,7 @@
 <!-- Meta tag seo -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" href="{{ site.url }}/{{ site.favicon }}" />
+<link rel="icon" href="{{ site.baseurl }}/{{ site.favicon }}" />
 <title>{% if page.url == "/" %}{{site.name}}{% else %}{{ page.title }} | {{site.name}}{% endif %}</title>
 {% feed_meta %}
 {% seo title=false %}
@@ -14,8 +14,8 @@
 <meta name="ICBM" content="20.816391, 105.33418">
 <!-- Preload file -->
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" as="script" /> 
-<link rel="preload" href="{{ site.url }}/assets/js/lunr.js" as="script" />
-<link rel="preload" href="{{ site.url }}/assets/js/lunrsearchengine.js" as="script" />
+<link rel="preload" href="{{ site.baseurl }}/assets/js/lunr.js" as="script" />
+<link rel="preload" href="{{ site.baseurl }}/assets/js/lunrsearchengine.js" as="script" />
 {% if site.fanpage-chat %}
 <link rel="preload" href="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" as="script" />
 {% endif %}
@@ -23,14 +23,14 @@
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="{{ site.url }}/{{ site.logo }}" as="image" />
+<link rel="preload" href="{{ site.baseurl }}/{{ site.logo }}" as="image" />
 {% if jekyll.environment == 'production' %}
 <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}" as="script" />
 {% endif %}
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" as="script" />
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js" as="script" />
-<link rel="preload" href="{{ site.url }}/assets/js/mediumish.js" as="script" />
-<link rel="preload" href="{{ site.url }}/assets/js/ie10-viewport-bug-workaround.js" as="script" />
+<link rel="preload" href="{{ site.baseurl }}/assets/js/mediumish.js" as="script" />
+<link rel="preload" href="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js" as="script" />
 {% if page.layout == 'post' %}
 <link rel="preload" href="//{{site.disqus}}.disqus.com/count.js" as="script" />
 {% endif %}
@@ -107,11 +107,11 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down" role="navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope">
     <div class="container pr-0">
         <!-- Begin Logo -->
-        <a class="navbar-brand" href="{{ site.url }}/" title="{{ site.name }}">
+        <a class="navbar-brand" href="{{ site.baseurl }}/" title="{{ site.name }}">
         {% if site.lazyimages == "enabled" %}
-        <img class="fade" data-src="{{ site.url }}/{{ site.logo }}" alt="{{ site.name }}" loading="lazy" />
+        <img class="fade" data-src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}" loading="lazy" />
         {% else %}
-        <img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.name }}" />
+        <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}" />
         {% endif %}
         </a>
         <!-- End Logo -->
@@ -126,7 +126,7 @@
                     {% else %}
                     <li class="nav-item">
                     {% endif %}
-                        <a class="nav-link" href="{{ site.url }}/" title="Home" itemprop="url"><span itemprop="name">Home</span></a>
+                        <a class="nav-link" href="{{ site.baseurl }}/" title="Home" itemprop="url"><span itemprop="name">Home</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://about.tuanducdesign.com/" title="About" itemprop="url"><span itemprop="name">About</span></a>
@@ -136,35 +136,35 @@
                     {% else %}
                     <li class="nav-item">
                     {% endif %}
-                        <a class="nav-link" href="{{ site.url }}/pages/my-customer/" title="My customer" itemprop="url"><span itemprop="name">My customer</span></a>
+                        <a class="nav-link" href="{{ site.baseurl }}/pages/my-customer/" title="My customer" itemprop="url"><span itemprop="name">My customer</span></a>
                     </li>
                     {% if page.url == "/pages/contacts" %}
                     <li class="nav-item active">
                     {% else %}
                     <li class="nav-item">
                     {% endif %}
-                        <a class="nav-link" href="{{ site.url }}/pages/contacts/" title="Contacts" itemprop="url"><span itemprop="name">Contacts</span></a>
+                        <a class="nav-link" href="{{ site.baseurl }}/pages/contacts/" title="Contacts" itemprop="url"><span itemprop="name">Contacts</span></a>
                     </li>
                     {% if page.url == "/series.html" %}
                     <li class="nav-item active">
                     {% else %}
                     <li class="nav-item">
                     {% endif %}
-                        <a class="nav-link" href="{{ site.url }}/series.html/" title="Series" itemprop="url"><span itemprop="name">Series</span></a>
+                        <a class="nav-link" href="{{ site.baseurl }}/series.html/" title="Series" itemprop="url"><span itemprop="name">Series</span></a>
                     </li>
                     {% if page.url == "/categories" %}
                     <li class="nav-item active">
                     {% else %}
                     <li class="nav-item">
                     {% endif %}
-                        <a class="nav-link" href="{{ site.url }}/categories/" title="Categories" itemprop="url"><span itemprop="name">Categories</span></a>
+                        <a class="nav-link" href="{{ site.baseurl }}/categories/" title="Categories" itemprop="url"><span itemprop="name">Categories</span></a>
                     </li>
                     {% if page.url == "/tags" %}
                     <li class="nav-item active">
                     {% else %}
                     <li class="nav-item">
                     {% endif %}
-                        <a class="nav-link" href="{{ site.url }}/tags/" title="Tags" itemprop="url"><span itemprop="name">Tags</span></a>
+                        <a class="nav-link" href="{{ site.baseurl }}/tags/" title="Tags" itemprop="url"><span itemprop="name">Tags</span></a>
                     </li>
                     {% include search-lunr.html %}
                 </ul>
@@ -185,7 +185,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12 text-center">
-                Copyright © <span itemprop="copyrightYear">{{ site.time | date: "%Y" }}</span> - <span itemprop="copyrightHolder" itemscope="itemscope" itemtype="https://schema.org/Organization"><a href="{{ site.url }}/" itemprop="url" title="{{ site.name }}"><span itemprop="name">{{ site.name }}</span></a> -  All Rights Reserved.</span>
+                Copyright © <span itemprop="copyrightYear">{{ site.time | date: "%Y" }}</span> - <span itemprop="copyrightHolder" itemscope="itemscope" itemtype="https://schema.org/Organization"><a href="{{ site.baseurl }}/" itemprop="url" title="{{ site.name }}"><span itemprop="name">{{ site.name }}</span></a> -  All Rights Reserved.</span>
             </div>
         </div>
     </div>
@@ -202,12 +202,12 @@
 <script>window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat');</script>
 {% endif %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="{{ site.url }}/assets/js/lunr.js"></script>
-<script src="{{ site.url }}/assets/js/lunrsearchengine.js"></script>
+<script src="{{ site.baseurl }}/assets/js/lunr.js"></script>
+<script src="{{ site.baseurl }}/assets/js/lunrsearchengine.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
-<script src="{{ site.url }}/assets/js/mediumish.js"></script>
-<script src="{{ site.url }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
+<script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
+<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
 {% if page.layout == 'post' %}
 <script src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
