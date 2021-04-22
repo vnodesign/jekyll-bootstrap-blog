@@ -149,6 +149,7 @@
   }
   .layout-post {
 	.article-post h2 {
+		position: relative;
 	  &:before, &:after {
 		content: "";
 		height: .125rem;
