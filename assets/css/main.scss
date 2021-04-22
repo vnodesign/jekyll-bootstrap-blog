@@ -147,6 +147,28 @@
   .layout-post .main-content {
 	max-width: 66.875rem;
   }
+  .layout-post {
+	.article-post h2 {
+	  &:before, &:after {
+		content: "";
+		height: .125rem;
+		position: absolute;
+		top: 100%;
+		left: 0;
+	  }
+  
+	  &:before {
+		width: 100%;
+		background-color: #efefef;
+	  }
+	}
+  
+	h2:after {
+	  width: 3.125rem;
+	  margin: auto;
+	  background-color: #fe2c55;
+	}
+  }
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"styles",
