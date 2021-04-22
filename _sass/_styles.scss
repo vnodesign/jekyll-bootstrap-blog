@@ -10560,13 +10560,12 @@
       font-size: 0.9rem;
   
       a {
-        background: rgba(0, 0, 0, 0.05);
-        color: rgba(0, 0, 0, 0.6);
+        background: #e4e6eb;
         border-radius: 25px;
         padding: 5px 10px;
   
         &:hover {
-          background: rgba(0, 0, 0, 0.07);
+          background: #0000000d;
           text-decoration: none;
         }
       }

@@ -178,6 +178,21 @@
 		  }
 	  }
   }
+  @media (min-width: 992px) {
+	.navbar-nav > .active {
+	  position: relative;
+  
+	  &:before {
+		content: '';
+		background-color: #fe2c55;
+		width: 100%;
+		top: 121%;
+		left: 0;
+		position: absolute;
+		height: .125rem;
+	  }
+	}
+  }
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"styles",
