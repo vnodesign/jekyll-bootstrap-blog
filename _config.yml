@@ -51,6 +51,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
   - jekyll-minifier
+  - jekyll-admin
     
 # Archives
 jekyll-archives:

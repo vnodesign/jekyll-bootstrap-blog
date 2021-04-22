@@ -13,7 +13,6 @@
 <meta name="geo.position" content="20.816391;105.33418" />
 <meta name="ICBM" content="20.816391, 105.33418">
 <!-- Preload file -->
-<link rel="preload" href="{{ site.url }}/assets/css/main.css" as="style" />
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" as="script" /> 
 <link rel="preload" href="{{ site.url }}/assets/js/lunr.js" as="script" />
 <link rel="preload" href="{{ site.url }}/assets/js/lunrsearchengine.js" as="script" />
@@ -80,7 +79,13 @@
 {% endif %}
 <link rel="Preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
-<link rel="stylesheet" href="{{ site.url }}/assets/css/main.css" />
+{% raw %}{% capture styles %}
+{% include main.scss %}
+{% endcapture %}
+<style>
+    {{ styles | scssify }}
+</style>
+{% endraw %}
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
 <script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');var cdnjs='https://cdnjs.cloudflare.com/ajax/libs';Defer.css(cdnjs + '/font-awesome/5.15.3/css/all.min.css','fa5-css');</script>
