@@ -77,15 +77,14 @@
 <link rel="preconnect" href="https://{{site.disqus}}.disqus.com" />
 <link rel="preconnect" href="https://disqus.com" />
 {% endif %}
-<link rel="Preconnect" href="https://cdn.jsdelivr.net" />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
-{% raw %}{% capture styles %}
-{% include main.scss %}
+{% capture main %}
+{% include main.css %}
 {% endcapture %}
 <style>
-    {{ styles | scssify }}
+{{ main | scssify }}
 </style>
-{% endraw %}
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
 <script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');var cdnjs='https://cdnjs.cloudflare.com/ajax/libs';Defer.css(cdnjs + '/font-awesome/5.15.3/css/all.min.css','fa5-css');</script>
