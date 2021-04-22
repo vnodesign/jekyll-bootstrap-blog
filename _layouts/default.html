@@ -5,7 +5,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <link rel="icon" href="{{ site.url }}/{{ site.favicon }}" />
-<title>{{ page.title }} | {{site.name}}</title>
+<title>{% if page.url == "/" %}{{site.name}}{% else %}{{ page.title }} | {{site.name}}{% endif %}</title>
 {% seo title=false %}
 <meta name="geo.region" content="VN-14" />
 <meta name="geo.placename" content="Hoa Binh City" />

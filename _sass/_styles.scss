@@ -10275,7 +10275,7 @@
       display: inline-block;
     }
   
-    &.post-date, &.post-read {
+    &.post-author, &.post-date, &.post-read {
       color: rgba(0, 0, 0, 0.44);
     }
   
@@ -10385,6 +10385,7 @@
   }
   
   .article-post {
+    text-align: justify;
     font-family: inherit;
     font-size: 1.01953rem;
     line-height: 1.89844rem;
@@ -10560,7 +10561,7 @@
       a {
         background: rgba(0, 0, 0, 0.05);
         color: rgba(0, 0, 0, 0.6);
-        border-radius: 3px;
+        border-radius: 25px;
         padding: 5px 10px;
   
         &:hover {

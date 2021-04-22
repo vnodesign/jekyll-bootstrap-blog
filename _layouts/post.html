@@ -10,6 +10,16 @@ post_class: post-template
         <!-- Post -->
         {% assign author = site.authors[page.author] %}
         <div class="col-md-12 flex-first flex-md-unordered">
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{{ site.url }}" title="Home">Home</a></li>
+                  {% for category in sortedCategories %}
+                  <li class="breadcrumb-item"><a href="{{ site.url }}/categories#{{ category | replace: " ","-" }}" title="{{ category }}">{{ category }}</a></li>
+                  {% endfor %}
+                  <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+                </ol>
+            </nav>
             <div class="mainheading text-center">
                 <!-- Post Title -->
                 <h1 class="posttitle" itemprop="name">{{ page.title }}</h1>
