@@ -43,7 +43,7 @@ post_class: post-template
             </div>
             {% if site.adsense == "enabled" %}
             <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
-                {% include adsense-under-header.html %}
+                {% include_cached adsense-under-header.html %}
             <!-- End Adsense -->
             {% endif %}
             <!-- Post Featured Image -->
@@ -61,7 +61,7 @@ post_class: post-template
                 <!-- Toc if any -->
                     <div class="toc mt-4 mb-4 lead">
                         <h3 class="font-weight-bold">Table of contents</h3>
-                        {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %}
+                        {% include_cached toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %}
                     </div>
                 <!-- End Toc -->
                 {{content}}
@@ -69,7 +69,7 @@ post_class: post-template
             <!-- Rating -->
             {% if page.rating %}
             <div class="rating mb-4 d-flex align-items-center">
-                <strong class="mr-1">Rating:</strong> {% include star_rating.html %}
+                <strong class="mr-1">Rating:</strong> {% include_cached star_rating.html %}
             </div>
             {% endif %}
             <!-- Post Categories -->
@@ -117,7 +117,7 @@ post_class: post-template
     <div class="container">
         <div id="comments" class="row justify-content-center mb-5">
             <div class="col-md-8">
-                {% include disqus.html %}
+                {% include_cached disqus.html %}
             </div>
         </div>
     </div>

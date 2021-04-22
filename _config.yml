@@ -46,6 +46,7 @@ authors:
 # Plugins
 plugins:
   - jekyll-paginate
+  - jekyll-include-cache
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
