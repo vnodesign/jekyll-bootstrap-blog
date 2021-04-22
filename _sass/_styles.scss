@@ -10303,10 +10303,11 @@
   
   .mediumnavigation {
     .form-control {
+      background: #f0f2f5;
       font-size: 0.8rem;
-      border-radius: 30px;
+      border-radius: 50px;
       overflow: hidden;
-      border: 1px solid rgba(0, 0, 0, 0.09);
+      border: unset;
       min-width: 180px;
     }
   

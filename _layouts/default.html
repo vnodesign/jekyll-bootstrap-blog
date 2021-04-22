@@ -190,18 +190,18 @@
 {% if site.fanpage-chat %}
 <script>window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat');</script>
 {% endif %}
-<script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="deferjs" src="{{ site.url }}/assets/js/lunr.js"></script>
-<script type="deferjs" src="{{ site.url }}/assets/js/lunrsearchengine.js"></script>
-<script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-<script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
-<script type="deferjs" src="{{ site.url }}/assets/js/mediumish.js"></script>
-<script type="deferjs" src="{{ site.url }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="{{ site.url }}/assets/js/lunr.js"></script>
+<script src="{{ site.url }}/assets/js/lunrsearchengine.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="{{ site.url }}/assets/js/mediumish.js"></script>
+<script src="{{ site.url }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
 {% if page.layout == 'post' %}
-<script type="deferjs" id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
+<script" id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
-<script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js"></script>
-<script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js"></script>
 <script>$(function(){$("article").each(function(){const n=$(this);n.readingTime({readingTimeTarget:n.find(".eta"),success:function(e){console.log(e)},error:function(e){n.find(".eta").remove()}})})});</script>
 {% if page.layout == 'post' %}
 <script>$(document).ready(function(){$('.share-content').hide();$('a.btn-share').click(function(e){e.stopPropagation();$('.share-content').slideToggle();});$('.share-content').click(function(e){e.stopPropagation();});$(document).click(function(){$('.share-content').slideUp();});});</script>
