@@ -83,8 +83,6 @@ adsense-data-ad-slot: "xxxxxxxxxx"
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "enabled"
 
-exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
-
 jekyll-minifier:
   preserve_php: true                # Default: false
   remove_spaces_inside_tags: true   # Default: true
@@ -122,3 +120,5 @@ jekyll-minifier:
     - datafiles
     - configuration
   homepage: "pages"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
