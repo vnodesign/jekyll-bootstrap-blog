@@ -2,7 +2,7 @@
   "name": "tuanducdesign",
   "version": "1.0.0",
   "description": "Specialist page sharing knowledge related to VPS development and Website optimization",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "build": "jekyll build && gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
