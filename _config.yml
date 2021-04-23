@@ -81,4 +81,5 @@ adsense-data-ad-slot: "xxxxxxxxxx"
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "enabled"
 
+include: [".htaccess"]
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, gulpfile.js, node_modules, package.json]
