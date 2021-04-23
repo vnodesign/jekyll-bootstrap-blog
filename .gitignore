@@ -4,3 +4,5 @@ _site
 .sass-cache
 *~
 .vscode
+node_modules
+package-lock.json

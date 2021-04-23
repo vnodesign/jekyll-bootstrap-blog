@@ -1,0 +1,32 @@
+{
+  "name": "tuanducdesign",
+  "version": "1.0.0",
+  "description": "Specialist page sharing knowledge related to VPS development and Website optimization",
+  "main": "index.html",
+  "scripts": {
+    "build": "jekyll build && gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuanducteam/beta.git"
+  },
+  "keywords": [
+    "blog",
+    "medium",
+    "bootstrap",
+    "theme",
+    "jekyll",
+    "seo",
+    "deferjs"
+  ],
+  "author": "Tuan Duc Design",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tuanducteam/beta/issues"
+  },
+  "homepage": "https://github.com/tuanducteam/beta#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
