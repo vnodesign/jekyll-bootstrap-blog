@@ -773,31 +773,9 @@ img {
 .pagination {
   display: block;
 
-  span,
-  a {
-    display: inline-block;
-    list-style: none;
-    margin: 0 2px;
-    padding: 0 20px;
-    border-radius: 2px;
-    font-size: 14px;
-    position: relative;
-    color: #999;
-  }
-
   .active {
     color: #fe2c55;
     font-weight: 700;
-
-    &::after {
-      content: "";
-      background-color: #fe2c55;
-      height: 1px;
-      position: absolute;
-      top: -17px;
-      left: 0;
-      right: 0;
-    }
   }
 }
 
