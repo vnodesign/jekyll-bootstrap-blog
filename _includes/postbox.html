@@ -5,8 +5,9 @@
         <div class="maxthumb">
             <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
                 {% if post.image %}
+                <link rel="preload" href="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.url }}/{{ post.image }}{% endif %}" as="image" />
                     {% if site.lazyimages == "enabled" %}
-                        <img class="img-fluid fade" data-src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.url }}/{{ post.image }}{% endif %}" alt="{{ post.title }}" loading="lazy" itemprop="image" />
+                        <img class="img-fluid fade" data-src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.url }}/{{ post.image }}{% endif %}" alt="{{ post.title }}" loading="lazy" decoding="async" itemprop="image" />
                     {% else %}
                         <img class="img-fluid" src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.url }}/{{ post.image }}{% endif %}" alt="{{ post.title }}" itemprop="image" /> 
                     {% endif %}
@@ -31,10 +32,10 @@
                 {% if site.lazyimages == "enabled" %}
                 {% if author.photo %}
                 <link rel="preload" href="{{ author.photo }}" as="image" />
-                <img class="author-thumb fade" data-src="{{ author.photo }}" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" />
+                <img class="author-thumb fade" data-src="{{ author.photo }}" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" decoding="async" />
                 {% else %}
                 <link rel="preload" href="https://graph.facebook.com/100003178356978/picture" as="image" />
-                <img class="author-thumb fade" data-src="https://graph.facebook.com/100003178356978/picture" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" />
+                <img class="author-thumb fade" data-src="https://graph.facebook.com/100003178356978/picture" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" decoding="async" />
                 {% endif %}
                 {% else %}
                 {% if author.photo %}
