@@ -48,7 +48,7 @@ pre {
 
 .mediumnavigation {
   background: rgba(255, 255, 255, 0.97);
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 20px rgb(171 187 204 / 14%);
   transition: top 0.2s ease-in-out;
 }
 
@@ -81,10 +81,17 @@ section {
   }
 
   span {
-    border-bottom: 1px solid #fe2c55;
+    color:#fe2c55;
     display: inline-block;
     padding-bottom: 20px;
     margin-bottom: -1px;
+    a {
+      color: inherit;
+      &:hover {
+        color: #fe9c55;
+      }
+    }
+
   }
 }
 
