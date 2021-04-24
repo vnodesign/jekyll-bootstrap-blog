@@ -14,23 +14,14 @@
 <meta name="ICBM" content="20.816391, 105.33418">
 <!-- Preload file -->
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" as="script" /> 
-<link rel="preload" href="{{ site.url }}/assets/js/lunr.js" as="script" />
-<link rel="preload" href="{{ site.url }}/assets/js/lunrsearchengine.js" as="script" />
 {% if site.fanpage-chat %}
 <link rel="preload" href="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" as="script" />
 {% endif %}
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" as="style" />
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="{{ site.url }}/{{ site.logo }}" as="image" />
 {% if jekyll.environment == 'production' %}
 <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}" as="script" />
 {% endif %}
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" as="script" />
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js" as="script" />
-<link rel="preload" href="{{ site.url }}/assets/js/mediumish.js" as="script" />
-<link rel="preload" href="{{ site.url }}/assets/js/ie10-viewport-bug-workaround.js" as="script" />
 {% if page.layout == 'post' %}
 <link rel="preload" href="//{{site.disqus}}.disqus.com/count.js" as="script" />
 {% endif %}
@@ -39,11 +30,6 @@
 {% if page.layout == 'post' %}
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" as="style" />
 {% endif %}
-<link rel="preload" href="{{ site.url }}/assets/css/bootstrap.css" as="style" />
-<link rel="preload" href="{{ site.url }}/assets/css/styles.css" as="style" />
-<link rel="preload" href="{{ site.url }}/assets/css/syntax.css" as="style" />
-<link rel="preload" href="{{ site.url }}/assets/css/stars.css" as="style" />
-<link rel="preload" href="{{ site.url }}/assets/css/custom.css" as="style" />
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js" as="script" />
 <!-- Prefetch Domain -->
 <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
@@ -84,16 +70,14 @@
 {% endif %}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
-<link rel="stylesheet" href="{{ site.url }}/assets/css/bootstrap.css" />
-<link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css" />
-<link rel="stylesheet" href="{{ site.url }}/assets/css/syntax.css" />
-<link rel="stylesheet" href="{{ site.url }}/assets/css/stars.css" />
+<link type="text/css" rel="stylesheet" href="{{ site.url }}/assets/css/app.min.css" async="async" />
+<link type="text/css" rel="stylesheet" href="{{ site.url }}/assets/css/custom.css" async="async" />
 <!-- Scripts -->
 <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
-<script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');var cdnjs='https://cdnjs.cloudflare.com/ajax/libs';Defer.css(cdnjs + '/font-awesome/5.15.3/css/all.min.css','fa5-css');</script>
+<script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');</script>
 {% if page.layout == 'post' %}
-<script>Defer.css(cdnjs + '/animate.css/3.5.2/animate.min.css','animate-css');</script>
+<link type="text/css" rel="stylesheet" href="{{ site.url }}/assets/css/animate.css" async="async" />
 {% endif %}
 {% if site.lazyimages == "enabled" %}
 <script>Defer.dom('img.fade', 200, 'loaded');</script>
@@ -200,10 +184,12 @@
 <!-- Scripts -->
 {% if site.google_analytics %}
 <!-- change your GA id in _config.yml -->
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{site.google_analytics}}');Defer.js('https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}','gtag');</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{site.google_analytics}}');</script>
+<script async="async" src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}"></script>
 {% endif %}
 {% if site.fanpage-chat %}
-<script>window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat');</script>
+<script>window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};</script>
+<script async="async" src="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js"></script>
 {% endif %}
 <script async="async" src="{{ site.url }}/assets/js/lunr.js"></script>
 <script async="async" src="{{ site.url }}/assets/js/lunrsearchengine.js"></script>
@@ -220,5 +206,6 @@
 {% if page.layout == 'post' %}
 <script>$(document).ready(function(){$('.share-content').hide();$('a.btn-share').click(function(e){e.stopPropagation();$('.share-content').slideToggle();});$('.share-content').click(function(e){e.stopPropagation();});$(document).click(function(){$('.share-content').slideUp();});});</script>
 {% endif %}
+<script>var loadDeferredStyles=function(){var e=document.getElementById("deferred-styles"),n=document.createElement("div");n.innerHTML=e.textContent,document.body.appendChild(n),e.parentElement.removeChild(e)},raf=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;raf?raf(function(){window.setTimeout(loadDeferredStyles,0)}):window.addEventListener("load",loadDeferredStyles);</script>
 </body>
 </html>
