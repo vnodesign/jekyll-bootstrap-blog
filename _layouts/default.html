@@ -28,7 +28,7 @@
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" as="script" />
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js" as="script" />
 {% if page.layout == 'post' %}
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" as="style" />
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"  type="text/css" rel="stylesheet" media="all" as="style" />
 {% endif %}
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js" as="script" />
 <!-- Prefetch Domain -->
@@ -70,14 +70,14 @@
 {% endif %}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
-<link type="text/css" rel="stylesheet" media="screen" href="{{ site.url }}/assets/css/app.min.css" />
-<link type="text/css" rel="stylesheet" media="screen" href="{{ site.url }}/assets/css/custom.css" />
+<link href="{{ site.url }}/assets/css/app.min.css" type="text/css" rel="stylesheet" />
+<link href="{{ site.url }}/assets/css/custom.css" type="text/css" rel="stylesheet" />
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
 <script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');</script>
 {% if page.layout == 'post' %}
-<link type="text/css" rel="stylesheet" media="screen" href="{{ site.url }}/assets/css/animate.css" />
+<link href="{{ site.url }}/assets/css/animate.css"  type="text/css" rel="stylesheet" />
 {% endif %}
 {% if site.lazyimages == "enabled" %}
 <script>Defer.dom('img.fade', 200, 'loaded');</script>
