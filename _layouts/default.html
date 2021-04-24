@@ -70,8 +70,12 @@
 {% endif %}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
-<link href="{{ site.url }}/assets/css/app.min.css" type="text/css" rel="stylesheet" />
-<link href="{{ site.url }}/assets/css/custom.css" type="text/css" rel="stylesheet" />
+<style type="text/css">
+    {% capture app %}
+      {% include app.scss %}
+    {% endcapture %}
+    {{ app | scssify }}
+</style>
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
