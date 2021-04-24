@@ -70,14 +70,14 @@
 {% endif %}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
-<link type="text/css" rel="stylesheet" href="{{ site.url }}/assets/css/app.min.css" async="async" />
-<link type="text/css" rel="stylesheet" href="{{ site.url }}/assets/css/custom.css" async="async" />
+<link type="text/css" rel="stylesheet" media="all" href="{{ site.url }}/assets/css/app.min.css" />
+<link type="text/css" rel="stylesheet" media="all" href="{{ site.url }}/assets/css/custom.css" />
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
 <script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');</script>
 {% if page.layout == 'post' %}
-<link type="text/css" rel="stylesheet" href="{{ site.url }}/assets/css/animate.css" async="async" />
+<link type="text/css" rel="stylesheet" media="all" href="{{ site.url }}/assets/css/animate.css" />
 {% endif %}
 {% if site.lazyimages == "enabled" %}
 <script>Defer.dom('img.fade', 200, 'loaded');</script>
