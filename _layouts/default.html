@@ -70,18 +70,26 @@
 {% endif %}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
-<style type="text/css">
-    {% capture app %}
-      {% include app.scss %}
-    {% endcapture %}
-    {{ app | scssify }}
-</style>
+<link rel="preload" as="style" onload="this.rel='stylesheet'" href="{{ site.url }}/assets/css/bootstrap.css" />
+<link rel="preload" as="style" onload="this.rel='stylesheet'" href="{{ site.url }}/assets/css/font-awesome.css" />
+<link rel="preload" as="style" onload="this.rel='stylesheet'" href="{{ site.url }}/assets/css/styles.css" />
+<link rel="preload" as="style" onload="this.rel='stylesheet'" href="{{ site.url }}/assets/css/syntax.css" />
+<link rel="preload" as="style" onload="this.rel='stylesheet'" href="{{ site.url }}/assets/css/stars.css" />
+<link rel="preload" as="style" onload="this.rel='stylesheet'" href="{{ site.url }}/assets/css/custom.css" />
+<noscript>
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css" />
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/syntax.css" />
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/stars.css" />
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/custom.css" />
+</noscript>
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
 <script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');</script>
 {% if page.layout == 'post' %}
-<link href="{{ site.url }}/assets/css/animate.css"  type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="{{ site.url }}/assets/css/animate.css" />
 {% endif %}
 {% if site.lazyimages == "enabled" %}
 <script>Defer.dom('img.fade', 200, 'loaded');</script>
