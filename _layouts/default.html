@@ -206,6 +206,5 @@
 {% if page.layout == 'post' %}
 <script>$(document).ready(function(){$('.share-content').hide();$('a.btn-share').click(function(e){e.stopPropagation();$('.share-content').slideToggle();});$('.share-content').click(function(e){e.stopPropagation();});$(document).click(function(){$('.share-content').slideUp();});});</script>
 {% endif %}
-<script>var loadDeferredStyles=function(){var e=document.getElementById("deferred-styles"),n=document.createElement("div");n.innerHTML=e.textContent,document.body.appendChild(n),e.parentElement.removeChild(e)},raf=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;raf?raf(function(){window.setTimeout(loadDeferredStyles,0)}):window.addEventListener("load",loadDeferredStyles);</script>
 </body>
 </html>
