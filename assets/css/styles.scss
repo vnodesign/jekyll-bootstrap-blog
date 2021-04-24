@@ -5,11 +5,11 @@
 
 /* Add custom css here */
 .post-excerpt p {
-    display: inline
+    display: inline;
 }
 
 .nav-up {
-    top: 0 !important
+    top: 0 !important;
 }
 
 .card-body {
@@ -19,7 +19,7 @@
 
             &:focus,
             &:hover {
-                color: #fe2c55 !important
+                color: #fe2c55 !important;
             }
         }
     }
@@ -31,7 +31,7 @@
 
         &:focus,
         &:hover {
-            color: #fe9c55 !important
+            color: #fe9c55 !important;
         }
     }
 }
@@ -47,7 +47,7 @@
         margin: 20px 10px;
         text-align: left;
         width: 40px;
-        height: 40px
+        height: 40px;
     }
 
     i {
@@ -60,7 +60,7 @@
         text-align: center;
         line-height: 1.9;
         position: relative;
-        z-index: 999
+        z-index: 999;
     }
 
     a {
@@ -81,11 +81,11 @@
             -moz-animation: headerAnimation .7s 1;
             -webkit-animation: headerAnimation .7s 1;
             -o-animation: headerAnimation .7s 1;
-            animation: headerAnimation .7s 1
+            animation: headerAnimation .7s 1;
         }
 
         &:hover span {
-            display: block
+            display: block;
         }
 
         display:block;
@@ -99,7 +99,7 @@
             border-color: transparent #fe2c55 transparent transparent;
             position: absolute;
             left: -10px;
-            top: 10px
+            top: 10px;
         }
     }
 }
@@ -124,7 +124,7 @@
     transition: all .5s;
     background-color: #fe2c55;
     opacity: .75;
-    right: -10px
+    right: -10px;
 }
 
 .share-circle {
@@ -138,15 +138,15 @@
     -moz-border-radius: 100%;
     border-radius: 100%;
     border: 2px solid #fe2c55;
-    opacity: .1
+    opacity: .1;
 }
 
 .share-wrapper .btn-share {
-    cursor: pointer
+    cursor: pointer;
 }
 
 .layout-post .main-content {
-    max-width: 66.875rem
+    max-width: 66.875rem;
 }
 
 .layout-post {
@@ -159,19 +159,19 @@
             height: .125rem;
             position: absolute;
             top: 100%;
-            left: 0
+            left: 0;
         }
 
         &:before {
             width: 100%;
-            background-color: #efefef
+            background-color: #efefef;
         }
     }
 
     h2:after {
         width: 3.125rem;
         margin: auto;
-        background-color: #fe2c55
+        background-color: #fe2c55;
     }
 }
 
@@ -181,7 +181,7 @@
 
         &:focus,
         &:hover {
-            color: #fe9c55
+            color: #fe9c55;
         }
     }
 }
@@ -197,14 +197,14 @@
             top: 121%;
             left: 0;
             position: absolute;
-            height: .125rem
+            height: .125rem;
         }
     }
 }
 
 article .card {
     border: 1px solid #ebecf0;
-    box-shadow: 0 3px 10px 0 #4c52671a
+    box-shadow: 0 3px 10px 0 #4c52671a;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
