@@ -9,7 +9,7 @@
                         <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
                             <link rel="preload" href="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.url }}/{{ post.image }}{% endif %}" as="image" />
                             {% if site.lazyimages == "enabled" %}
-                            <img class="featured-box-img-cover lazyload" src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.url }}/{{ post.image }}{% endif %}" alt="{{ post.title }}" loading="lazy" decoding="async" itemprop="image" />
+                            <img class="featured-box-img-cover fade" data-src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.url }}/{{ post.image }}{% endif %}" alt="{{ post.title }}" loading="lazy" decoding="async" itemprop="image" />
                             {% else %}
                             <img class="featured-box-img-cover" src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.url }}/{{ post.image }}{% endif %}" alt="{{ post.title }}" itemprop="image" />
                             {% endif %}
