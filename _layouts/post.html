@@ -91,16 +91,12 @@ post_class: post-template
             {% if page.previous.url %}
             <a href="{{ site.url }}/{{page.previous.url}}" rel="prev" class="btn prev-post" title="{{page.previous.title}}">
 				<i class="fa fa-arrow-left"></i>
-				<span>
-					{{page.previous.title}}
-				</span>
+				<span>{{page.previous.title}}</span>
 			</a>
             {% endif %}
             {% if page.next.url %}
             <a href="{{ site.url }}/{{page.next.url}}" rel="next" class="btn next-post" title="{{page.next.title}}">
-				<span>
-					{{page.next.title}}
-				</span>
+				<span>{{page.next.title}}</span>
 				<i class="fa fa-arrow-right"></i>
 			</a>
             {% endif %}
@@ -116,7 +112,7 @@ post_class: post-template
 {% if page.comments != false %}
     <div class="container">
         <div id="comments" class="row justify-content-center mb-5">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 {% include disqus.html %}
             </div>
         </div>
