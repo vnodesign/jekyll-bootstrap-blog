@@ -28,12 +28,7 @@
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" as="script" />
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js" as="script" />
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js" as="script" />
-<link rel="preload" href="{{ site.url }}/assets/css/root.css" as="style" />
-<link rel="preload" href="{{ site.url }}/assets/css/bootstrap.css" as="style" />
-<link rel="preload" href="{{ site.url }}/assets/css/font-awesome.css" as="style" />
-<link rel="preload" href="{{ site.url }}/assets/css/styles.css" as="style" />
-<link rel="preload" href="{{ site.url }}/assets/css/syntax.css" as="style" />
-<link rel="preload" href="{{ site.url }}/assets/css/stars.css" as="style" />
+<link rel="preload" href="{{ site.url }}/assets/scss/root.css" as="style" />
 {% if page.layout == 'post' %}
 <link rel="preload" href="{{ site.url }}/assets/css/animate.css" as="style" />
 {% endif %}
@@ -42,8 +37,6 @@
 <link rel="preload" href="{{ site.url }}/assets/fonts/fa-light-300.woff2" type="font/woff2" as="font" crossorigin />
 <link rel="preload" href="{{ site.url }}/assets/fonts/fa-regular-400.woff2" type="font/woff2" as="font" crossorigin />
 <link rel="preload" href="{{ site.url }}/assets/fonts/fa-solid-900.woff2" type="font/woff2" as="font" crossorigin />
-<link rel="preload" href="data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22%23ddd%22%20d%3D%22M457.888 210.672l-139.504-20.272-62.384-126.4-62.384 126.4-139.504 20.272 100.944 98.384-23.84 138.928 124.768-65.6 124.768 65.6-23.84-138.928c0 0 100.944-98.384 100.944-98.384z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E" as="image" />
-<link rel="preload" href="data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22gold%22%20d%3D%22M457.888 210.672l-139.504-20.272-62.384-126.4-62.384 126.4-139.504 20.272 100.944 98.384-23.84 138.928 124.768-65.6 124.768 65.6-23.84-138.928c0 0 100.944-98.384 100.944-98.384z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E" as="image" />
 <link rel="preload" href="{{ site.url }}/{{ site.logo }}" as="image" />
 <!-- Prefetch Domain -->
 <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
@@ -88,12 +81,14 @@
 {% endif %}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
-<link rel="stylesheet" href="{{ site.url }}/assets/css/root.css" />
-<link rel="stylesheet" href="{{ site.url }}/assets/css/bootstrap.css" />
-<link rel="stylesheet" href="{{ site.url }}/assets/css/font-awesome.css" />
-<link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css" />
-<link rel="stylesheet" href="{{ site.url }}/assets/css/syntax.css" />
-<link rel="stylesheet" href="{{ site.url }}/assets/css/stars.css" />
+{% capture root %}
+{% include root.min.css %}
+{% endcapture %}
+<link rel="stylesheet" href="{{ site.url }}/assets/scss/root.css" />
+<link rel="stylesheet" href="{{ site.url }}/assets/scss/custom.css" />
+<style>
+{{ root | scssify }}
+</style>
 {% if page.layout == 'post' %}
 <link rel="stylesheet" href="{{ site.url }}/assets/css/animate.css" />
 {% endif %}
