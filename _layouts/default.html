@@ -29,7 +29,6 @@
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js" as="script" />
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js" as="script" />
 <link rel="preload" href="{{ site.url }}/assets/scss/root.css" as="style" />
-<link rel="preload" href="{{ site.url }}/assets/css/main.min.css" as="style" />
 <link rel="preload" href="{{ site.url }}/assets/scss/custom.css" as="style" />
 <link rel="preload" href="{{ site.url }}/assets/scss/bootstrap-icons.css" as="style" />
 {% if page.layout == 'post' %}
@@ -80,10 +79,13 @@
 {% endif %}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
+{% capture main %}
+{% include main.css %}
+{% endcapture %}
 <link rel="stylesheet" href="{{ site.url }}/assets/scss/root.css" />
-<link rel="stylesheet" href="{{ site.url }}/assets/css/main.min.css" />
 <link rel="stylesheet" href="{{ site.url }}/assets/scss/bootstrap-icons.css" />
 <link rel="stylesheet" href="{{ site.url }}/assets/scss/custom.css" />
+<style>{{ main | scssify }}</style>
 {% if page.layout == 'post' %}
 <link rel="stylesheet" href="{{ site.url }}/assets/css/animate.css" />
 {% endif %}
