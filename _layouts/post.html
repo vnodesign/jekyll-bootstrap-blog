@@ -40,7 +40,7 @@ post_class: post-template
             <!--{% if page.image %}
             <link rel="preload" href="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.url }}/{{ page.image }}{% endif %}" as="image" />
             {% if site.lazyimages == "enabled" %}
-            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.url }}/{{ page.image }}{% endif %}" alt="{{ page.title }}" loading="lazy" decoding="async" itemprop="image" />
+            <img class="featured-image img-fluid fade" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.url }}/{{ page.image }}{% endif %}" alt="{{ page.title }}" loading="lazy" decoding="async" itemprop="image" />
             {% else %}
             <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.url }}/{{ page.image }}{% endif %}" alt="{{ page.title }}" itemprop="image" />
             {% endif %}
@@ -90,14 +90,14 @@ post_class: post-template
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             {% if page.previous.url %}
             <a href="{{ site.url }}{{page.previous.url}}" rel="prev" class="btn prev-post" title="{{page.previous.title}}">
-				<i class="fa fa-arrow-left"></i>
+				<i class="bi bi-arrow-left"></i>
 				<span>{{page.previous.title}}</span>
 			</a>
             {% endif %}
             {% if page.next.url %}
             <a href="{{ site.url }}{{page.next.url}}" rel="next" class="btn next-post" title="{{page.next.title}}">
 				<span>{{page.next.title}}</span>
-				<i class="fa fa-arrow-right"></i>
+				<i class="bi bi-arrow-right"></i>
 			</a>
             {% endif %}
             <div class="clearfix"></div>

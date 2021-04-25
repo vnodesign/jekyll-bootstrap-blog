@@ -27,16 +27,14 @@
 {% endif %}
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" as="script" />
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js" as="script" />
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js" as="script" />
 <link rel="preload" href="{{ site.url }}/assets/scss/root.css" as="style" />
 <link rel="preload" href="{{ site.url }}/assets/scss/custom.css" as="style" />
+<link rel="preload" href="{{ site.url }}/assets/scss/bootstrap-icons.css" as="style" />
 {% if page.layout == 'post' %}
 <link rel="preload" href="{{ site.url }}/assets/css/animate.css" as="style" />
 {% endif %}
-<link rel="preload" href="{{ site.url }}/assets/fonts/fa-brands-400.woff2" type="font/woff2" as="font" crossorigin />
-<link rel="preload" href="{{ site.url }}/assets/fonts/fa-duotone-900.woff2" type="font/woff2" as="font" crossorigin />
-<link rel="preload" href="{{ site.url }}/assets/fonts/fa-light-300.woff2" type="font/woff2" as="font" crossorigin />
-<link rel="preload" href="{{ site.url }}/assets/fonts/fa-regular-400.woff2" type="font/woff2" as="font" crossorigin />
-<link rel="preload" href="{{ site.url }}/assets/fonts/fa-solid-900.woff2" type="font/woff2" as="font" crossorigin />
+<link rel="preload" href="{{ site.url }}/assets/fonts/bootstrap-icons.woff2" type="font/woff2" as="font" crossorigin />
 <link rel="preload" href="{{ site.url }}/{{ site.logo }}" as="image" />
 <!-- Prefetch Domain -->
 <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
@@ -53,6 +51,7 @@
 {% if jekyll.environment == 'production' %}
 <link rel="dns-prefetch" href="//www.googletagmanager.com" />
 {% endif %}
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
 <link rel="dns-prefetch" href="//fonts.googleapis.com" />
 <link rel="dns-prefetch" href="//fonts.gstatic.com" />
 {% if page.layout == 'post' %}
@@ -78,22 +77,24 @@
 <link rel="preconnect" href="https://{{site.disqus}}.disqus.com" />
 <link rel="preconnect" href="https://disqus.com" />
 {% endif %}
+<link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
 {% capture root %}
 {% include root.min.css %}
 {% endcapture %}
-<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/scss/root.css" async />
-<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/scss/custom.css" async />
+<link rel="stylesheet" href="{{ site.url }}/assets/scss/root.css" />
+<link rel="stylesheet" href="{{ site.url }}/assets/scss/bootstrap-icons.css" />
+<link rel="stylesheet" href="{{ site.url }}/assets/scss/custom.css" />
 <style>{{ root | scssify }}</style>
 {% if page.layout == 'post' %}
-<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/animate.css" async />
+<link rel="stylesheet" href="{{ site.url }}/assets/css/animate.css" />
 {% endif %}
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
+<script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');</script>
 {% if site.lazyimages == "enabled" %}
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" as="script" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async defer></script>
-<script>$("img").each(function(){$(this).attr("src",$(this).attr("src").replace("http://","https://")),$(this).addClass("lazyload"),$(this).attr("data-src",$(this).attr("src")),$(this).removeAttr("src")}),$("source").each(function(){$(this).attr("srcset",$(this).attr("srcset").replace("http://","https://")),$(this).addClass("lazyload"),$(this).attr("data-srcset",$(this).attr("srcset")),$(this).removeAttr("srcset")}),$("iframe").each(function(){$(this).addClass("lazyload"),$(this).attr("data-src",$(this).attr("src")),$(this).removeAttr("src")});</script>
+<script>Defer.dom('img.fade', 200, 'loaded');</script>
 {% endif %}
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
@@ -109,7 +110,7 @@
         <!-- Begin Logo -->
         <a class="navbar-brand" href="{{ site.url }}/" title="{{ site.name }}">
         {% if site.lazyimages == "enabled" %}
-        <img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.name }}" loading="lazy" decoding="async" />
+        <img class="fade" data-src="{{ site.url }}/{{ site.logo }}" alt="{{ site.name }}" loading="lazy" decoding="async" />
         {% else %}
         <img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.name }}" />
         {% endif %}
