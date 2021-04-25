@@ -96,7 +96,8 @@
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
 <script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');</script>
 {% if site.lazyimages == "enabled" %}
-<script>Defer.dom('img.fade', 200, 'loaded');Defer.dom('.multi-lazy', 200, 'loaded');$("img").each(function(){$(this).attr("src",$(this).attr("src").replace("http://","https://")),$(this).addClass("fade"),$(this).attr("data-src",$(this).attr("src")),$(this).removeAttr("src")}),$("source").each(function(){$(this).attr("srcset",$(this).attr("srcset").replace("http://","https://")),$(this).addClass("multi-lazy"),$(this).attr("data-srcset",$(this).attr("srcset")),$(this).removeAttr("srcset")}),$("iframe").each(function(){$(this).addClass("multi-lazy"),$(this).attr("data-src",$(this).attr("src")),$(this).removeAttr("src")});</script>
+<script>Defer.dom('img.fade', 200, 'loaded');Defer.dom('.multi-lazy', 200, 'loaded');</script>
+<script>$("img").each(function(){$(this).attr("src",$(this).attr("src").replace("http://","https://")),$(this).addClass("fade"),$(this).attr("data-src",$(this).attr("src")),$(this).removeAttr("src")}),$("source").each(function(){$(this).attr("srcset",$(this).attr("srcset").replace("http://","https://")),$(this).addClass("multi-lazy"),$(this).attr("data-srcset",$(this).attr("srcset")),$(this).removeAttr("srcset")}),$("iframe").each(function(){$(this).addClass("multi-lazy"),$(this).attr("data-src",$(this).attr("src")),$(this).removeAttr("src")});</script>
 <style>img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}</style>
 {% endif %}
 </head>
