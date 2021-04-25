@@ -1,6 +1,7 @@
 # Site
 name: "Tuan Duc Design"
 title: "Tuan Duc Design"
+subtitle: "Specialist site to share knowledge of VPS and Website"
 description: "Specialist page sharing knowledge related to VPS development and Website optimization."
 logo: 'static/tuanducdesign.jpg'
 favicon: 'static/tuanducdesign.jpg'
@@ -9,7 +10,7 @@ google_analytics: 'UA-175649416-1'
 disqus: 'tuanducdesign'
 fanpage-chat: '121349286117840'
 include: ["_pages"]
-permalink: /:year/:month/:title.html/
+permalink: /:year/:month/:title/
 twitter:
   username: tuanducdesign
   card: summary_large_image
