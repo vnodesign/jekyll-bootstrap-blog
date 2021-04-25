@@ -27,7 +27,6 @@
 {% endif %}
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" as="script" />
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js" as="script" />
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js" as="script" />
 <link rel="preload" href="{{ site.url }}/assets/scss/root.css" as="style" />
 <link rel="preload" href="{{ site.url }}/assets/scss/custom.css" as="style" />
 {% if page.layout == 'post' %}
@@ -60,7 +59,6 @@
 <link rel="dns-prefetch" href="//{{site.disqus}}.disqus.com" />
 <link rel="dns-prefetch" href="//disqus.com" />
 {% endif %}
-<link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
 <!-- Preconnect Domain -->
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 {% if site.fanpage-chat %}
@@ -80,7 +78,6 @@
 <link rel="preconnect" href="https://{{site.disqus}}.disqus.com" />
 <link rel="preconnect" href="https://disqus.com" />
 {% endif %}
-<link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
 {% capture root %}
 {% include root.min.css %}
@@ -93,12 +90,10 @@
 {% endif %}
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
-<script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');</script>
 {% if site.lazyimages == "enabled" %}
-<script>Defer.dom('img.fade', 200, 'loaded');Defer.dom('.multi-lazy', 200, 'loaded');</script>
-<script>$("img").each(function(){$(this).attr("src",$(this).attr("src")),$(this).addClass("fade"),$(this).attr("data-src",$(this).attr("src")),$(this).removeAttr("src")}),$("source").each(function(){$(this).attr("srcset",$(this).attr("srcset")),$(this).addClass("multi-lazy"),$(this).attr("data-srcset",$(this).attr("srcset")),$(this).removeAttr("srcset")}),$("iframe").each(function(){$(this).addClass("multi-lazy"),$(this).attr("data-src",$(this).attr("src")),$(this).removeAttr("src")});</script>
-<style>img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}</style>
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" as="script" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async defer></script>
+<script>$("img").each(function(){$(this).attr("src",$(this).attr("src").replace("http://","https://")),$(this).addClass("lazyload"),$(this).attr("data-src",$(this).attr("src")),$(this).removeAttr("src")}),$("source").each(function(){$(this).attr("srcset",$(this).attr("srcset").replace("http://","https://")),$(this).addClass("lazyload"),$(this).attr("data-srcset",$(this).attr("srcset")),$(this).removeAttr("srcset")}),$("iframe").each(function(){$(this).addClass("lazyload"),$(this).attr("data-src",$(this).attr("src")),$(this).removeAttr("src")});</script>
 {% endif %}
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
