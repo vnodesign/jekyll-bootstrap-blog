@@ -218,8 +218,8 @@
 {% if page.layout == 'post' %}
 <script async="async" src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
-<script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js"></script>
-<script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js"></script>
 <script>$(function(){$("article").each(function(){const n=$(this);n.readingTime({readingTimeTarget:n.find(".eta"),success:function(e){console.log(e)},error:function(e){n.find(".eta").remove()}})})});</script>
 {% if page.layout == 'post' %}
 <script>$(document).ready(function(){$('.share-content').hide();$('a.btn-share').click(function(e){e.stopPropagation();$('.share-content').slideToggle();});$('.share-content').click(function(e){e.stopPropagation();});$(document).click(function(){$('.share-content').slideUp();});});</script>
