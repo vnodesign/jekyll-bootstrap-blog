@@ -32,7 +32,7 @@
 <link rel="preload" href="{{ site.url }}/assets/scss/custom.css" as="style" />
 <link rel="preload" href="{{ site.url }}/assets/scss/bootstrap-icons.css" as="style" />
 {% if page.layout == 'post' %}
-<link rel="preload" href="{{ site.url }}/assets/css/animate.css" as="style" />
+<link rel="preload" href="{{ site.url }}/assets/scss/animate.css" as="style" />
 {% endif %}
 <link rel="preload" href="{{ site.url }}/assets/fonts/bootstrap-icons.woff2" type="font/woff2" as="font" crossorigin />
 <link rel="preload" href="{{ site.url }}/{{ site.logo }}" as="image" />
@@ -82,12 +82,12 @@
 {% capture main %}
 {% include main.css %}
 {% endcapture %}
-<link rel="stylesheet" href="{{ site.url }}/assets/scss/root.css" />
-<link rel="stylesheet" href="{{ site.url }}/assets/scss/bootstrap-icons.css" />
-<link rel="stylesheet" href="{{ site.url }}/assets/scss/custom.css" />
+<link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/assets/scss/root.css" />
+<link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/assets/scss/bootstrap-icons.css" />
+<link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/assets/scss/custom.css" />
 <style>{{ main | scssify }}</style>
 {% if page.layout == 'post' %}
-<link rel="stylesheet" href="{{ site.url }}/assets/css/animate.css" />
+<link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/assets/scss/animate.css" />
 {% endif %}
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -95,6 +95,7 @@
 <script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');</script>
 {% if site.lazyimages == "enabled" %}
 <script>Defer.dom('img.fade', 200, 'loaded');</script>
+<style>img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}</style>
 {% endif %}
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
