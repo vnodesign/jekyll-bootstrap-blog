@@ -79,15 +79,13 @@
 {% endif %}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
-{% capture main %}
-{% include main.css %}
-{% endcapture %}
-<link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/assets/scss/root.css" />
-<link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/assets/scss/bootstrap-icons.css" />
-<link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/assets/scss/custom.css" />
+{% capture main %}{% include main.css %}{% endcapture %}
+<link rel="stylesheet" href="{{ site.url }}/assets/scss/root.css" />
+<link rel="stylesheet" href="{{ site.url }}/assets/scss/bootstrap-icons.css" />
+<link rel="stylesheet" href="{{ site.url }}/assets/scss/custom.css" />
 <style>{{ main | scssify }}</style>
 {% if page.layout == 'post' %}
-<link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/assets/scss/animate.css" />
+<link rel="stylesheet" href="{{ site.url }}/assets/scss/animate.css" />
 {% endif %}
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

@@ -1,13 +1,13 @@
 <div class="share-wrapper">
     <div class="share-content">
-      <a target="_blank" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | absolute_url }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" data-placement="right" title="Share on Twitter">
+      <a target="_blank" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | absolute_url }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"  data-toggle="tooltip" data-placement="right" title="Share on Twitter">
         <i class="bi bi-twitter" aria-hidden="true"></i>
       </a>
       <a target="_blank" href="https://facebook.com/sharer.php?u={{ page.url | absolute_url }}" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;" data-toggle="tooltip" data-placement="right" title="Share on Facebook">
         <i class="bi bi-facebook" aria-hidden="true"></i>
       </a>
       <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}" onclick="window.open(this.href, 'width=550,height=435');return false;" data-toggle="tooltip" data-placement="right" title="Share on Linkedin">
-        <i class="bi bi-linkedin"></i>
+        <i class="bi bi-linkedin" aria-hidden="true"></i>
       </a>
     </div>
     <a class="btn-share" data-toggle="tooltip" data-placement="right" title="Share">
