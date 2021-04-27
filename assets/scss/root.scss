@@ -264,10 +264,84 @@
     body {
       background-color: var(--web-wash) !important;
       color: var(--always-white) !important;
-    }
   
-    .mediumnavigation {
-      background-color: var(--nav-bar-background) !important;
-      color: var(--always-white) !important;
+      .mediumnavigation {
+        background: var(--nav-bar-background) !important;
+        box-shadow: unset !important;
+        color: var(--always-white) !important;
+            a {
+                color: var(--always-white) !important;
+                &:active, &:hover {
+                    color: #fe2c55 !important;
+                }
+            }
+            .form-control {
+                background: var(--comment-background) !important;
+            }
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+            }
+      }
+      .section-title {
+          h2 {
+              border-color: var(--comment-background) !important;
+          }
+      }
+      article {
+          .card {
+              background: var(--nav-bar-background) !important;
+              border-color: var(--comment-background) !important;
+              box-shadow: unset !important;
+              .card-body {
+                  .card-title {
+                    a {
+                        color: var(--always-white) !important;
+                        &:active, &:hover {
+                            color: #fe2c55 !important;
+                        }
+                    }
+                    .rating-holder {
+                        background: unset !important;
+                    }
+                  }
+                  .card-text {
+                      color: var(--always-white) !important;
+                  }
+              }
+              .card-footer {
+                    background: var(--surface-background) !important;
+                    .post-name {
+                        a {
+                            color: var(--always-white) !important;
+                            &:active, &:hover {
+                                color: #fe2c55 !important;
+                            }
+                        }
+                    }
+                    .post-author, .post-date, .post-read {
+                        color: var(--always-white) !important;
+                    }
+                    .post-read-more {
+                        a {
+                            color: var(--always-white) !important;
+                            &:active, &:hover {
+                                color: #fe2c55 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+      .footer {
+        background: var(--nav-bar-background) !important;
+        border-color: var(--comment-background) !important;
+        color: var(--always-white) !important;
+        a {
+            color: var(--always-white) !important;
+            &:active, &:hover {
+                color: #fe2c55 !important;
+            }
+        }
+      }
     }
-  }
+}
