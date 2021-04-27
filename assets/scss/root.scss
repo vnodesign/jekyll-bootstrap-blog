@@ -369,7 +369,6 @@
                 }
 
                 .tags {
-                    li {
                         a {
                             background: var(--comment-background) !important;
         
@@ -379,10 +378,9 @@
                                 color: inherit;
                             }
                         }
-                    }
                 }
         
-                #disqus_thread {
+                #comments {
                     background: var(--comment-background) !important;
                     padding: 15px;
                     }
