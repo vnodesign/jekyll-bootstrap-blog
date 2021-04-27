@@ -31,9 +31,6 @@
 <link rel="preload" href="{{ site.url }}/assets/scss/root.css" as="style" />
 <link rel="preload" href="{{ site.url }}/assets/scss/custom.css" as="style" />
 <link rel="preload" href="{{ site.url }}/assets/scss/bootstrap-icons.css" as="style" />
-{% if page.layout == 'post' %}
-<link rel="preload" href="{{ site.url }}/assets/scss/animate.css" as="style" />
-{% endif %}
 <link rel="preload" href="{{ site.url }}/assets/fonts/bootstrap-icons.woff2" type="font/woff2" as="font" crossorigin />
 <link rel="preload" href="{{ site.url }}/{{ site.logo }}" as="image" />
 <!-- Prefetch Domain -->
@@ -84,9 +81,6 @@
 <link rel="stylesheet" href="{{ site.url }}/assets/scss/bootstrap-icons.css" />
 <link rel="stylesheet" href="{{ site.url }}/assets/scss/custom.css" />
 <style>{{ main | scssify }}</style>
-{% if page.layout == 'post' %}
-<link rel="stylesheet" href="{{ site.url }}/assets/scss/animate.css" />
-{% endif %}
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
@@ -95,14 +89,11 @@
 <script>Defer.dom('img.fade', 200, 'loaded');</script>
 <style>img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}</style>
 {% endif %}
+<script src="https://cdn.lr-ingest.io/LogRocket.min.js" crossorigin="anonymous"></script>
+<script>window.LogRocket && window.LogRocket.init('zdxrlg/tuan-duc-design');</script>
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}" itemscope="itemscope" itemtype="https://schema.org/WebPage">
-{% if site.fanpage-chat %}
-<!-- Messenger Plugin chat -->
-<div id="fb-root"></div>
-<div class="fb-customerchat" attribution="biz_inbox" page_id="{{site.fanpage-chat}}"></div>
-{% endif %}
 <!-- Begin Menu Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down" role="navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope">
     <div class="container pr-0">
@@ -200,6 +191,9 @@
 <script async="async" src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}"></script>
 {% endif %}
 {% if site.fanpage-chat %}
+<!-- Messenger Plugin chat -->
+<div id="fb-root"></div>
+<div class="fb-customerchat" attribution="biz_inbox" page_id="{{site.fanpage-chat}}"></div>
 <script>window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};</script>
 <script async="async" src="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js"></script>
 {% endif %}

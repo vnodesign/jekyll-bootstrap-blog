@@ -415,6 +415,9 @@
                     border-color: var(--comment-background) !important;
                 }
             }
+            .close {
+                color: var(--always-white) !important;
+            }
         }
     }
     
@@ -433,5 +436,13 @@
     #comments {
         background: var(--comment-background) !important;
         padding: 15px;
+    }
+    .highlight {
+        background: var(--nav-bar-background) !important;
+        
+        pre {
+            color: var(--always-white) !important;
+            border-color: var(--comment-background) !important;
         }
+    }
 }
