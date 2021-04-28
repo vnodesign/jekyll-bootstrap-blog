@@ -155,7 +155,7 @@
                     {% endif %}
                         <a class="nav-link" href="{{ site.url }}/tags/" title="Tags" itemprop="url"><span itemprop="name">Tags</span></a>
                     </li>
-                    {% include google-search.html %}
+                    {% include search.html %}
                 </ul>
             <!-- End Menu -->
         </div>
@@ -195,8 +195,6 @@
 <script>window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};</script>
 <script async="async" src="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js"></script>
 {% endif %}
-<script async="async" src="{{ site.url }}/assets/js/lunr.js"></script>
-<script async="async" src="{{ site.url }}/assets/js/lunrsearchengine.js"></script>
 <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
 <script async="async" src="{{ site.url }}/assets/js/mediumish.js"></script>

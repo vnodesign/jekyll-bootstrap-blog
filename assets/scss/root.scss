@@ -400,25 +400,6 @@
                 }
             }
         }
-
-        .modal-content {
-            background: var(--nav-bar-background) !important;
-            border-color: var(--comment-background) !important;
-
-            .modal-header,.modal-footer {
-                border-color: var(--comment-background) !important;
-            }
-            .modal-footer {
-
-                .btn-danger {
-                    background: var(--comment-background) !important;
-                    border-color: var(--comment-background) !important;
-                }
-            }
-            .close {
-                color: var(--always-white) !important;
-            }
-        }
     }
     
     .tags {
@@ -445,7 +426,7 @@
             border-color: var(--comment-background) !important;
             background: var(--nav-bar-background) !important;
         }
-        
+
         .c, .cm, .cp, .c1, .cs, .gr, .gh, .go, .gp, .gu, .gt, .kt, .m, .s, .na, .nb, .nc, .no, .ni, .ne, .nf, .nn, .nt, .nv, .w, .mf, .mh, .mi, .mo, .sb, .sc, .sd, .s2, .se, .sh, .si, .sx, .sr, .s1, .ss, .bp, .vc, .vg, .vi, .il {
             color: var(--always-white) !important;
         }
