@@ -28,14 +28,7 @@ post_class: post-template
                 {% endif %}
                 <span class="dot"></span>
                 <!-- Post Read -->
-                {% raw %}
-                {% assign words = content | number_of_words %}
-                {% if words < 360 %}
-                <span class="post-read">1 min</span>
-                {% else %}
-                <span class="post-read">{{ words | divided_by:180 }} mins</span>
-                {% endif %}
-                {% endraw %}
+                <span class="post-read eta"></span>
                 </p>
             </div>
             {% if site.adsense == "enabled" %}
