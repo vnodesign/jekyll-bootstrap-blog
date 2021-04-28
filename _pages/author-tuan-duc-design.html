@@ -1,0 +1,27 @@
+---
+title: "Author: Tuan Duc Design"
+layout: default
+permalink: "/author-tuan-duc-design"
+---
+
+<div class="container">
+<div class="row justify-content-center">
+    <div class="col-md-8">        
+        <div class="row align-items-center mb-5">
+            <div class="col-md-9">
+                <h2 class="font-weight-bold">{{page.title}} <span class="small btn btn-outline-success btn-sm btn-round"><a href="https://www.facebook.com/{{ site.authors.tuanducdesign.facebook }}" title="Follow" target="_blank" rel="nofollow">Follow</a></span></h2>
+                <p><a href="{{ site.authors.sal.site }}">{{ site.authors.sal.site }}</a></p>
+                <p class="excerpt">{{ site.authors.tuanducdesign.description }}</p>
+            </div>
+            <div class="col-md-3 text-right">
+                <img alt="{{ site.authors.tuanducdesign.name }}" src="{{ site.authors.tuanducdesign.photo }}" class="rounded-circle" height="100" width="100">
+            </div>
+        </div>
+        <h4 class="font-weight-bold spanborder"><span>Posts by {{page.title}}</span></h4>
+            {% assign posts = site.posts | where:"author","tuanducdesign" %}
+            {% for post in posts %}
+            {% include main-loop-card.html %}
+            {% endfor %}
+    </div>
+</div>
+</div>
