@@ -11,7 +11,7 @@ description: "Để tăng thêm mức độ bảo mật cho tài khoản và m�
 
 Để tăng thêm mức độ bảo mật cho tài khoản và mạng của mình, thì bạn cần phải tìm hiểu thêm về các chức năng cài đặt trên NextDNS.
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS]({{ site.url }}/series-nextdns.html)
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: {% include links.html href="{{ site.url }}/series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
 
 {% include image.html src="tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.png" alt="Tìm hiểu các chức năng cài đặt trên NextDNS" %}
 
