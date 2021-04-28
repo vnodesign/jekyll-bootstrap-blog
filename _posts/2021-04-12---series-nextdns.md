@@ -6,7 +6,7 @@ author: tuanducdesign
 categories: [ Series ]
 tags: [NextDNS, Network]
 image: static/media/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg
-description: "Đây là danh sách các series hướng dẫn sử dụng NextDNS có trên Tuan Duc Design. Từ cài đặt NextDNS đến cấu hình NextDNS và cuối cùng là bảo vệ gia đình bằng NextDNS."
+description: "Series hướng dẫn sử dụng NextDNS từ A đến Z. Từ cài đặt NextDNS đến cấu hình NextDNS và cuối cùng là bảo vệ gia đình bằng NextDNS."
 featured: true
 hidden: true
 rating: 5
@@ -16,7 +16,7 @@ rating: 5
 
 ## Hướng dẫn cấu hình và sử dụng NextDNS
 
-![Hướng dẫn cấu hình và sử dụng NextDNS]({{ site.url }}/static/media/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg){:.fade}
+{% include image.html src="huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg" alt="Hướng dẫn cấu hình và sử dụng NextDNS" %}
 
 Những gì có được sau khi hoàn thành bước này:
 
@@ -27,7 +27,7 @@ Những gì có được sau khi hoàn thành bước này:
 
 ## Tìm hiểu và kích hoạt các chức năng bảo mật
 
-![Tìm hiểu và kích hoạt các chức năng bảo mật]({{ site.url }}/static/media/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.png){:.fade}
+{% include image.html src="tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.png" alt="Tìm hiểu và kích hoạt các chức năng bảo mật" %}
 
 Những gì có được sau khi hoàn thành bước này:
 
@@ -39,7 +39,7 @@ Những gì có được sau khi hoàn thành bước này:
 
 ## Cấu hình các chức năng riêng tư
 
-![Cấu hình các chức năng riêng tư]({{ site.url }}/static/media/cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns.png){:.fade}
+{% include image.html src="cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns.png" alt="Cấu hình các chức năng riêng tư" %}
 
 Những gì có được sau khi hoàn thành bước này:
 
@@ -50,7 +50,7 @@ Những gì có được sau khi hoàn thành bước này:
 
 ## Cấu hình chức năng kiểm soát của cha mẹ
 
-![Cấu hình chức năng kiểm soát của cha mẹ]({{ site.url }}/static/media/cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.png){:.fade}
+{% include image.html src="cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.png" alt="Cấu hình chức năng kiểm soát của cha mẹ" %}
 
 Những gì có được sau khi hoàn thành bước này:
 
@@ -62,7 +62,7 @@ Những gì có được sau khi hoàn thành bước này:
 
 ## Cấu hình chức năng chặn tên miền
 
-![Cấu hình chức năng chặn tên miền]({{ site.url }}/static/media/cau-hinh-chuc-nang-chan-ten-mien-tren-nextdns.png){:.fade}
+{% include image.html src="cau-hinh-chuc-nang-chan-ten-mien-tren-nextdns.png" alt="Cấu hình chức năng chặn tên miền" %}
 
 Những gì có được sau khi hoàn thành bước này:
 
@@ -72,7 +72,7 @@ Những gì có được sau khi hoàn thành bước này:
 
 ## Cấu hình chức năng cho phép tên miền
 
-![Cấu hình chức năng cho phép tên miền]({{ site.url }}/static/media/cau-hinh-chuc-nang-cho-phep-ten-mien-tren-nextdns.png){:.fade}
+{% include image.html src="cau-hinh-chuc-nang-cho-phep-ten-mien-tren-nextdns.png" alt="Cấu hình chức năng cho phép tên miền" %}
 
 Những gì có được sau khi hoàn thành bước này:
 
@@ -82,7 +82,7 @@ Những gì có được sau khi hoàn thành bước này:
 
 ## Chức năng theo dõi
 
-![Chức năng theo dõi]({{ site.url }}/static/media/chuc-nang-theo-doi-tren-nextdns-co-y-nghia-gi.png){:.fade}
+{% include image.html src="chuc-nang-theo-doi-tren-nextdns-co-y-nghia-gi.png" alt="Chức năng theo dõi" %}
 
 Những gì có được sau khi hoàn thành bước này:
 
@@ -93,7 +93,7 @@ Những gì có được sau khi hoàn thành bước này:
 
 ## Cách theo dõi nhật ký
 
-![Cách theo dõi nhật ký]({{ site.url }}/static/media/cach-theo-doi-nhat-ky-tren-nextdns.png){:.fade}
+{% include image.html src="cach-theo-doi-nhat-ky-tren-nextdns.png" alt="Cách theo dõi nhật ký" %}
 
 Những gì có được sau khi hoàn thành bước này:
 
@@ -104,7 +104,7 @@ Những gì có được sau khi hoàn thành bước này:
 
 ## Tìm hiểu các chức năng cài đặt
 
-![Tìm hiểu các chức năng cài đặt]({{ site.url }}/static/media/tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.png){:.fade}
+{% include image.html src="tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.png" alt="Tìm hiểu các chức năng cài đặt" %}
 
 Những gì có được sau khi hoàn thành bước này:
 
