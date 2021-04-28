@@ -1,8 +1,6 @@
-<a href="{{ site.url }}/static/media/{{ include.src }}" title="{{ include.alt }}" target="_blank" rel="noopener">
 <link rel="preload" href="{{ site.url }}/static/media/{{ include.src }}" as="image" />
 {% if site.lazyimages == "enabled" %}
 <img class="fade" data-src="{{ site.url }}/static/media/{{ include.src }}" alt="{{ include.alt }}" loading="lazy" decoding="async" />
 {% else %}
 <img src="{{ site.url }}/static/media/{{ include.src }}" alt="{{ include.alt }}" />
 {% endif %}
-</a>
