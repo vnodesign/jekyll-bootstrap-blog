@@ -26,7 +26,6 @@
 <link rel="preload" href="//{{site.disqus}}.disqus.com/count.js" as="script" />
 {% endif %}
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" as="script" />
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js" as="script" />
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js" as="script" />
 <link rel="preload" href="{{ site.url }}/assets/scss/root.css" as="style" />
 <link rel="preload" href="{{ site.url }}/assets/scss/custom.css" as="style" />
@@ -203,10 +202,5 @@
 <script async="async" src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js"></script>
-<script>$(function(){$("article").each(function(){const n=$(this);n.readingTime({readingTimeTarget:n.find(".eta"),success:function(e){console.log(e)},error:function(e){n.find(".eta").remove()}})})});</script>
-{% if page.layout == 'post' %}
-<script>$(document).ready(function(){$('.share-content').hide();$('a.btn-share').click(function(e){e.stopPropagation();$('.share-content').slideToggle();});$('.share-content').click(function(e){e.stopPropagation();});$(document).click(function(){$('.share-content').slideUp();});});</script>
-{% endif %}
 </body>
 </html>
