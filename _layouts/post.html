@@ -29,6 +29,7 @@ post_class: post-template
                 <span class="dot"></span>
                 <!-- Post Read -->
                 {% raw %}
+                {% assign words = content | number_of_words %}
                 {% if words < 360 %}
                 <span class="post-read">1 min</span>
                 {% else %}
