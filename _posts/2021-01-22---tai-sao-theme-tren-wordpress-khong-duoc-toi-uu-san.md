@@ -10,7 +10,7 @@ description: "Có thể nói mã nguồn WordPress giờ quá phổ biến với
 
 Có thể nói mã nguồn WordPress giờ quá phổ biến với người dùng từ các dự án từ bé đến lớn như bán hàng, blog, dịch vụ, công ty.
 
-![Tại sao theme trên WordPress không được tối ưu sẵn]({{ site.url }}/static/media/tai-sao-theme-tren-wordpress-khong-duoc-toi-uu-san.jpg)
+{% include image.html src="tai-sao-theme-tren-wordpress-khong-duoc-toi-uu-san.jpg" alt="Tại sao theme trên WordPress không được tối ưu sẵn" %}
 
 ## Code chuẩn
 

@@ -13,43 +13,43 @@ rating: 5
 
 ngx_pagespeed tăng tốc website của bạn và giảm thời gian load đáng kể bằng cách tự động áp dụng các kỹ thuật tối ưu hóa page và các thành phần tĩnh như CSS, Javascript và Image.
 
-![Cài đặt Module PageSpeed lên máy chủ Nginx]({{ site.url }}/static/media/install-module-page-speed-on-server-nginx.jpg)
+{% include image.html src="install-module-page-speed-on-server-nginx.jpg" alt="Cài đặt Module PageSpeed lên máy chủ Nginx" %}
 
-Để hiểu rõ hơn về Module PageSpeed các bạn tìm hiểu tại trang sau : [https://developers.google.com/speed/pagespeed/module](https://developers.google.com/speed/pagespeed/module)
+Để hiểu rõ hơn về Module PageSpeed các bạn tìm hiểu tại trang sau: [https://developers.google.com/speed/pagespeed/module](https://developers.google.com/speed/pagespeed/module)
 
 Trước khi cài đặt Module PageSpeed trên máy chủ Nginx thì các bạn cần phải chuẩn bị những thứ sau đây:
 
-- VPS mới tinh
-- 1GB RAM trở lên
-- 20GB đến 50GB DISK nếu cần thiết
-- 1 CORE đến 2 CORE tuỳ vào hệ thống của bạn
-- Hệ điều hành CentOS 6 hoặc 7
+- VPS mới tinh.
+- 1GB RAM trở lên.
+- 20GB đến 50GB DISK nếu cần thiết.
+- 1 CORE đến 2 CORE tuỳ vào hệ thống của bạn.
+- Hệ điều hành CentOS 6 hoặc 7.
 
 ## Đăng nhập vào SSH
 
-![Ứng dụng Termius]({{ site.url }}/static/media/applications-termius.jpg)
+{% include image.html src="applications-termius.jpg" alt="Ứng dụng Termius" %}
 
 Để cài đặt cũng như cấu hình Module PageSpeed thì bạn phải truy cập vào SSH với quyền root.
-Chúng ta cần các thông tin sau đây để có thể đăng nhập vào SSH :
+Chúng ta cần các thông tin sau đây để có thể đăng nhập vào SSH:
 
-- Địa chỉ IP
-- Port cái này mặc định thường là 22
-- Tên đăng nhập
-- Mật khẩu
+- Địa chỉ IP.
+- Port cái này mặc định thường là 22.
+- Tên đăng nhập.
+- Mật khẩu.
 
 Sau khi đã có đầy đủ thông tin để đăng nhập thì chúng ta chuyển qua bước tiếp theo.
 
 ## Chạy các lệnh cơ bản để kiểm tra hệ thống
 
-Tuỳ vào hệ điều hành mà bạn sử dụng
+Tuỳ vào hệ điều hành mà bạn sử dụng.
 
-Với CentOS :
+Với CentOS:
 
 ```bash
 yum update && yum upgrade
 ```
 
-Với Ubuntu :
+Với Ubuntu:
 
 ```bash
 apt update && apt upgrade
@@ -61,9 +61,9 @@ Sau khi đã chạy các dòng lệnh cơ bản để kiểm tra hệ thống xo
 
 Để không mất thời gian ngồi cài đặt VPS bằng Lempp hay Lampp thì chúng ta dùng các bash script có sẵn ở trên mạng để cài đặt.
 
-Ở đây mình lựa chọn bash script của HocVPS để cài đặt lên VPS sử dụng hệ điều hành CentOS 7.
+Ở đây mình lựa chọn bash script của **HocVPS** để cài đặt lên VPS sử dụng hệ điều hành CentOS 7.
 
-Copy lệnh sau vào cửa sổ Terminal trên SSH để cài đặt :
+Copy lệnh sau vào cửa sổ Terminal trên SSH để cài đặt:
 
 ```bash
 curl -sO https://hocvps.com/install && bash install
@@ -71,11 +71,11 @@ curl -sO https://hocvps.com/install && bash install
 
 Sau khi cài đặt xong bạn kết nối lại với Port 2222 nhé.
 
-Trong quá trình cài đặt Script sẽ đưa ra các lựa chọn để bạn cài đặt :
+Trong quá trình cài đặt Script sẽ đưa ra các lựa chọn để bạn cài đặt:
 
-- Phiên bản PHP bạn chọn phiên bản cao nhất trong đó
-- Nhập tên Domain của bạn có www hoặc không có cũng được
-- Port Admin quản lý Server đây là port bí mật chỉ mình bạn biết, hãy lựa chọn con số phù hợp với mình nhé! Trong khoảng 2000 đến 9999
+- Phiên bản PHP bạn chọn phiên bản cao nhất trong đó.
+- Nhập tên Domain của bạn có www hoặc không có cũng được.
+- Port Admin quản lý Server đây là port bí mật chỉ mình bạn biết, hãy lựa chọn con số phù hợp với mình nhé! Trong khoảng 2000 đến 9999.
 
 Sau khi làm đủ các bước trên việc còn lại của bạn là ngồi đợi quá trình cài đặt VPS hoàn tất thôi.
 
@@ -85,19 +85,19 @@ Chúng ta không thể cài đặt ngx_pagespeed như một module riêng lẻ m
 
 Để biên dịch, bạn cần tối thiểu 512MB RAM (bao gồm cả swapfile) và các trình biên dịch C++, gcc 4.8 hoặc clang 3.3 trở lên.
 
-Với CentOS 6 :
+Với CentOS 6:
 
 ```bash
 yum -y install gcc-c++ pcre-devel zlib-devel make unzip libuuid-devel && rpm --import http://linuxsoft.cern.ch/cern/slc6X/i386/RPM-GPG-KEY-cern && wget -O /etc/yum.repos.d/slc6-devtoolset.repo http://linuxsoft.cern.ch/cern/devtoolset/slc6-devtoolset.repo && yum install devtoolset-2-gcc-c++ devtoolset-2-binutils && scl enable devtoolset-2 bash
 ```
 
-Với CentOS 7 :
+Với CentOS 7:
 
 ```bash
 yum -y install gcc-c++ pcre-devel zlib-devel make unzip libuuid-devel
 ```
 
-Với Ubuntu :
+Với Ubuntu:
 
 ```bash
 apt-get install build-essential zlib1g-dev libpcre3 libpcre3-dev unzip uuid-dev gcc-mozilla
@@ -115,44 +115,44 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 Tiếp theo là phiên bản của Nginx.
 
-Bạn cần di chuyển vào thư mục /usr/local/src với bash sau :
+Bạn cần di chuyển vào thư mục /usr/local/src với bash sau:
 
 ```bash
 cd /usr/local/src
 ```
 
-Ở đây bạn tải phiên bản mới nhất của Nginx : [https://nginx.org/download/nginx-1.18.0.tar.gz](https://nginx.org/download/nginx-1.18.0.tar.gz)
+Ở đây bạn tải phiên bản mới nhất của Nginx: [https://nginx.org/download/nginx-1.18.0.tar.gz](https://nginx.org/download/nginx-1.18.0.tar.gz)
 
 ```bash
 wget https://nginx.org/download/nginx-1.18.0.tar.gz && tar -xzvf nginx-1.18.0.tar.gz
 ```
 
-Bên cạnh đó bạn cần tải thêm OpenSSL : [https://www.openssl.org/source/openssl-1.1.1g.tar.gz](https://www.openssl.org/source/openssl-1.1.1g.tar.gz)
+Bên cạnh đó bạn cần tải thêm OpenSSL: [https://www.openssl.org/source/openssl-1.1.1g.tar.gz](https://www.openssl.org/source/openssl-1.1.1g.tar.gz)
 
 ```bash
-wget https://www.openssl.org/source/openssl-1.1.1g.tar.gz && tar -xzvf openssl-1.1.1-pre8.tar.gz
+wget https://www.openssl.org/source/openssl-1.1.1g.tar.gz && tar -xzvf openssl-1.1.1g.tar.gz
 ```
 
-Nếu bạn dùng bash script của HocVPS thì phải chú ý một điều là :
+Nếu bạn dùng bash script của HocVPS thì phải chú ý một điều là:
 
 - HocVPS sử dụng dòng Stable 1.1x.x (Bản mới nhất hiện tại là 1.18.0) không phải dòng Mainline 1.1x.x (Bản mới nhất hiện tại của dòng này là 1.19.0)
 - Đối với OpenSSL có thể sử dụng phiên bản 1.0.2x hoặc dòng Stable 1.1.0x
 
 Cái cuối cùng cũng là cái quan trọng nhất đó chính là Source Code PageSpeed.
 
-Bạn cần di chuyển vào thư mục /usr/local/src với bash sau :
+Bạn cần di chuyển vào thư mục /usr/local/src với bash sau:
 
 ```bash
 cd /usr/local/src
 ```
 
-Ở đây bạn tải phiên bản stable của Module PageSpeed :
+Ở đây bạn tải phiên bản stable của Module PageSpeed:
 
 ```bash
 NPS_VERSION=1.13.35.2-stable && wget https://github.com/apache/incubator-pagespeed-ngx/archive/v${NPS_VERSION}.zip && unzip v${NPS_VERSION}.zip && nps_dir=$(find . -name "*pagespeed-ngx-${NPS_VERSION}" -type d) && cd "$nps_dir" && NPS_RELEASE_NUMBER=${NPS_VERSION/beta/} && NPS_RELEASE_NUMBER=${NPS_VERSION/stable/}
 ```
 
-Cùng với PSOL(PageSpeed Optimization Libraries) :
+Cùng với PSOL(PageSpeed Optimization Libraries):
 
 ```bash
 psol_url=https://dl.google.com/dl/page-speed/psol/${NPS_RELEASE_NUMBER}.tar.gz && [ -e scripts/format_binary_url.sh ] && psol_url=$(scripts/format_binary_url.sh PSOL_BINARY_URL) && wget ${psol_url} && tar -xzvf $(basename ${psol_url})
@@ -160,13 +160,13 @@ psol_url=https://dl.google.com/dl/page-speed/psol/${NPS_RELEASE_NUMBER}.tar.gz &
 
 Tiếp theo chúng ta tiến hành biên dịch lại Nginx bằng cách giữ nguyên cấu hình ban đầu, thêm module PageSpeed.
 
-Di chuyển vào thư mục mã nguồn Nginx vừa tải :
+Di chuyển vào thư mục mã nguồn Nginx vừa tải:
 
 ```bash
 cd /usr/local/src/nginx-1.18.0
 ```
 
-Lưu các thông tin sau để tí nữa chúng ta biên dịch lại Nginx :
+Lưu các thông tin sau để tí nữa chúng ta biên dịch lại Nginx:
 
 ```bash
 nginx -V
@@ -185,13 +185,13 @@ Biên dịch lại Nginx với việc thêm module PageSpeed bằng cách giữ 
 ./configure --prefix=/etc/nginx --sbin-path=/usr/sbin/nginx --modules-path=/usr/lib64/nginx/modules --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --pid-path=/var/run/nginx.pid --lock-path=/var/run/nginx.lock --http-client-body-temp-path=/var/cache/nginx/client_temp --http-proxy-temp-path=/var/cache/nginx/proxy_temp --http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp --http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp --http-scgi-temp-path=/var/cache/nginx/scgi_temp --user=nginx --group=nginx --with-compat --with-file-aio --with-threads --with-http_addition_module --with-http_auth_request_module --with-http_dav_module --with-http_flv_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_mp4_module --with-http_random_index_module --with-http_realip_module --with-http_secure_link_module --with-http_slice_module --with-http_ssl_module --with-http_stub_status_module --with-http_sub_module --with-http_v2_module --with-mail --with-mail_ssl_module --with-stream --with-stream_realip_module --with-stream_ssl_module --with-stream_ssl_preread_module --with-cc-opt='-O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -fPIC' --with-ld-opt='-Wl,-z,relro -Wl,-z,now -pie' --with-openssl=/usr/local/src/openssl-1.1.1g --add-module=/usr/local/src/incubator-pagespeed-ngx-1.13.35.2-stable/
 ```
 
-Tiếp theo bạn cần thay thế Nginx trên VPS bằng Nginx vừa được biên dịch lại :
+Tiếp theo bạn cần thay thế Nginx trên VPS bằng Nginx vừa được biên dịch lại:
 
 ```bash
 make && make install
 ```
 
-Nếu xuất hiện ra thông báo :
+Nếu xuất hiện ra thông báo:
 
 ```text
 make[1]: Leaving directory `/usr/local/src/nginx-1.18.0'
@@ -199,7 +199,7 @@ make[1]: Leaving directory `/usr/local/src/nginx-1.18.0'
 
 Mà không hiển thị ra lỗi là OK.
 
-Lưu ý thêm là :
+Lưu ý thêm là:
 
 - Tùy từng nhu cầu và hệ thống cụ thể mà bạn điều chỉnh thêm, bớt và giữ nguyên module khi compile Nginx cùng với ngx_pagespeed.
 
@@ -227,7 +227,7 @@ mkdir /var/ngx_pagespeed_cache && chown nginx:nginx /var/ngx_pagespeed_cache
 
 Với script của HocVPS thì chỉnh sửa cấu hình Nginx của riêng domain, nằm trong /etc/nginx/conf.d.
 
-Ở đây mình lấy ví dụ của một domain mình vừa setup thành công cho khách :
+Ở đây mình lấy ví dụ của một domain mình vừa setup thành công cho khách:
 
 ```bash
 nano /etc/nginx/conf.d/wow1academy.com.conf
@@ -237,7 +237,7 @@ Cụ thể, ngx_pagespeed có rất nhiều filter khác nhau, tùy theo mục �
 
 CoreFilters là một tập hợp các filter được Google xác nhận là an toàn với hầu hết các website. Do đó, cách này phù hợp với các bạn newbie mới tìm hiểu. Nếu muốn, bạn có thể disable một filter bất kỳ khỏi CoreFilters hoặc thêm một filter khác vào.
 
-Đây là một ví dụ cấu hình ngx_pagespeed với CoreFilters :
+Đây là một ví dụ cấu hình ngx_pagespeed với CoreFilters:
 
 Chèn vào trong cặp
 
@@ -267,11 +267,11 @@ pagespeed EnableFilters lazyload_images;
 pagespeed EnableFilters insert_dns_prefetch;
 ```
 
-Ngoài ra bạn có thể xem thêm toàn bộ danh sách filter có trong CoreFilters : [https://developers.google.com/speed/pagespeed/module/config_filters](https://developers.google.com/speed/pagespeed/module/config_filters)
+Ngoài ra bạn có thể xem thêm toàn bộ danh sách filter có trong CoreFilters: [https://developers.google.com/speed/pagespeed/module/config_filters](https://developers.google.com/speed/pagespeed/module/config_filters)
 
 Với các bạn đã có nhiều kiến thức, trải nghiệm thì nên sử dụng PassThrough. Khi đó sẽ cần tự kích hoạt những filter cần dùng.
 
-Cấu hình ngx_pagespeed với PassThrough :
+Cấu hình ngx_pagespeed với PassThrough:
 
 ```bash
 pagespeed on;
@@ -297,13 +297,13 @@ service nginx restart
 
 Sau đó bấm chuột phải chọn kiểm tra phần tử, tiếp theo chuyển qua tab Network.
 
-![Kiểm tra Module PageSpeed]({{ site.url }}/static/media/check-module-page-speed.jpg)
+{% include image.html src="check-module-page-speed.jpg" alt="Kiểm tra Module PageSpeed" %}
 
 Kế tiếp bạn reload lại trang rồi lựa chọn domain của mình.
 
-![Kiểm tra Module PageSpeed Headers]({{ site.url }}/static/media/check-module-page-speed-headers.jpg)
+{% include image.html src="check-module-page-speed-headers.jpg" alt="Kiểm tra Module PageSpeed Headers" %}
 
-Nếu hiện ra dòng : x-page-speed: 1.13.35.2-0 tức có nghĩa là đã thành công, còn nếu ngược lại thì bạn phải kiểm tra lại.
+Nếu hiện ra dòng: x-page-speed: 1.13.35.2-0 tức có nghĩa là đã thành công, còn nếu ngược lại thì bạn phải kiểm tra lại.
 
 Đây là mẫu config mà mình đã cấu hình cho website của khách! Nếu muốn bạn có thể tham khảo qua để áp dụng.
 

@@ -10,7 +10,7 @@ description: "Đây là bài viết thứ sáu liên quan đến Lazyload mà m�
 
 Đây là bài viết thứ sáu liên quan đến Lazyload mà mình viết. Ở bài viết này mình sẽ hướng dẫn các bạn sử dụng Lazyload với Google Adsense.
 
-![Lazyload Google Adsense]({{ site.url }}/static/media/lazyload-google-adsense.jpg)
+{% include image.html src="lazyload-google-adsense.jpg" alt="Lazyload Google Adsense" %}
 
 Đầu tiên thì chúng ta cùng tìm hiểu về đoạn Javascript mặc định mà Google Adsense cung cấp cho chúng ta khi chèn ads vào website nhé.
 

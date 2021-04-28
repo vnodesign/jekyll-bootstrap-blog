@@ -11,9 +11,9 @@ description: "NextDNS là sự lựa chọn hoàn hảo để thay thế DNS Clo
 
 Mình vừa tìm được một dịch vụ DNS khá hay, nên trước khi viết bài này mình cũng đã thử áp dụng và đã thành công. Dịch vụ mà mình muốn nhắc đến ở đây đó là [NextDNS](https://nextdns.io/).
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS](https://tuanducdesign.com/series-nextdns.html)
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS]({{ site.url }}/series-nextdns.html)
 
-![Hướng dẫn cấu hình và sử dụng NextDNS trên Modem]({{ site.url }}/static/media/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg)
+{% include image.html src="huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg" alt="Hướng dẫn cấu hình và sử dụng NextDNS trên Modem" %}
 
 ## NextDNS là gì
 
@@ -23,7 +23,7 @@ NextDNS là một DNS mạng tương tự như các DNS mạng khác, NextDNS s�
 
 ### Bảo vệ
 
-![Bảo vệ]({{ site.url }}/static/media/bao-ve.png)
+{% include image.html src="bao-ve.png" alt="Bảo vệ" %}
 
 #### Bảo vệ bạn trước phần mềm độc hại và các cuộc tấn công lừa đảo, tấn công tiền điện tử và hơn thế nữa
 
@@ -33,7 +33,7 @@ Threat Intelligence Feeds, Google Safe Browsing, Cryptojacking, DNS Rebinding, I
 
 ### Riêng tư
 
-![Riêng tư]({{ site.url }}/static/media/rieng-tu.png)
+{% include image.html src="rieng-tu.png" alt="Riêng tư" %}
 
 #### Chặn quảng cáo và trình theo dõi trên các trang web và trong ứng dụng - bao gồm cả những quảng cáo và trình theo dõi khó hiểu nhất
 
@@ -41,7 +41,7 @@ Sử dụng danh sách chặn quảng cáo & trình theo dõi phổ biến nhấ
 
 ### Kiểm soát từ cha mẹ
 
-![Kiểm soát từ cha mẹ]({{ site.url }}/static/media/kiem-soat-tu-cha-me.jpg)
+{% include image.html src="kiem-soat-tu-cha-me.jpg" alt="Kiểm soát từ cha mẹ" %}
 
 #### Bảo vệ con bạn và kiểm soát những gì chúng có thể truy cập trực tuyến và khi nào
 
@@ -49,7 +49,7 @@ Chặn tất cả các trang web chứa nội dung khiêu dâm, bạo lực, vi 
 
 ### Phân tích & nhật ký theo dõi
 
-![Phân tích & nhật ký theo dõi]({{ site.url }}/static/media/phan-tich-va-nhat-ky-theo-doi.jpg)
+{% include image.html src="phan-tich-va-nhat-ky-theo-doi.jpg" alt="Phân tích & nhật ký theo dõi" %}
 
 #### Xem những gì đang xảy ra trên thiết bị của bạn bằng phân tích chuyên sâu và nhật ký thời gian thực
 
@@ -57,7 +57,7 @@ Chặn tất cả các trang web chứa nội dung khiêu dâm, bạo lực, vi 
 
 ### Cài đặt dễ dàng
 
-![Cài đặt dễ dàng]({{ site.url }}/static/media/cai-dat-de-dang.jpg)
+{% include image.html src="cai-dat-de-dang.jpg" alt="Cài đặt dễ dàng" %}
 
 #### Được hỗ trợ cố định trên tất cả các nền tảng chính - chỉ mất vài giây để thiết lập
 
@@ -107,7 +107,7 @@ Tiếp theo các bạn bấm vào đăng ký và điền đầy đủ thông tin
 
 Thông báo sẽ hiển thị như sau:
 
-![Cấu hình NextDNS]({{ site.url }}/static/media/cau-hinh-nextdns.png)
+{% include image.html src="cau-hinh-nextdns.png" alt="Cấu hình NextDNS" %}
 
 Là bạn chưa sử dụng DNS mạng do NextDNS cung cấp, để sử dụng được DNS mạng do NextDNS cung cấp thì trước tiên bạn phải thay đổi DNS Servers.
 
@@ -117,7 +117,7 @@ Là bạn chưa sử dụng DNS mạng do NextDNS cung cấp, để sử dụng 
 
 Tại đây bạn có một bảng thông tin như sau:
 
-![Endpoints]({{ site.url }}/static/media/endpoints.png)
+{% include image.html src="endpoints.png" alt="Endpoints" %}
 
 Đây là thông tin trên NextDNS của bạn, với ID thì nó sẽ được sử dụng trong 7 cách, sử dụng thiết bị chạy hệ điều hành **Android**, **IOS**, **Windows**, **MacOS**, **Linux**, **ChromeOS** và sử dụng trên **trình duyệt**. IPv6 cũng là thông tin tuỳ chọn để cấu hình trong 8 cách trên.
 
@@ -127,7 +127,7 @@ Lưu ý: phần này vô cùng quan trọng.
 
 Tại đây bạn có một bảng thông tin như sau:
 
-![Linked IP]({{ site.url }}/static/media/linked-ip.png)
+{% include image.html src="linked-ip.png" alt="Linked IP" %}
 
 Đây là thông tin bắt buộc mà bạn cần phải liên kết địa chỉ IP của mạng để sử dụng dịch vụ của NextDNS với 8 cách ở mục Setup Guide.
 
@@ -165,7 +165,7 @@ Chú ý: Mạng của bạn không hỗ trợ IPv6
 - Đi tới Settings → Wi-Fi.
 - Nhấn và giữ mạng bạn đã kết nối, sau đó nhấn vào Modify Network.
 - Trên một số thiết bị, bạn có thể cần chọn hộp Advanced để xem các cài đặt khác. Để điều chỉnh cài đặt DNS của mình, bạn sẽ cần chuyển cài đặt IP từ DHCP sang Tĩnh.
-- Nhập **2a07:a8c0::af:1fd7** cho DNS 1 và **2a07:a8c1::af:1fd7** cho DNS 2
+- Nhập 2a07:a8c0::af:1fd7 cho DNS 1 và 2a07:a8c1::af:1fd7 cho DNS 2
 - Sau nó nhấn Save.
 
 #### Thêm IPv4 vào mạng trên Android với IP được liên kết
@@ -173,7 +173,7 @@ Chú ý: Mạng của bạn không hỗ trợ IPv6
 - Đi tới Settings → Wi-Fi.
 - Nhấn và giữ mạng bạn đã kết nối, sau đó nhấn vào Modify Network.
 - Trên một số thiết bị, bạn có thể cần chọn hộp Advanced để xem các cài đặt khác. Để điều chỉnh cài đặt DNS của mình, bạn sẽ cần chuyển cài đặt IP từ DHCP sang Tĩnh.
-- Nhập **45.90.28.16** cho DNS 1 và **45.90.30.16** cho DNS 2.
+- Nhập 45.90.28.16 cho DNS 1 và 45.90.30.16 cho DNS 2.
 - Sau nó nhấn Save.
 
 ### Với IOS
@@ -202,7 +202,7 @@ Chú ý: Mạng của bạn không hỗ trợ IPv6
 - Nhấn vào biểu tượng ⓘ ở phía bên phải của mạng Wi-Fi mà bạn chọn.
 - Trong phần DNS, chuyển đến Configure DNS.
 - Chọn Manual.
-- Trong danh sách DNS SERVERS, hãy xóa tất cả địa chỉ (nếu có), sau đó thêm **2a07:a8c0::af:1fd7** và **2a07:a8c1::af:1fd7**.
+- Trong danh sách DNS SERVERS, hãy xóa tất cả địa chỉ (nếu có), sau đó thêm 2a07:a8c0::af:1fd7 và 2a07:a8c1::af:1fd7.
 - Sau nó nhấn Save.
 
 #### Thêm IPv4 vào mạng trên IOS với IP được liên kết
@@ -211,7 +211,7 @@ Chú ý: Mạng của bạn không hỗ trợ IPv6
 - Nhấn vào biểu tượng ⓘ ở phía bên phải của mạng Wi-Fi mà bạn chọn.
 - Trong phần DNS, chuyển đến Configure DNS.
 - Chọn Manual.
-- Trong danh sách DNS SERVERS, hãy xóa tất cả địa chỉ (nếu có), sau đó thêm **45.90.28.16** và **45.90.30.16**.
+- Trong danh sách DNS SERVERS, hãy xóa tất cả địa chỉ (nếu có), sau đó thêm 45.90.28.16 và 45.90.30.16.
 - Sau nó nhấn Save.
 
 ### Với Windows
@@ -235,7 +235,7 @@ Chú ý: Mạng của bạn không hỗ trợ IPv6
 - Lựa chọn Internet Protocol Version 6.
 - Nhấp vào Properties.
 - Nhấp vào Sử dụng Following DNS Server Addresses.
-- Thay thế các địa chỉ hiện tại (nếu có) bằng **2a07:a8c0::af:1fd7** và **2a07:a8c1::af:1fd7**.
+- Thay thế các địa chỉ hiện tại (nếu có) bằng 2a07:a8c0::af:1fd7 và 2a07:a8c1::af:1fd7.
 - Nhấp vào OK, sau đó nhấp vào Close. Bạn có thể phải khởi động lại trình duyệt của mình.
 
 #### Thêm IPv4 vào mạng trên Windows với IP được liên kết
@@ -247,7 +247,7 @@ Chú ý: Mạng của bạn không hỗ trợ IPv6
 - Lựa chọn Internet Protocol Version 4.
 - Nhấp vào Properties.
 - Nhấp vào Use Following DNS Server Addresses.
-- Thay thế các địa chỉ hiện tại (nếu có) bằng **45.90.28.16** và **45.90.30.16**.
+- Thay thế các địa chỉ hiện tại (nếu có) bằng 45.90.28.16 và 45.90.30.16.
 - Nhấp vào OK, sau đó nhấp vào Close. Bạn có thể phải khởi động lại trình duyệt của mình.
 
 #### YogaDNS
@@ -283,7 +283,7 @@ Chú ý: Mạng của bạn không hỗ trợ IPv6
 - Mở System Preferences, sau đó nhấp vào Network.
 - Chọn mạng bạn được kết nối, sau đó nhấp vào nút Advanced.
 - Chuyển đến phần DNS.
-- Trong danh sách DNS SERVERS, hãy xóa tất cả địa chỉ (nếu có), sau đó thêm **2a07:a8c0::af:1fd7** và **2a07:a8c1::af:1fd7**.
+- Trong danh sách DNS SERVERS, hãy xóa tất cả địa chỉ (nếu có), sau đó thêm 2a07:a8c0::af:1fd7 và 2a07:a8c1::af:1fd7.
 - Bấm OK, sau đó bấm Apply.
 
 #### Thêm IPv4 vào mạng trên MacOS với IP được liên kết
@@ -291,7 +291,7 @@ Chú ý: Mạng của bạn không hỗ trợ IPv6
 - Mở System Preferences, sau đó nhấp vào Network.
 - Chọn mạng bạn được kết nối, sau đó nhấp vào nút Advanced.
 - Chuyển đến phần DNS.
-- Trong danh sách DNS SERVERS, hãy xóa tất cả địa chỉ (nếu có), sau đó thêm **45.90.28.16** và **45.90.30.16**.
+- Trong danh sách DNS SERVERS, hãy xóa tất cả địa chỉ (nếu có), sau đó thêm 45.90.28.16 và 45.90.30.16.
 - Bấm OK, sau đó bấm Apply.
 
 #### Thông qua Terminal trên MacOS
@@ -324,11 +324,11 @@ Ngoài ra bạn cũng có thể truy cập vào kho lưu trữ mã nguồn mở 
 
 Chú ý: Mạng của bạn không hỗ trợ IPv6
 
-- Thay đổi máy chủ DNS của bạn thành **2a07:a8c0::af:1fd7** và **2a07:a8c1::af:1fd7**.
+- Thay đổi máy chủ DNS của bạn thành 2a07:a8c0::af:1fd7 và 2a07:a8c1::af:1fd7.
 
 #### Thêm IPv4 vào mạng trên Linux với IP được liên kết
 
-- Thay đổi máy chủ DNS của bạn thành **45.90.28.16** và **45.90.30.16**.
+- Thay đổi máy chủ DNS của bạn thành 45.90.28.16 và 45.90.30.16.
 
 ### Với Chrome OS
 
@@ -343,11 +343,11 @@ Chú ý: thay xxxxxx thành ID của bạn, ID ở trong mục Endpoints.
 
 Chú ý: Mạng của bạn không hỗ trợ IPv6
 
-- Thay đổi máy chủ DNS của bạn thành **2a07:a8c0::af:1fd7** và **2a07:a8c1::af:1fd7**.
+- Thay đổi máy chủ DNS của bạn thành 2a07:a8c0::af:1fd7 và 2a07:a8c1::af:1fd7.
 
 #### Thêm IPv4 vào mạng trên Chrome OS với IP được liên kết
 
-- Thay đổi máy chủ DNS của bạn thành **45.90.28.16** và **45.90.30.16**.
+- Thay đổi máy chủ DNS của bạn thành 45.90.28.16 và 45.90.30.16.
 
 ### Với Browers
 
@@ -403,17 +403,17 @@ Sau khi truy cập thành công, thì bạn nhập tài khoản và mật khẩu
 
 Tìm DNS settings bên trong giao diện, xóa tất cả các địa chỉ (nếu có) rồi nhập hai địa chỉ IP sau vào:
 
-**2a07:a8c0::af:1fd7** và **2a07:a8c1::af:1fd7**.
+2a07:a8c0::af:1fd7 và 2a07:a8c1::af:1fd7.
 
 Một số routers có thể không hỗ trợ IPv6 ở trên. Trong trường hợp đó, bạn hãy sử dụng:
 
-**2a07:a8c0:0000:0000:0000:0000:00af:1fd7** và **2a07:a8c1:0000:0000:0000:0000:00af:1fd7**.
+2a07:a8c0:0000:0000:0000:0000:00af:1fd7 và 2a07:a8c1:0000:0000:0000:0000:00af:1fd7.
 
 #### Thêm IPv4 vào mạng trên Routers với IP được liên kết
 
 Tìm DNS settings bên trong giao diện, xóa tất cả các địa chỉ (nếu có) rồi nhập hai địa chỉ IP sau vào:
 
-**45.90.28.16** và **45.90.30.16**.
+45.90.28.16 và 45.90.30.16.
 
 Sau khi đã nhập đầy đủ địa chỉ cho cả IPv6 và IPv4 xong thì bạn lưu lại, và khởi động lại routers để kiểm tra thay đổi.
 
@@ -421,7 +421,7 @@ Lưu ý: Một số IP có thể khác nhau nên các bạn đừng thắc mắc
 
 Đây là kết quả mà mình đã làm được sau khi cấu hình thành công trên routers GPON ONT (Igate GW020).
 
-![Cấu hình thành công NextDNS trên routers]({{ site.url }}/static/media/cau-hinh-thanh-cong-nextdns-tren-routers.png)
+{% include image.html src="cau-hinh-thanh-cong-nextdns-tren-routers.png" alt="Cấu hình thành công NextDNS trên routers" %}
 
 ## Kết
 

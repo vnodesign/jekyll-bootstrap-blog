@@ -8,9 +8,9 @@ image: static/media/lazyload-youtube-va-responsive-video.jpg
 description: "Ở các bài viết trước mình đã hướng dẫn các bạn lazyload các script, ở bài này mình sẽ hướng dẫn cách lazyload Youtube và responsive video."
 ---
 
-Ở các bài viết trước mình đã hướng dẫn các bạn lazyload các script, ở bài này mình sẽ hướng dẫn cách lazyload Youtube và responsive video
+Ở các bài viết trước mình đã hướng dẫn các bạn lazyload các script, ở bài này mình sẽ hướng dẫn cách lazyload Youtube và responsive video.
 
-![Lazyload Youtube và Respsonsive Video]({{ site.url }}/static/media/lazyload-youtube-va-responsive-video.jpg)
+{% include image.html src="lazyload-youtube-va-responsive-video.jpg" alt="Lazyload Youtube và Respsonsive Video" %}
 
 ## Làm thế nào để nhúng video Youtube vào Website
 
@@ -21,7 +21,7 @@ Cách nhanh nhất và đơn giản nhất để chèn Video Youtube vào trang 
 - Nhấp vào nút Nhúng trong cửa sổ bật lên.
 - Sao chép và dán mã vào tài liệu của bạn.
 
-![Làm thế nào để nhúng video Youtube vào Website]({{ site.url }}/static/media/lam-the-nao-de-nhung-video-youtube-vao-website.jpg)
+{% include image.html src="lam-the-nao-de-nhung-video-youtube-vao-website.jpg" alt="Làm thế nào để nhúng video Youtube vào Website" %}
 
 ### Vấn đề xảy ra khi nhúng video từ Youtube vào Website
 
@@ -34,7 +34,7 @@ Cách nhanh nhất và đơn giản nhất để chèn Video Youtube vào trang 
 
 Ở bài viết trước mình đã có một bài viết về Lazyload Image Và Iframe bạn xem lại bài viết đó để sử dụng nó nhé.
 
-[Thêm class lazyload cho image và iframe](https://tuanducdesign.com/2021/01/lazyload-image-va-iframe.html)
+[Thêm class lazyload cho image và iframe]({{ site.url }}/2021/01/lazyload-image-va-iframe.html)
 
 ## Làm thế nào để Responsive video từ Youtube
 
@@ -222,8 +222,8 @@ Tổng hợp lại thì ta có như sau:
 
 Dựa vào các kiến thức vốn có từ các bài trước, bạn có thể tối ưu thêm khi chèn video Youtube vào website.
 
-- [Bộ Ba Thư Viện Thần Thánh Giúp Website Tối Ưu](https://tuanducdesign.com/2021/02/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.html)
-- [Tăng Tốc Website Từ Preload](https://tuanducdesign.com/2021/01/tang-toc-website-tu-preload.html)
+- [Bộ Ba Thư Viện Thần Thánh Giúp Website Tối Ưu]({{ site.url }}/2021/02/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.html)
+- [Tăng Tốc Website Từ Preload]({{ site.url }}/2021/01/tang-toc-website-tu-preload.html)
 
 Demo : [https://about.tuanducdesign.com/#baihat](https://about.tuanducdesign.com/#baihat)
 

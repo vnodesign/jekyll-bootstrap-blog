@@ -10,7 +10,7 @@ description: "Ngày nay khi tối ưu website thì người ta quan trọng nh�
 
 Ngày nay khi tối ưu website thì người ta quan trọng nhất là tốc độ và trải nghiệm của người dùng. Bạn có thể áp dụng nội dung trong bài viết này với các đoạn script của bài trước để tối ưu thêm.
 
-![Tăng Tốc Website Từ Preload]({{ site.url }}/static/media/speed-website-from-preload.jpg)
+{% include image.html src="speed-website-from-preload.jpg" alt="Tăng Tốc Website Từ Preload" %}
 
 Để hiểu rõ hơn về cả thẻ link các bạn tìm hiểu tại trang sau: [https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content)
 

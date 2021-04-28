@@ -6,30 +6,30 @@ author: tuanducdesign
 categories: [ Series ]
 tags: [Parental Control, Restrict, Websites, Games, Apps, NextDNS]
 image: static/media/cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.png
-description: "Thêm một chức năng nữa mà mình muốn nhắc đến đối với các bậc làm, làm mẹ đó chính là chức năng kiểm soát của cha mẹ. Chức năng này sẽ giúp bạn quản lý con cái dễ dàng hơn."
+description: "Cấu hình chức năng kiểm soát của cha mẹ trên NextDNS. Bảo vệ con cái của bạn dễ dàng hơn với các cấu hình từ cơ bản tới nâng cao."
 ---
 
 Thêm một chức năng nữa mà mình muốn nhắc đến đối với các bậc làm, làm mẹ đó chính là chức năng kiểm soát của cha mẹ. Chức năng này sẽ giúp bạn quản lý con cái dễ dàng hơn.
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS](https://tuanducdesign.com/series-nextdns.html)
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS]({{ site.url }}/series-nextdns.html)
 
-![Cấu hình chức năng kiểm soát của cha mẹ trên NextDNS]({{ site.url }}/static/media/cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.png)
+{% include image.html src="cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.png" alt="Cấu hình chức năng kiểm soát của cha mẹ trên NextDNS" %}
 
 ## Các chức năng kiểm soát của cha mẹ trên NextDNS
 
 ### Websites, Apps & Games
 
-![Websites, Apps & Games]({{ site.url }}/static/media/websites-apps-games.png)
+{% include image.html src="websites-apps-games.png" alt="Websites, Apps & Games" %}
 
 Hạn chế quyền truy cập vào các trang web, ứng dụng và trò chơi cụ thể.
 
 ### Categories
 
-![Categories]({{ site.url }}/static/media/categories.png)
+{% include image.html src="categories.png" alt="Categories" %}
 
 Hạn chế quyền truy cập vào các danh mục trang web và ứng dụng cụ thể.
 
-Chức năng này giống với chức năng **[Block Child Sexual Abuse Material](https://tuanducdesign.com/series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.html#block-child-sexual-abuse-material)** nhưng nó nhiều tuỳ chọn hơn như:
+Chức năng này giống với chức năng **[Block Child Sexual Abuse Material]({{ site.url }}/series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.html#block-child-sexual-abuse-material)** nhưng nó nhiều tuỳ chọn hơn như:
 
 - Gambling (Chặn nội dung cờ bạc)
 - Dating (Chặn tất cả các trang web và ứng dụng hẹn hò)
@@ -38,7 +38,7 @@ Chức năng này giống với chức năng **[Block Child Sexual Abuse Materia
 
 ### Recreation Time
 
-![Recreation Time]({{ site.url }}/static/media/recreation-time.png)
+{% include image.html src="recreation-time.png" alt="Recreation Time" %}
 
 Cái này rất hay mà mình mới tìm hiểu được đó là, đặt khoảng thời gian cho mỗi ngày trong tuần mà trong đó một số trang web, ứng dụng, trò chơi hoặc danh mục ở trên sẽ không bị chặn.
 
@@ -46,21 +46,21 @@ Ví dụ: cho phép ứng dụng Facebook vào Thứ Hai và Thứ Ba trong kho�
 
 ### SafeSearch
 
-![SafeSearch]({{ site.url }}/static/media/safesearch.png)
+{% include image.html src="safesearch.png" alt="SafeSearch" %}
 
 Lọc kết quả khiêu dâm trên tất cả các công cụ tìm kiếm chính, bao gồm cả hình ảnh và video. Điều này cũng sẽ chặn quyền truy cập vào các công cụ tìm kiếm không hỗ trợ tính năng này.
 
-Chức năng này giống với chức năng **[Block Child Sexual Abuse Material](https://tuanducdesign.com/series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.html#block-child-sexual-abuse-material)**
+Chức năng này giống với chức năng **[Block Child Sexual Abuse Material]({{ site.url }}/series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.html#block-child-sexual-abuse-material)**
 
 ### YouTube Restricted Mode
 
-![YouTube Restricted Mode]({{ site.url }}/static/media/youtube-restricted-mode.png)
+{% include image.html src="youtube-restricted-mode.png" alt="YouTube Restricted Mode" %}
 
 Lọc ra các video dành cho người trưởng thành trên YouTube và chặn các video dành cho người lớn được nhúng không cho người lớn xem trên các trang web khác. Điều này cũng sẽ ẩn tất cả các bình luận.
 
 ### Block Bypass Methods
 
-![Block Bypass Methods]({{ site.url }}/static/media/block-bypass-methods.png)
+{% include image.html src="block-bypass-methods.png" alt="Block Bypass Methods" %}
 
 ## Chức năng của Websites, Apps & Games
 

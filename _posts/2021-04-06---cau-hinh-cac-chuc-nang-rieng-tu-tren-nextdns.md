@@ -6,14 +6,14 @@ author: tuanducdesign
 categories: [ Series ]
 tags: [Blocklists, Adblock, NextDNS]
 image: static/media/cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns.png
-description: "Ở bài viết trước chúng ta đã biết cách kích hoạt các chức năng bảo mật cần thiết trên NextDNS, trong bài viết này mình sẽ hướng dẫn các bạn cách cấu hình các chức năng riêng tư trên NextDNS."
+description: "Trong bài viết này mình sẽ hướng dẫn các bạn cách cấu hình các chức năng riêng tư trên NextDNS."
 ---
 
 Ở bài viết trước chúng ta đã biết cách kích hoạt các chức năng bảo mật cần thiết trên NextDNS, trong bài viết này mình sẽ hướng dẫn các bạn cách cấu hình các chức năng riêng tư trên NextDNS
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS](https://tuanducdesign.com/series-nextdns.html)
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS]({{ site.url }}/series-nextdns.html)
 
-![Cấu hình các chức năng riêng tư trên NextDNS]({{ site.url }}/static/media/cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns.png)
+{% include image.html src="cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns.png" alt="Cấu hình các chức năng riêng tư trên NextDNS" %}
 
 ## Các chức năng riêng tư trên NextDNS
 
@@ -21,7 +21,7 @@ Các bạn chú ý khi sử dụng **Blocklists**, vì nó sẽ chặn một s�
 
 ### Blocklists
 
-![Blocklists]({{ site.url }}/static/media/blocklists.png)
+{% include image.html src="blocklists.png" alt="Blocklists" %}
 
 Chặn quảng cáo & trình theo dõi bằng cách sử dụng các danh sách chặn phổ biến nhất hiện có - tất cả đều được cập nhật theo thời gian thực. Ở đây mặc định NextDNS đã sử dụng bộ chặn quảng cáo & trình theo dõi rồi.
 
@@ -29,7 +29,7 @@ Chức năng này rất mạnh các bạn lưu ý trước khi sử dụng nhé.
 
 ### Native Tracking Protection
 
-![Native Tracking Protection]({{ site.url }}/static/media/native-tracking-protection.png)
+{% include image.html src="native-tracking-protection.png" alt="Native Tracking Protection" %}
 
 Chặn các trình theo dõi phổ rộng - thường hoạt động ở cấp hệ điều hành - theo dõi hoạt động của bạn trên thiết bị. Điều này có thể bao gồm tất cả các trang web bạn truy cập, mọi thứ bạn nhập hoặc vị trí của bạn mọi lúc.
 
@@ -37,13 +37,13 @@ Chức năng này còn ở trong phiên bản BETA nên còn thiếu một số 
 
 ### Block Disguised Third-Party Trackers
 
-![Block Disguised Third-Party Trackers]({{ site.url }}/static/media/block-disguised-third-party-trackers.png)
+{% include image.html src="block-disguised-third-party-trackers.png" alt="Block Disguised Third-Party Trackers" %}
 
 Tự động phát hiện và chặn các trình theo dõi của bên thứ ba giả dạng thành bên thứ nhất để phá vỡ các biện pháp bảo vệ quyền riêng tư của trình duyệt gần đây như ITP.
 
 ### Allow Affiliate & Tracking Links
 
-![Allow Affiliate & Tracking Links]({{ site.url }}/static/media/allow-affiliate-tracking-links.png)
+{% include image.html src="allow-affiliate-tracking-links.png" alt="Allow Affiliate & Tracking Links" %}
 
 Cho phép tên miền liên kết & theo dõi phổ biến trên các trang web giao dịch, trong email hoặc trong kết quả tìm kiếm. Những người đó thường chỉ được gọi sau khi nhấp vào một liên kết theo cách thủ công.
 
@@ -51,11 +51,11 @@ Chức năng này mình chưa sử dụng nên chưa bên công dụng của nó
 
 ## Cấu hình danh sách chặn
 
-![Add a blocklist]({{ site.url }}/static/media/add-a-blocklist.png)
+{% include image.html src="add-a-blocklist.png" alt="Add a blocklist" %}
 
 Ở đây NextDNS đã chọn sẵn trình chặn quảng cáo của mình rồi, nếu bạn thấy như vậy vẫn chưa đủ thì có thể cấu hình thêm.
 
-Trong đây mình sẽ liệt kê ra một số danh sách cần thiết như :
+Trong đây mình sẽ liệt kê ra một số danh sách cần thiết như:
 
 - NextDNS Ads & Trackers Blocklist - Danh sách chặn toàn diện để chặn quảng cáo và trình theo dõi ở tất cả các quốc gia. Đây là danh sách chặn bắt đầu được đề xuất. Cái này mặc định của NextDNS nên mình sẽ không thay đổi.
 - Disconnect (Ads) - Giải phóng bản thân khỏi sự theo dõi không mong muốn. Tận hưởng Internet nhanh hơn, an toàn hơn.

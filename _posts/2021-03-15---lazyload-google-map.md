@@ -10,7 +10,7 @@ description: "Google Map có thể nói là cái quan trọng nhất với mọi
 
 Google Map có thể nói là cái quan trọng nhất với mọi người, không chỉ tìm kiếm vị trí, mà nó còn là cái giúp mọi người tìm kiếm đến doanh nghiệp của bạn.
 
-![Lazyload Google Map]({{ site.url }}/static/media/google-maps-logo.png)
+{% include image.html src="google-maps-logo.png" alt="Lazyload Google Map" %}
 
 ## Làm thế nào để lazyload Google Map?
 

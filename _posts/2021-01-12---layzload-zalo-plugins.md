@@ -10,19 +10,21 @@ description: "Trong bài viết tiếp theo của ngày hôm nay mình sẽ hư�
 
 Trong bài viết tiếp theo của ngày hôm nay mình sẽ hướng dẫn các bạn cách Lazyload script của Zalo để tải trang nhanh hơn.
 
-![Lazyload Zalo Plugins]({{ site.url }}/static/media/lazyload-zalo-plugins.jpg)
+{% include image.html src="lazyload-zalo-plugins.jpg" alt="Lazyload Zalo Plugins" %}
 
-Đầu tiên các bạn truy cập vào trang : [https://developers.zalo.me/docs/social/share](https://developers.zalo.me/docs/social/share)
+Đầu tiên các bạn truy cập vào trang: [https://developers.zalo.me/docs/social/share](https://developers.zalo.me/docs/social/share)
 
 Tiếp theo các bạn chọn plugins mà mình cần chèn vào website.
 
-![Zalo Plugins Share]({{ site.url }}/static/media/zalo-plugins-share.jpg)
+{% include image.html src="zalo-plugins-share.jpg" alt="Zalo Plugins Share" %}
 
 Sau đó chọn loại bố cục và màu sắc mà bạn cần dùng sau đó lấy mã.
 
-![Zalo Layout Share]({{ site.url }}/static/media/zalo-layout-share.jpg)
+{% include image.html src="zalo-layout-share.jpg" alt="Zalo Layout Share" %}
 
 ![Zalo Color Share]({{ site.url }}/static/media/zalo-color-share.jpg)
+
+{% include image.html src="zalo-color-share.jpg" alt="Zalo Color Share" %}
 
 Rồi bây giờ chúng ta cùng xem cấu trúc đoạn code nó như nào nhé!
 

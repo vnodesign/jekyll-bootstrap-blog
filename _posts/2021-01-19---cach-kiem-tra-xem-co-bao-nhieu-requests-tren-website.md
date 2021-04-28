@@ -10,11 +10,11 @@ description: "Về vấn đề dùng nhiều scripts bên ba thì bạn sẽ kh�
 
 Về vấn đề dùng nhiều scripts bên ba thì bạn sẽ không tránh khỏi được có nhiều requests được tải cùng website, Bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách kiểm tra xem có bao nhiêu requests trên Website.
 
-![Cách Kiểm Tra Xem Có Bao Nhiêu Requests Trên Website]({{ site.url }}/static/media/cach-kiem-tra-xem-co-bao-nhieu-requests-tren-website.jpg)
+{% include image.html src="cach-kiem-tra-xem-co-bao-nhieu-requests-tren-website.jpg" alt="Cách Kiểm Tra Xem Có Bao Nhiêu Requests Trên Website" %}
 
 ## Requests là gì
 
-Request có thể hiểu nhanh là thông tin gửi từ client lên server. Khi bạn lên trình duyệt browser gõ một địa chỉ nào đó, ví dụ bạn gõ là [https://tuanducdesign.com/](https://tuanducdesign.com/) thì ngay lập tức trình duyệt sẽ dựa vào tên domain để gửi yêu cầu truy cập đến địa chỉ IP mà domain này đang trỏ tới, lúc này phía server sẽ phân tích yêu cầu và sẽ gửi luồng xử lý tới vị trí vị trí lưu trữ của mã nguồn và nhiệm vụ của các mã nguồn là tiếp nhận yêu cầu, phân tích request đó và trả kết quả lại cho client.
+Request có thể hiểu nhanh là thông tin gửi từ client lên server. Khi bạn lên trình duyệt browser gõ một địa chỉ nào đó, ví dụ bạn gõ là [{{ site.url }}/]({{ site.url }}/) thì ngay lập tức trình duyệt sẽ dựa vào tên domain để gửi yêu cầu truy cập đến địa chỉ IP mà domain này đang trỏ tới, lúc này phía server sẽ phân tích yêu cầu và sẽ gửi luồng xử lý tới vị trí vị trí lưu trữ của mã nguồn và nhiệm vụ của các mã nguồn là tiếp nhận yêu cầu, phân tích request đó và trả kết quả lại cho client.
 
 ## Cách kiểm tra xem có bao nhiêu requests đang hoạt động
 
@@ -34,7 +34,7 @@ Finish: 7.63 s
 DOMContentLoaded: 1.12 s
 ```
 
-![Số Requests Trên Website]({{ site.url }}/static/media/so-requests-tren-website.jpg)
+{% include image.html src="so-requests-tren-website.jpg" alt="Số requests trên website" %}
 
 ## Tìm kiếm và tối ưu các requests
 
@@ -42,11 +42,11 @@ Bên trên có khung Fillter bạn gõ vào đó tên domain hoặc đuôi mở 
 
 Ở đây mình sẽ check với Google Fonts để kiểm tra xem Google Fonts load những thành phần nào ra.
 
-![Kiểm Tra Số Requests Từ Google Fonts]({{ site.url }}/static/media/kiem-tra-so-requests-tu-google-fonts.jpg)
+{% include image.html src="so-requests-tren-website.jpg" alt="Kiểm tra số requests từ Google Fonts" %}
 
 Kết quả hiển thị ra như vậy là bạn đã biết là có bao nhiêu requests trên Website rồi nhé.
 
-Bây giờ chúng ta tiến hành áp dụng các kiến thức từ bài [Tăng Tốc Website Từ Preload](https://tuanducdesign.com/2021/01/tang-toc-website-tu-preload.html) để áp dụng vào bài này.
+Bây giờ chúng ta tiến hành áp dụng các kiến thức từ bài [Tăng Tốc Website Từ Preload]({{ site.url }}/2021/01/tang-toc-website-tu-preload.html) để áp dụng vào bài này.
 
 Cú pháp quen thuộc mà mình muốn nhắc đến đó chính là:
 

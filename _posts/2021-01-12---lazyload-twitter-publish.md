@@ -10,9 +10,9 @@ description: "Trong bài viết tiếp theo của ngày hôm nay mình sẽ hư�
 
 Ở bài viết trước thì chúng ta đã tìm hiểu về cách Lazy Load Facebook Customize Chat. Thì ở bài viết tiếp theo mình sẽ hướng dẫn các bạn cách Lazyload Twitter Publish để trang tải nhanh hơn.
 
-![Lazyload Twitter Publish]({{ site.url }}/static/media/lazyload-twitter-publish.jpg)
+{% include image.html src="lazyload-twitter-publish.jpg" alt="Lazyload Twitter Publish" %}
 
-Đầu tiên các bạn truy cập vào trang : [https://publish.twitter.com](https://publish.twitter.com)
+Đầu tiên các bạn truy cập vào trang: [https://publish.twitter.com](https://publish.twitter.com)
 
 Tiếp theo các bạn nhập đường dẫn đến trang profile của mình trên Twitter.
 

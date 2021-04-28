@@ -10,7 +10,7 @@ description: "Ở bài trước mình đã hướng dẫn các bạn tăng tốc
 
 Ở bài trước mình đã hướng dẫn các bạn tăng tốc Website bằng cách sử dụng Staticaly nhưng ở mức độ cơ bản, Bài viết ngày hôm nay mình sẽ hướng dẫn cách tạo và cấu hình Github để sử dụng Staticaly.
 
-![Cách Sử Dụng Github và Staticaly Để Tối Ưu Website]({{ site.url }}/static/media/cach-su-dung-github-va-staticaly-de-toi-uu-website.jpg)
+{% include image.html src="cach-su-dung-github-va-staticaly-de-toi-uu-website.jpg" alt="Cách Sử Dụng Github và Staticaly Để Tối Ưu Website" %}
 
 ## Github là gì
 
@@ -24,21 +24,21 @@ GitHub cung cấp chức năng social networking như feeds, followers và netwo
 
 Sau đó nhập đầy đủ thông tin và bấm vào Create account.
 
-![Tạo tài khoản Github]({{ site.url }}/static/media/tao-tai-khoan-github.jpg)
+{% include image.html src="tao-tai-khoan-github.jpg" alt="Tạo tài khoản Github" %}
 
 Tiếp theo bạn chọn công việc hiện tại của bạn và các thông tin phía dưới rồi bấm vào Complete setup để hoàn tất.
 
-![Hoàn tất thông tin tạo tài khoản Github]({{ site.url }}/static/media/hoan-tat-thong-tin-tao-tai-khoan-github.jpg)
+{% include image.html src="hoan-tat-thong-tin-tao-tai-khoan-github.jpg" alt="Hoàn tất thông tin tạo tài khoản Github" %}
 
 Sau khi đã hoàn tất đầy đủ các thông tin phía trên xong bạn cần vào email để xác minh tài khoản của mình.
 
 Xác minh tài khoản thành công xong bạn tạo một project mới.
 
-![Tạo một project mới trên Github]({{ site.url }}/static/media/tao-project-moi-tren-github.jpg)
+{% include image.html src="tao-project-moi-tren-github.jpg" alt="Tạo một project mới trên Github" %}
 
-Sau đó nhập tên cho repository đó
+Sau đó nhập tên cho repository đó.
 
-![Nhập một tên mới cho repository]({{ site.url }}/static/media/nhap-mot-ten-moi-cho-repository.jpg)
+{% include image.html src="nhap-mot-ten-moi-cho-repository.jpg" alt="Nhập một tên mới cho repository" %}
 
 Với Add .gitignore bạn tắt nó đi và Choose a license bạn để là MIT License nhé! Rồi bấm vào Create repository để hoàn tất quá trình khởi tạo project.
 
@@ -48,29 +48,29 @@ Với Add .gitignore bạn tắt nó đi và Choose a license bạn để là MI
 
 Bạn bấm vào Download for Mac hoặc Windows tùy theo hệ điều hành mà máy bạn đang đùng, sau khi cài đặt xong bạn tiến hành đăng nhập vào tài khoản Github mà lúc nãy chúng ta đã tạo nhé! Ở bước này mình không hướng dẫn nữa vì mình đã đăng nhập sẵn rồi.
 
-Sau khi đăng nhập thành công bạn bấm vào Current Repository rồi bấm vào nút Add, bấm tiếp vào Clone a Repository rồi chọn repository mà bạn đã tạo trên Github
+Sau khi đăng nhập thành công bạn bấm vào Current Repository rồi bấm vào nút Add, bấm tiếp vào Clone a Repository rồi chọn repository mà bạn đã tạo trên Github.
 
-![Clone repository trên Github Desktop]({{ site.url }}/static/media/clone-repository-tren-github-desktop.jpg)
+{% include image.html src="clone-repository-tren-github-desktop.jpg" alt="Clone repository trên Github Desktop" %}
 
 Tới chỗ Local Path bạn chọn khu vực để lưu! Tiếp theo mở thư mục của dự án mà bạn vừa clone về để bắt đầu làm việc nhé.
 
 ## Tạo folder và file để sử dụng Staticaly
 
-Bạn mở thư mục dự án mà bạn vừa clone để bắt đầu tạo folder và file để sử dụng Staticaly
+Bạn mở thư mục dự án mà bạn vừa clone để bắt đầu tạo folder và file để sử dụng Staticaly.
 
-![Clone repository trên Github Desktop]({{ site.url }}/static/media/thu-muc-du-an-vua-clone-ve.jpg)
+{% include image.html src="thu-muc-du-an-vua-clone-ve.jpg" alt="Thư mục dự án vừa clone về" %}
 
 Tại đây bạn tạo một folder bên trong folder đó bạn tạo các folder con khác để tí nữa mình copy file vào.
 
-![Tạo thư mục để lưu trữ file]({{ site.url }}/static/media/tao-thu-muc-de-luu-tru-file.jpg)
+{% include image.html src="tao-thu-muc-de-luu-tru-file.jpg" alt="Tạo thư mục để lưu trữ file" %}
 
 Kế tiếp bạn copy các file của bạn vào từng folder tương ứng mà bạn đã tạo, sau khi tạo xong bạn quay lại ứng dụng Github Desktop để tiến hành deploy lên Github.
 
-![Deploy dự án sau khi hoàn tất]({{ site.url }}/static/media/deploy-du-an-sau-khi-hoan-tat.jpg)
+{% include image.html src="deploy-du-an-sau-khi-hoan-tat.jpg" alt="Deploy dự án sau khi hoàn tất" %}
 
 Nếu không có gì thay đổi thì bạn bấm vào Commit to main rồi ấn Push origin để hoàn tất, bây giờ chúng ta truy cập vào profile trên Github để lấy đường dẫn của file vừa deploy.
 
-Đối với file ảnh thì bạn bấm chuột phải sau đó bấm vào Open Image In New Tab rồi copy lại URL đó
+Đối với file ảnh thì bạn bấm chuột phải sau đó bấm vào Open Image In New Tab rồi copy lại URL đó.
 
 URL tương tự như sau:
 
@@ -78,45 +78,45 @@ URL tương tự như sau:
 https://raw.githubusercontent.com/tuanducdesign/cdn.tuanducdesign.com/main/assets/images/tuanducdesign.jpg
 ```
 
-Đối với các file như fonts,css và js bạn bấm vào RAW sau đó copy lại URL đó
+Đối với các file như fonts,css và js bạn bấm vào RAW sau đó copy lại URL đó.
 
-Tiếp theo bạn truy cập vào trang [https://tools.hung1001.com/tools/staticaly.html](https://tools.hung1001.com/tools/staticaly.html) rồi dán URL vừa copy vào khung đầu tiên
+Tiếp theo bạn truy cập vào trang [https://tools.hung1001.com/tools/staticaly.html](https://tools.hung1001.com/tools/staticaly.html) rồi dán URL vừa copy vào khung đầu tiên.
 
 Bạn cần lưu ý các bước sau khi sử dụng công cụ này.
 
-![Các bước cần lưu ý khi sử dụng công cụ]({{ site.url }}/static/media/cac-buoc-can-luu-y-khi-su-dung-cong-cu-nay.jpg)
+{% include image.html src="cac-buoc-can-luu-y-khi-su-dung-cong-cu-nay.jpg" alt="Các bước cần lưu ý khi sử dụng công cụ này" %}
 
-Bạn đến ý hai khung bên trái và hai khung bên phải
+Bạn đến ý hai khung bên trái và hai khung bên phải.
 
-Với phần sử dụng URL sản phẩm :
+Với phần sử dụng URL sản phẩm:
 
 - Phần khung đầu tiên bên trái là sử dụng kèm theo commit tức sử dụng theo lần commit gần đây, với khung thứ hai là sử dụng không kèm theo commit nghĩa là bạn sử dụng trực tiếp luôn URL sản phẩm đó.
 
-Với phần sử dụng URL nhà phát triển :
+Với phần sử dụng URL nhà phát triển:
 
 - Phần khung tiếp theo bên phải là sử dụng kèm theo commit và định dạng ?env=dev tức sử dụng theo lần commit gần đây, với khung thứ hai cũng tương tự như ở khung bên trái nhưng ở đây bạn sẽ sử dụng thêm định dạng ?env=dev ở phía sau URL như ảnh trên.
 
 Bạn nên sử dụng URL không có commit ở phía trái để an toàn hơn, sau khi đã có được thông tin về URL xong bạn copy URL của mục cần lấy và dán lại vào mục đó.
 
-Với CSS :
+Với CSS:
 
 ```html
 <link rel="stylesheet" href="https://cdn.staticaly.com/gh/tuanducdesign/cdn.tuanducdesign.com/main/assets/css/animate.css">
 ```
 
-Với JS :
+Với JS:
 
 ```html
 <script type="text/javascript" src="https://cdn.staticaly.com/gh/tuanducdesign/cdn.tuanducdesign.com/main/assets/js/jquery.min.js"></script>
 ```
 
-Với IMG :
+Với IMG:
 
 ```html
 <img src="https://cdn.staticaly.com/gh/tuanducdesign/cdn.tuanducdesign.com/main/assets/images/tuanducdesign.jpg">
 ```
 
-Với Fonts bạn chèn vào file css tương ứng của Fonts đó :
+Với Fonts bạn chèn vào file css tương ứng của Fonts đó:
 
 ```css
 @font-face {

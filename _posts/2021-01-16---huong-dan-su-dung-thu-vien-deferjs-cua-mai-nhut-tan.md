@@ -13,7 +13,7 @@ rating: 5
 
 Tình cờ mình tìm được một thư viện khá hay của bác Mai Nhựt Tân trên GitHub. Trong bài viết ngày hôm nay mình sẽ hướng dẫn các bạn sử dụng thư viện này trên Website của bạn.
 
-![Hướng Dẫn Sử Dụng Thư Viện DeferJS của Mai Nhựt Tân]({{ site.url }}/static/media/user-guide-for-deferjs-library-by-mai-nhut-tan.jpg)
+{% include image.html src="user-guide-for-deferjs-library-by-mai-nhut-tan.jpg" alt="Hướng Dẫn Sử Dụng Thư Viện DeferJS của Mai Nhựt Tân" %}
 
 Trang chủ thư viện DeferJS trên kho GitHub của Mai Nhựt Tân: [https://github.com/shinsenter/defer.js](https://github.com/shinsenter/defer.js)
 
@@ -73,7 +73,7 @@ Sau khi chuyển:
 
 Bạn có thể sử dụng Công cụ dành cho nhà phát triển của trình duyệt (nhấn phím F12) để xem các yêu cầu được gửi như thế nào.
 
-Bạn có thể xem demo có sẵn của thư viện này tại đây : [phiên bản demo trên WordPress](https://appseeds.net/defer.js/wp/optimized)
+Bạn có thể xem demo có sẵn của thư viện này tại đây: [phiên bản demo trên WordPress](https://appseeds.net/defer.js/wp/optimized)
 
 Rồi từ từ cuộn xuống để xem hình ảnh được tải như thế nào.
 
@@ -83,8 +83,8 @@ Trình duyệt của bạn đã tải nó sau 3 giây kể từ khi trang của 
 <script type="text/javascript">
 window.fbAsyncInit = function() {
           FB.init({
-            xfbml            : true,
-            version          : 'v9.0'
+            xfbml      : true,
+            version    : 'v9.0'
           });
         };
         if (/^http/.test(window.location.protocol)) {

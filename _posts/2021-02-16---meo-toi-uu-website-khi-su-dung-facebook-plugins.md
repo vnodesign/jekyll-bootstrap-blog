@@ -10,7 +10,7 @@ description: "Ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạ
 
 Ở các bài viết trước mình đã hướng dẫn các bạn cách lazyload các scripts bên ba, ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Facebook plugins.
 
-![Mẹo Tối Ưu Website Khi Sử Dụng Facebook Plugins]({{ site.url }}/static/media/meo-toi-uu-website-khi-su-dung-facebook-plugins.jpg)
+{% include image.html src="meo-toi-uu-website-khi-su-dung-facebook-plugins.jpg" alt="Mẹo Tối Ưu Website Khi Sử Dụng Facebook Plugins" %}
 
 ## Truy cập vào đường dẫn tới file JS của Facebook
 

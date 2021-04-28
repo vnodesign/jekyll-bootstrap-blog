@@ -13,7 +13,7 @@ rating: 5
 
 In this article I would like to share with you the list of CSS Frameworks that support Website design.
 
-![List of awesome CSS frameworks]({{ site.url }}/static/media/css-frameworks.jpg)
+{% include image.html src="css-frameworks.jpg" alt="List of awesome CSS frameworks" %}
 
 ## Base / Reset / Normalize
 

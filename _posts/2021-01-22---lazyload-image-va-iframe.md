@@ -10,7 +10,7 @@ description: "Ở các bài trước mình đã hướng dẫn các bạn lazylo
 
 Ở các bài trước mình đã hướng dẫn các bạn lazyload các script, ở bài này mình sẽ hướng dẫn cách lazyload image và iframe.
 
-![Lazyload Image Và Iframe]({{ site.url }}/static/media/lazyload-image-va-iframe.jpg)
+{% include image.html src="lazyload-image-va-iframe.jpg" alt="Lazyload Image Và Iframe" %}
 
 ## Sử dụng Jquery
 
