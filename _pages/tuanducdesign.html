@@ -15,12 +15,12 @@ permalink: "/author/tuanducdesign"
                 {% else %}
                 <img class="rounded-circle" src="{{ site.authors.tuanducdesign.photo }}" alt="{{ site.authors.tuanducdesign.name }}" width="100" height="100" /> 
                 {% endif %}
-                <h2 class="font-weight-bold">{{page.title}} <span class="small"><a class="btn follow" href="https://www.facebook.com/{{ site.authors.tuanducdesign.facebook }}" title="Follow" target="_blank" rel="nofollow noopener">Follow</a></span></h2>
-                <p><a href="{{ site.authors.tuanducdesign.web }}">{{ site.authors.tuanducdesign.web }}</a></p>
+                <h2 class="font-weight-bold">{{ site.authors.tuanducdesign.name }} <span class="small"><a class="btn follow" href="https://www.facebook.com/{{ site.authors.tuanducdesign.facebook }}" title="Follow" target="_blank" rel="nofollow noopener">Follow</a></span></h2>
+                <p><a href="{{ site.authors.tuanducdesign.web }}" title="{{ site.authors.tuanducdesign.web }}">{{ site.authors.tuanducdesign.web }}</a></p>
                 <p class="excerpt">{{ site.authors.tuanducdesign.description }}</p>
             </div>
         </div>
-        <h4 class="font-weight-bold spanborder"><span>Posts by {{page.title}}</span></h4>
+        <h4 class="font-weight-bold spanborder"><span>Posts by {{ site.authors.tuanducdesign.name }}</span></h4>
             {% assign posts = site.posts | where:"author","tuanducdesign" %}
             {% for post in posts %}
             {% include main-loop-card.html %}
