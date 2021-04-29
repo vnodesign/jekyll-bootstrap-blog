@@ -55,7 +55,6 @@ post_class: post-template
                     </div>
                 <!-- End Toc -->
                 {{content}}
-            </div>
             <!-- Rating -->
             {% if page.rating %}
             <div class="rating mb-4 d-flex align-items-center">
@@ -102,23 +101,23 @@ post_class: post-template
             {% endif %}
             <div class="clearfix"></div>
             </div>
-            <!-- End Categories -->
+            <!-- Begin Comments -->
+            {% if page.comments != false %}
+                <div class="container">
+                    <div id="comments" class="row justify-content-center mb-5">
+                        <div class="col-md-12">
+                            {% include disqus.html %}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+            <!--End Comments -->
+            </div>
         </div>
         <!-- End Post -->
     </div>
 </article>
 <!-- End Article -->
-<!-- Begin Comments -->
-{% if page.comments != false %}
-    <div class="container">
-        <div id="comments" class="row justify-content-center mb-5">
-            <div class="col-md-12">
-                {% include disqus.html %}
-            </div>
-        </div>
-    </div>
-{% endif %}
-<!--End Comments -->
 <!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: https://search.google.com/structured-data/testing-tool/u/0/ -->
 {% if page.rating %}
 <script type="application/ld+json">
