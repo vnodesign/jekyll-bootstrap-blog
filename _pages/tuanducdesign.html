@@ -1,25 +1,23 @@
 ---
 title: "Author: Tuan Duc Design"
 layout: default
-permalink: "/author-tuan-duc-design"
+permalink: "tuanducdesign"
 ---
 
 <div class="container">
 <div class="row justify-content-center">
     <div class="col-md-8">        
         <div class="row align-items-center mb-5">
-            <div class="col-md-9">
+            <div class="col-md-12 text-center">
+                <link rel="preload" href="{{ site.authors.tuanducdesign.photo }}" as="image" />
+                {% if site.lazyimages == "enabled" %}
+                <img class="rounded-circle fade" data-src="{{ site.authors.tuanducdesign.photo }}" alt="{{ site.authors.tuanducdesign.name }}" loading="lazy" decoding="async" width="100" height="100" />
+                {% else %}
+                <img class="rounded-circle" src="{{ site.authors.tuanducdesign.photo }}" alt="{{ site.authors.tuanducdesign.name }}" width="100" height="100" /> 
+                {% endif %}
                 <h2 class="font-weight-bold">{{page.title}} <span class="small"><a class="btn follow" href="https://www.facebook.com/{{ site.authors.tuanducdesign.facebook }}" title="Follow" target="_blank" rel="nofollow">Follow</a></span></h2>
                 <p><a href="{{ site.authors.tuanducdesign.web }}">{{ site.authors.tuanducdesign.web }}</a></p>
                 <p class="excerpt">{{ site.authors.tuanducdesign.description }}</p>
-            </div>
-            <div class="col-md-3 text-right">
-                <link rel="preload" href="{{ site.authors.tuanducdesign.photo }}" as="image" />
-                {% if site.lazyimages == "enabled" %}
-                <img class="w-100 h-100 rounded-circle fade" data-src="{{ site.authors.tuanducdesign.photo }}" alt="{{ site.authors.tuanducdesign.name }}" loading="lazy" decoding="async" />
-            {% else %}
-                <img class="w-100 h-100 rounded-circle" src="{{ site.authors.tuanducdesign.photo }}" alt="{{ site.authors.tuanducdesign.name }}" /> 
-            {% endif %}
             </div>
         </div>
         <h4 class="font-weight-bold spanborder"><span>Posts by {{page.title}}</span></h4>
