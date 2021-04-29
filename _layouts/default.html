@@ -17,20 +17,14 @@
 {% if site.fanpage-chat %}
 <link rel="preload" href="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" as="script" />
 {% endif %}
-{% if jekyll.environment == 'production' %}
+{% if site.google_analytics %}
 <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}" as="script" />
 {% endif %}
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" as="script" />
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js" as="script" />
-{% if page.layout == 'post' %}
-<link rel="preload" href="//{{site.disqus}}.disqus.com/count.js" as="script" />
-{% endif %}
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" as="script" />
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js" as="script" />
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js" as="script" />
-<link rel="preload" href="{{ site.url }}/assets/scss/root.css" as="style" />
-<link rel="preload" href="{{ site.url }}/assets/scss/custom.css" as="style" />
-<link rel="preload" href="{{ site.url }}/assets/scss/bootstrap-icons.css" as="style" />
 <link rel="preload" href="{{ site.url }}/assets/fonts/bootstrap-icons.woff2" type="font/woff2" as="font" crossorigin />
 <link rel="preload" href="{{ site.url }}/{{ site.logo }}" as="image" />
 <!-- Prefetch Domain -->
@@ -45,7 +39,7 @@
 <link rel="dns-prefetch" href="//static.xx.fbcdn.net" />
 <link rel="dns-prefetch" href="//staticxx.facebook.com" />
 {% endif %}
-{% if jekyll.environment == 'production' %}
+{% if site.google_analytics %}
 <link rel="dns-prefetch" href="//www.googletagmanager.com" />
 {% endif %}
 <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
@@ -65,7 +59,7 @@
 <link rel="preconnect" href="https://static.xx.fbcdn.net" />
 <link rel="preconnect" href="https://staticxx.facebook.com" />
 {% endif %}
-{% if jekyll.environment == 'production' %}
+{% if site.google_analytics %}
 <link rel="preconnect" href="https://www.googletagmanager.com" />
 {% endif %}
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -76,10 +70,10 @@
 {% endif %}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
+{% capture root %}{% include root.css %}{% endcapture %}
 {% capture main %}{% include main.css %}{% endcapture %}
-<link rel="stylesheet" href="{{ site.url }}/assets/scss/root.css" />
-<link rel="stylesheet" href="{{ site.url }}/assets/scss/bootstrap-icons.css" />
-<link rel="stylesheet" href="{{ site.url }}/assets/scss/custom.css" />
+<style>@font-face{font-family:"bootstrap-icons";src:url("{{ site.url }}/assets/fonts/bootstrap-icons.woff2") format("woff2"),url("{{ site.url }}/assets/fonts/bootstrap-icons.woff") format("woff");}</style>
+<style>{{ root | scssify }}</style>
 <style>{{ main | scssify }}</style>
 <!-- Scripts required -->
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
@@ -87,6 +81,37 @@
 {% if site.lazyimages == "enabled" %}
 <script>Defer.dom('img.fade', 200, 'loaded');</script>
 <style>img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}</style>
+{% endif %}
+<script>
+{% if site.fanpage-chat %}Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};});{% endif %}
+{% if site.google_analytics %}
+Defer.js('https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}','gtag-js',100,function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{site.google_analytics}}');});
+{% endif %}
+</script>
+{% if page.layout == 'post' %}
+{% if page.rating %}
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: https://search.google.com/structured-data/testing-tool/u/0/ -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Thing",
+    "name": "{{ page.title }}"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "{{ author.display_name }}"
+  },
+  "datePublished": "{{ page.date | date:"%Y-%m-%d" }}",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "{{ page.rating }}",
+    "bestRating": "5"
+  }
+}
+</script>
+{% endif %}
 {% endif %}
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
@@ -189,28 +214,18 @@
 </div>
 <!-- /.site-content -->
 <!-- Scripts -->
-{% if site.google_analytics %}
-<!-- change your GA id in _config.yml -->
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{site.google_analytics}}');</script>
-<script type="deferjs" src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}" async="1"></script>
-{% endif %}
 {% if site.fanpage-chat %}
 <!-- Messenger Plugin chat -->
 <div id="fb-root"></div>
 <div class="fb-customerchat" attribution="biz_inbox" page_id="{{site.fanpage-chat}}"></div>
-<script>window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};</script>
-<script type="deferjs" src="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" async="1"></script>
 {% endif %}
-<script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" async="1"></script>
 <script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" async="1"></script>
 <script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js" async="1"></script>
 <script type="deferjs" src="{{ site.url }}/assets/js/mediumish.js" async="1"></script>
 <script type="deferjs" src="{{ site.url }}/assets/js/ie10-viewport-bug-workaround.js" async="1"></script> 
-{% if page.layout == 'post' %}
-<script type="deferjs" src="//{{site.disqus}}.disqus.com/count.js" async="1"></script>
-{% endif %}
-<script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js"></script>
-<script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js"></script>
-<script>$(function(){$("article").each(function(){const n=$(this);n.readingTime({readingTimeTarget:n.find(".eta"),success:function(e){console.log(e)},error:function(e){n.find(".eta").remove()}})})});</script>
+<script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" async="1"></script>
+<script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/reading-time/2.0.0/readingTime.min.js" async="1"></script>
+<script type="deferjs">$(function(){$("article").each(function(){const n=$(this);n.readingTime({readingTimeTarget:n.find(".eta"),success:function(e){console.log(e)},error:function(e){n.find(".eta").remove()}})})});</script>
 </body>
 </html>
