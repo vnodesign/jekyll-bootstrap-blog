@@ -86,7 +86,7 @@ post_class: post-template
             </div>
             <!-- End Tags -->
             <!-- Prev/Next -->
-            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            <div class="PageNavigation">
             {% if page.previous.url %}
             <a href="{{ site.url }}{{page.previous.url}}" rel="prev" class="btn prev-post" title="{{page.previous.title}}">
 				<i class="bi bi-arrow-left"></i>
@@ -99,16 +99,11 @@ post_class: post-template
 				<i class="bi bi-arrow-right"></i>
 			</a>
             {% endif %}
-            <div class="clearfix"></div>
             </div>
             <!-- Begin Comments -->
             {% if page.comments != false %}
-                <div class="container">
-                    <div id="comments" class="row justify-content-center mb-5">
-                        <div class="col-md-12">
-                            {% include disqus.html %}
-                        </div>
-                    </div>
+                <div id="comments" class="justify-content-center mb-5">
+                    {% include disqus.html %}
                 </div>
             {% endif %}
             <!--End Comments -->
