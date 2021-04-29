@@ -5,7 +5,7 @@ archive: false
 post_class: post-template
 ---
 <!-- Begin Article -->
-<article class="container text-justify" itemscope itemtype="https://schema.org/Article">
+<article class="container" itemscope itemtype="https://schema.org/Article">
     <div class="row">
         <!-- Post -->
         {% assign author = site.authors[page.author] %}
@@ -16,7 +16,7 @@ post_class: post-template
                 <p>
                 <!-- Post Author -->
                 {% if page.author %}
-                <span class="post-author"><a target="_blank" class="link-dark" href="https://www.facebook.com/{{ author.facebook }}" title="{{ author.display_name }}" rel="nofollow noopener">{{ author.display_name }}</a></span>
+                <span class="post-author"><a class="link-dark" href="{{ site.url }}/author/{{ author.username }}" title="{{ author.display_name }}">{{ author.display_name }}</a></span>
                 {% endif %}
                 <span class="dot"></span>
                 <!-- Post Date -->

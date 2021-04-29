@@ -48,7 +48,7 @@
                 {% endif %}
                 </span>
                 <span class="author-meta">
-                <span class="post-name"><a target="_blank" href="https://www.facebook.com/{{ author.facebook }}" title="{{ author.display_name }}" rel="nofollow noopener">{{ author.display_name }}</a></span><br/>
+                <span class="post-name"><a href="{{ site.url }}/author/{{ author.username }}" title="{{ author.display_name }}">{{ author.display_name }}</a></span><br/>
                 {% endif %}
                 <span class="post-date">{{ post.date | date_to_string }}</span>
                 <span class="dot"></span>
