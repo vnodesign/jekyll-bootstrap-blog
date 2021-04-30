@@ -17,11 +17,9 @@ group :jekyll_plugins do
     gem 'jekyll-sitemap'
     gem 'jekyll-paginate'
     gem 'jekyll-archives'
-    gem 'jekyll-minifier'
     gem 'jekyll-seo-tag'
     gem 'kramdown'
     gem 'rouge'
-    gem 'uglifier'
     gem 'jekyll-compress-images'
     gem 'jekyll-webp'
 end
