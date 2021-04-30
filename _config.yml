@@ -10,7 +10,7 @@ google_analytics: 'UA-175649416-1'
 disqus: 'tuanducdesign'
 fanpage-chat: '121349286117840'
 include: ["_pages"]
-permalink: /:title.html
+permalink: /:year/:month/:title.html
 twitter:
   username: tuanducdesign
   card: summary_large_image
