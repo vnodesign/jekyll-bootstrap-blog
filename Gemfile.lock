@@ -92,6 +92,7 @@ DEPENDENCIES
   jekyll-sitemap
   kramdown
   rouge
+  uglifier
 
 BUNDLED WITH
    2.2.16

@@ -111,5 +111,6 @@ jekyll-minifier:
   simple_boolean_attributes: false  # Default: false
   compress_js_templates: false      # Default: false
   preserve_patterns:                # Default: (empty)
-  uglifier_args:                    # Default: (empty)
+  uglifier_args:
+    harmony: true
   exclude: 'atom.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
