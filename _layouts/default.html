@@ -7,11 +7,12 @@
 <link rel="icon" href="{{ site.url }}/{{ site.favicon }}" />
 {% feed_meta %}
 <title>{%if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }} - {{site.subtitle}}{% endif %}</title>
+{% seo title=false %}
 <meta name="geo.region" content="VN-14" />
 <meta name="geo.placename" content="Hoa Binh City" />
 <meta name="geo.position" content="20.816391;105.33418" />
 <meta name="ICBM" content="20.816391, 105.33418" />
-{% if seo_tag.page_title %}
+<!--{% if seo_tag.page_title %}
 <meta property="og:title" content="{{ seo_tag.page_title }}" />
 {% endif %}
 {% if seo_tag.author.name %}
@@ -74,7 +75,7 @@
 {% endif %}
 <script type="application/ld+json">
 {{ seo_tag.json_ld | jsonify }}
-</script>
+</script>-->
 {% if page.layout == 'post' %}
 {% if page.rating %}
 <!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: https://search.google.com/structured-data/testing-tool/u/0/ -->
