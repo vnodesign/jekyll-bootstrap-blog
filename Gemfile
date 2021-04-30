@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
 # Hello! This is where you manage which Jekyll version is used to run.
@@ -15,11 +13,8 @@ group :jekyll_plugins do
     gem 'jekyll-feed'
     gem 'jekyll-sitemap'
     gem 'jekyll-paginate'
-    gem 'jekyll-archives'
     gem 'jekyll-seo-tag'
+    gem 'jekyll-archives'
     gem 'kramdown'
     gem 'rouge'
-    gem 'jekyll-compress-images'
-    gem 'jekyll-webp'
-    
 end
