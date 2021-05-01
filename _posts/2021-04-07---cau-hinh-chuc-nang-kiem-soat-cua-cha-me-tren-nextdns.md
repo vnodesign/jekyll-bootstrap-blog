@@ -11,7 +11,7 @@ description: "Cấu hình chức năng kiểm soát của cha mẹ trên NextDNS
 
 Thêm một chức năng nữa mà mình muốn nhắc đến đối với các bậc làm, làm mẹ đó chính là chức năng kiểm soát của cha mẹ. Chức năng này sẽ giúp bạn quản lý con cái dễ dàng hơn.
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS]({{ site.url }}/series-nextdns.html)
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: {% include links.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
 
 {% include image.html src="cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.png" alt="Cấu hình chức năng kiểm soát của cha mẹ trên NextDNS" %}
 
@@ -29,7 +29,7 @@ Hạn chế quyền truy cập vào các trang web, ứng dụng và trò chơi 
 
 Hạn chế quyền truy cập vào các danh mục trang web và ứng dụng cụ thể.
 
-Chức năng này giống với chức năng **[Block Child Sexual Abuse Material]({{ site.url }}/series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.html#block-child-sexual-abuse-material)** nhưng nó nhiều tuỳ chọn hơn như:
+Chức năng này giống với chức năng **{% include links.html href="series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.html#block-child-sexual-abuse-material" title="Block Child Sexual Abuse Material" %}** nhưng nó nhiều tuỳ chọn hơn như:
 
 - Gambling (Chặn nội dung cờ bạc)
 - Dating (Chặn tất cả các trang web và ứng dụng hẹn hò)
@@ -50,7 +50,7 @@ Ví dụ: cho phép ứng dụng Facebook vào Thứ Hai và Thứ Ba trong kho�
 
 Lọc kết quả khiêu dâm trên tất cả các công cụ tìm kiếm chính, bao gồm cả hình ảnh và video. Điều này cũng sẽ chặn quyền truy cập vào các công cụ tìm kiếm không hỗ trợ tính năng này.
 
-Chức năng này giống với chức năng **[Block Child Sexual Abuse Material]({{ site.url }}/series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.html#block-child-sexual-abuse-material)**
+Chức năng này giống với chức năng **{% include links.html href="series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.html#block-child-sexual-abuse-material" title="Block Child Sexual Abuse Material" %}**
 
 ### YouTube Restricted Mode
 

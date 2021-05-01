@@ -11,7 +11,7 @@ description: "Trong bài viết kế tiếp này chúng ta cùng tìm hiểu và
 
 Ở bài viết trước mình đã hướng dẫn các bạn cấu hình và sử dụng NextDNS trên Modem, ở bài viết kế tiếp này chúng ta cùng tìm hiểu và kích hoạt các chức năng bảo mật trên NextDNS nhé.
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS]({{ site.url }}/series-nextdns.html)
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: {% include links.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
 
 {% include image.html src="tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.png" alt="Tìm hiểu và kích hoạt các chức năng bảo mật trên NextDNS" %}
 

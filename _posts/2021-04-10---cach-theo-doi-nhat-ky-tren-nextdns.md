@@ -11,7 +11,7 @@ description: "Cách theo dõi nhật ký trên NextDNS để kiểm tra xem tên
 
 Cách theo dõi nhật ký trên NextDNS để kiểm tra xem tên miền nào đang bị chặn, và nguyên nhân nó bị chặn do trình chặn quảng cáo nào.
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS]({{ site.url }}/series-nextdns.html)
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: {% include links.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
 
 ## Cách theo dõi nhật ký trên NextDNS
 

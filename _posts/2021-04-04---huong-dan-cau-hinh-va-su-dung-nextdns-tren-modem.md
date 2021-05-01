@@ -11,7 +11,7 @@ description: "NextDNS là sự lựa chọn hoàn hảo để thay thế DNS Clo
 
 Mình vừa tìm được một dịch vụ DNS khá hay, nên trước khi viết bài này mình cũng đã thử áp dụng và đã thành công. Dịch vụ mà mình muốn nhắc đến ở đây đó là [NextDNS](https://nextdns.io/).
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS]({{ site.url }}/series-nextdns.html)
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: {% include links.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
 
 {% include image.html src="huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg" alt="Hướng dẫn cấu hình và sử dụng NextDNS trên Modem" %}
 

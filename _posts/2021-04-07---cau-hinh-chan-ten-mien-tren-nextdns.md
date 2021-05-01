@@ -6,12 +6,12 @@ author: tuanducdesign
 categories: [ Series ]
 tags: [Denylist, Ads, NextDNS]
 image: static/media/cau-hinh-chuc-nang-chan-ten-mien-tren-nextdns.png
-description: "NextDNS ngày càng trở nên phổ biến hơn đặc biết là hỗ trợ khách hàng chặn và bỏ chặn một tên miền bất kì. Bạn có thể chặn các domain có chứa quảng cáo như Google và MGID."
+description: "NextDNS ngày càng trở nên phổ biến hơn đặc biết là hỗ trợ chặn và bỏ chặn một tên miền bất kì. Bạn có thể chặn các domain có chứa quảng cáo như Google và MGID."
 ---
 
 NextDNS ngày càng trở nên phổ biến hơn đặc biết là hỗ trợ khách hàng chặn và bỏ chặn một tên miền bất kì. Bạn có thể chặn các domain có chứa quảng cáo như Google và MGID.
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS]({{ site.url }}/series-nextdns.html)
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: {% include links.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
 
 ## Cấu hình chặn tên miền
 

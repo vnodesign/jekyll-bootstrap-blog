@@ -11,7 +11,7 @@ description: "Trong bài viết này mình sẽ hướng dẫn các bạn cách 
 
 Ở bài viết trước chúng ta đã biết cách kích hoạt các chức năng bảo mật cần thiết trên NextDNS, trong bài viết này mình sẽ hướng dẫn các bạn cách cấu hình các chức năng riêng tư trên NextDNS
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: [Series hướng dẫn sử dụng NextDNS]({{ site.url }}/series-nextdns.html)
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: {% include links.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
 
 {% include image.html src="cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns.png" alt="Cấu hình các chức năng riêng tư trên NextDNS" %}
 
