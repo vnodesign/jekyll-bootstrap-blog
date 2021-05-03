@@ -100,8 +100,10 @@
 {% if site.google_analytics %}Defer.js('https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}','gtag-js',100,function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{site.google_analytics}}');});{% endif %}
 </script>
 <!-- Cloudflare Web Analytics -->
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "661af687c4704dbebe561e9b4f58b1b0"}"></script>
-<!-- End Cloudflare Web Analytics -->
+<link rel="preload" href="https://static.cloudflareinsights.com/beacon.min.js" as="script" />
+<link rel="dns-prefetch" href="//static.cloudflareinsights.com" />
+<link rel="preconnect" href="https://static.cloudflareinsights.com" />
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "661af687c4704dbebe561e9b4f58b1b0"}'></script><!-- End Cloudflare Web Analytics -->
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}" itemscope="itemscope" itemtype="https://schema.org/WebPage">
@@ -168,12 +170,12 @@
                     {% endif %}
                         <a class="nav-link" href="{{ site.url }}/tags/" title="Tags" itemprop="url"><span itemprop="name">Tags</span></a>
                     </li>
-                    {% if page.url == "/authors-list" %}
+                    {% if page.url == "/author" %}
                     <li class="nav-item active">
                     {% else %}
                     <li class="nav-item">
                     {% endif %}
-                        <a class="nav-link" href="{{ site.url }}/authors-list/" title="Authors list" itemprop="url"><span itemprop="name">Authors list</span></a>
+                        <a class="nav-link" href="{{ site.url }}/author/" title="Author" itemprop="url"><span itemprop="name">Author</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://service.tuanducdesign.com/" title="Service" itemprop="url"><span itemprop="name">Service</span></a>
