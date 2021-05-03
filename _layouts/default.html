@@ -113,7 +113,7 @@
         <!-- Begin Logo -->
         <a class="navbar-brand" href="{{ site.url }}/" title="{{ site.name }}">
         {% if site.lazyimages == "enabled" %}
-        <img class="fade" data-src="{{ site.url }}/{{ site.logo }}" alt="{{ site.name }}" loading="lazy" decoding="async" />
+        <img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.name }}" loading="lazy" decoding="async" />
         {% else %}
         <img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.name }}" />
         {% endif %}
