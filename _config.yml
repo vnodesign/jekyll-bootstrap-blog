@@ -5,8 +5,8 @@ subtitle: "Specialist site to share knowledge of VPS and Website"
 description: "Specialist page sharing knowledge related to VPS development and Website optimization."
 logo: 'static/tuanducdesign.jpg'
 favicon: 'static/tuanducdesign.jpg'
-baseurl: ""
-url: "https://tuanducdesign.com"
+#baseurl: ""
+#url: "https://tuanducdesign.com"
 google_analytics: 'UA-175649416-1'
 disqus: 'tuanducdesign'
 fanpage-chat: '121349286117840'
@@ -120,7 +120,7 @@ webp:
 
   # Local path to the WebP utilities to use (relative or absolute)
   # Omit or leave as nil to use the utilities shipped with the gem, override only to use your local install
-  webp_path: nil
+  webp_path: /static/media
 
   # List of files or directories to exclude
   # e.g. custom or hand generated webp conversion files
