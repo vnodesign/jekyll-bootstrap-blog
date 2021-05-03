@@ -90,8 +90,6 @@ exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
 
 keep_files: [static]
 
-include: ['.htaccess']
-
 ############################################################
 # Site configuration for the WebP Generator Plugin
 # The values here represent the defaults if nothing is set
