@@ -5,7 +5,8 @@ subtitle: "Specialist site to share knowledge of VPS and Website"
 description: "Specialist page sharing knowledge related to VPS development and Website optimization."
 logo: 'static/tuanducdesign.jpg'
 favicon: 'static/tuanducdesign.jpg'
-baseurl:
+baseurl: ""
+url: "https://tuanducdesign.com"
 google_analytics: 'UA-175649416-1'
 disqus: 'tuanducdesign'
 fanpage-chat: '121349286117840'
@@ -129,3 +130,8 @@ webp:
   # Default transforms `image.png` to `image.webp`, while changing to true transforms `image.png` to `image.png.webp`
   append_ext: false
 ############################################################
+
+collections:
+  - pages
+  - posts
+  - series
