@@ -16,7 +16,7 @@ description: "Ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạ
 
 Đầu tiên thì chúng ta truy cập vào đường dẫn tới file JS của Zalo nhé.
 
-[https://sp.zalo.me/plugins/sdk.js](https://sp.zalo.me/plugins/sdk.js)
+{% include external-link.html href="https://sp.zalo.me/plugins/sdk.js" title="https://sp.zalo.me/plugins/sdk.js" %}
 
 Tiếp theo bạn tìm các từ khoá liên quan đến đường dẫn file css và js nhé. Tương tự như ví dụ dưới đây:
 

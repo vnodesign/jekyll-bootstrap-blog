@@ -34,7 +34,7 @@ Cách nhanh nhất và đơn giản nhất để chèn Video Youtube vào trang 
 
 Ở bài viết trước mình đã có một bài viết về Lazyload Image Và Iframe bạn xem lại bài viết đó để sử dụng nó nhé.
 
-[Thêm class lazyload cho image và iframe]({{ site.url }}/2021/01/lazyload-image-va-iframe.html)
+{% include internal-link.html href="2021/01/lazyload-image-va-iframe.html" title="Thêm class lazyload cho image và iframe" %}
 
 ## Làm thế nào để Responsive video từ Youtube
 
@@ -222,10 +222,10 @@ Tổng hợp lại thì ta có như sau:
 
 Dựa vào các kiến thức vốn có từ các bài trước, bạn có thể tối ưu thêm khi chèn video Youtube vào website.
 
-- [Bộ Ba Thư Viện Thần Thánh Giúp Website Tối Ưu]({{ site.url }}/2021/02/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.html)
-- [Tăng Tốc Website Từ Preload]({{ site.url }}/2021/01/tang-toc-website-tu-preload.html)
+- {% include internal-link.html href="2021/02/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.html" title="Bộ Ba Thư Viện Thần Thánh Giúp Website Tối Ưu" %}
+- {% include internal-link.html href="2021/01/tang-toc-website-tu-preload.html" title="Tăng Tốc Website Từ Preload" %}
 
-Demo : [https://about.tuanducdesign.com/#baihat](https://about.tuanducdesign.com/#baihat)
+Demo: {% include external-link.html href="https://about.tuanducdesign.com/#baihat" title="https://about.tuanducdesign.com/#baihat" %}
 
 Nếu bố cục của khung video quá to hoặc ảnh bị mờ thì bạn chỉnh lại các đoạn sau trong css nhé!
 

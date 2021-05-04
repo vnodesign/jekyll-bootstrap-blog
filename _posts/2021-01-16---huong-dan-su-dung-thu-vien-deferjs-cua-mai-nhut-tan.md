@@ -15,7 +15,7 @@ Tình cờ mình tìm được một thư viện khá hay của bác Mai Nhựt 
 
 {% include image.html src="user-guide-for-deferjs-library-by-mai-nhut-tan.jpg" alt="Hướng Dẫn Sử Dụng Thư Viện DeferJS của Mai Nhựt Tân" %}
 
-Trang chủ thư viện DeferJS trên kho GitHub của Mai Nhựt Tân: [https://github.com/shinsenter/defer.js](https://github.com/shinsenter/defer.js)
+Trang chủ thư viện DeferJS trên kho GitHub của Mai Nhựt Tân: {% include external-link.html href="https://github.com/shinsenter/defer.js" title="https://github.com/shinsenter/defer.js" %}
 
 ## Bắt đầu
 
@@ -37,7 +37,7 @@ Bạn chỉ cần tải thư viện này một lần trên một trang, chèn ng
 </html>
 ```
 
-Bởi vì [phiên bản rút gọn của defer.js](https://github.com/shinsenter/defer.js/blob/master/defer_plus.min.js) là siêu nhỏ, bạn có thể đưa nội dung của nó trực tiếp vào tài liệu HTML và tránh yêu cầu mạng.
+Bởi vì {% include external-link.html href="https://github.com/shinsenter/defer.js/blob/master/defer_plus.min.js" title="phiên bản rút gọn của defer.js" %} là siêu nhỏ, bạn có thể đưa nội dung của nó trực tiếp vào tài liệu HTML và tránh yêu cầu mạng.
 
 ```html
 <html>
@@ -73,7 +73,7 @@ Sau khi chuyển:
 
 Bạn có thể sử dụng Công cụ dành cho nhà phát triển của trình duyệt (nhấn phím F12) để xem các yêu cầu được gửi như thế nào.
 
-Bạn có thể xem demo có sẵn của thư viện này tại đây: [phiên bản demo trên WordPress](https://appseeds.net/defer.js/wp/optimized)
+Bạn có thể xem demo có sẵn của thư viện này tại đây: {% include external-link.html href="https://appseeds.net/defer.js/wp/optimized" title="phiên bản demo trên WordPress" %}
 
 Rồi từ từ cuộn xuống để xem hình ảnh được tải như thế nào.
 
@@ -81,15 +81,7 @@ Trình duyệt của bạn đã tải nó sau 3 giây kể từ khi trang của 
 
 ```html
 <script type="text/javascript">
-window.fbAsyncInit = function() {
-          FB.init({
-            xfbml      : true,
-            version    : 'v9.0'
-          });
-        };
-        if (/^http/.test(window.location.protocol)) {
-        deferscript('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js', 'customerchat', 5);
-        }
+Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};});
 </script>
 ```
 
@@ -151,7 +143,7 @@ Cách sử dụng nâng cao: Trì hoãn Lazyload thẻ `<img>` 200ms sau khi tra
 <img class="lazy-extra" alt="Photo 3" data-src="https://picsum.photos/200/300?random=6" width="200" height="300" />
 ```
 
-Sử dụng nâng cao: Lazyload với [Intersection observer options](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options)
+Sử dụng nâng cao: Lazyload với {% include external-link.html href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options" title="Intersection observer options" %}
 
 ```html
 <script>

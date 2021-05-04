@@ -41,7 +41,7 @@ Các tính năng nổi bật của lazySizes:
 - SEO friendly: lazysizes không ẩn ảnh và tài nguyên của bạn khỏi Google. Nên sẽ không sự có khác biệt dù có sử dụng hay không với các bộ máy tìm kiếm.
 - Độ tương thích cao: script hoạt động tốt với hầu hết các trình duyệt và hệ điều hành
 
-Để cài đặt Lazyload lazySizes bạn truy cập vào [https://afarkas.github.io/lazysizes/lazysizes.min.js](https://afarkas.github.io/lazysizes/lazysizes.min.js) sau đó tải về máy hoặc copy toàn bộ script bên trong dán vào file js riêng của bạn.
+Để cài đặt Lazyload lazySizes bạn truy cập vào {% include external-link.html href="https://afarkas.github.io/lazysizes/lazysizes.min.js" title="https://afarkas.github.io/lazysizes/lazysizes.min.js" %} sau đó tải về máy hoặc copy toàn bộ script bên trong dán vào file js riêng của bạn.
 
 ## Chèn vào mã nguồn
 
@@ -55,7 +55,7 @@ Tiếp theo bạn chèn vào mã nguồn
     </head>
     <body>
     ...
-    <img src="https://cdn.staticaly.com/gh/tuanducteam/tuanducdesign/master/static/media/lazyload-image-va-iframe.jpg" />
+    <img src="https://cdn.staticaly.com/gh/tuanducteam/blog/master/static/media/lazyload-image-va-iframe.jpg" />
     <script src="https://cdn.staticaly.com/gh/aFarkas/lazysizes/gh-pages/lazysizes.min.js" async defer></script>
     </body>
 </html>
@@ -73,7 +73,7 @@ Tiếp theo bạn chèn vào mã nguồn
     </head>
     <body>
     ...
-    <img src="https://cdn.staticaly.com/gh/tuanducteam/tuanducdesign/master/static/media/lazyload-image-va-iframe.jpg" />
+    <img src="https://cdn.staticaly.com/gh/tuanducteam/blog/master/static/media/lazyload-image-va-iframe.jpg" />
     <script src="https://cdn.staticaly.com/gh/aFarkas/lazysizes/gh-pages/lazysizes.min.js" async defer></script>
     <script>$("img").each(function(){$(this).attr("src",$(this).attr("src").replace("http://","https://")),$(this).addClass("lazyload"),$(this).attr("data-src",$(this).attr("src")),$(this).removeAttr("src")}),$("source").each(function(){$(this).attr("srcset",$(this).attr("srcset").replace("http://","https://")),$(this).addClass("lazyload"),$(this).attr("data-srcset",$(this).attr("srcset")),$(this).removeAttr("srcset")}),$("iframe").each(function(){$(this).addClass("lazyload"),$(this).attr("data-src",$(this).attr("src")),$(this).removeAttr("src")});</script>
     </body>

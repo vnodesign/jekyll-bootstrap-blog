@@ -14,20 +14,20 @@ Khi lập trình một trang web chắc hẳn bạn đã từng nghe đến thu�
 
 ## Tại sao phải tối ưu CSS và Javascript
 
-Theo khảo sát từ phía người dùng. Đa phần người dùng khi truy cập một website bắt buộc website đó phải đầy đủ các tiêu chí như :
+Theo khảo sát từ phía người dùng. Đa phần người dùng khi truy cập một website bắt buộc website đó phải đầy đủ các tiêu chí như:
 
 - Tải nhanh
 - Nội dung dễ nhìn
 - Bố cục gọn gàng
 - Ít quảng cáo,flash và popup
 
-Bên cạnh đó đối với một website muốn nhanh không phải cứ chọn host khỏe vps khỏe là sẽ nhanh được, nó phụ thuộc vào cấu trúc mã nguồn của website đó.
+Bên cạnh đó đối với một website muốn nhanh không phải cứ chọn Host khỏe VPS khỏe là sẽ nhanh được, nó phụ thuộc vào cấu trúc mã nguồn của website đó.
 
 ## Bắt đầu code lại CSS và Javascript
 
 Trước khi bắt đầu code lại CSS và Javascript bạn phải xác định xem trang chủ nên dùng CSS và Javascript như nào cho phù hợp.
 
-Mình sẽ lấy ví dụ ra trang chính :
+Mình sẽ lấy ví dụ ra trang chính:
 
 - Trang chủ của bạn menu là responsive thì tất nhiên phải cần có Jquery và CSS cho responsive đó
 - Tương tự với menu có Jquery thì với slider cũng vậy
@@ -149,13 +149,13 @@ Các thành phần khác
 
 ## Đặt tên các file CSS và Javascript cho dễ phân biệt
 
-Với các đoạn css mình sẽ đặt như sau :
+Với các đoạn css mình sẽ đặt như sau:
 
 - Đoạn css đầu tiên mình đặt là owl.carousel.min.css
 - Đoạn css thứ hai là đoạn css chính nên mình đặt là style.min.css
 - Đoạn css cuối cùng là đoạn css của home nên mình đặt là home.min.css
 
-Với các đoạn Javascript thì mình sẽ phân loại ra và đặt tên bạn xem qua ví dụ dưới đây để hiểu :
+Với các đoạn Javascript thì mình sẽ phân loại ra và đặt tên bạn xem qua ví dụ dưới đây để hiểu:
 
 - Đoạn Javascript đầu tiên là Jquery, jQuery JSON, jQuery lightbox, jQuery Color Animations, Tipsy, jQuery Star Rating, Cloud Zoom, Countdown, Tabiy, Jquery owl carousel với jQuery Cookie và các đoạn Jquery còn lại, mình đặt riêng nó ra hai file rồi đặt tên cho nó là jquery.min.1.8.3.js và plugins.js
 
@@ -163,7 +163,7 @@ Sau khi đã đặt xong tên bạn tiến hành save lại để chuyển qua b
 
 ## Chèn vào mã nguồn
 
-Mẫu code mình biên soạn như sau cho các bạn dễ hiểu :
+Mẫu code mình biên soạn như sau cho các bạn dễ hiểu:
 
 ```html
 <html>
@@ -230,6 +230,6 @@ Bạn tùy chỉnh lại sao cho phù hợp với cấu trúc thư mục của f
 
 Bây giờ bạn quay ra trang chủ rồi kiểm tra xem nhanh hơn không nhé.
 
-Xem demo [LYTSHOP](https://lytshop.net)
+Xem demo {% include external-link.html href="https://lytshop.net" title="LYTSHOP" %}
 
 Chúc các bạn thành công.

@@ -28,7 +28,7 @@ Nhưng trong nhiều trường hợp khác nhau, việc sử dụng thuộc tín
 
 Mình đã có một bài viết đầy đủ hướng dẫn sử dụng thư viện này. Bạn có thể đọc bài viết sau để biết cách sử dụng nhé!
 
-[Hướng Dẫn Sử Dụng Thư Viện DeferJS của Mai Nhựt Tân]({{ site.url }}/2021/01/huong-dan-su-dung-thu-vien-deferjs-cua-mai-nhut-tan.html)
+{% include internal-link.html href="2021/01/huong-dan-su-dung-thu-vien-deferjs-cua-mai-nhut-tan.html" title="Hướng Dẫn Sử Dụng Thư Viện DeferJS của Mai Nhựt Tân" %}
 
 ## Lazysizes của tác giả aFarkas
 
@@ -42,7 +42,7 @@ Nó cũng có thể trở thành công cụ số một của bạn để tích h
 
 Mình đã có một bài viết đầy đủ hướng dẫn sử dụng thư viện này. Bạn có thể đọc bài viết sau để biết cách sử dụng nhé!
 
-[Lazyload Image Và Iframe]({{ site.url }}/2021/01/lazyload-image-va-iframe.html)
+{% include internal-link.html href="2021/01/lazyload-image-va-iframe.html" title="Lazyload Image Và Iframe" %}
 
 ## Thư viện hỗ trợ Lazyload các script của mình
 
@@ -54,10 +54,10 @@ Khi nói đến việc tối ưu hóa tốc độ trang, theo nguyên tắc chun
 
 Mình đã có một số bài viết hướng dẫn sử dụng thư viện này. Bạn có thể đọc các bài viết sau để biết cách sử dụng nhé!
 
-- [Lazyload Facebook Customize Chat]({{ site.url }}/2021/01/lazyload-facebook-customize-chat.html)
-- [Lazyload Twitter Publish]({{ site.url }}/2021/01/lazyload-twitter-publish.html)
-- [Lazyload Zalo Plugins]({{ site.url }}/2021/01/lazyload-zalo-plugins.html)
-- [Lazyload Google Fonts]({{ site.url }}/2021/01/lazyload-google-fonts.html)
-- [Lazyload Image Và Iframe]({{ site.url }}/2021/01/lazyload-image-va-iframe.html)
+- {% include internal-link.html href="2021/01/lazyload-facebook-customize-chat.html" title="Lazyload Facebook Customize Chat" %}
+- {% include internal-link.html href="2021/01/lazyload-twitter-publish.html" title="Lazyload Twitter Publish" %}
+- {% include internal-link.html href="2021/01/lazyload-zalo-plugins.html" title="Lazyload Zalo Plugins" %}
+- {% include internal-link.html href="2021/01/lazyload-google-fonts.html" title="Lazyload Google Fonts" %}
+- {% include internal-link.html href="2021/01/lazyload-image-va-iframe.html" title="Lazyload Image Và Iframe" %}
 
 Chúc các bạn thành công

@@ -16,9 +16,9 @@ description: "Ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạ
 
 Đầu tiên thì chúng ta truy cập vào đường dẫn tới file JS của Facebook nhé.
 
-[https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js](https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js)
+{% include external-link.html href="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" title="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" %}
 
-Tiếp theo bạn tìm các từ khoá liên quan đến đường dẫn ảnh png. Tương tự như ví dụ dưới đây :
+Tiếp theo bạn tìm các từ khoá liên quan đến đường dẫn ảnh png. Tương tự như ví dụ dưới đây:
 
 ```css
 .fb_dialog_close_icon{background:url(https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yq\/r\/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}
@@ -27,7 +27,7 @@ Tiếp theo bạn tìm các từ khoá liên quan đến đường dẫn ảnh p
 #fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yD\/r\/t-wz8gw1xG1.png);
 ```
 
-Và tìm tiếp các từ khoá liên quan đến facebook.com. Ví dụ dưới đây sẽ giúp bạn hiểu :
+Và tìm tiếp các từ khoá liên quan đến facebook.com. Ví dụ dưới đây sẽ giúp bạn hiểu:
 
 ```js
 {"locale":"vi_VN","revision":"1003309171","rtl":false,"sdkab":null,"sdkns":"FB","sdkurl":"https:\/\/connect.facebook.net\/vi_VN\/sdk\/xfbml.customerchat.js"});__d("UrlMapConfig",[],{"www":"www.facebook.com","m":"m.facebook.com","business":"business.facebook.com","api":"api.facebook.com","api_read":"api-read.facebook.com","graph":"graph.facebook.com","an":"an.facebook.com","fbcdn":"static.xx.fbcdn.net","cdn":"staticxx.facebook.com","graph_facebook":"graph.facebook.com","graph_gaming":"graph.fb.gg","graph_instagram":"graph.instagram.com"});__d("JSSDKConfig",[],{"features":{"allow_non_canvas_app_events":false,"error_handling":{"rate":4},"e2e_ping_tracking":{"rate":0.1},"xd_timeout":{"rate":1,"value":60000},"use_bundle":false,"should_log_response_error":true,"popup_blocker_scribe_logging":{"rate":100},"https_only_enforce_starting":2538809200000,"https_only_learn_more":"https:\/\/developers.facebook.com\/blog\/post\/2018\/06\/08\/enforce-https-facebook-login\/","https_only_scribe_logging":{"rate":1},"log_perf":{"rate":0.001},"use_x_xd":{"rate":100},"cache_auth_response":{"rate":0}
@@ -39,13 +39,13 @@ Tại sao chúng ta lại phải lấy đoạn này thì ở bước tiếp theo
 
 Có hai thành phần trong file JS mà bạn cần quan tâm, đó chính là liên kết hình ảnh và các liên kết của Facebook, liên kết hình ảnh chính là đoạn css ở trên giờ chúng ta tiến hành biên dịch lại liên kết của hình ảnh nhé!
 
-Với class fb_dialog_close_icon và các class cùng tên :
+Với class fb_dialog_close_icon và các class cùng tên:
 
 ```text
 https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png
 ```
 
-Với id fb_dialog_loader_spinner :
+Với id fb_dialog_loader_spinner:
 
 ```text
 https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png

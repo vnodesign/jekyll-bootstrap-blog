@@ -12,7 +12,7 @@ Theo mình tìm hiểu thì Staticaly khá hay khi sử dụng nó bạn sẽ c�
 
 {% include image.html src="so-requests-tren-website.jpg" alt="Tăng Tốc Website Bằng Cách Sử Dụng Staticaly" %}
 
-Trang chủ Staticaly: [https://statically.io](https://statically.io)
+Trang chủ Staticaly: {% include external-link.html href="https://statically.io" title="https://statically.io" %}
 
 ## Staticaly là gì
 
@@ -21,7 +21,7 @@ Staticaly là một trang hoàn toàn miễn phí nó giúp bạn đẩy các fi
 Ví dụ như các ảnh thumb ở ngoài trang chủ trên website của mình.
 
 ```html
-<img src="https://cdn.staticaly.com/gh/tuanducteam/tuanducdesign/master/static/media/tang-toc-website-bang-cach-su-dung-staticaly.jpg"/>
+<img src="https://cdn.staticaly.com/gh/tuanducteam/blog/master/static/media/tang-toc-website-bang-cach-su-dung-staticaly.jpg"/>
 ```
 
 Bất cứ URL ảnh nào bạn chỉ cần nhập vào thông tin trên website của họ là bạn sẽ nhận lại được URL sản phẩm của bạn.
@@ -30,7 +30,7 @@ Bất cứ URL ảnh nào bạn chỉ cần nhập vào thông tin trên website
 
 Đầu tiên bạn cần truy cập vào đường dẫn dưới đây.
 
-[https://tools.hung1001.com/tools/staticaly.html](https://tools.hung1001.com/tools/staticaly.html)
+{% include external-link.html href="https://tools.hung1001.com/tools/staticaly.html" title="https://tools.hung1001.com/tools/staticaly.html" %}
 
 Tiếp theo bạn kéo xuống cuối trang sau đó dán đường dẫn hình ảnh của bạn vào.
 

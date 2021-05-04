@@ -9,9 +9,9 @@ image: static/media/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg
 description: "NextDNS là sự lựa chọn hoàn hảo để thay thế DNS Cloudflare, Khi sử dụng NextDNS thì bạn sẽ được bảo vệ toàn diện từ các chức năng nổi bật của NextDNS."
 ---
 
-Mình vừa tìm được một dịch vụ DNS khá hay, nên trước khi viết bài này mình cũng đã thử áp dụng và đã thành công. Dịch vụ mà mình muốn nhắc đến ở đây đó là [NextDNS](https://nextdns.io/).
+Mình vừa tìm được một dịch vụ DNS khá hay, nên trước khi viết bài này mình cũng đã thử áp dụng và đã thành công. Dịch vụ mà mình muốn nhắc đến ở đây đó là {% include external-link.html href="https://nextdns.io/" title="NextDNS" %}.
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: {% include links.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
 
 {% include image.html src="huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg" alt="Hướng dẫn cấu hình và sử dụng NextDNS trên Modem" %}
 
@@ -101,7 +101,7 @@ Bạn không được hỗ trợ qua email, thay vào đó thì bạn được h
 
 Để có thể sử dụng NextDNS thì bạn cần phải tạo tài khoản. Các bạn truy cập vào đường dẫn sau:
 
-[https://my.nextdns.io/login](https://my.nextdns.io/login)
+{% include external-link.html href="https://my.nextdns.io/login" title="https://my.nextdns.io/login" %}
 
 Tiếp theo các bạn bấm vào đăng ký và điền đầy đủ thông tin của mình vào đó, sau khi đăng ký thành công bạn sẽ được chuyển vào trang dashboard.
 
@@ -153,7 +153,7 @@ Chú ý: thay xxxxxx thành ID của bạn, ID ở trong mục Endpoints.
 
 #### Tải về thông qua Google Play
 
-- Bạn mở Google Play lên cài đặt [NextDNS For Android](https://play.google.com/store/apps/details?id=io.nextdns.NextDNS).
+- Bạn mở Google Play lên cài đặt {% include external-link.html href="https://play.google.com/store/apps/details?id=io.nextdns.NextDNS" title="NextDNS For Android" %}.
 - Trong ứng dụng NextDNS, nhập xxxxxx trong Settings → Configuration ID, sau đó kết nối.
 
 Chú ý: thay xxxxxx thành ID của bạn, ID ở trong mục Endpoints.
@@ -172,7 +172,7 @@ Chú ý: Mạng của bạn không hỗ trợ IPv6
 
 - Đi tới Settings → Wi-Fi.
 - Nhấn và giữ mạng bạn đã kết nối, sau đó nhấn vào Modify Network.
-- Trên một số thiết bị, bạn có thể cần chọn hộp Advanced để xem các cài đặt khác. Để điều chỉnh cài đặt DNS của mình, bạn sẽ cần chuyển cài đặt IP từ DHCP sang Tĩnh.
+- Trên một số thiết bị, bạn có thể cần chọn hộp Advanced để xem các cài đặt khác. Để điều chỉnh cài đặt DNS của mình, bạn sẽ cần chuyển cài đặt IP từ DHCP sang Static.
 - Nhập 45.90.28.16 cho DNS 1 và 45.90.30.16 cho DNS 2.
 - Sau nó nhấn Save.
 
@@ -180,7 +180,7 @@ Chú ý: Mạng của bạn không hỗ trợ IPv6
 
 #### Tải về thông qua AppStore trên IOS
 
-- Bạn mở AppStore lên cài đặt [NextDNS For IOS](https://apps.apple.com/app/nextdns/id1463342498).
+- Bạn mở AppStore lên cài đặt {% include external-link.html href="https://apps.apple.com/app/nextdns/id1463342498" title="NextDNS For IOS" %}.
 - Mở ứng dụng, sau đó đi tới Settings và chuyển đổi "Use Custom Configuration". Nhập xxxxxx cho Configuration ID.
 - Sau khi đã làm đầy đủ thì bạn tiến hành kích hoạt NextDNS.
 
@@ -190,7 +190,7 @@ Chú ý: thay xxxxxx thành ID của bạn, ID ở trong mục Endpoints.
 
 Cách này áp dụng với IOS 14 trở lên
 
-- Sử dụng Trình tạo hồ sơ cấu hình Apple của NextDNS có sẵn tại [https://apple.nextdns.io/?configuration=xxxxxx](https://apple.nextdns.io/?configuration=xxxxxx)
+- Sử dụng Trình tạo hồ sơ cấu hình Apple của NextDNS có sẵn tại {% include external-link.html href="https://apple.nextdns.io/?configuration=xxxxxx" title="https://apple.nextdns.io/?configuration=xxxxxx" %}
 
 Chú ý: thay xxxxxx thành ID của bạn, ID ở trong mục Endpoints.
 
@@ -218,7 +218,7 @@ Chú ý: Mạng của bạn không hỗ trợ IPv6
 
 #### Tải về thông qua trang chủ của NextDNS
 
-- Tải xuống trình cài đặt [NextDNS](https://nextdns.io/download/windows/stable).
+- Tải xuống trình cài đặt {% include external-link.html href="https://nextdns.io/download/windows/stable" title="NextDNS" %}.
 - Sau khi cài đặt, nhấp chuột phải vào biểu tượng NextDNS trong Systray rồi mở Settings. Đặt xxxxxx cho Configuration ID.
 - Nhấp chuột phải vào biểu tượng NextDNS trong Systray, sau đó nhấp vào Enable.
 
@@ -252,8 +252,8 @@ Chú ý: Mạng của bạn không hỗ trợ IPv6
 
 #### YogaDNS
 
-- Cài đặt YogaDNS từ [https://yogadns.com](https://yogadns.com).
-- Làm theo hướng dẫn cho NextDNS tại [https://yogadns.com/docs/nextdns](https://yogadns.com/docs/nextdns) và sử dụng xxxxxx cho Configuration ID.
+- Cài đặt YogaDNS từ {% include external-link.html href="https://yogadns.com" title="https://yogadns.com" %}.
+- Làm theo hướng dẫn cho NextDNS tại {% include external-link.html href="https://yogadns.com/docs/nextdns" title="https://yogadns.com/docs/nextdns" %} và sử dụng xxxxxx cho Configuration ID.
 
 Chú ý: thay xxxxxx thành ID của bạn, ID ở trong mục Endpoints.
 
@@ -261,7 +261,7 @@ Chú ý: thay xxxxxx thành ID của bạn, ID ở trong mục Endpoints.
 
 #### Tải về thông qua AppStore trên MacOS
 
-- Bạn mở AppStore lên cài đặt [NextDNS For MacOS](https://apps.apple.com/app/nextdns/id1464122853).
+- Bạn mở AppStore lên cài đặt {% include external-link.html href="https://apps.apple.com/app/nextdns/id1464122853" title="NextDNS For MacOS" %}.
 - Mở ứng dụng, sau đó nhấp vào Preferences trong menu thanh trạng thái ứng dụng và chuyển đến tab Configuration.
 - Kiểm tra "Use Custom Configuration" và nhập xxxxxx cho Configuration ID.
 - Sau khi đã làm đầy đủ thì bạn tiến hành kích hoạt NextDNS.
@@ -272,7 +272,7 @@ Chú ý: thay xxxxxx thành ID của bạn, ID ở trong mục Endpoints.
 
 Cách này áp dụng với MacOS Big Sur trở lên
 
-- Sử dụng Trình tạo hồ sơ cấu hình Apple của NextDNS có sẵn tại [https://apple.nextdns.io/?configuration=xxxxxx](https://apple.nextdns.io/?configuration=xxxxxx)
+- Sử dụng Trình tạo hồ sơ cấu hình Apple của NextDNS có sẵn tại {% include external-link.html href="https://apple.nextdns.io/?configuration=xxxxxx" title="https://apple.nextdns.io/?configuration=xxxxxx" %}
 
 Chú ý: thay xxxxxx thành ID của bạn, ID ở trong mục Endpoints.
 
@@ -304,7 +304,7 @@ Trong cửa sổ của Terminal bạn gõ:
 
 Kế tiếp là bạn làm theo chỉ dẫn.
 
-Ngoài ra bạn cũng có thể truy cập vào kho lưu trữ mã nguồn mở của NextDNS tại [Github](https://github.com/nextdns/nextdns/wiki) để biết hướng dẫn cài đặt thủ công.
+Ngoài ra bạn cũng có thể truy cập vào kho lưu trữ mã nguồn mở của NextDNS tại {% include external-link.html href="https://github.com/nextdns/nextdns/wiki" title="Github" %} để biết hướng dẫn cài đặt thủ công.
 
 ### Với Linux
 
@@ -318,7 +318,7 @@ Trong cửa sổ của Terminal bạn gõ:
 
 Kế tiếp là bạn làm theo chỉ dẫn.
 
-Ngoài ra bạn cũng có thể truy cập vào kho lưu trữ mã nguồn mở của NextDNS tại [Github](https://github.com/nextdns/nextdns/wiki) để biết hướng dẫn cài đặt thủ công.
+Ngoài ra bạn cũng có thể truy cập vào kho lưu trữ mã nguồn mở của NextDNS tại {% include external-link.html href="https://github.com/nextdns/nextdns/wiki" title="Github" %} để biết hướng dẫn cài đặt thủ công.
 
 #### Thêm IPv6 vào mạng trên Linux
 
@@ -334,7 +334,7 @@ Chú ý: Mạng của bạn không hỗ trợ IPv6
 
 #### Tải về thông qua Chrome Web Store
 
-- Bạn mở trình duyệt lên và cài đặt [NextDNS for Chrome OS](https://chrome.google.com/webstore/detail/nextdns/pkdcfcnohogmdmhllilgaheobbjadggl).
+- Bạn mở trình duyệt lên và cài đặt {% include external-link.html href="https://chrome.google.com/webstore/detail/nextdns/pkdcfcnohogmdmhllilgaheobbjadggl" title="NextDNS for Chrome OS" %}.
 - Trong Settings, nhập xxxxxx cho Configuration ID, sau đó kết nối.
 
 Chú ý: thay xxxxxx thành ID của bạn, ID ở trong mục Endpoints.

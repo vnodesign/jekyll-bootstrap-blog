@@ -29,7 +29,7 @@ Có thể kể đến như :
 
 Mình có hai cách đơn giản nhất để giúp bạn tối ưu website của bạn khi sử dụng mã nguồn WordPress:
 
-- Sử dụng Plugins [An efficient lazy loader (defer.js)](https://wordpress.org/plugins/shins-pageload-magic/) của tác giả Mai Nhựt Tân và Plugins [WP-Rocket](https://wp-rocket.me/) của nhóm phát triển [WP-Media](https://wp-media.me/)
-- Sử dụng VPS Nginx kèm với [Module Pagespeed](https://www.modpagespeed.com/doc/) kết hợp với Plugins [WP-Rocket](https://wp-rocket.me/) và [Rocket Nginx](https://github.com/SatelliteWP/rocket-nginx)
+- Sử dụng Plugins {% include external-link.html href="https://wordpress.org/plugins/shins-pageload-magic/" title="An efficient lazy loader (defer.js)" %} của tác giả Mai Nhựt Tân và Plugins {% include external-link.html href="https://wp-rocket.me/" title="WP-Rocket" %} của nhóm phát triển {% include external-link.html href="https://wp-media.me/" title="WP-Media" %}
+- Sử dụng VPS Nginx kèm với {% include external-link.html href="https://www.modpagespeed.com/doc/" title="Module Pagespeed" %} kết hợp với Plugins {% include external-link.html href="https://wp-rocket.me/" title="WP-Rocket" %} và {% include external-link.html href="https://github.com/SatelliteWP/rocket-nginx" title="Rocket Nginx" %}
 
 Chúc các bạn thành công.

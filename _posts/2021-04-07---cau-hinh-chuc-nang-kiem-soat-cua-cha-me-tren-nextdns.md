@@ -11,7 +11,7 @@ description: "Cấu hình chức năng kiểm soát của cha mẹ trên NextDNS
 
 Thêm một chức năng nữa mà mình muốn nhắc đến đối với các bậc làm, làm mẹ đó chính là chức năng kiểm soát của cha mẹ. Chức năng này sẽ giúp bạn quản lý con cái dễ dàng hơn.
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: {% include links.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
 
 {% include image.html src="cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.png" alt="Cấu hình chức năng kiểm soát của cha mẹ trên NextDNS" %}
 
@@ -29,7 +29,7 @@ Hạn chế quyền truy cập vào các trang web, ứng dụng và trò chơi 
 
 Hạn chế quyền truy cập vào các danh mục trang web và ứng dụng cụ thể.
 
-Chức năng này giống với chức năng **{% include links.html href="series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.html#block-child-sexual-abuse-material" title="Block Child Sexual Abuse Material" %}** nhưng nó nhiều tuỳ chọn hơn như:
+Chức năng này giống với chức năng **{% include internal-link.html href="series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.html#block-child-sexual-abuse-material" title="Block Child Sexual Abuse Material" %}** nhưng nó nhiều tuỳ chọn hơn như:
 
 - Gambling (Chặn nội dung cờ bạc)
 - Dating (Chặn tất cả các trang web và ứng dụng hẹn hò)
@@ -50,7 +50,7 @@ Ví dụ: cho phép ứng dụng Facebook vào Thứ Hai và Thứ Ba trong kho�
 
 Lọc kết quả khiêu dâm trên tất cả các công cụ tìm kiếm chính, bao gồm cả hình ảnh và video. Điều này cũng sẽ chặn quyền truy cập vào các công cụ tìm kiếm không hỗ trợ tính năng này.
 
-Chức năng này giống với chức năng **{% include links.html href="series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.html#block-child-sexual-abuse-material" title="Block Child Sexual Abuse Material" %}**
+Chức năng này giống với chức năng **{% include internal-link.html href="series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.html#block-child-sexual-abuse-material" title="Block Child Sexual Abuse Material" %}**
 
 ### YouTube Restricted Mode
 
@@ -61,6 +61,8 @@ Lọc ra các video dành cho người trưởng thành trên YouTube và chặn
 ### Block Bypass Methods
 
 {% include image.html src="block-bypass-methods.png" alt="Block Bypass Methods" %}
+
+Ngăn chặn hoặc cản trở việc sử dụng các phương pháp có thể giúp bỏ qua lọc NextDNS trên mạng. Điều này bao gồm VPN, proxy, phần mềm liên quan đến Tor và các nhà cung cấp DNS được mã hóa.
 
 ## Chức năng của Websites, Apps & Games
 
@@ -98,7 +100,7 @@ Chặn con cái truy cập vào các website, ứng dụng và game. Dưới đ�
 - eBay
 - Skype
 - Spotify
-- Zoom (Cái này mình thấy giờ nhiều thầy, cô ở các trường áp dụng để dạy học cho học sinh trong dịch COVID)
+- Zoom
 - Amazon
 - Prime Video
 
@@ -126,7 +128,7 @@ Chế độ hạn chế của Youtube sẽ lọc ra các video dành cho ngườ
 
 ## Chức năng của Block Bypass Methods
 
-Ngăn chặn hoặc cản trở việc sử dụng các phương pháp có thể giúp bỏ qua bộ lọc NextDNS trên mạng. Điều này bao gồm VPN, proxy, phần mềm liên quan đến Tor và các nhà cung cấp DNS được mã hóa.
+Chức năng của Block Bypass Methods sẽ ngăn chặn hoặc cản trở việc sử dụng các phương pháp có thể giúp bỏ qua bộ lọc NextDNS trên mạng. Điều này bao gồm VPN, proxy, phần mềm liên quan đến Tor và các nhà cung cấp DNS được mã hóa.
 
 ## Kết
 

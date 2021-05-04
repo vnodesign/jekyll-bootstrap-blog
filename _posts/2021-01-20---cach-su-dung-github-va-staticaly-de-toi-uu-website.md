@@ -20,7 +20,7 @@ GitHub cung cấp chức năng social networking như feeds, followers và netwo
 
 ## Tạo tài khoản và cấu hình Github
 
-Để tạo tài khoản Github bạn truy cập vào trang chủ của [Github](https://github.com). Tiếp theo bạn bấm vào Sign up.
+Để tạo tài khoản Github bạn truy cập vào trang chủ của {% include external-link.html href="https://github.com" title="Github" %}. Tiếp theo bạn bấm vào Sign up.
 
 Sau đó nhập đầy đủ thông tin và bấm vào Create account.
 
@@ -44,7 +44,7 @@ Với Add .gitignore bạn tắt nó đi và Choose a license bạn để là MI
 
 ## Tải ứng dụng Github Desktop
 
-Để quản lý Github được dễ dàng hơn bạn sử dụng ứng dụng [Github Desktop](https://desktop.github.com/)
+Để quản lý Github được dễ dàng hơn bạn sử dụng ứng dụng {% include external-link.html href="https://desktop.github.com/" title="Github Desktop" %}
 
 Bạn bấm vào Download for Mac hoặc Windows tùy theo hệ điều hành mà máy bạn đang đùng, sau khi cài đặt xong bạn tiến hành đăng nhập vào tài khoản Github mà lúc nãy chúng ta đã tạo nhé! Ở bước này mình không hướng dẫn nữa vì mình đã đăng nhập sẵn rồi.
 
@@ -80,7 +80,7 @@ https://raw.githubusercontent.com/tuanducdesign/cdn.tuanducdesign.com/main/asset
 
 Đối với các file như fonts,css và js bạn bấm vào RAW sau đó copy lại URL đó.
 
-Tiếp theo bạn truy cập vào trang [https://tools.hung1001.com/tools/staticaly.html](https://tools.hung1001.com/tools/staticaly.html) rồi dán URL vừa copy vào khung đầu tiên.
+Tiếp theo bạn truy cập vào trang {% include external-link.html href="https://tools.hung1001.com/tools/staticaly.html" title="https://tools.hung1001.com/tools/staticaly.html" %} rồi dán URL vừa copy vào khung đầu tiên.
 
 Bạn cần lưu ý các bước sau khi sử dụng công cụ này.
 

@@ -12,7 +12,7 @@ Trong bài viết tiếp theo của ngày hôm nay mình sẽ hướng dẫn cá
 
 {% include image.html src="lazyload-zalo-plugins.jpg" alt="Lazyload Zalo Plugins" %}
 
-Đầu tiên các bạn truy cập vào trang: [https://developers.zalo.me/docs/social/share](https://developers.zalo.me/docs/social/share)
+Đầu tiên các bạn truy cập vào trang: {% include external-link.html href="https://developers.zalo.me/docs/social/share" title="https://developers.zalo.me/docs/social/share" %}
 
 Tiếp theo các bạn chọn plugins mà mình cần chèn vào website.
 

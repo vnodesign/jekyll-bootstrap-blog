@@ -12,7 +12,7 @@ Ngày nay khi tối ưu website thì người ta quan trọng nhất là tốc �
 
 {% include image.html src="speed-website-from-preload.jpg" alt="Tăng Tốc Website Từ Preload" %}
 
-Để hiểu rõ hơn về cả thẻ link các bạn tìm hiểu tại trang sau: [https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content)
+Để hiểu rõ hơn về cả thẻ link các bạn tìm hiểu tại trang sau: {% include external-link.html href="https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content" title="https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content" %}
 
 Để preload nội dung bạn dùng code sau:
 

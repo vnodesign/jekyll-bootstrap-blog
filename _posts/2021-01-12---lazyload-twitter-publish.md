@@ -12,7 +12,7 @@ description: "Trong bài viết tiếp theo của ngày hôm nay mình sẽ hư�
 
 {% include image.html src="lazyload-twitter-publish.jpg" alt="Lazyload Twitter Publish" %}
 
-Đầu tiên các bạn truy cập vào trang: [https://publish.twitter.com](https://publish.twitter.com)
+Đầu tiên các bạn truy cập vào trang: {% include external-link.html href="https://publish.twitter.com" title="https://publish.twitter.com" %}
 
 Tiếp theo các bạn nhập đường dẫn đến trang profile của mình trên Twitter.
 

@@ -54,6 +54,6 @@ Cú pháp quen thuộc mà mình muốn nhắc đến đó chính là:
 
 Để tìm cú pháp phù hợp với ``` as= ``` thì bạn đọc nội dung sau:
 
-[https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content#what_types_of_content_can_be_preloaded](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content#what_types_of_content_can_be_preloaded)
+{% include external-link.html href="https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content#what_types_of_content_can_be_preloaded" title="https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content#what_types_of_content_can_be_preloaded" %}
 
 Chúc các bạn thành công.
