@@ -5,3 +5,5 @@ _site
 *~
 .vscode
 ._*
+node_modules
+package-lock.json
