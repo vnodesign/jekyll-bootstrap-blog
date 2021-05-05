@@ -38,7 +38,14 @@
 {% endif %}
 {% endif %}
 <!-- Preload file -->
-<link rel="preload" href="https://cdn.tuanducdesign.com/assets/js/bundle.min.js" as="script" />
+<link href="{{ site.url }}/assets/css/root.min.css" rel="preload" as="style" />
+<link href="{{ site.url }}/assets/css/bootstrap.min.css" rel="preload" as="style" />
+<link href="{{ site.url }}/assets/css/bootstrap-icons.min.css" rel="preload" as="style" />
+<link href="{{ site.url }}/assets/css/main.min.css" rel="preload" as="style" />
+<link href="{{ site.url }}/assets/js/jquery.min.js" rel="preload" as="script" />
+<link href="{{ site.url }}/assets/js/bootstrap.min.js" rel="preload" as="script" />
+<link href="{{ site.url }}/assets/js/popper.min.js" rel="preload" as="script" />
+<link href="{{ site.url }}/assets/js/main.min.js" rel="preload" as="script" />
 {% if site.fanpage-chat %}
 <link rel="preload" href="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" as="script" />
 {% endif %}
@@ -48,7 +55,6 @@
 <link rel="preload" href="{{ site.url }}/assets/fonts/bootstrap-icons.woff2" type="font/woff2" as="font" crossorigin />
 <link rel="preload" href="{{ site.url }}/{{ site.logo }}" as="image" />
 <!-- Prefetch Domain -->
-<link rel="dns-prefetch" href="//cdn.tuanducdesign.com" />
 {% if site.fanpage-chat %}
 <link rel="dns-prefetch" href="//static.xx.fbcdn.net" />
 <link rel="dns-prefetch" href="//scontent.fhan3-2.fna.fbcdn.net" />
@@ -67,7 +73,6 @@
 <link rel="dns-prefetch" href="//disqus.com" />
 {% endif %}
 <!-- Preconnect Domain -->
-<link rel="preconnect" href="https://cdn.tuanducdesign.com" />
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 {% if site.fanpage-chat %}
 <link rel="preconnect" href="https://static.xx.fbcdn.net" />
@@ -86,8 +91,10 @@
 {% endif %}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
-{% capture root %}{% include root.css %}{% endcapture %}{% capture main %}{% include main.css %}{% endcapture %}
-<style type="text/css">@font-face{font-family:"bootstrap-icons";src:url("{{ site.url }}/assets/fonts/bootstrap-icons.woff2") format("woff2"),url("{{ site.url }}/assets/fonts/bootstrap-icons.woff") format("woff");}{{ root | scssify }}{{ main | scssify }}</style>
+<link href="{{ site.url }}/assets/css/root.min.css" type="text/css" rel="stylesheet" />
+<link href="{{ site.url }}/assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" async="1" />
+<link href="{{ site.url }}/assets/css/bootstrap-icons.min.css" type="text/css" rel="stylesheet" />
+<link href="{{ site.url }}/assets/css/main.min.css" type="text/css" rel="stylesheet" />
 <!-- Scripts required -->
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
 <script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');</script>
@@ -213,6 +220,9 @@
 <div id="fb-root"></div>
 <div class="fb-customerchat" attribution="biz_inbox" page_id="{{site.fanpage-chat}}"></div>
 {% endif %}
-<script type="deferjs" src="https://cdn.tuanducdesign.com/assets/js/bundle.min.js"></script>
+<script type="deferjs" src="{{ site.url }}/assets/js/jquery.min.js" defer="1"></script>
+<script type="deferjs" src="{{ site.url }}/assets/js/bootstrap.min.js" async="1"></script>
+<script type="deferjs" src="{{ site.url }}/assets/js/popper.min.js" async="1"></script>
+<script type="deferjs" src="{{ site.url }}/assets/js/main.min.js" async="1"></script>
 </body>
 </html>
