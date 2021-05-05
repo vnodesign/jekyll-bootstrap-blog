@@ -1,1 +1,25 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: 'static/media'
+public_media: '/media'
+
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: '_posts/'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}---{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: "Description", name: "description", widget: "text", hint: "Description for the post", pattern: ['{155,}', "The character in the description should be 155 or less"], required: true }
+      - { label: 'Title', name: 'title', widget: 'string', hint: "The title of the post", pattern: ['.{10,}', "Should be more than 10 characters"], required: true }
+      - { label: 'Permalink', name: 'permalink', widget: 'string', hint: "For example: series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.html" }
+      - { label: "Image", name: "image", widget: "image", hint: "Photo when sharing articles on social networks. The image posted must have a size of 250x250px", required: true }
+      - {label: "Toc+", name: "toc", widget: "boolean", default: false, hint: "Turn toc+ on for this post on or off"}
+      - { label: "Category", name: "category", widget: "list", hint: "The name of the category", required: true }
+      - { label: "Tags", name: "tags", widget: "list", hint: "Tags for posts are separated by commas", required: true }
       - { label: 'Content', name: 'body', widget: 'markdown', hint: "Content for this post", required: true }

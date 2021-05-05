@@ -256,10 +256,6 @@
     --tds-slow: 400ms
 }
 
-* {
-    transition: all 0.6s ease;
-}
-
 /* Dark mode */
 @media (prefers-color-scheme:dark) {
     body {
