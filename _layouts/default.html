@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head itemscope="itemscope" itemtype="https://schema.org/WebSite">
-{% capture root %}{% include root.min.css %}{% endcapture %}
-<style type="text/css">{{ root | scssify }}</style>
+{% capture root %}{% include root.min.css %}{% endcapture %}<style type="text/css">{{ root | scssify }}</style>
 <!-- Meta tag seo -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -207,6 +206,15 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 text-center">
                 Copyright © <span itemprop="copyrightYear">{{ site.time | date: "%Y" }}</span> - <span itemprop="copyrightHolder" itemscope="itemscope" itemtype="https://schema.org/Organization"><a href="{{ site.url }}/" itemprop="url" title="{{ site.name }}"><span itemprop="name">{{ site.name }}</span></a> -  All Rights Reserved.</span>
+                <div class="socials" itemscope="itemscope" itemtype="https://schema.org/Organization">
+                    <link itemprop="url" href="{{ site.url }}" />
+                    <a rel="nofollow" target="_blank" href="https://twitter.com/tuanducdesign/" data-toggle="tooltip" data-placement="top" title="Twitter" itemprop="sameAs"> <i class="bi bi-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a rel="nofollow" target="_blank" href="https://www.facebook.com/tuanduc.support/" data-toggle="tooltip" data-placement="top" title="Facebook" itemprop="sameAs"> <i class="bi bi-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a rel="nofollow" target="_blank" href="https://instagram.com/mi.profile.56/" data-toggle="tooltip" data-placement="top" title="Instagram" itemprop="sameAs"><i class="bi bi-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
