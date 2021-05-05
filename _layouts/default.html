@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head itemscope="itemscope" itemtype="https://schema.org/WebSite">
-{% capture root %}{% include root.min.css %}{% endcapture %}<style type="text/css">{{ root | scssify }}</style>
 <!-- Meta tag seo -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -39,13 +38,8 @@
 {% endif %}
 {% endif %}
 <!-- Preload file -->
-<link href="{{ site.url }}/assets/css/bootstrap.min.css" rel="preload" as="style" />
-<link href="{{ site.url }}/assets/css/bootstrap-icons.min.css" rel="preload" as="style" />
-<link href="{{ site.url }}/assets/css/main.min.css" rel="preload" as="style" />
-<link href="{{ site.url }}/assets/js/jquery.min.js" rel="preload" as="script" />
-<link href="{{ site.url }}/assets/js/bootstrap.min.js" rel="preload" as="script" />
-<link href="{{ site.url }}/assets/js/popper.min.js" rel="preload" as="script" />
-<link href="{{ site.url }}/assets/js/main.min.js" rel="preload" as="script" />
+<link href="{{ site.url }}/assets/css/main.css" rel="preload" as="style" />
+<link href="{{ site.url }}/assets/js/app.js" rel="preload" as="script" />
 {% if site.fanpage-chat %}
 <link rel="preload" href="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" as="script" />
 {% endif %}
@@ -93,9 +87,7 @@
 {% endif %}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
-<link href="{{ site.url }}/assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" async="1" />
-<link href="{{ site.url }}/assets/css/bootstrap-icons.min.css" type="text/css" rel="stylesheet" />
-<link href="{{ site.url }}/assets/css/main.min.css" type="text/css" rel="stylesheet" />
+<link href="{{ site.url }}/assets/css/main.css" type="text/css" rel="stylesheet" />
 <!-- Scripts required -->
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
 <script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');</script>
@@ -230,9 +222,6 @@
 <div id="fb-root"></div>
 <div class="fb-customerchat" attribution="biz_inbox" page_id="{{site.fanpage-chat}}" data-lazy="true"></div>
 {% endif %}
-<script src="{{ site.url }}/assets/js/jquery.min.js"></script>
-<script src="{{ site.url }}/assets/js/bootstrap.min.js"></script>
-<script src="{{ site.url }}/assets/js/main.min.js"></script>
-<script src="{{ site.url }}/assets/js/popper.min.js"></script>
+<script src="{{ site.url }}/assets/js/app.js"></script>
 </body>
 </html>
