@@ -86,8 +86,7 @@
 {% endif %}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
-{% capture root %}{% include root.css %}{% endcapture %}{% capture main %}{% include main.css %}{% endcapture %}
-<style type="text/css">@font-face{font-family:"bootstrap-icons";src:url("{{ site.url }}/assets/fonts/bootstrap-icons.woff2") format("woff2"),url("{{ site.url }}/assets/fonts/bootstrap-icons.woff") format("woff");}{{ root | scssify }}{{ main | scssify }}</style>
+<style type="text/css">@font-face{font-family:"bootstrap-icons";src:url("{{ site.url }}/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("{{ site.url }}/assets/fonts/bootstrap-icons.woff")format("woff");}</style>
 <!-- Scripts required -->
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
 <script>'IntersectionObserver'in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');</script>
