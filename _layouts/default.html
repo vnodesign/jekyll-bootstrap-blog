@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head itemscope="itemscope" itemtype="https://schema.org/WebSite">
+{% capture root %}{% include root.min.css %}{% endcapture %}{% endcapture %}
+<style type="text/css">{{ root | scssify }}</style>
 <!-- Meta tag seo -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -38,7 +40,6 @@
 {% endif %}
 {% endif %}
 <!-- Preload file -->
-<link href="{{ site.url }}/assets/css/root.min.css" rel="preload" as="style" />
 <link href="{{ site.url }}/assets/css/bootstrap.min.css" rel="preload" as="style" />
 <link href="{{ site.url }}/assets/css/bootstrap-icons.min.css" rel="preload" as="style" />
 <link href="{{ site.url }}/assets/css/main.min.css" rel="preload" as="style" />
@@ -91,7 +92,6 @@
 {% endif %}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <!-- Style -->
-<link href="{{ site.url }}/assets/css/root.min.css" type="text/css" rel="stylesheet" />
 <link href="{{ site.url }}/assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" async="1" />
 <link href="{{ site.url }}/assets/css/bootstrap-icons.min.css" type="text/css" rel="stylesheet" />
 <link href="{{ site.url }}/assets/css/main.min.css" type="text/css" rel="stylesheet" />
@@ -218,7 +218,7 @@
 {% if site.fanpage-chat %}
 <!-- Messenger Plugin chat -->
 <div id="fb-root"></div>
-<div class="fb-customerchat" attribution="biz_inbox" page_id="{{site.fanpage-chat}}"></div>
+<div class="fb-customerchat" attribution="biz_inbox" page_id="{{site.fanpage-chat}}" data-lazy="true"></div>
 {% endif %}
 <script type="deferjs" src="{{ site.url }}/assets/js/jquery.min.js" defer="1"></script>
 <script type="deferjs" src="{{ site.url }}/assets/js/bootstrap.min.js" async="1"></script>
