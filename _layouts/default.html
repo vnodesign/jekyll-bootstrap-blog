@@ -5,7 +5,7 @@
 <!-- Meta tag seo -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<link rel="icon" href="{{ site.url }}/{{ site.favicon }}" />
+<link rel="icon" href="{{ site.favicon }}" />
 {% feed_meta %}
 <title>{% if page.url == "/" %}{{site.name}} - {{site.subtitle}}{% else %}{{ page.title }} - {{site.name}}{% endif %}</title>
 {% seo title=false %}
@@ -53,7 +53,7 @@
 <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}" as="script" />
 {% endif %}
 <link rel="preload" href="{{ site.url }}/assets/fonts/bootstrap-icons.woff2" type="font/woff2" as="font" crossorigin />
-<link rel="preload" href="{{ site.url }}/{{ site.logo }}" as="image" />
+<link rel="preload" href="{{ site.logo }}" as="image" />
 <!-- Prefetch Domain -->
 {% if site.fanpage-chat %}
 <link rel="dns-prefetch" href="//static.xx.fbcdn.net" />
@@ -68,6 +68,7 @@
 {% if site.google_analytics %}
 <link rel="dns-prefetch" href="//www.googletagmanager.com" />
 {% endif %}
+<link rel="dns-prefetch" href="//cdn.tuanducdesign.com" />
 {% if page.layout == 'post' %}
 <link rel="dns-prefetch" href="//{{site.disqus}}.disqus.com" />
 <link rel="dns-prefetch" href="//disqus.com" />
@@ -85,6 +86,7 @@
 {% if site.google_analytics %}
 <link rel="preconnect" href="https://www.googletagmanager.com" />
 {% endif %}
+<link rel="preconnect" href="https://cdn.tuanducdesign.com" />
 {% if page.layout == 'post' %}
 <link rel="preconnect" href="https://{{site.disqus}}.disqus.com" />
 <link rel="preconnect" href="https://disqus.com" />
@@ -119,9 +121,9 @@
         <!-- Begin Logo -->
         <a class="navbar-brand" href="{{ site.url }}/" title="{{ site.name }}">
         {% if site.lazyimages == "enabled" %}
-        <img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.name }}" loading="lazy" decoding="async" />
+        <img src="{{ site.logo }}" alt="{{ site.name }}" loading="lazy" decoding="async" />
         {% else %}
-        <img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.name }}" />
+        <img src="{{ site.logo }}" alt="{{ site.name }}" />
         {% endif %}
         </a>
         <!-- End Logo -->

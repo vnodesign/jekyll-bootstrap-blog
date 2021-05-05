@@ -3,8 +3,8 @@ name: "Tuan Duc Design"
 title: "Tuan Duc Design"
 subtitle: "Specialist site to share knowledge of VPS and Website"
 description: "Specialist page sharing knowledge related to VPS development and Website optimization."
-logo: 'static/tuanducdesign.jpg'
-favicon: 'static/tuanducdesign.jpg'
+logo: 'https://cdn.tuanducdesign.com/assets/images/tuanducdesign.jpg'
+favicon: 'https://cdn.tuanducdesign.com/assets/images/tuanducdesign.jpg'
 baseurl:
 url: 'https://tuanducdesign.com'
 google_analytics: 'UA-175649416-1'
@@ -126,5 +126,5 @@ webp:
 
   # append '.webp' to filename after original extension rather than replacing it.
   # Default transforms `image.png` to `image.webp`, while changing to true transforms `image.png` to `image.png.webp`
-  append_ext: false
+  append_ext: true
 ############################################################
