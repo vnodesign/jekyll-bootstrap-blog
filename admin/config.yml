@@ -1,0 +1,1 @@
+      - { label: 'Content', name: 'body', widget: 'markdown', hint: "Content for this post", required: true }
