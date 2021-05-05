@@ -6,6 +6,7 @@ categories: [ Javascript ]
 tags: [Lazyload, Video, Responsive]
 image: static/media/lazyload-youtube-va-responsive-video.jpg
 description: "Ở các bài viết trước mình đã hướng dẫn các bạn lazyload các script, ở bài này mình sẽ hướng dẫn cách lazyload Youtube và responsive video."
+toc: true
 ---
 
 Ở các bài viết trước mình đã hướng dẫn các bạn lazyload các script, ở bài này mình sẽ hướng dẫn cách lazyload Youtube và responsive video.

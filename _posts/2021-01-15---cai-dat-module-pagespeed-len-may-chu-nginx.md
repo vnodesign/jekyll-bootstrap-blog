@@ -9,6 +9,7 @@ description: "ngx_pagespeed tăng tốc website của bạn và giảm thời gi
 featured: true
 hidden: true
 rating: 5
+toc: true
 ---
 
 ngx_pagespeed tăng tốc website của bạn và giảm thời gian load đáng kể bằng cách tự động áp dụng các kỹ thuật tối ưu hóa page và các thành phần tĩnh như CSS, Javascript và Image.

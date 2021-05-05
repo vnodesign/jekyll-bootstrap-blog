@@ -7,6 +7,7 @@ categories: [ Series ]
 tags: [Parental Control, Restrict, Websites, Games, Apps, NextDNS]
 image: static/media/cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.png
 description: "Cấu hình chức năng kiểm soát của cha mẹ trên NextDNS. Bảo vệ con cái của bạn dễ dàng hơn với các cấu hình từ cơ bản tới nâng cao."
+toc: true
 ---
 
 Thêm một chức năng nữa mà mình muốn nhắc đến đối với các bậc làm, làm mẹ đó chính là chức năng kiểm soát của cha mẹ. Chức năng này sẽ giúp bạn quản lý con cái dễ dàng hơn.

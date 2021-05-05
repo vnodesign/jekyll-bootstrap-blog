@@ -6,6 +6,7 @@ categories: [ Javascript ]
 tags: [Lazyload, Zalo]
 image: static/media/lazyload-zalo-plugins.jpg
 description: "Trong bài viết tiếp theo của ngày hôm nay mình sẽ hướng dẫn các bạn cách Lazyload script của Zalo để tải trang nhanh hơn."
+toc: false
 ---
 
 Trong bài viết tiếp theo của ngày hôm nay mình sẽ hướng dẫn các bạn cách Lazyload script của Zalo để tải trang nhanh hơn.

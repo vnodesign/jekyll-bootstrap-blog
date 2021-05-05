@@ -6,6 +6,7 @@ categories: [ Website ]
 tags: [Requests, Tăng tốc]
 image: static/media/cach-kiem-tra-xem-co-bao-nhieu-requests-tren-website.jpg
 description: "Về vấn đề dùng nhiều scripts bên ba thì bạn sẽ không tránh khỏi được có nhiều requests được tải cùng website."
+toc: true
 ---
 
 Về vấn đề dùng nhiều scripts bên ba thì bạn sẽ không tránh khỏi được có nhiều requests được tải cùng website, Bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách kiểm tra xem có bao nhiêu requests trên Website.

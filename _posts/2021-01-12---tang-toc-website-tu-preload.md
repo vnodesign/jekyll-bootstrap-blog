@@ -6,6 +6,7 @@ categories: [ HTML ]
 tags: [Preload, Font, Script, Style]
 image: static/media/speed-website-from-preload.jpg
 description: "Ngày nay khi tối ưu website thì người ta quan trọng nhất là tốc độ và trải nghiệm của người dùng."
+toc: false
 ---
 
 Ngày nay khi tối ưu website thì người ta quan trọng nhất là tốc độ và trải nghiệm của người dùng. Bạn có thể áp dụng nội dung trong bài viết này với các đoạn script của bài trước để tối ưu thêm.

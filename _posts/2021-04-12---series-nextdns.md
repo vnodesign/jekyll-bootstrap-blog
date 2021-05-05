@@ -10,6 +10,7 @@ description: "Series hướng dẫn sử dụng NextDNS từ A đến Z. Từ c�
 featured: true
 hidden: true
 rating: 5
+toc: true
 ---
 
 Đây là danh sách các series hướng dẫn sử dụng NextDNS có trên [Tuan Duc Design]({{ site.url }}/). Từ cài đặt NextDNS đến cấu hình NextDNS và cuối cùng là bảo vệ gia đình bằng NextDNS.

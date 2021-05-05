@@ -6,6 +6,7 @@ categories: [ Javascript ]
 tags: [Preload, Zalo]
 image: static/media/meo-toi-uu-website-khi-su-dung-zalo-plugins.jpg
 description: "Ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Zalo plugins."
+toc: true
 ---
 
 Ở bài viết trước mình đã hướng dẫn các bạn cách tối ưu website khi sử dụng Facebook Plugins, ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Zalo plugins.

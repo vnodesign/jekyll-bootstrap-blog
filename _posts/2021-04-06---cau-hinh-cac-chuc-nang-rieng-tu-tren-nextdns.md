@@ -7,6 +7,7 @@ categories: [ Series ]
 tags: [Blocklists, Adblock, NextDNS]
 image: static/media/cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns.png
 description: "Trong bài viết này mình sẽ hướng dẫn các bạn cách cấu hình các chức năng riêng tư trên NextDNS."
+toc: true
 ---
 
 Ở bài viết trước chúng ta đã biết cách kích hoạt các chức năng bảo mật cần thiết trên NextDNS, trong bài viết này mình sẽ hướng dẫn các bạn cách cấu hình các chức năng riêng tư trên NextDNS

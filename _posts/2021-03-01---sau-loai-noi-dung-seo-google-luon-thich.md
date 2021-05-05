@@ -6,6 +6,7 @@ categories: [ SEO ]
 tags: [SEO, Google]
 image: static/media/sau-loai-noi-dung-seo-google-luon-thich.jpg
 description: "Nắm vững sáu loại nội dung này, bạn sẽ có thể tạo ra vô số nội dung chất lượng vừa tốt cho người dùng, vừa tốt cho Google trên website của mình."
+toc: true
 ---
 
 Nắm vững sáu loại nội dung này, bạn sẽ có thể tạo ra vô số nội dung chất lượng vừa tốt cho người dùng, vừa tốt cho Google trên website của mình.

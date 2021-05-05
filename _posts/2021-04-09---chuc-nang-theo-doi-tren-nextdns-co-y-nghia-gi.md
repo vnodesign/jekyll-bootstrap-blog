@@ -7,6 +7,7 @@ categories: [ Series ]
 tags: [Queries, Resolved Domains, Blocked Domains, Blocked Reasons, Devices, IPs, Root Domains, GAFAM Dominance, Encrypted DNS, Traffic Destination, NextDNS]
 image: static/media/chuc-nang-theo-doi-tren-nextdns-co-y-nghia-gi.png
 description: "Với chức năng theo dõi trên NextDNS, thì bạn có thể theo dõi được các hoạt động đang diễn ra trên các trình chặn quảng cáo mà bạn đã thêm."
+toc: true
 ---
 
 Với chức năng theo dõi trên NextDNS, thì bạn có thể theo dõi được các hoạt động đang diễn ra trên các trình chặn quảng cáo mà bạn đã thêm.

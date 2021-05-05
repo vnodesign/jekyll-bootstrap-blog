@@ -6,6 +6,7 @@ categories: [ Javascript ]
 tags: [Preload, Facebook]
 image: static/media/meo-toi-uu-website-khi-su-dung-facebook-plugins.jpg
 description: "Ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Facebook plugins."
+toc: true
 ---
 
 Ở các bài viết trước mình đã hướng dẫn các bạn cách lazyload các scripts bên ba, ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Facebook plugins.

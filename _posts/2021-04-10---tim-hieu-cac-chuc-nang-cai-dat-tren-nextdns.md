@@ -7,6 +7,7 @@ categories: [ Series ]
 tags: [Settings, NextDNS]
 image: static/media/tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.png
 description: "Để tăng thêm mức độ bảo mật cho tài khoản và mạng của mình, thì bạn cần phải tìm hiểu thêm về các chức năng cài đặt trên NextDNS."
+toc: true
 ---
 
 Để tăng thêm mức độ bảo mật cho tài khoản và mạng của mình, thì bạn cần phải tìm hiểu thêm về các chức năng cài đặt trên NextDNS.

@@ -9,6 +9,7 @@ description: "Đây là một thư viện hiệu suất nguyên bản siêu nh�
 featured: true
 hidden: true
 rating: 5
+toc: true
 ---
 
 Tình cờ mình tìm được một thư viện khá hay của bác Mai Nhựt Tân trên GitHub. Trong bài viết ngày hôm nay mình sẽ hướng dẫn các bạn sử dụng thư viện này trên Website của bạn.

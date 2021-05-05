@@ -6,6 +6,7 @@ categories: [ Library ]
 tags: [Tối ưu, PageSpeed, Preload, Lazyload]
 image: static/media/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.jpg
 description: "Bài viết ngày hôm nay mình sẽ tổng hợp bộ ba thư viện thần thánh giúp website của bạn tối ưu hơn."
+toc: true
 ---
 
 Bài viết ngày hôm nay mình sẽ tổng hợp bộ ba thư viện thần thành giúp website của bạn tối ưu hơn. Vậy các công cụ mà mình muốn nhắc đến là gì? Hãy cùng mình theo dõi hết bài viết ngày hôm nay nhé.

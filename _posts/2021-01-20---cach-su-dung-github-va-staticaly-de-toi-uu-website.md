@@ -6,6 +6,7 @@ categories: [ Website ]
 tags: [Github, Staticaly, CDN]
 image: static/media/cach-su-dung-github-va-staticaly-de-toi-uu-website.jpg
 description: "Ở bài trước mình đã hướng dẫn các bạn tăng tốc Website bằng cách sử dụng Staticaly nhưng ở mức độ cơ bản."
+toc: true
 ---
 
 Ở bài trước mình đã hướng dẫn các bạn tăng tốc Website bằng cách sử dụng Staticaly nhưng ở mức độ cơ bản, Bài viết ngày hôm nay mình sẽ hướng dẫn cách tạo và cấu hình Github để sử dụng Staticaly.
