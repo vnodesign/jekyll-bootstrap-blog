@@ -1,0 +1,29 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuanducteam/blog.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "medium",
+    "seo",
+    "faster",
+    "deferjs"
+  ],
+  "author": "Tuan Duc Design <nguoisoidangyeu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tuanducteam/blog/issues"
+  },
+  "homepage": "https://github.com/tuanducteam/blog#readme",
+  "dependencies": {
+    "purgecss": "^4.0.3"
+  }
+}
