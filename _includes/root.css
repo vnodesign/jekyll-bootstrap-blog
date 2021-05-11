@@ -256,226 +256,6 @@
     --tds-slow: 400ms
 }
 
-/* Dark mode */
-@media (prefers-color-scheme:dark) {
-    body {
-        background-color: var(--web-wash) !important;
-        color: var(--always-white) !important
-    }
-
-    body p {
-        color: var(--always-white) !important
-    }
-
-    body .mediumnavigation {
-        background: var(--nav-bar-background) !important;
-        box-shadow: unset !important;
-        color: var(--always-white) !important
-    }
-
-    body .mediumnavigation a {
-        color: var(--always-white) !important
-    }
-
-    body .mediumnavigation a:active,
-    body .mediumnavigation a:hover {
-        color: #fe2c55 !important
-    }
-
-    body .mediumnavigation .form-control {
-        background: var(--comment-background) !important
-    }
-
-    body .mediumnavigation .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important
-    }
-
-    body .mediumnavigation .search-icon svg {
-        fill: var(--always-white) !important
-    }
-
-    body .section-title h2 {
-        border-color: var(--comment-background) !important
-    }
-
-    body article .card {
-        background: var(--nav-bar-background) !important;
-        border-color: var(--comment-background) !important;
-        box-shadow: unset !important
-    }
-
-    body article .card .card-body .card-title a {
-        color: var(--always-white) !important
-    }
-
-    body article .card .card-body .card-title a:active,
-    body article .card .card-body .card-title a:hover {
-        color: #fe2c55 !important
-    }
-
-    body article .card .card-body .card-text {
-        color: var(--always-white) !important
-    }
-
-    body article .card .card-footer {
-        background: var(--surface-background) !important
-    }
-
-    body article .card .card-footer .post-name a {
-        color: var(--always-white) !important
-    }
-
-    body article .card .card-footer .post-name a:active,
-    body article .card .card-footer .post-name a:hover {
-        color: #fe2c55 !important
-    }
-
-    body article .card .card-footer .post-author,
-    body article .card .card-footer .post-date,
-    body article .card .card-footer .post-read {
-        color: var(--always-white) !important
-    }
-
-    body article .card .card-footer .post-read-more a {
-        color: var(--always-white) !important
-    }
-
-    body article .card .card-footer .post-read-more a:active,
-    body article .card .card-footer .post-read-more a:hover {
-        color: #fe2c55 !important
-    }
-
-    body article .post-author,
-    body article .post-date,
-    body article .post-read,
-    body article .article-post {
-        color: var(--always-white) !important
-    }
-
-    body article .prev-post,
-    body article .next-post {
-        background: var(--nav-bar-background) !important
-    }
-
-    body article .article-post h2:before {
-        background-color: var(--comment-background) !important
-    }
-
-    body .footer {
-        background: var(--nav-bar-background) !important;
-        border-color: var(--comment-background) !important;
-        color: var(--always-white) !important
-    }
-
-    body .footer a {
-        color: var(--always-white) !important
-    }
-
-    body .footer a:active,
-    body .footer a:hover {
-        color: #fe2c55 !important
-    }
-
-    body .bottompagination .navigation {
-        border-color: var(--comment-background) !important;
-        color: var(--always-white) !important
-    }
-
-    body .bottompagination .navigation a {
-        color: var(--always-white) !important
-    }
-
-    body .bottompagination .navigation a:active,
-    body .bottompagination .navigation a:hover {
-        color: #fe2c55 !important
-    }
-
-    .tags a {
-        background: var(--comment-background) !important
-    }
-
-    .tags a:active,
-    .tags a:hover {
-        background: var(--nav-bar-background) !important;
-        color: inherit
-    }
-
-    .highlight {
-        background: var(--nav-bar-background) !important
-    }
-
-    .highlight pre {
-        color: var(--always-white) !important;
-        border-color: var(--comment-background) !important;
-        background: var(--nav-bar-background) !important
-    }
-
-    .highlight .c,
-    .highlight .cm,
-    .highlight .cp,
-    .highlight .c1,
-    .highlight .cs,
-    .highlight .gr,
-    .highlight .gh,
-    .highlight .go,
-    .highlight .gp,
-    .highlight .gu,
-    .highlight .gt,
-    .highlight .kt,
-    .highlight .m,
-    .highlight .s,
-    .highlight .na,
-    .highlight .nb,
-    .highlight .nc,
-    .highlight .no,
-    .highlight .ni,
-    .highlight .ne,
-    .highlight .nf,
-    .highlight .nn,
-    .highlight .nt,
-    .highlight .nv,
-    .highlight .w,
-    .highlight .mf,
-    .highlight .mh,
-    .highlight .mi,
-    .highlight .mo,
-    .highlight .sb,
-    .highlight .sc,
-    .highlight .sd,
-    .highlight .s2,
-    .highlight .se,
-    .highlight .sh,
-    .highlight .si,
-    .highlight .sx,
-    .highlight .sr,
-    .highlight .s1,
-    .highlight .ss,
-    .highlight .bp,
-    .highlight .vc,
-    .highlight .vg,
-    .highlight .vi,
-    .highlight .il {
-        color: var(--always-white) !important
-    }
-
-    .highlight .err {
-        color: #fe2c55 !important;
-        background-color: unset !important
-    }
-
-    .highlight .gd,
-    .highlight .gi {
-        color: var(--always-white) !important;
-        background-color: unset !important
-    }
-
-    .highlight .gd .x,
-    .highlight .gi .x {
-        color: var(--always-white) !important;
-        background-color: unset !important
-    }
-}
-
 /* Bootstrap Icons */
 [class^="bi-"]::before,
 [class*=" bi-"]::before {
@@ -5791,6 +5571,202 @@
     content: "\f62d"
 }
 
+/* Dark mode */
+@media (prefers-color-scheme:dark) {
+    body {
+        background-color: var(--web-wash) !important;
+        color: var(--always-white) !important
+    }
+
+    body p,
+    .highlight .c,
+    .highlight .cm,
+    .highlight .cp,
+    .highlight .c1,
+    .highlight .cs,
+    .highlight .gr,
+    .highlight .gh,
+    .highlight .go,
+    .highlight .gp,
+    .highlight .gu,
+    .highlight .gt,
+    .highlight .kt,
+    .highlight .m,
+    .highlight .s,
+    .highlight .na,
+    .highlight .nb,
+    .highlight .nc,
+    .highlight .no,
+    .highlight .ni,
+    .highlight .ne,
+    .highlight .nf,
+    .highlight .nn,
+    .highlight .nt,
+    .highlight .nv,
+    .highlight .w,
+    .highlight .mf,
+    .highlight .mh,
+    .highlight .mi,
+    .highlight .mo,
+    .highlight .sb,
+    .highlight .sc,
+    .highlight .sd,
+    .highlight .s2,
+    .highlight .se,
+    .highlight .sh,
+    .highlight .si,
+    .highlight .sx,
+    .highlight .sr,
+    .highlight .s1,
+    .highlight .ss,
+    .highlight .bp,
+    .highlight .vc,
+    .highlight .vg,
+    .highlight .vi,
+    .highlight .il,
+    body .mediumnavigation a,
+    body article .card .card-body .card-title a,
+    body article .card .card-body .card-text {
+        color: var(--always-white) !important
+    }
+
+    body .mediumnavigation,
+    body article .card {
+        background: var(--nav-bar-background) !important;
+        box-shadow: unset !important;
+        color: var(--always-white) !important
+    }
+
+    body .mediumnavigation a:active,
+    body .mediumnavigation a:hover,
+    body article .card .card-body .card-title a:active,
+    body article .card .card-body .card-title a:hover {
+        color: #fe2c55 !important
+    }
+
+    body .mediumnavigation .form-control {
+        background: var(--comment-background) !important
+    }
+
+    body .mediumnavigation .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important
+    }
+
+    body .mediumnavigation .search-icon svg {
+        fill: var(--always-white) !important
+    }
+
+    body .section-title h2 {
+        border-color: var(--comment-background) !important
+    }
+
+    body article .card .card-footer {
+        background: var(--surface-background) !important
+    }
+
+    body article .card .card-footer .post-name a {
+        color: var(--always-white) !important
+    }
+
+    body article .card .card-footer .post-name a:active,
+    body article .card .card-footer .post-name a:hover {
+        color: #fe2c55 !important
+    }
+
+    body article .card .card-footer .post-author,
+    body article .card .card-footer .post-date,
+    body article .card .card-footer .post-read {
+        color: var(--always-white) !important
+    }
+
+    body article .card .card-footer .post-read-more a {
+        color: var(--always-white) !important
+    }
+
+    body article .card .card-footer .post-read-more a:active,
+    body article .card .card-footer .post-read-more a:hover {
+        color: #fe2c55 !important
+    }
+
+    body article .post-author,
+    body article .post-date,
+    body article .post-read,
+    body article .article-post {
+        color: var(--always-white) !important
+    }
+
+    body article .prev-post,
+    body article .next-post {
+        background: var(--nav-bar-background) !important
+    }
+
+    body article .article-post h2:before {
+        background-color: var(--comment-background) !important
+    }
+
+    body .footer {
+        background: var(--nav-bar-background) !important;
+        border-color: var(--comment-background) !important;
+        color: var(--always-white) !important
+    }
+
+    body .footer a {
+        color: var(--always-white) !important
+    }
+
+    body .footer a:active,
+    body .footer a:hover {
+        color: #fe2c55 !important
+    }
+
+    body .bottompagination .navigation {
+        border-color: var(--comment-background) !important;
+        color: var(--always-white) !important
+    }
+
+    body .bottompagination .navigation a {
+        color: var(--always-white) !important
+    }
+
+    body .bottompagination .navigation a:active,
+    body .bottompagination .navigation a:hover {
+        color: #fe2c55 !important
+    }
+
+    .tags a {
+        background: var(--comment-background) !important
+    }
+
+    .tags a:active,
+    .tags a:hover {
+        background: var(--nav-bar-background) !important;
+        color: inherit
+    }
+
+    .highlight {
+        background: var(--nav-bar-background) !important
+    }
+
+    .highlight pre {
+        color: var(--always-white) !important;
+        border-color: var(--comment-background) !important;
+        background: var(--nav-bar-background) !important
+    }
+
+    .highlight .err {
+        color: #fe2c55 !important;
+        background-color: unset !important
+    }
+
+    .highlight .gd,
+    .highlight .gi,
+    .highlight .gd .x,
+    .highlight .gi .x {
+        color: var(--always-white) !important;
+        background-color: unset !important
+    }
+}
+
 /* Custom CSS */
 .post-excerpt p {
     display: inline
@@ -5871,7 +5847,7 @@
 
 .layout-post .main-content .article-post .PageNavigation a,
 .layout-post .main-content .article-post .after-post-tags a {
-    color: #4c5267 !important
+    color: var(--always-white) !important
 }
 
 .layout-post .main-content .article-post .PageNavigation a:focus,
@@ -5920,7 +5896,7 @@ article .card {
     -o-transition: all .3s ease-in-out !important;
     -webkit-transition: all .3s ease-in-out !important;
     align-items: center;
-    background: #fff;
+    background: var(--always-white);
     display: flex !important;
     font-size: 14px !important;
     height: 40px;
@@ -5960,7 +5936,7 @@ article .card {
     -o-transition: all .3s ease-in-out !important;
     -webkit-transition: all .3s ease-in-out !important;
     align-items: center;
-    background: #fff;
+    background: var(--always-white);
     display: flex !important;
     font-size: 14px !important;
     height: 40px;
@@ -6023,5 +5999,5 @@ article .card {
 
 .socials a:hover,
 .socials a:focus {
-    color: #fff
+    color: var(--always-white)
 }
