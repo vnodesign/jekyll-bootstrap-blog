@@ -5573,233 +5573,275 @@
 
 /* Dark mode */
 @media (prefers-color-scheme:dark) {
-    :root body {
+    body {
         background-color: var(--web-wash) !important;
         color: var(--always-white) !important
     }
 
-    :root p,
-    :root .highlight .c,
-    :root .highlight .cm,
-    :root .highlight .cp,
-    :root .highlight .c1,
-    :root .highlight .cs,
-    :root .highlight .gr,
-    :root .highlight .gh,
-    :root .highlight .go,
-    :root .highlight .gp,
-    :root .highlight .gu,
-    :root .highlight .gt,
-    :root .highlight .kt,
-    :root .highlight .m,
-    :root .highlight .s,
-    :root .highlight .na,
-    :root .highlight .nb,
-    :root .highlight .nc,
-    :root .highlight .no,
-    :root .highlight .ni,
-    :root .highlight .ne,
-    :root .highlight .nf,
-    :root .highlight .nn,
-    :root .highlight .nt,
-    :root .highlight .nv,
-    :root .highlight .w,
-    :root .highlight .mf,
-    :root .highlight .mh,
-    :root .highlight .mi,
-    :root .highlight .mo,
-    :root .highlight .sb,
-    :root .highlight .sc,
-    :root .highlight .sd,
-    :root .highlight .s2,
-    :root .highlight .se,
-    :root .highlight .sh,
-    :root .highlight .si,
-    :root .highlight .sx,
-    :root .highlight .sr,
-    :root .highlight .s1,
-    :root .highlight .ss,
-    :root .highlight .bp,
-    :root .highlight .vc,
-    :root .highlight .vg,
-    :root .highlight .vi,
-    :root .highlight .il,
-    :root .mediumnavigation a,
-    :root article .card .card-.card-title a,
-    :root article .card .card-.card-text,
-    :root article .card .card-footer .post-name a,
-    :root article .card .card-footer .post-author,
-    :root article .card .card-footer .post-date,
-    :root article .card .card-footer .post-read,
-    :root article .card .card-footer .post-read-more a,
-    :root article .post-author,
-    :root article .post-date,
-    :root article .post-read,
-    :root article .post-cat,
-    :root article .article-post,
-    :root .footer a,
-    :root .bottompagination .navigation a,
-    :root .layout-post .main-content .article-post .PageNavigation a,
-    :root .layout-post .main-content .article-post .after-post-tags a,
-    :root .layout-author .text-dark {
+    body p,
+    .highlight .c,
+    .highlight .cm,
+    .highlight .cp,
+    .highlight .c1,
+    .highlight .cs,
+    .highlight .gr,
+    .highlight .gh,
+    .highlight .go,
+    .highlight .gp,
+    .highlight .gu,
+    .highlight .gt,
+    .highlight .kt,
+    .highlight .m,
+    .highlight .s,
+    .highlight .na,
+    .highlight .nb,
+    .highlight .nc,
+    .highlight .no,
+    .highlight .ni,
+    .highlight .ne,
+    .highlight .nf,
+    .highlight .nn,
+    .highlight .nt,
+    .highlight .nv,
+    .highlight .w,
+    .highlight .mf,
+    .highlight .mh,
+    .highlight .mi,
+    .highlight .mo,
+    .highlight .sb,
+    .highlight .sc,
+    .highlight .sd,
+    .highlight .s2,
+    .highlight .se,
+    .highlight .sh,
+    .highlight .si,
+    .highlight .sx,
+    .highlight .sr,
+    .highlight .s1,
+    .highlight .ss,
+    .highlight .bp,
+    .highlight .vc,
+    .highlight .vg,
+    .highlight .vi,
+    .highlight .il,
+    body .mediumnavigation a,
+    body article .card .card-body .card-title a,
+    body article .card .card-body .card-text {
         color: var(--always-white) !important
     }
 
-    :root .mediumnavigation,
-    :root article .card {
+    body .mediumnavigation,
+    body article .card {
         background: var(--nav-bar-background) !important;
         box-shadow: unset !important;
         color: var(--always-white) !important
     }
 
-    :root .mediumnavigation a:active,
-    :root .mediumnavigation a:hover,
-    :root article .card .card-.card-title a:active,
-    :root article .card .card-.card-title a:hover,
-    :root article .card .card-footer .post-name a:active,
-    :root article .card .card-footer .post-name a:hover,
-    :root article .card .card-footer .post-read-more a:active,
-    :root article .card .card-footer .post-read-more a:hover,
-    :root .footer a:active,
-    :root .footer a:hover,
-    :root .bottompagination .navigation a:active,
-    :root .bottompagination .navigation a:hover,
-    :root .layout-author .text-dark:hover,
-    :root .btn.follow {
+    body .mediumnavigation a:active,
+    body .mediumnavigation a:hover,
+    body article .card .card-body .card-title a:active,
+    body article .card .card-body .card-title a:hover {
         color: #fe2c55 !important
     }
 
-    :root .btn.follow {
-        border-color: #fe2c55 !important;
-    }
-
-    :root .mediumnavigation .form-control,
-    :root article .article-post h2:before,
-    :root .tags a {
+    body .mediumnavigation .form-control {
         background: var(--comment-background) !important
     }
 
-    :root .mediumnavigation .navbar-toggler-icon {
+    body .mediumnavigation .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important
     }
 
-    :root .mediumnavigation .search-icon svg {
+    body .mediumnavigation .search-icon svg {
         fill: var(--always-white) !important
     }
 
-    :root .section-title h2 {
+    body .section-title h2 {
         border-color: var(--comment-background) !important
     }
 
-    :root article .card .card-footer {
+    body article .card .card-footer {
         background: var(--surface-background) !important
     }
 
-    :root article .prev-post,
-    :root article .next-post,
-    :root .highlight {
+    body article .card .card-footer .post-name a {
+        color: var(--always-white) !important
+    }
+
+    body article .card .card-footer .post-name a:active,
+    body article .card .card-footer .post-name a:hover {
+        color: #fe2c55 !important
+    }
+
+    body article .card .card-footer .post-author,
+    body article .card .card-footer .post-date,
+    body article .card .card-footer .post-read {
+        color: var(--always-white) !important
+    }
+
+    body article .card .card-footer .post-read-more a {
+        color: var(--always-white) !important
+    }
+
+    body article .card .card-footer .post-read-more a:active,
+    body article .card .card-footer .post-read-more a:hover {
+        color: #fe2c55 !important
+    }
+
+    body article .post-author,
+    body article .post-date,
+    body article .post-read,
+    body article .article-post {
+        color: var(--always-white) !important
+    }
+
+    body article .prev-post,
+    body article .next-post {
         background: var(--nav-bar-background) !important
     }
 
-    :root .footer {
+    body article .article-post h2:before {
+        background-color: var(--comment-background) !important
+    }
+
+    body .footer {
         background: var(--nav-bar-background) !important;
         border-color: var(--comment-background) !important;
         color: var(--always-white) !important
     }
 
-    :root .border {
-        border-color: var(--comment-background) !important;
+    body .footer a {
+        color: var(--always-white) !important
     }
-    
-    :root .bottompagination .navigation {
+
+    body .footer a:active,
+    body .footer a:hover {
+        color: #fe2c55 !important
+    }
+
+    body .bottompagination .navigation {
         border-color: var(--comment-background) !important;
         color: var(--always-white) !important
     }
 
-    :root .tags a:active,
-    :root .tags a:hover {
+    body .bottompagination .navigation a {
+        color: var(--always-white) !important
+    }
+
+    body .bottompagination .navigation a:active,
+    body .bottompagination .navigation a:hover {
+        color: #fe2c55 !important
+    }
+
+    .tags a {
+        background: var(--comment-background) !important
+    }
+
+    .tags a:active,
+    .tags a:hover {
         background: var(--nav-bar-background) !important;
         color: inherit
     }
 
-    :root .highlight pre {
+    .highlight {
+        background: var(--nav-bar-background) !important
+    }
+
+    .highlight pre {
         color: var(--always-white) !important;
         border-color: var(--comment-background) !important;
         background: var(--nav-bar-background) !important
     }
 
-    :root .highlight .err {
+    .highlight .err {
         color: #fe2c55 !important;
         background-color: unset !important
     }
 
-    :root .highlight .gd,
-    :root .highlight .gi,
-    :root .highlight .gd .x,
-    :root .highlight .gi .x {
+    .highlight .gd,
+    .highlight .gi,
+    .highlight .gd .x,
+    .highlight .gi .x {
         color: var(--always-white) !important;
         background-color: unset !important
+    }
+
+    .border {
+        border-color: var(--comment-background) !important;
+    }
+    
+    .layout-author .post-cat .text-dark {
+        color: #fe2c55 !important;
+    }
+
+    .layout-author .post-cat .text-dark:hover, .layout-author .text-dark {
+        color: var(--always-white) !important;
     }
 
 }
 
 /* Custom CSS */
-:root .post-excerpt p {
+.post-excerpt p {
     display: inline
 }
 
-:root .nav-up {
+.nav-up {
     top: 0 !important
 }
 
-:root .card-body.card-title a {
+.card-body .card-title a {
     color: #4c5267 !important
 }
 
-:root .card-body.card-title a:focus,
-:root .card-body.card-title a:hover,
-:root .layout-post .main-content .post-author a,
-:root .layout-post .main-content .article-post a,
-:root .layout-page .main-content .article-post a,
-:root .layout-post .main-content .article-post .PageNavigation a:focus,
-:root .layout-post .main-content .article-post .after-post-tags a:focus,
-:root .layout-post .main-content .article-post .PageNavigation a:hover,
-:root .layout-post .main-content .article-post .after-post-tags a:hover {
+.card-body .card-title a:focus,
+.card-body .card-title a:hover {
     color: #fe2c55 !important
 }
 
-:root .layout-post .main-content,
-:root .layout-page .main-content {
+.layout-post .main-content,
+.layout-page .main-content {
     max-width: 66.875rem;
     margin-left: auto;
     margin-right: auto
 }
 
-:root .layout-post .main-content .post-author a:focus,
-:root .layout-post .main-content .post-author a:hover,
-:root .layout-post .main-content .article-post .PageNavigation a:focus,
-:root .layout-post .main-content .article-post .after-post-tags a:focus,
-:root .layout-post .main-content .article-post .PageNavigation a:hover,
-:root .layout-post .main-content .article-post .after-post-tags a:hover {
-    color: #fe9c55 !important
+.layout-post .main-content .post-author a {
+    color: #fe2c55
 }
 
-:root .layout-post .main-content .article-post,
-:root .layout-page .main-content .article-post {
+.layout-post .main-content .post-author a:focus,
+.layout-post .main-content .post-author a:hover {
+    color: #fe9c55
+}
+
+.layout-post .main-content .article-post,
+.layout-page .main-content .article-post {
     max-width: 46.875rem;
     padding: 0;
     margin: 0 auto
 }
 
-:root .layout-post .main-content .article-post h2,
-:root .layout-page .main-content .article-post h2 {
+.layout-post .main-content .article-post a,
+.layout-page .main-content .article-post a {
+    color: #fe2c55 !important
+}
+
+.layout-post .main-content .article-post a:focus,
+.layout-post .main-content .article-post a:hover,
+.layout-page .main-content .article-post a:focus,
+.layout-page .main-content .article-post a:hover {
+    color: #fe9c55 !important
+}
+
+.layout-post .main-content .article-post h2,
+.layout-page .main-content .article-post h2 {
     position: relative
 }
 
-:root .layout-post .main-content .article-post h2:before,
-:root .layout-post .main-content .article-post h2:after,
-:root .layout-page .main-content .article-post h2:before,
-:root .layout-page .main-content .article-post h2:after {
+.layout-post .main-content .article-post h2:before,
+.layout-post .main-content .article-post h2:after,
+.layout-page .main-content .article-post h2:before,
+.layout-page .main-content .article-post h2:after {
     content: "";
     height: .125rem;
     position: absolute;
@@ -5807,38 +5849,50 @@
     left: 0
 }
 
-:root .layout-post .main-content .article-post h2:before,
-:root .layout-page .main-content .article-post h2:before {
+.layout-post .main-content .article-post h2:before,
+.layout-page .main-content .article-post h2:before {
     width: 100%;
     background-color: #efefef
 }
 
-:root .layout-post .main-content .article-post h2:after,
-:root .layout-page .main-content .article-post h2:after {
+.layout-post .main-content .article-post h2:after,
+.layout-page .main-content .article-post h2:after {
     width: 3.125rem;
     margin: auto;
     background-color: #fe2c55
 }
 
-:root .layout-post .main-content h1,
-:root .layout-page .main-content h1 {
+.layout-post .main-content .article-post .PageNavigation a,
+.layout-post .main-content .article-post .after-post-tags a {
+    color: var(--always-white) !important
+}
+
+.layout-post .main-content .article-post .PageNavigation a:focus,
+.layout-post .main-content .article-post .after-post-tags a:focus,
+.layout-post .main-content .article-post .PageNavigation a:hover,
+.layout-post .main-content .article-post .after-post-tags a:hover {
+    color: #fe2c55 !important
+}
+
+.layout-post .main-content h1,
+.layout-page .main-content h1 {
     font-weight: 600;
     font-size: 2.26563rem
 }
 
-:root .layout-post .main-content p,
-:root .layout-page .main-content p {
+.layout-post .main-content p,
+.layout-page .main-content p {
     font-size: 1.01953rem;
     line-height: 1.89844rem;
     margin-bottom: 1.89844rem
 }
 
 @media (min-width:992px) {
-    :root .navbar-nav>.active {
+    .navbar-nav>.active {
         position: relative
     }
 
-    :root .navbar-nav>.active:before {
+    .navbar-nav>.active:before {
         content: '';
         background-color: #fe2c55;
         width: 100%;
@@ -5849,12 +5903,12 @@
     }
 }
 
-:root article .card {
+article .card {
     border: 1px solid rgba(0, 0, 0, 0.125);
     box-shadow: 0 3px 10px 0 #4c52671a
 }
 
-:root .next-post {
+.next-post {
     -moz-transition: all .3s ease-in-out !important;
     -o-transition: all .3s ease-in-out !important;
     -webkit-transition: all .3s ease-in-out !important;
@@ -5879,24 +5933,22 @@
     line-height: unset !important
 }
 
-:root .next-post span,
-:root .prev-post span {
+.next-post span {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
 }
 
-:root .next-post:hover,
-:root .prev-post:hover {
+.next-post:hover {
     max-width: 500px
 }
 
-:root .next-post i {
+.next-post i {
     font-size: 16px;
     margin-left: 13px
 }
 
-:root .prev-post {
+.prev-post {
     -moz-transition: all .3s ease-in-out !important;
     -o-transition: all .3s ease-in-out !important;
     -webkit-transition: all .3s ease-in-out !important;
@@ -5924,14 +5976,24 @@
     right: auto
 }
 
-:root .prev-post i {
+.prev-post span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.prev-post:hover {
+    max-width: 500px
+}
+
+.prev-post i {
     font-size: 16px;
     margin-left: 13px;
     margin-left: 0;
     margin-right: 13px
 }
 
-:root .socials {
+.socials {
     opacity: 1;
     -webkit-transition: all .5s ease-in 3s;
     transition: all .5s ease-in 3s;
@@ -5941,24 +6003,33 @@
 }
 
 @media (min-width: 1200px) {
-    :root .socials {
+    .socials {
         margin-left: auto
     }
 }
 
-:root .socials a {
+.socials a {
     color: var(--always-white) !important;
     margin-right: 20px;
     transition: .3s all ease
 }
 
-:root .socials a:hover,
-:root .socials a:focus {
+.socials a:hover,
+.socials a:focus {
     color: var(--always-white)
 }
 
-:root .card-group>.card:only-child,
-:root .card-group>.card:only-child .card-footer,
-:root .card-group>.card:only-child .card-img-bottom {
+@media(max-width:767px) {
+
+    .prev-post,
+    .next-post {
+        display: none !important;
+    }
+}
+
+.card-group>.card:only-child,
+.card-group>.card:only-child .card-footer,
+.card-group>.card:only-child .card-img-bottom {
     border-radius: 25px !important;
 }
+
