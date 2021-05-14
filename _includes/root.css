@@ -5887,7 +5887,7 @@
 }
 
 article .card {
-    border: 1px solid #ebecf0;
+    border: 1px solid rgba(0,0,0,0.125);
     box-shadow: 0 3px 10px 0 #4c52671a
 }
 
@@ -6000,4 +6000,10 @@ article .card {
 .socials a:hover,
 .socials a:focus {
     color: var(--always-white)
+}
+@media(max-width:767px) {
+    .prev-post,
+    .next-post {
+        display: none!important;
+    }
 }

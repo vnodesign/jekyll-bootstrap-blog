@@ -23,7 +23,7 @@ permalink: "/author/tuanducdesign"
         <h4 class="font-weight-bold spanborder"><span>Posts by {{ site.authors.tuanducdesign.name }}</span></h4>
             {% assign posts = site.posts | where:"author","tuanducdesign" %}
             {% for post in posts %}
-            {% include main-loop-card.html %}
+            {% include postbox.html %}
             {% endfor %}
     </div>
 </div>
