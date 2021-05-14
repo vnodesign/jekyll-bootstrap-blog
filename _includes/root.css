@@ -5785,7 +5785,8 @@
     color: #fe2c55 !important
 }
 
-.layout-post .main-content, .layout-page .main-content {
+.layout-post .main-content,
+.layout-page .main-content {
     max-width: 66.875rem;
     margin-left: auto;
     margin-right: auto
@@ -5800,13 +5801,15 @@
     color: #fe9c55
 }
 
-.layout-post .main-content .article-post, .layout-page .main-content .article-post {
+.layout-post .main-content .article-post,
+.layout-page .main-content .article-post {
     max-width: 46.875rem;
     padding: 0;
     margin: 0 auto
 }
 
-.layout-post .main-content .article-post a, .layout-page .main-content .article-post a {
+.layout-post .main-content .article-post a,
+.layout-page .main-content .article-post a {
     color: #fe2c55 !important
 }
 
@@ -5817,7 +5820,8 @@
     color: #fe9c55 !important
 }
 
-.layout-post .main-content .article-post h2, .layout-page .main-content .article-post h2 {
+.layout-post .main-content .article-post h2,
+.layout-page .main-content .article-post h2 {
     position: relative
 }
 
@@ -5887,7 +5891,7 @@
 }
 
 article .card {
-    border: 1px solid rgba(0,0,0,0.125);
+    border: 1px solid rgba(0, 0, 0, 0.125);
     box-shadow: 0 3px 10px 0 #4c52671a
 }
 
@@ -6001,9 +6005,16 @@ article .card {
 .socials a:focus {
     color: var(--always-white)
 }
+
 @media(max-width:767px) {
+
     .prev-post,
     .next-post {
-        display: none!important;
+        display: none !important;
     }
+}
+
+.card-group>.card:only-child .card-footer,
+.card-group>.card:only-child .card-img-bottom {
+    border-radius: 25px !important;
 }

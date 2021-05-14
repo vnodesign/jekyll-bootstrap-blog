@@ -10448,6 +10448,8 @@ section.recent-posts {
 }
 
 .maxthumb {
+    border-top-left-radius: 25px !important;
+    border-top-right-radius: 25px !important;
     max-height: 300px;
     overflow: hidden
 }
@@ -10463,8 +10465,8 @@ section.recent-posts {
     display: block;
     background-position: 38% 22% !important;
     background-origin: border-box !important;
-    border-top-left-radius: .25rem;
-    border-bottom-left-radius: .25rem
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px
 }
 
 .listfeaturedtag .card-block {

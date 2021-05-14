@@ -7,9 +7,11 @@
                 {% if post.image %}
                 <link rel="preload" href="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.url }}/{{ post.image }}{% endif %}" as="image" />
                     {% if site.lazyimages == "enabled" %}
-                        <img class="img-fluid fade" data-src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.url }}/{{ post.image }}{% endif %}" alt="{{ post.title }}" loading="lazy" decoding="async" itemprop="image" />
+                    <div class="thumbnail" data-style="background-image:url({% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.url }}/{{ post.image }}{% endif %});">
+                    </div>
                     {% else %}
-                        <img class="img-fluid" src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.url }}/{{ post.image }}{% endif %}" alt="{{ post.title }}" itemprop="image" /> 
+                    <div class="thumbnail" style="background-image:url({% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.url }}/{{ post.image }}{% endif %});">
+                    </div>
                     {% endif %}
                 {% endif %}
             </a>
