@@ -99,7 +99,8 @@
     <script>
     'IntersectionObserver' in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');
     {% if site.lazyimages == "enabled" %}Defer.dom('img.fade',200,'loaded');{% endif %}
-    {% if site.fanpage-chat %}Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})}});{% endif %}{% if site.google_analytics %}Defer.js('https://cdn.jsdelivr.net/npm/ga-lite@1/dist/ga-lite.min.js','galite-js',100,function(){var galite=galite||{};galite.UA='{{site.google_analytics}}';);{% endif %}
+    {% if site.fanpage-chat %}Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})}});{% endif %}
+    {% if site.google_analytics %}Defer.js('https://cdn.jsdelivr.net/npm/ga-lite@1/dist/ga-lite.min.js','galite-js',100,function(){var galite=galite||{};galite.UA='{{site.google_analytics}}'});{% endif %}
     </script>
     <!-- Cloudflare Web Analytics -->
     <link rel="preload" href="https://static.cloudflareinsights.com/beacon.min.js" as="script" />
