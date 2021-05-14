@@ -6026,10 +6026,3 @@ article .card {
         display: none !important;
     }
 }
-
-.card-group>.card:only-child,
-.card-group>.card:only-child .card-footer,
-.card-group>.card:only-child .card-img-bottom {
-    border-radius: 25px !important;
-}
-
