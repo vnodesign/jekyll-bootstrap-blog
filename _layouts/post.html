@@ -12,23 +12,47 @@ post_class: post-template
         <div class="col-md-12 flex-first flex-md-unordered">
             <div class="mainheading text-center">
                 <!-- Post Title -->
-                <h1 class="posttitle" itemprop="name">{{ page.title }}</h1>
+                <h1 class="posttitle" itemprop="name">
+                    {{ page.title }}
+                </h1>
                 <p>
                 <!-- Post Author -->
                 {% if page.author %}
-                <span class="post-author"><a class="link-dark" href="{{ site.url }}/author/{{ author.username }}" title="{{ author.display_name }}">{{ author.display_name }}</a></span>
+                <span class="post-author">
+                    <a class="link-dark" href="{{ site.url }}/author/{{ author.username }}" title="{{ author.display_name }}">
+                        {{ author.display_name }}
+                    </a>
+                </span>
                 {% endif %}
                 <span class="dot"></span>
                 <!-- Post Date -->
-                <span class="post-date"><time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                <span class="post-date">
+                    <time datetime="{{ page.date | date:"%Y-%m-%d" }}">
+                        {{ page.date | date_to_string }}
+                    </time>
+                </span>           
                 {% if page.last_modified_at %}
                 <span class="dot"></span>
                 <!-- Post Updated -->
-                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">
+                    {{ page.last_modified_at | date: "%b %-d, %Y" }}
+                </time>)
                 {% endif %}
                 <span class="dot"></span>
                 <!-- Post Read -->
                 <span class="post-read eta"></span>
+                <span class="dot"></span>
+                <!-- Post Cat -->
+                <span class="post-cat">
+                    {% assign sortedCategories = page.categories | sort %}
+                    {% for category in sortedCategories %}
+                    <li>
+                        <a class="smoothscroll" href="{{ site.url }}/categories#{{ category | replace: " ","-" }}" title="{{ category }}" rel="tag">
+                            {{ category }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </span>
                 </p>
             </div>
             {% if site.adsense == "enabled" %}
@@ -50,7 +74,9 @@ post_class: post-template
             <div class="article-post" itemprop="articleBody">
                 <!-- Toc if any -->
                     <div class="toc mt-4 mb-4 lead">
-                        <h3 class="font-weight-bold">Table of contents</h3>
+                        <h3 class="font-weight-bold">
+                            Table of contents
+                        </h3>
                         {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %}
                     </div>
                 <!-- End Toc -->
@@ -58,28 +84,21 @@ post_class: post-template
             <!-- Rating -->
             {% if page.rating %}
             <div class="rating mb-4 d-flex align-items-center">
-                <strong class="mr-1">Rating:</strong> {% include star_rating.html %}
+                <strong class="mr-1">
+                    Rating by author:
+                </strong> 
+                {% include star_rating.html %}
             </div>
             {% endif %}
-            <!-- Post Categories -->
-            <!--<div class="after-post-cats">
-                <ul class="tags mb-4">
-                    {% assign sortedCategories = page.categories | sort %}
-                    {% for category in sortedCategories %}
-                    <li>
-                        <a class="smoothscroll" href="{{ site.url }}/categories#{{ category | replace: " ","-" }}" title="{{ category }}">{{ category }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>-->
-            <!-- End Categories -->
             <!-- Post Tags -->
             <div class="after-post-tags">
                 <ul class="tags">
                     {% assign sortedTags = page.tags | sort %}
                     {% for tag in sortedTags %}
                     <li>
-                        <a class="smoothscroll" href="{{ site.url }}/tags#{{ tag | replace: " ","-" }}" title="{{ tag }}">{{ tag }}</a>
+                        <a class="smoothscroll" href="{{ site.url }}/tags#{{ tag | replace: " ","-" }}" title="{{ tag }}" rel="tag">
+                            {{ tag }}
+                        </a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -90,12 +109,10 @@ post_class: post-template
             {% if page.previous.url %}
             <a href="{{ site.url }}{{page.previous.url}}" rel="prev" class="btn prev-post" title="{{page.previous.title}}">
 				<i class="bi bi-arrow-left"></i>
-				<span>{{page.previous.title}}</span>
 			</a>
             {% endif %}
             {% if page.next.url %}
             <a href="{{ site.url }}{{page.next.url}}" rel="next" class="btn next-post" title="{{page.next.title}}">
-				<span>{{page.next.title}}</span>
 				<i class="bi bi-arrow-right"></i>
 			</a>
             {% endif %}
