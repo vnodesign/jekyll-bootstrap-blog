@@ -5640,7 +5640,7 @@
     .footer a,
    .bottompagination .navigation a,
    .layout-post .main-content .article-post .PageNavigation a,
-   .layout-post .main-content .article-post .after-post-tags a
+   .layout-post .main-content .article-post .after-post-tags a,
    .layout-author .text-dark {
         color: var(--always-white) !important
     }
