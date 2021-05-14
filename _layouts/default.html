@@ -106,7 +106,7 @@
     <link rel="preload" href="https://static.cloudflareinsights.com/beacon.min.js" as="script" />
     <link rel="dns-prefetch" href="//static.cloudflareinsights.com" />
     <link rel="preconnect" href="https://static.cloudflareinsights.com" />
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "661af687c4704dbebe561e9b4f58b1b0"}'></script>
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "8d6cafbff9c04e16afae08ecdd06eafe"}'></script>
     <!-- End Cloudflare Web Analytics -->
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
@@ -226,6 +226,6 @@
     <div id="fb-root"></div>
     <div class="fb-customerchat" attribution="biz_inbox" page_id="{{site.fanpage-chat}}" data-lazy="true"></div>
     {% endif %}
-    <script src="{{ site.url }}/assets/js/bundle.min.js"></script>
+    <script src="{{ site.url }}/assets/js/bundle.min.js" defer></script>
 </body>
 </html>
