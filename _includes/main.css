@@ -10569,7 +10569,8 @@ span.author-meta {
 
 span.post-author,
 span.post-date,
-span.post-read {
+span.post-read,
+span.post-cat {
     color: rgba(0, 0, 0, .44)
 }
 

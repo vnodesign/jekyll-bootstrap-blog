@@ -9,6 +9,7 @@ post_class: post-template
     <div class="row">
         <!-- Post -->
         {% assign author = site.authors[page.author] %}
+        {% assign sortedCategories = page.categories | sort %}
         <div class="col-md-12 flex-first flex-md-unordered">
             <div class="mainheading text-center">
                 <!-- Post Title -->
@@ -44,13 +45,10 @@ post_class: post-template
                 <span class="dot"></span>
                 <!-- Post Cat -->
                 <span class="post-cat">
-                    {% assign sortedCategories = page.categories | sort %}
                     {% for category in sortedCategories %}
-                    <li>
-                        <a class="smoothscroll" href="{{ site.url }}/categories#{{ category | replace: " ","-" }}" title="{{ category }}" rel="tag">
-                            {{ category }}
-                        </a>
-                    </li>
+                    <a class="link-dark" href="{{ site.url }}/categories#{{ category | replace: " ","-" }}" title="{{ category }}" rel="tag">
+                    {{ category }}
+                    </a>
                     {% endfor %}
                 </span>
                 </p>
