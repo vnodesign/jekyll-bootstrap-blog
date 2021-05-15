@@ -28,6 +28,9 @@
     --breakpoint-xl: 1200px;
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+:root .dark-mode {
     --tds-black: black;
     --tds-black-alpha-05: rgba(0, 0, 0, .05);
     --tds-black-alpha-10: rgba(0, 0, 0, .1);
@@ -254,6 +257,11 @@
     --tds-duration-none: 0ms;
     --tds-fast: 200ms;
     --tds-slow: 400ms
+}
+
+:root body {
+    -webkit-transition: background-color 800ms ease;
+    transition: background-color 800ms ease;
 }
 
 /* Bootstrap Icons */
@@ -5573,209 +5581,157 @@
 
 /* Dark mode */
 @media (prefers-color-scheme:dark) {
-    body {
+    :root .dark-mode body {
         background-color: var(--web-wash) !important;
         color: var(--always-white) !important
     }
 
-    body p,
-    .highlight .c,
-    .highlight .cm,
-    .highlight .cp,
-    .highlight .c1,
-    .highlight .cs,
-    .highlight .gr,
-    .highlight .gh,
-    .highlight .go,
-    .highlight .gp,
-    .highlight .gu,
-    .highlight .gt,
-    .highlight .kt,
-    .highlight .m,
-    .highlight .s,
-    .highlight .na,
-    .highlight .nb,
-    .highlight .nc,
-    .highlight .no,
-    .highlight .ni,
-    .highlight .ne,
-    .highlight .nf,
-    .highlight .nn,
-    .highlight .nt,
-    .highlight .nv,
-    .highlight .w,
-    .highlight .mf,
-    .highlight .mh,
-    .highlight .mi,
-    .highlight .mo,
-    .highlight .sb,
-    .highlight .sc,
-    .highlight .sd,
-    .highlight .s2,
-    .highlight .se,
-    .highlight .sh,
-    .highlight .si,
-    .highlight .sx,
-    .highlight .sr,
-    .highlight .s1,
-    .highlight .ss,
-    .highlight .bp,
-    .highlight .vc,
-    .highlight .vg,
-    .highlight .vi,
-    .highlight .il,
-    body .mediumnavigation a,
-    body article .card .card-body .card-title a,
-    body article .card .card-body .card-text {
+    :root .dark-mode img {
+        -webkit-filter: brightness(70%);
+        filter: brightness(70%);
+    }
+
+    :root .dark-mode p,
+    :root .dark-mode .highlight .c,
+    :root .dark-mode .highlight .cm,
+    :root .dark-mode .highlight .cp,
+    :root .dark-mode .highlight .c1,
+    :root .dark-mode .highlight .cs,
+    :root .dark-mode .highlight .gr,
+    :root .dark-mode .highlight .gh,
+    :root .dark-mode .highlight .go,
+    :root .dark-mode .highlight .gp,
+    :root .dark-mode .highlight .gu,
+    :root .dark-mode .highlight .gt,
+    :root .dark-mode .highlight .kt,
+    :root .dark-mode .highlight .m,
+    :root .dark-mode .highlight .s,
+    :root .dark-mode .highlight .na,
+    :root .dark-mode .highlight .nb,
+    :root .dark-mode .highlight .nc,
+    :root .dark-mode .highlight .no,
+    :root .dark-mode .highlight .ni,
+    :root .dark-mode .highlight .ne,
+    :root .dark-mode .highlight .nf,
+    :root .dark-mode .highlight .nn,
+    :root .dark-mode .highlight .nt,
+    :root .dark-mode .highlight .nv,
+    :root .dark-mode .highlight .w,
+    :root .dark-mode .highlight .mf,
+    :root .dark-mode .highlight .mh,
+    :root .dark-mode .highlight .mi,
+    :root .dark-mode .highlight .mo,
+    :root .dark-mode .highlight .sb,
+    :root .dark-mode .highlight .sc,
+    :root .dark-mode .highlight .sd,
+    :root .dark-mode .highlight .s2,
+    :root .dark-mode .highlight .se,
+    :root .dark-mode .highlight .sh,
+    :root .dark-mode .highlight .si,
+    :root .dark-mode .highlight .sx,
+    :root .dark-mode .highlight .sr,
+    :root .dark-mode .highlight .s1,
+    :root .dark-mode .highlight .ss,
+    :root .dark-mode .highlight .bp,
+    :root .dark-mode .highlight .vc,
+    :root .dark-mode .highlight .vg,
+    :root .dark-mode .highlight .vi,
+    :root .dark-mode .highlight .il,
+    :root .dark-mode .mediumnavigation a,
+    :root .dark-mode article .card .card-body .card-title a,
+    :root .dark-mode article .card .card-body .card-text {
         color: var(--always-white) !important
     }
 
-    body .mediumnavigation,
-    body article .card {
+    :root .dark-mode .mediumnavigation,
+    :root .dark-mode article .card {
         background: var(--nav-bar-background) !important;
         box-shadow: unset !important;
         color: var(--always-white) !important
     }
 
-    body .mediumnavigation a:active,
-    body .mediumnavigation a:hover,
-    body article .card .card-body .card-title a:active,
-    body article .card .card-body .card-title a:hover {
+    :root .dark-mode .mediumnavigation a:active,
+    :root .dark-mode .mediumnavigation a:hover,
+    :root .dark-mode article .card .card-body .card-title a:active,
+    :root .dark-mode article .card .card-body .card-title a:hover,
+    :root .dark-mode article .card .card-footer .post-name a:active,
+    :root .dark-mode article .card .card-footer .post-name a:hover,
+    :root .dark-mode article .card .card-footer .post-read-more a:active,
+    :root .dark-mode article .card .card-footer .post-read-more a:hover,
+    :root .dark-mode .footer a:active,
+    :root .dark-mode .footer a:hover,
+    :root .dark-mode .bottompagination .navigation a:active,
+    :root .dark-mode .bottompagination .navigation a:hover,
+    :root .dark-mode .layout-author .post-cat .text-dark {
         color: #fe2c55 !important
     }
 
-    body .mediumnavigation .form-control {
+    :root .dark-mode .mediumnavigation .form-control,
+    :root .dark-mode article .article-post h2:before,
+    :root .dark-mode .tags a {
         background: var(--comment-background) !important
     }
 
-    body .mediumnavigation .navbar-toggler-icon {
+    :root .dark-mode .mediumnavigation .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important
     }
 
-    body .mediumnavigation .search-icon svg {
+    :root .dark-mode .mediumnavigation .search-icon svg {
         fill: var(--always-white) !important
     }
 
-    body .section-title h2 {
+    :root .dark-mode .section-title h2 {
         border-color: var(--comment-background) !important
     }
 
-    body article .card .card-footer {
+    :root .dark-mode article .card .card-footer {
         background: var(--surface-background) !important
     }
 
-    body article .card .card-footer .post-name a {
-        color: var(--always-white) !important
-    }
-
-    body article .card .card-footer .post-name a:active,
-    body article .card .card-footer .post-name a:hover {
-        color: #fe2c55 !important
-    }
-
-    body article .card .card-footer .post-author,
-    body article .card .card-footer .post-date,
-    body article .card .card-footer .post-read {
-        color: var(--always-white) !important
-    }
-
-    body article .card .card-footer .post-read-more a {
-        color: var(--always-white) !important
-    }
-
-    body article .card .card-footer .post-read-more a:active,
-    body article .card .card-footer .post-read-more a:hover {
-        color: #fe2c55 !important
-    }
-
-    body article .post-author,
-    body article .post-date,
-    body article .post-read,
-    body article .article-post {
-        color: var(--always-white) !important
-    }
-
-    body article .prev-post,
-    body article .next-post {
+    :root .dark-mode article .prev-post,
+    :root .dark-mode article .next-post,
+    :root .dark-mode .highlight {
         background: var(--nav-bar-background) !important
     }
 
-    body article .article-post h2:before {
-        background-color: var(--comment-background) !important
-    }
-
-    body .footer {
+    :root .dark-mode .footer {
         background: var(--nav-bar-background) !important;
         border-color: var(--comment-background) !important;
         color: var(--always-white) !important
     }
 
-    body .footer a {
-        color: var(--always-white) !important
-    }
-
-    body .footer a:active,
-    body .footer a:hover {
-        color: #fe2c55 !important
-    }
-
-    body .bottompagination .navigation {
+    :root .dark-mode .bottompagination .navigation {
         border-color: var(--comment-background) !important;
         color: var(--always-white) !important
     }
 
-    body .bottompagination .navigation a {
-        color: var(--always-white) !important
-    }
-
-    body .bottompagination .navigation a:active,
-    body .bottompagination .navigation a:hover {
-        color: #fe2c55 !important
-    }
-
-    .tags a {
-        background: var(--comment-background) !important
-    }
-
-    .tags a:active,
-    .tags a:hover {
+    :root .dark-mode .tags a:active,
+    :root .dark-mode .tags a:hover {
         background: var(--nav-bar-background) !important;
         color: inherit
     }
 
-    .highlight {
-        background: var(--nav-bar-background) !important
-    }
-
-    .highlight pre {
+    :root .dark-mode .highlight pre {
         color: var(--always-white) !important;
         border-color: var(--comment-background) !important;
         background: var(--nav-bar-background) !important
     }
 
-    .highlight .err {
+    :root .dark-mode .highlight .err {
         color: #fe2c55 !important;
         background-color: unset !important
     }
 
-    .highlight .gd,
-    .highlight .gi,
-    .highlight .gd .x,
-    .highlight .gi .x {
+    :root .dark-mode .highlight .gd,
+    :root .dark-mode .highlight .gi,
+    :root .dark-mode .highlight .gd .x,
+    :root .dark-mode .highlight .gi .x {
         color: var(--always-white) !important;
         background-color: unset !important
     }
 
-    .border {
+    :root .dark-mode .border {
         border-color: var(--comment-background) !important;
-    }
-    
-    .layout-author .post-cat .text-dark {
-        color: #fe2c55 !important;
-    }
-
-    .layout-author .post-cat .text-dark:hover, .layout-author .text-dark {
-        color: var(--always-white) !important;
     }
 
 }
@@ -5794,7 +5750,15 @@
 }
 
 .card-body .card-title a:focus,
-.card-body .card-title a:hover {
+.card-body .card-title a:hover,
+.layout-post .main-content .post-author a,
+.layout-post .main-content .article-post a,
+.layout-page .main-content .article-post a,
+.layout-post .main-content .article-post .PageNavigation a:focus,
+.layout-post .main-content .article-post .after-post-tags a:focus,
+.layout-post .main-content .article-post .PageNavigation a:hover,
+.layout-post .main-content .article-post .after-post-tags a:hover,
+.post-cat a {
     color: #fe2c55 !important
 }
 
@@ -5805,12 +5769,13 @@
     margin-right: auto
 }
 
-.layout-post .main-content .post-author a {
-    color: #fe2c55
-}
-
 .layout-post .main-content .post-author a:focus,
-.layout-post .main-content .post-author a:hover {
+.layout-post .main-content .post-author a:hover,
+.layout-post .main-content .article-post a:focus,
+.layout-post .main-content .article-post a:hover,
+.layout-page .main-content .article-post a:focus,
+.layout-page .main-content .article-post a:hover,
+.post-cat a:hover {
     color: #fe9c55
 }
 
@@ -5819,19 +5784,6 @@
     max-width: 46.875rem;
     padding: 0;
     margin: 0 auto
-}
-
-.layout-post .main-content .article-post a,
-.layout-page .main-content .article-post a {
-    color: #fe2c55 !important
-}
-
-.layout-post .main-content .article-post a:focus,
-.layout-post .main-content .article-post a:hover,
-.layout-page .main-content .article-post a:focus,
-.layout-page .main-content .article-post a:hover,
-.post-cat a {
-    color: #fe9c55 !important
 }
 
 .layout-post .main-content .article-post h2,
@@ -5861,19 +5813,6 @@
     width: 3.125rem;
     margin: auto;
     background-color: #fe2c55
-}
-
-.layout-post .main-content .article-post .PageNavigation a,
-.layout-post .main-content .article-post .after-post-tags a {
-    color: var(--always-white) !important
-}
-
-.layout-post .main-content .article-post .PageNavigation a:focus,
-.layout-post .main-content .article-post .after-post-tags a:focus,
-.layout-post .main-content .article-post .PageNavigation a:hover,
-.layout-post .main-content .article-post .after-post-tags a:hover,
-.post-cat a {
-    color: #fe2c55 !important
 }
 
 .layout-post .main-content h1,
@@ -5935,16 +5874,6 @@ article .card {
     line-height: unset !important
 }
 
-.next-post span {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
-}
-
-.next-post:hover {
-    max-width: 500px
-}
-
 .next-post i {
     font-size: 16px;
     margin-left: 13px
@@ -5976,16 +5905,6 @@ article .card {
     justify-content: flex-start;
     left: 30px;
     right: auto
-}
-
-.prev-post span {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
-}
-
-.prev-post:hover {
-    max-width: 500px
 }
 
 .prev-post i {
