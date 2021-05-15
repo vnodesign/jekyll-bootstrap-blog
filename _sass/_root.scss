@@ -29,8 +29,6 @@
   --breakpoint-xl:1200px;
   --font-family-sans-serif:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-
-  .dark-mode {
     --tds-black:black;
     --tds-black-alpha-05:rgba(0, 0, 0, 0.05);
     --tds-black-alpha-10:rgba(0, 0, 0, 0.1);
@@ -257,8 +255,6 @@
     --tds-duration-none:0ms;
     --tds-fast:200ms;
     --tds-slow:400ms;
-  }
-
   body {
     -webkit-transition: background-color 800ms ease;
     transition: background-color 800ms ease;
@@ -5582,7 +5578,7 @@
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-  :root .dark-mode {
+  :root {
     body {
       background-color: var(--web-wash) !important;
       color: var(--always-white) !important;
