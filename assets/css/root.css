@@ -5829,7 +5829,8 @@
 .layout-post .main-content .article-post a:focus,
 .layout-post .main-content .article-post a:hover,
 .layout-page .main-content .article-post a:focus,
-.layout-page .main-content .article-post a:hover {
+.layout-page .main-content .article-post a:hover,
+.post-cat a {
     color: #fe9c55 !important
 }
 
@@ -5870,7 +5871,8 @@
 .layout-post .main-content .article-post .PageNavigation a:focus,
 .layout-post .main-content .article-post .after-post-tags a:focus,
 .layout-post .main-content .article-post .PageNavigation a:hover,
-.layout-post .main-content .article-post .after-post-tags a:hover {
+.layout-post .main-content .article-post .after-post-tags a:hover,
+.post-cat a {
     color: #fe2c55 !important
 }
 
@@ -6017,12 +6019,4 @@ article .card {
 .socials a:hover,
 .socials a:focus {
     color: var(--always-white)
-}
-
-@media(max-width:767px) {
-
-    .prev-post,
-    .next-post {
-        display: none !important;
-    }
 }

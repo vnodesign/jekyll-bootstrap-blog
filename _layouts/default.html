@@ -46,9 +46,11 @@
     {% if site.google_analytics %}
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/ga-lite@1/dist/ga-lite.min.js" as="script" />
     {% endif %}
+    <link rel="preload" href="{{ site.url }}/assets/fonts/bootstrap-icons.woff" as="font" crossorigin />
     <link rel="preload" href="{{ site.url }}/assets/fonts/bootstrap-icons.woff2" type="font/woff2" as="font"
         crossorigin />
     <link rel="preload" href="{{ site.logo }}" as="image" />
+    <link rel="preload" href="https://static.cloudflareinsights.com/beacon.min.js" as="script" />
     <!-- Prefetch Domain -->
     {% if site.fanpage-chat %}
     <link rel="dns-prefetch" href="//static.xx.fbcdn.net" />
@@ -68,6 +70,8 @@
     <link rel="dns-prefetch" href="//{{site.disqus}}.disqus.com" />
     <link rel="dns-prefetch" href="//disqus.com" />
     {% endif %}
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="//static.cloudflareinsights.com" />
     <!-- Preconnect Domain -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
     {% if site.fanpage-chat %}
@@ -87,8 +91,10 @@
     <link rel="preconnect" href="https://disqus.com" />
     {% endif %}
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://static.cloudflareinsights.com" />
     <!-- Style -->
     <link rel="stylesheet" media="all" href="{{ site.url }}/assets/css/app.css" data-turbolinks-track="reload" />
+    <style>@font-face{font-family:"bootstrap-icons";src:url("{{ site.url }}/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("{{ site.url }}/assets/fonts/bootstrap-icons.woff") format("woff");font-display:swap}</style>
     {% if site.lazyimages == "enabled" %}<style type="text/css">img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}</style>{% endif %}
     <!-- Scripts required -->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js" data-turbolinks-track="reload"></script>
@@ -98,12 +104,6 @@
     {% if site.fanpage-chat %}Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})}});{% endif %}
     {% if site.google_analytics %}Defer.js('https://cdn.jsdelivr.net/npm/ga-lite@1/dist/ga-lite.min.js','galite-js',100,function(){var galite=galite||{};galite.UA='{{site.google_analytics}}'});{% endif %}
     </script>
-    <!-- Cloudflare Web Analytics -->
-    <link rel="preload" href="https://static.cloudflareinsights.com/beacon.min.js" as="script" />
-    <link rel="dns-prefetch" href="//static.cloudflareinsights.com" />
-    <link rel="preconnect" href="https://static.cloudflareinsights.com" />
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "8d6cafbff9c04e16afae08ecdd06eafe"}' data-turbolinks-track="reload"></script>
-    <!-- End Cloudflare Web Analytics -->
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}" itemscope="itemscope" itemtype="https://schema.org/WebPage">
@@ -222,6 +222,6 @@
     <div id="fb-root"></div>
     <div class="fb-customerchat" attribution="biz_inbox" page_id="{{site.fanpage-chat}}" data-lazy="true"></div>
     {% endif %}
-    <script src="{{ site.url }}/assets/js/bundle.min.js" defer data-turbolinks-track="reload"></script>
+    <script src="{{ site.url }}/assets/js/bundle.min.js" data-turbolinks-track="reload"></script>
 </body>
 </html>
