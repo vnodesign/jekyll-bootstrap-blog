@@ -68,7 +68,10 @@ GEM
     unicode-display_width (1.7.0)
 
 PLATFORMS
+  ruby
+  x64-mingw32
   universal-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   jekyll-archives
