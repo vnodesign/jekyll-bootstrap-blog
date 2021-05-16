@@ -38,8 +38,6 @@
     {% endif %}
     {% endif %}
     <!-- Preload file -->
-    <link href="{{ site.url }}/assets/css/root.css" rel="preload" as="style" />
-    <link href="{{ site.url }}/assets/css/main.css" rel="preload" as="style" />
     <link href="{{ site.url }}/assets/js/bundle.min.js" rel="preload" as="script" />
     {% if site.fanpage-chat %}
     <link rel="preload" href="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" as="script" />
@@ -94,8 +92,9 @@
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="preconnect" href="https://static.cloudflareinsights.com" />
     <!-- Style -->
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/root.css" />
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css" />
+    {% capture root %}{% include root.css %}{% endcapture %}
+    {% capture main %}{% include main.css %}{% endcapture %}
+    <style type="text/css">{{ root | scssify }}{{ main | scssify }}</style>
     <style>@font-face{font-family:"bootstrap-icons";src:url("{{ site.url }}/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("{{ site.url }}/assets/fonts/bootstrap-icons.woff") format("woff");font-display:swap}</style>
     {% if site.lazyimages == "enabled" %}<style type="text/css">img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}</style>{% endif %}
     <!-- Scripts required -->

@@ -255,11 +255,11 @@
   --tds-duration-none:0ms;
   --tds-fast:200ms;
   --tds-slow:400ms;
+}
 
-  body {
-    -webkit-transition: background-color 800ms ease;
-    transition: background-color 800ms ease;
-  }
+body {
+  -webkit-transition: background-color 800ms ease;
+  transition: background-color 800ms ease;
 }
 
 /* Bootstrap Icons */
@@ -5579,11 +5579,9 @@
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-  :root {
-    body {
-      background-color: var(--web-wash) !important;
-      color: var(--always-white) !important;
-    }
+  body {
+    background-color: var(--web-wash) !important;
+    color: var(--always-white) !important;
 
     img {
       -webkit-filter: brightness(70%);
@@ -5608,6 +5606,10 @@
       .card-title a, .card-text {
         color: var(--always-white) !important;
       }
+    }
+
+    .post-author a, .post-date, .post-read, .post-cat a {
+      color: var(--always-white) !important;
     }
 
     .mediumnavigation, article .card {
@@ -5656,7 +5658,7 @@
       }
     }
 
-    .layout-author .post-cat .text-dark {
+    .layout-author .post-cat .text-dark, .post-author a:hover, .post-cat a:hover {
       color: #fe2c55 !important;
     }
 
@@ -5672,6 +5674,10 @@
       .search-icon svg {
         fill: var(--always-white) !important;
       }
+    }
+
+    .post-read-more {
+      fill: var(--always-white) !important;
     }
 
     .section-title h2 {
