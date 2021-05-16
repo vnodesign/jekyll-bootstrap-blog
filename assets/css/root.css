@@ -28,9 +28,6 @@
     --breakpoint-xl: 1200px;
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-:root .dark-mode {
     --tds-black: black;
     --tds-black-alpha-05: rgba(0, 0, 0, .05);
     --tds-black-alpha-10: rgba(0, 0, 0, .1);
@@ -5581,156 +5578,156 @@
 
 /* Dark mode */
 @media (prefers-color-scheme:dark) {
-    :root .dark-mode body {
+    :root body {
         background-color: var(--web-wash) !important;
         color: var(--always-white) !important
     }
 
-    :root .dark-mode img {
+    :root img {
         -webkit-filter: brightness(70%);
         filter: brightness(70%);
     }
 
-    :root .dark-mode p,
-    :root .dark-mode .highlight .c,
-    :root .dark-mode .highlight .cm,
-    :root .dark-mode .highlight .cp,
-    :root .dark-mode .highlight .c1,
-    :root .dark-mode .highlight .cs,
-    :root .dark-mode .highlight .gr,
-    :root .dark-mode .highlight .gh,
-    :root .dark-mode .highlight .go,
-    :root .dark-mode .highlight .gp,
-    :root .dark-mode .highlight .gu,
-    :root .dark-mode .highlight .gt,
-    :root .dark-mode .highlight .kt,
-    :root .dark-mode .highlight .m,
-    :root .dark-mode .highlight .s,
-    :root .dark-mode .highlight .na,
-    :root .dark-mode .highlight .nb,
-    :root .dark-mode .highlight .nc,
-    :root .dark-mode .highlight .no,
-    :root .dark-mode .highlight .ni,
-    :root .dark-mode .highlight .ne,
-    :root .dark-mode .highlight .nf,
-    :root .dark-mode .highlight .nn,
-    :root .dark-mode .highlight .nt,
-    :root .dark-mode .highlight .nv,
-    :root .dark-mode .highlight .w,
-    :root .dark-mode .highlight .mf,
-    :root .dark-mode .highlight .mh,
-    :root .dark-mode .highlight .mi,
-    :root .dark-mode .highlight .mo,
-    :root .dark-mode .highlight .sb,
-    :root .dark-mode .highlight .sc,
-    :root .dark-mode .highlight .sd,
-    :root .dark-mode .highlight .s2,
-    :root .dark-mode .highlight .se,
-    :root .dark-mode .highlight .sh,
-    :root .dark-mode .highlight .si,
-    :root .dark-mode .highlight .sx,
-    :root .dark-mode .highlight .sr,
-    :root .dark-mode .highlight .s1,
-    :root .dark-mode .highlight .ss,
-    :root .dark-mode .highlight .bp,
-    :root .dark-mode .highlight .vc,
-    :root .dark-mode .highlight .vg,
-    :root .dark-mode .highlight .vi,
-    :root .dark-mode .highlight .il,
-    :root .dark-mode .mediumnavigation a,
-    :root .dark-mode article .card .card-body .card-title a,
-    :root .dark-mode article .card .card-body .card-text {
+    :root p,
+    :root .highlight .c,
+    :root .highlight .cm,
+    :root .highlight .cp,
+    :root .highlight .c1,
+    :root .highlight .cs,
+    :root .highlight .gr,
+    :root .highlight .gh,
+    :root .highlight .go,
+    :root .highlight .gp,
+    :root .highlight .gu,
+    :root .highlight .gt,
+    :root .highlight .kt,
+    :root .highlight .m,
+    :root .highlight .s,
+    :root .highlight .na,
+    :root .highlight .nb,
+    :root .highlight .nc,
+    :root .highlight .no,
+    :root .highlight .ni,
+    :root .highlight .ne,
+    :root .highlight .nf,
+    :root .highlight .nn,
+    :root .highlight .nt,
+    :root .highlight .nv,
+    :root .highlight .w,
+    :root .highlight .mf,
+    :root .highlight .mh,
+    :root .highlight .mi,
+    :root .highlight .mo,
+    :root .highlight .sb,
+    :root .highlight .sc,
+    :root .highlight .sd,
+    :root .highlight .s2,
+    :root .highlight .se,
+    :root .highlight .sh,
+    :root .highlight .si,
+    :root .highlight .sx,
+    :root .highlight .sr,
+    :root .highlight .s1,
+    :root .highlight .ss,
+    :root .highlight .bp,
+    :root .highlight .vc,
+    :root .highlight .vg,
+    :root .highlight .vi,
+    :root .highlight .il,
+    :root .mediumnavigation a,
+    :root article .card .card-body .card-title a,
+    :root article .card .card-body .card-text {
         color: var(--always-white) !important
     }
 
-    :root .dark-mode .mediumnavigation,
-    :root .dark-mode article .card {
+    :root .mediumnavigation,
+    :root article .card {
         background: var(--nav-bar-background) !important;
         box-shadow: unset !important;
         color: var(--always-white) !important
     }
 
-    :root .dark-mode .mediumnavigation a:active,
-    :root .dark-mode .mediumnavigation a:hover,
-    :root .dark-mode article .card .card-body .card-title a:active,
-    :root .dark-mode article .card .card-body .card-title a:hover,
-    :root .dark-mode article .card .card-footer .post-name a:active,
-    :root .dark-mode article .card .card-footer .post-name a:hover,
-    :root .dark-mode article .card .card-footer .post-read-more a:active,
-    :root .dark-mode article .card .card-footer .post-read-more a:hover,
-    :root .dark-mode .footer a:active,
-    :root .dark-mode .footer a:hover,
-    :root .dark-mode .bottompagination .navigation a:active,
-    :root .dark-mode .bottompagination .navigation a:hover,
-    :root .dark-mode .layout-author .post-cat .text-dark {
+    :root .mediumnavigation a:active,
+    :root .mediumnavigation a:hover,
+    :root article .card .card-body .card-title a:active,
+    :root article .card .card-body .card-title a:hover,
+    :root article .card .card-footer .post-name a:active,
+    :root article .card .card-footer .post-name a:hover,
+    :root article .card .card-footer .post-read-more a:active,
+    :root article .card .card-footer .post-read-more a:hover,
+    :root .footer a:active,
+    :root .footer a:hover,
+    :root .bottompagination .navigation a:active,
+    :root .bottompagination .navigation a:hover,
+    :root .layout-author .post-cat .text-dark {
         color: #fe2c55 !important
     }
 
-    :root .dark-mode .mediumnavigation .form-control,
-    :root .dark-mode article .article-post h2:before,
-    :root .dark-mode .tags a {
+    :root .mediumnavigation .form-control,
+    :root article .article-post h2:before,
+    :root .tags a {
         background: var(--comment-background) !important
     }
 
-    :root .dark-mode .mediumnavigation .navbar-toggler-icon {
+    :root .mediumnavigation .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important
     }
 
-    :root .dark-mode .mediumnavigation .search-icon svg {
+    :root .mediumnavigation .search-icon svg {
         fill: var(--always-white) !important
     }
 
-    :root .dark-mode .section-title h2 {
+    :root .section-title h2 {
         border-color: var(--comment-background) !important
     }
 
-    :root .dark-mode article .card .card-footer {
+    :root article .card .card-footer {
         background: var(--surface-background) !important
     }
 
-    :root .dark-mode article .prev-post,
-    :root .dark-mode article .next-post,
-    :root .dark-mode .highlight {
+    :root article .prev-post,
+    :root article .next-post,
+    :root .highlight {
         background: var(--nav-bar-background) !important
     }
 
-    :root .dark-mode .footer {
+    :root .footer {
         background: var(--nav-bar-background) !important;
         border-color: var(--comment-background) !important;
         color: var(--always-white) !important
     }
 
-    :root .dark-mode .bottompagination .navigation {
+    :root .bottompagination .navigation {
         border-color: var(--comment-background) !important;
         color: var(--always-white) !important
     }
 
-    :root .dark-mode .tags a:active,
-    :root .dark-mode .tags a:hover {
+    :root .tags a:active,
+    :root .tags a:hover {
         background: var(--nav-bar-background) !important;
         color: inherit
     }
 
-    :root .dark-mode .highlight pre {
+    :root .highlight pre {
         color: var(--always-white) !important;
         border-color: var(--comment-background) !important;
         background: var(--nav-bar-background) !important
     }
 
-    :root .dark-mode .highlight .err {
+    :root .highlight .err {
         color: #fe2c55 !important;
         background-color: unset !important
     }
 
-    :root .dark-mode .highlight .gd,
-    :root .dark-mode .highlight .gi,
-    :root .dark-mode .highlight .gd .x,
-    :root .dark-mode .highlight .gi .x {
+    :root .highlight .gd,
+    :root .highlight .gi,
+    :root .highlight .gd .x,
+    :root .highlight .gi .x {
         color: var(--always-white) !important;
         background-color: unset !important
     }
 
-    :root .dark-mode .border {
+    :root .border {
         border-color: var(--comment-background) !important;
     }
 
