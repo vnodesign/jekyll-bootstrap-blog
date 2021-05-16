@@ -5578,11 +5578,9 @@
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-  :root {
     body {
       background-color: var(--web-wash) !important;
       color: var(--always-white) !important;
-    }
 
     img {
       -webkit-filter: brightness(70%);
