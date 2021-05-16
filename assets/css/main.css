@@ -11052,7 +11052,8 @@ h6 {
 }
 
 img {
-    max-width: 100%
+    max-width: 100%;
+    aspect-ratio: 16/9;
 }
 
 .bottompagination span.navigation {
