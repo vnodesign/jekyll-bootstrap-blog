@@ -257,224 +257,223 @@
 }
 
 /* Dark mode */
-@media (prefers-color-scheme:dark) {
-    body {
+    .dark-mode {
         background-color: var(--web-wash) !important;
         color: var(--always-white) !important
     }
 
-    body p {
+    .dark-mode p {
         color: var(--always-white) !important
     }
 
-    body .mediumnavigation {
+    .dark-mode .mediumnavigation {
         background: var(--nav-bar-background) !important;
         box-shadow: unset !important;
         color: var(--always-white) !important
     }
 
-    body .mediumnavigation a {
+    .dark-mode .mediumnavigation a {
         color: var(--always-white) !important
     }
 
-    body .mediumnavigation a:active,
-    body .mediumnavigation a:hover {
+    .dark-mode .mediumnavigation a:active,
+    .dark-mode .mediumnavigation a:hover {
         color: #fe2c55 !important
     }
 
-    body .mediumnavigation .form-control {
+    .dark-mode .mediumnavigation .form-control {
         background: var(--comment-background) !important
     }
 
-    body .mediumnavigation .navbar-toggler-icon {
+    .dark-mode .mediumnavigation .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important
     }
 
-    body .mediumnavigation .search-icon svg {
+    .dark-mode .mediumnavigation .search-icon svg {
         fill: var(--always-white) !important
     }
 
-    body .section-title h2 {
+    .dark-mode .section-title h2 {
         border-color: var(--comment-background) !important
     }
 
-    body article .card {
+    .dark-mode article .card {
         background: var(--nav-bar-background) !important;
         border-color: var(--comment-background) !important;
         box-shadow: unset !important
     }
 
-    body article .card .card-body .card-title a {
+    .dark-mode article .card .card-body .card-title a {
         color: var(--always-white) !important
     }
 
-    body article .card .card-body .card-title a:active,
-    body article .card .card-body .card-title a:hover {
+    .dark-mode article .card .card-body .card-title a:active,
+    .dark-mode article .card .card-body .card-title a:hover {
         color: #fe2c55 !important
     }
 
-    body article .card .card-body .card-text {
+    .dark-mode article .card .card-body .card-text {
         color: var(--always-white) !important
     }
 
-    body article .card .card-footer {
+    .dark-mode article .card .card-footer {
         background: var(--surface-background) !important
     }
 
-    body article .card .card-footer .post-name a {
+    .dark-mode article .card .card-footer .post-name a {
         color: var(--always-white) !important
     }
 
-    body article .card .card-footer .post-name a:active,
-    body article .card .card-footer .post-name a:hover {
+    .dark-mode article .card .card-footer .post-name a:active,
+    .dark-mode article .card .card-footer .post-name a:hover {
         color: #fe2c55 !important
     }
 
-    body article .card .card-footer .post-author,
-    body article .card .card-footer .post-date,
-    body article .card .card-footer .post-read {
+    .dark-mode article .card .card-footer .post-author,
+    .dark-mode article .card .card-footer .post-date,
+    .dark-mode article .card .card-footer .post-read {
         color: var(--always-white) !important
     }
 
-    body article .card .card-footer .post-read-more a {
+    .dark-mode article .card .card-footer .post-read-more a {
         color: var(--always-white) !important
     }
 
-    body article .card .card-footer .post-read-more a:active,
-    body article .card .card-footer .post-read-more a:hover {
+    .dark-mode article .card .card-footer .post-read-more a:active,
+    .dark-mode article .card .card-footer .post-read-more a:hover {
         color: #fe2c55 !important
     }
 
-    body article .post-author,
-    body article .post-date,
-    body article .post-read,
-    body article .article-post {
+    .dark-mode article .post-author,
+    .dark-mode article .post-date,
+    .dark-mode article .post-read,
+    .dark-mode article .article-post
+    .dark-mode article .post-cat {
         color: var(--always-white) !important
     }
 
-    body article .prev-post,
-    body article .next-post {
+    .dark-mode article .prev-post,
+    .dark-mode article .next-post {
         background: var(--nav-bar-background) !important
     }
 
-    body article .article-post h2:before {
+    .dark-mode article .article-post h2:before {
         background-color: var(--comment-background) !important
     }
 
-    body .footer {
+    .dark-mode .footer {
         background: var(--nav-bar-background) !important;
         border-color: var(--comment-background) !important;
         color: var(--always-white) !important
     }
 
-    body .footer a {
+    .dark-mode .footer a {
         color: var(--always-white) !important
     }
 
-    body .footer a:active,
-    body .footer a:hover {
+    .dark-mode .footer a:active,
+    .dark-mode .footer a:hover {
         color: #fe2c55 !important
     }
 
-    body .bottompagination .navigation {
+    .dark-mode .bottompagination .navigation {
         border-color: var(--comment-background) !important;
         color: var(--always-white) !important
     }
 
-    body .bottompagination .navigation a {
+    .dark-mode .bottompagination .navigation a {
         color: var(--always-white) !important
     }
 
-    body .bottompagination .navigation a:active,
-    body .bottompagination .navigation a:hover {
+    .dark-mode .bottompagination .navigation a:active,
+    .dark-mode .bottompagination .navigation a:hover {
         color: #fe2c55 !important
     }
 
-    .tags a {
+    .dark-mode .tags a {
         background: var(--comment-background) !important
     }
 
-    .tags a:active,
-    .tags a:hover {
+    .dark-mode .tags a:active,
+    .dark-mode .tags a:hover {
         background: var(--nav-bar-background) !important;
         color: inherit
     }
 
-    .highlight {
+    .dark-mode .highlight {
         background: var(--nav-bar-background) !important
     }
 
-    .highlight pre {
+    .dark-mode .highlight pre {
         color: var(--always-white) !important;
         border-color: var(--comment-background) !important;
         background: var(--nav-bar-background) !important
     }
 
-    .highlight .c,
-    .highlight .cm,
-    .highlight .cp,
-    .highlight .c1,
-    .highlight .cs,
-    .highlight .gr,
-    .highlight .gh,
-    .highlight .go,
-    .highlight .gp,
-    .highlight .gu,
-    .highlight .gt,
-    .highlight .kt,
-    .highlight .m,
-    .highlight .s,
-    .highlight .na,
-    .highlight .nb,
-    .highlight .nc,
-    .highlight .no,
-    .highlight .ni,
-    .highlight .ne,
-    .highlight .nf,
-    .highlight .nn,
-    .highlight .nt,
-    .highlight .nv,
-    .highlight .w,
-    .highlight .mf,
-    .highlight .mh,
-    .highlight .mi,
-    .highlight .mo,
-    .highlight .sb,
-    .highlight .sc,
-    .highlight .sd,
-    .highlight .s2,
-    .highlight .se,
-    .highlight .sh,
-    .highlight .si,
-    .highlight .sx,
-    .highlight .sr,
-    .highlight .s1,
-    .highlight .ss,
-    .highlight .bp,
-    .highlight .vc,
-    .highlight .vg,
-    .highlight .vi,
-    .highlight .il {
+    .dark-mode .highlight .c,
+    .dark-mode .highlight .cm,
+    .dark-mode .highlight .cp,
+    .dark-mode .highlight .c1,
+    .dark-mode .highlight .cs,
+    .dark-mode .highlight .gr,
+    .dark-mode .highlight .gh,
+    .dark-mode .highlight .go,
+    .dark-mode .highlight .gp,
+    .dark-mode .highlight .gu,
+    .dark-mode .highlight .gt,
+    .dark-mode .highlight .kt,
+    .dark-mode .highlight .m,
+    .dark-mode .highlight .s,
+    .dark-mode .highlight .na,
+    .dark-mode .highlight .nb,
+    .dark-mode .highlight .nc,
+    .dark-mode .highlight .no,
+    .dark-mode .highlight .ni,
+    .dark-mode .highlight .ne,
+    .dark-mode .highlight .nf,
+    .dark-mode .highlight .nn,
+    .dark-mode .highlight .nt,
+    .dark-mode .highlight .nv,
+    .dark-mode .highlight .w,
+    .dark-mode .highlight .mf,
+    .dark-mode .highlight .mh,
+    .dark-mode .highlight .mi,
+    .dark-mode .highlight .mo,
+    .dark-mode .highlight .sb,
+    .dark-mode .highlight .sc,
+    .dark-mode .highlight .sd,
+    .dark-mode .highlight .s2,
+    .dark-mode .highlight .se,
+    .dark-mode .highlight .sh,
+    .dark-mode .highlight .si,
+    .dark-mode .highlight .sx,
+    .dark-mode .highlight .sr,
+    .dark-mode .highlight .s1,
+    .dark-mode .highlight .ss,
+    .dark-mode .highlight .bp,
+    .dark-mode .highlight .vc,
+    .dark-mode .highlight .vg,
+    .dark-mode .highlight .vi,
+    .dark-mode .highlight .il {
         color: var(--always-white) !important
     }
 
-    .highlight .err {
+    .dark-mode .highlight .err {
         color: #fe2c55 !important;
         background-color: unset !important
     }
 
-    .highlight .gd,
-    .highlight .gi {
+    .dark-mode .highlight .gd,
+    .dark-mode .highlight .gi {
         color: var(--always-white) !important;
         background-color: unset !important
     }
 
-    .highlight .gd .x,
-    .highlight .gi .x {
+    .dark-mode .highlight .gd .x,
+    .dark-mode .highlight .gi .x {
         color: var(--always-white) !important;
         background-color: unset !important
     }
-}
 
 /* Bootstrap Icons */
 [class^="bi-"]::before,
@@ -6016,4 +6015,89 @@ article .card {
 .socials a:hover,
 .socials a:focus {
     color: #fff
+}
+._ms,
+._ms-content {
+    border-radius: 3px 0 0 3px
+}
+
+._ms {
+    background-color: #fe2c55;
+    box-shadow: rgba(0, 0, 0, .2) 0 4px 10px;
+    position: fixed;
+    z-index: 444;
+    padding: 0;
+    opacity: 1;
+    top: 60px;
+    right: -45px;
+    transition: all .4s
+}
+
+._ms:hover {
+    right: 0
+}
+
+._ms-content {
+    display: block;
+    width: 45px;
+    height: 40px;
+    background: #fff;
+    margin-left: 4px;
+    margin-right: 0;
+    position: relative
+}
+
+._sis {
+    display: none
+}
+
+._sls {
+    position: absolute;
+    cursor: pointer;
+    font-weight: 700;
+    text-align: left;
+    top: 20px;
+    left: 4px
+}
+
+._sls:after,
+._sls:before {
+    content: "";
+    position: absolute;
+    margin: 0;
+    outline: 0;
+    top: 50%;
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease
+}
+
+._sls:before {
+    left: 1px;
+    width: 34px;
+    height: 14px;
+    background-color: #9E9E9E;
+    border-radius: 8px
+}
+
+._sls:after {
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #FAFAFA;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .098), 0 1px 5px 0 rgba(0, 0, 0, .084)
+}
+
+._sis:checked+._sls:before {
+    background-color: #fe9c55
+}
+
+._sis:checked+._sls:after {
+    background-color: #fe2c55;
+    -ms-transform: translate(80%, -50%);
+    -webkit-transform: translate(80%, -50%);
+    transform: translate(80%, -50%)
 }

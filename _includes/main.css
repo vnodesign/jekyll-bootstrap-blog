@@ -10452,6 +10452,10 @@ section.recent-posts {
     overflow: hidden
 }
 
+.maxthumb img {
+    aspect-ratio: 16/9;
+}
+
 .listfeaturedtag .card,
 .card-footer {
     border: 0

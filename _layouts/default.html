@@ -108,6 +108,12 @@
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+    <a class="_ms" href="javascript:void(0)">
+        <span class="_ms-content">
+            <input class="_sis" id="_ts" name="set-name" type="checkbox" />
+            <label class="_sls" for="_ts"></label>
+        </span>
+    </a>
     <!-- Begin Menu Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down" role="navigation"
         itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope">
