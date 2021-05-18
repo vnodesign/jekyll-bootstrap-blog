@@ -9,7 +9,9 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7)
+    eventmachine (1.2.7-x64-mingw32)
     ffi (1.15.0)
+    ffi (1.15.0-x64-mingw32)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
     i18n (1.8.10)
@@ -63,14 +65,19 @@ GEM
     safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
+    sassc (2.4.0-x64-mingw32)
+      ffi (~> 1.9)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
+    turbolinks (5.2.1)
+      turbolinks-source (~> 5.2)
+    turbolinks-source (5.2.0)
     unicode-display_width (1.7.0)
 
 PLATFORMS
   ruby
-  x64-mingw32
   universal-darwin-20
+  x64-mingw32
   x86_64-linux
 
 DEPENDENCIES
@@ -82,6 +89,7 @@ DEPENDENCIES
   jekyll-webp
   kramdown
   rouge
+  turbolinks (~> 5.2.0)
 
 BUNDLED WITH
-   2.2.16
+   2.2.17
