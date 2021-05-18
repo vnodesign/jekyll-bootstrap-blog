@@ -19,5 +19,4 @@ group :jekyll_plugins do
     gem 'kramdown'
     gem 'rouge'
     gem 'jekyll-webp'
-    gem 'turbolinks', '~> 5.2.0'
 end
