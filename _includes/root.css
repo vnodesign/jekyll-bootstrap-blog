@@ -262,153 +262,27 @@
     color: var(--always-white) !important
 }
 
-.dark-mode p {
-    color: var(--always-white) !important
-}
-
-.dark-mode .mediumnavigation {
-    background: var(--nav-bar-background) !important;
-    box-shadow: unset !important;
-    color: var(--always-white) !important
-}
-
-.dark-mode .mediumnavigation a {
-    color: var(--always-white) !important
-}
-
-.dark-mode .mediumnavigation a:active,
-.dark-mode .mediumnavigation a:hover {
-    color: #fe2c55 !important
-}
-
-.dark-mode .mediumnavigation .form-control {
-    background: var(--comment-background) !important
-}
-
-.dark-mode .mediumnavigation .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important
-}
-
-.dark-mode .mediumnavigation .search-icon svg {
-    fill: var(--always-white) !important
-}
-
-.dark-mode .section-title h2 {
-    border-color: var(--comment-background) !important
-}
-
-.dark-mode article .card {
-    background: var(--nav-bar-background) !important;
-    border-color: var(--comment-background) !important;
-    box-shadow: unset !important
-}
-
-.dark-mode article .card .card-body .card-title a {
-    color: var(--always-white) !important
-}
-
-.dark-mode article .card .card-body .card-title a:active,
-.dark-mode article .card .card-body .card-title a:hover {
-    color: #fe2c55 !important
-}
-
-.dark-mode article .card .card-body .card-text {
-    color: var(--always-white) !important
-}
-
-.dark-mode article .card .card-footer {
-    background: var(--surface-background) !important
-}
-
-.dark-mode article .card .card-footer .post-name a {
-    color: var(--always-white) !important
-}
-
-.dark-mode article .card .card-footer .post-name a:active,
-.dark-mode article .card .card-footer .post-name a:hover {
-    color: #fe2c55 !important
-}
-
+.dark-mode p,
+.dark-mode .mediumnavigation a
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode article .card .card-body .card-title a,
+.dark-mode article .card .card-body .card-text,
+.dark-mode article .card .card-footer .post-name a,
 .dark-mode article .card .card-footer .post-author,
 .dark-mode article .card .card-footer .post-date,
-.dark-mode article .card .card-footer .post-read {
-    color: var(--always-white) !important
-}
-
-.dark-mode article .card .card-footer .post-read-more a {
-    color: var(--always-white) !important
-}
-
-.dark-mode article .card .card-footer .post-read-more a:active,
-.dark-mode article .card .card-footer .post-read-more a:hover {
-    color: #fe2c55 !important
-}
-
+.dark-mode article .card .card-footer .post-read,
+.dark-mode article .card .card-footer .post-read-more a,
 .dark-mode article .post-author,
 .dark-mode article .post-date,
 .dark-mode article .post-read,
-.dark-mode article .article-post .dark-mode article .post-cat {
-    color: var(--always-white) !important
-}
-
-.dark-mode article .prev-post,
-.dark-mode article .next-post {
-    background: var(--nav-bar-background) !important
-}
-
-.dark-mode article .article-post h2:before {
-    background-color: var(--comment-background) !important
-}
-
-.dark-mode .footer {
-    background: var(--nav-bar-background) !important;
-    border-color: var(--comment-background) !important;
-    color: var(--always-white) !important
-}
-
-.dark-mode .footer a {
-    color: var(--always-white) !important
-}
-
-.dark-mode .footer a:active,
-.dark-mode .footer a:hover {
-    color: #fe2c55 !important
-}
-
-.dark-mode .bottompagination .navigation {
-    border-color: var(--comment-background) !important;
-    color: var(--always-white) !important
-}
-
-.dark-mode .bottompagination .navigation a {
-    color: var(--always-white) !important
-}
-
-.dark-mode .bottompagination .navigation a:active,
-.dark-mode .bottompagination .navigation a:hover {
-    color: #fe2c55 !important
-}
-
-.dark-mode .tags a {
-    background: var(--comment-background) !important
-}
-
-.dark-mode .tags a:active,
-.dark-mode .tags a:hover {
-    background: var(--nav-bar-background) !important;
-    color: inherit
-}
-
-.dark-mode .highlight {
-    background: var(--nav-bar-background) !important
-}
-
-.dark-mode .highlight pre {
-    color: var(--always-white) !important;
-    border-color: var(--comment-background) !important;
-    background: var(--nav-bar-background) !important
-}
-
+.dark-mode article .article-post .dark-mode article .post-cat,
+.dark-mode .footer a,
+.dark-mode .bottompagination .navigation a,
 .dark-mode .highlight .c,
 .dark-mode .highlight .cm,
 .dark-mode .highlight .cp,
@@ -457,17 +331,91 @@
     color: var(--always-white) !important
 }
 
+.dark-mode .mediumnavigation {
+    background: var(--nav-bar-background) !important;
+    box-shadow: unset !important;
+    color: var(--always-white) !important
+}
+
+.dark-mode .mediumnavigation a:active,
+.dark-mode .mediumnavigation a:hover,
+.dark-mode article .card .card-body .card-title a:active,
+.dark-mode article .card .card-body .card-title a:hover,
+.dark-mode article .card .card-footer .post-name a:active,
+.dark-mode article .card .card-footer .post-name a:hover,
+.dark-mode article .card .card-footer .post-read-more a:active,
+.dark-mode article .card .card-footer .post-read-more a:hover,
+.dark-mode .footer a:active,
+.dark-mode .footer a:hover,
+.dark-mode .bottompagination .navigation a:active,
+.dark-mode .bottompagination .navigation a:hover {
+    color: #fe2c55 !important
+}
+
+.dark-mode .mediumnavigation .form-control,
+.dark-mode article .article-post h2:before,
+.dark-mode .tags a {
+    background: var(--comment-background) !important
+}
+
+.dark-mode .mediumnavigation .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important
+}
+
+.dark-mode .mediumnavigation .search-icon svg {
+    fill: var(--always-white) !important
+}
+
+.dark-mode .section-title h2 {
+    border-color: var(--comment-background) !important
+}
+
+.dark-mode article .card {
+    background: var(--nav-bar-background) !important;
+    border-color: var(--comment-background) !important;
+    box-shadow: unset !important
+}
+
+.dark-mode article .card .card-footer {
+    background: var(--surface-background) !important
+}
+
+.dark-mode article .prev-post,
+.dark-mode article .next-post,
+.dark-mode .highlight {
+    background: var(--nav-bar-background) !important
+}
+
+.dark-mode .footer {
+    background: var(--nav-bar-background) !important;
+    border-color: var(--comment-background) !important;
+    color: var(--always-white) !important
+}
+
+.dark-mode .bottompagination .navigation {
+    border-color: var(--comment-background) !important;
+    color: var(--always-white) !important
+}
+
+.dark-mode .tags a:active,
+.dark-mode .tags a:hover {
+    background: var(--nav-bar-background) !important;
+    color: inherit
+}
+
+.dark-mode .highlight pre {
+    color: var(--always-white) !important;
+    border-color: var(--comment-background) !important;
+    background: var(--nav-bar-background) !important
+}
+
 .dark-mode .highlight .err {
     color: #fe2c55 !important;
     background-color: unset !important
 }
 
 .dark-mode .highlight .gd,
-.dark-mode .highlight .gi {
-    color: var(--always-white) !important;
-    background-color: unset !important
-}
-
+.dark-mode .highlight .gi,
 .dark-mode .highlight .gd .x,
 .dark-mode .highlight .gi .x {
     color: var(--always-white) !important;
@@ -5798,12 +5746,21 @@
     top: 0 !important
 }
 
-.card-body .card-title a {
+.card-body .card-title a,
+.layout-post .main-content .article-post .PageNavigation a,
+.layout-post .main-content .article-post .after-post-tags a {
     color: #4c5267 !important
 }
 
 .card-body .card-title a:focus,
-.card-body .card-title a:hover {
+.card-body .card-title a:hover,
+.layout-post .main-content .post-author a,
+.layout-post .main-content .article-post a,
+.layout-page .main-content .article-post a,
+.layout-post .main-content .article-post .PageNavigation a:focus,
+.layout-post .main-content .article-post .after-post-tags a:focus,
+.layout-post .main-content .article-post .PageNavigation a:hover,
+.layout-post .main-content .article-post .after-post-tags a:hover {
     color: #fe2c55 !important
 }
 
@@ -5814,12 +5771,12 @@
     margin-right: auto
 }
 
-.layout-post .main-content .post-author a {
-    color: #fe2c55
-}
-
 .layout-post .main-content .post-author a:focus,
-.layout-post .main-content .post-author a:hover {
+.layout-post .main-content .post-author a:hover,
+.layout-post .main-content .article-post a:focus,
+.layout-post .main-content .article-post a:hover,
+.layout-page .main-content .article-post a:focus,
+.layout-page .main-content .article-post a:hover {
     color: #fe9c55
 }
 
@@ -5828,18 +5785,6 @@
     max-width: 46.875rem;
     padding: 0;
     margin: 0 auto
-}
-
-.layout-post .main-content .article-post a,
-.layout-page .main-content .article-post a {
-    color: #fe2c55 !important
-}
-
-.layout-post .main-content .article-post a:focus,
-.layout-post .main-content .article-post a:hover,
-.layout-page .main-content .article-post a:focus,
-.layout-page .main-content .article-post a:hover {
-    color: #fe9c55 !important
 }
 
 .layout-post .main-content .article-post h2,
@@ -5869,18 +5814,6 @@
     width: 3.125rem;
     margin: auto;
     background-color: #fe2c55
-}
-
-.layout-post .main-content .article-post .PageNavigation a,
-.layout-post .main-content .article-post .after-post-tags a {
-    color: #4c5267 !important
-}
-
-.layout-post .main-content .article-post .PageNavigation a:focus,
-.layout-post .main-content .article-post .after-post-tags a:focus,
-.layout-post .main-content .article-post .PageNavigation a:hover,
-.layout-post .main-content .article-post .after-post-tags a:hover {
-    color: #fe2c55 !important
 }
 
 .layout-post .main-content h1,
