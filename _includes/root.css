@@ -327,7 +327,8 @@
 .dark-mode .highlight .vc,
 .dark-mode .highlight .vg,
 .dark-mode .highlight .vi,
-.dark-mode .highlight .il {
+.dark-mode .highlight .il,
+.dark-mode .layout-post .main-content .article-post .PageNavigation a {
     color: var(--always-white) !important
 }
 
@@ -336,7 +337,7 @@
     box-shadow: unset !important;
     color: var(--always-white) !important
 }
-
+.dark-mode .mediumnavigation .active,
 .dark-mode .mediumnavigation a:active,
 .dark-mode .mediumnavigation a:hover,
 .dark-mode article .card .card-body .card-title a:active,
