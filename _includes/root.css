@@ -328,7 +328,9 @@
 .dark-mode .highlight .vg,
 .dark-mode .highlight .vi,
 .dark-mode .highlight .il,
-.dark-mode .layout-post .main-content .article-post .PageNavigation a {
+.dark-mode .layout-post .main-content .article-post .PageNavigation a,
+.dark-mode .article-post,
+ {
     color: var(--always-white) !important
 }
 
@@ -337,7 +339,7 @@
     box-shadow: unset !important;
     color: var(--always-white) !important
 }
-.dark-mode .mediumnavigation .active,
+.dark-mode .mediumnavigation .active>.nav-link,
 .dark-mode .mediumnavigation a:active,
 .dark-mode .mediumnavigation a:hover,
 .dark-mode article .card .card-body .card-title a:active,
@@ -5756,12 +5758,14 @@
 .card-body .card-title a:focus,
 .card-body .card-title a:hover,
 .layout-post .main-content .post-author a,
+.layout-post .main-content .post-cat a,
 .layout-post .main-content .article-post a,
 .layout-page .main-content .article-post a,
 .layout-post .main-content .article-post .PageNavigation a:focus,
 .layout-post .main-content .article-post .after-post-tags a:focus,
 .layout-post .main-content .article-post .PageNavigation a:hover,
-.layout-post .main-content .article-post .after-post-tags a:hover {
+.layout-post .main-content .article-post .after-post-tags a:hover
+ {
     color: #fe2c55 !important
 }
 
@@ -5774,6 +5778,8 @@
 
 .layout-post .main-content .post-author a:focus,
 .layout-post .main-content .post-author a:hover,
+.layout-post .main-content .post-cat a:focus,
+.layout-post .main-content .post-cat a:hover,
 .layout-post .main-content .article-post a:focus,
 .layout-post .main-content .article-post a:hover,
 .layout-page .main-content .article-post a:focus,
