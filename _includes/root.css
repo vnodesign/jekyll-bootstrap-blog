@@ -330,7 +330,7 @@
 .dark-mode .highlight .il,
 .dark-mode .layout-post .main-content .article-post .PageNavigation a,
 .dark-mode .article-post,
- {
+.dark-mode .layout-post .main-content .article-post .after-post-tags a {
     color: var(--always-white) !important
 }
 
