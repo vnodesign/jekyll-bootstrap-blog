@@ -126,6 +126,19 @@
         }
     </script>
     {% endif %}
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "{{site.name}}",
+          "url": "{{ site.url }}/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://cse.google.com/cse?cx=f8de27089149e0ecc&ie=UTF-8&q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+    </script>
     <!-- Preload file -->
     <link href="{{ site.url }}/assets/js/bundle.min.js" rel="preload" as="script" />
     {% if site.fanpage-chat %}
