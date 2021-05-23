@@ -85,7 +85,11 @@ adsense-data-ad-slot: "xxxxxxxxxx"
 lazyimages: "enabled"
 
 sass:
+  indentWidth: 4
   style: compressed
+  precision: 10
+
+include: ['.htaccess']
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
 
