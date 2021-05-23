@@ -5950,14 +5950,14 @@ article .card {
 }
 
 .socials a {
-    color: var(--always-white) !important;
+    color: #4c5267 !important;
     margin-right: 20px;
     transition: .3s all ease
 }
 
 .socials a:hover,
 .socials a:focus {
-    color: #fff
+    color: #fe2c55
 }
 
 ._ms,

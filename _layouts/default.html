@@ -197,7 +197,7 @@
     {% capture main %}{% include main.css %}{% endcapture %}
     <style id="root">{{ root | scssify }}</style>
     <style id="main-global-css">{{ main | scssify }}</style>
-    <style>@font-face{font-family:"bootstrap-icons";src:url("{{ site.url }}/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("{{ site.url }}/assets/fonts/bootstrap-icons.woff") format("woff");font-display:swap}</style>
+    <style>@font-face{font-family:"bootstrap-icons";src:url("{{ site.url }}/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("{{ site.url }}/assets/fonts/bootstrap-icons.woff")format("woff");font-display:swap}</style>
     {% if site.lazyimages == "enabled" %}<style type="text/css">img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}</style>{% endif %}
     <!-- Scripts required -->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>

@@ -23,20 +23,36 @@ title: Tuan Duc Design
     </div>
 </section>
 {% endif %}
-<!-- All posts -->
-<section class="recent-posts">
+<!-- Series-->
+<section class="recent-posts series">
     <div class="section-title">
-        <h2><span>Recent Posts</span></h2>
+        <h2><span><a href="{{ site.url }}/category/series/" title="Series">Series</a></span></h2>
     </div>
     <div class="row listrecent">
-        {% for post in paginator.posts %}
+        {% for post in site.categories['Series'] limit: 5 %}
         {% include all-posts.html %}
         {% endfor %}
     </div>
 </section>
-<!-- Pagination -->
-<div class="bottompagination">
-    <span class="navigation" role="navigation">
-        {% include pagination.html %}
-    </span>
-</div>
+<!-- Javascript-->
+<section class="recent-posts javascript">
+    <div class="section-title">
+        <h2><span><a href="{{ site.url }}/category/javascript/" title="Javascript">Javascript</a></span></h2>
+    </div>
+    <div class="row listrecent">
+        {% for post in site.categories['Javascript'] limit: 5 %}
+        {% include all-posts.html %}
+        {% endfor %}
+    </div>
+</section>
+<!-- Server-->
+<section class="recent-posts server">
+    <div class="section-title">
+        <h2><span><a href="{{ site.url }}/category/server/" title="Series">Server</a></span></h2>
+    </div>
+    <div class="row listrecent">
+        {% for post in site.categories['Server'] limit: 5 %}
+        {% include all-posts.html %}
+        {% endfor %}
+    </div>
+</section>
