@@ -135,11 +135,11 @@ webp:
 #optimization
 #compress.html
 compress_html:
-  clippings: [all]
-  comments: ["<!-- ", " -->"]
-  endings: [all]
-  ignore:
+    clippings: []
+    comments: [all]
+    endings: []
+    ignore:
     envs: [local]
-  blanklines: false
-  profile: false
-  startings: [html, head, body]
+    blanklines: false
+    profile: false
+    startings: []
