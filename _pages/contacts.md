@@ -8,4 +8,4 @@ Do you have problems related to VPS development and Website optimization? Please
 
 All information, questions and questions, please send mail to the following address:
 
-[miumiu.official.56@gmail.com](mailto:miumiu.official.56@gmail.com)
+{% include external-link.html href="mailto:miumiu.official.56@gmail.com" title="miumiu.official.56@gmail.com" %}
