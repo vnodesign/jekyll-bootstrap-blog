@@ -19,4 +19,5 @@ group :jekyll_plugins do
     gem 'kramdown'
     gem 'rouge'
     gem 'jekyll-webp'
+    gem 'jekyll-minifier'
 end
