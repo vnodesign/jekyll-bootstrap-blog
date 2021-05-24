@@ -207,7 +207,6 @@
     {% if site.fanpage-chat %}Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})}});{% endif %}
     {% if site.google_analytics %}Defer.js('https://cdn.jsdelivr.net/npm/ga-lite@1/dist/ga-lite.min.js','galite-js',100,function(){var galite=galite||{};galite.UA='{{site.google_analytics}}'});{% endif %}
     </script>
-    <script src="{{ site.url }}/assets/js/bundle.min.js" defer></script>
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}" itemscope="itemscope" itemtype="https://schema.org/WebPage">
@@ -334,5 +333,8 @@
     <div id="fb-root"></div>
     <div class="fb-customerchat" attribution="biz_inbox" page_id="{{site.fanpage-chat}}" data-lazy="true"></div>
     {% endif %}
+    <!-- Javascript -->
+    <script src="{{ site.url }}/assets/js/bundle.min.js" defer></script>
+    <script>$((function(){$("#_ts").on("change",(function(){$(this).is(":checked")?(localStorage.setItem("dark-mode","true"),$("body").addClass("dark-mode")):(localStorage.setItem("dark-mode","false"),$("body").removeClass("dark-mode"))}));var e=localStorage.getItem("dark-mode");null!=e&&("true"==e?($("#_ts").prop("checked",!0),$("body").addClass("dark-mode")):($("#_ts").prop("checked",!1),$("body").removeClass("dark-mode")))}));</script>
 </body>
 </html>
