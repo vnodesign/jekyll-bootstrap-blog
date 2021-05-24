@@ -158,3 +158,4 @@ jekyll-minifier:
   compress_js_templates: false      # Default: false
   preserve_patterns:                # Default: (empty)
   uglifier_args:                    # Default: (empty)
+

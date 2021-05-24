@@ -334,7 +334,6 @@
     <div class="fb-customerchat" attribution="biz_inbox" page_id="{{site.fanpage-chat}}" data-lazy="true"></div>
     {% endif %}
     <!-- Javascript -->
-    <script src="{{ site.url }}/assets/js/bundle.min.js" defer></script>
-    <script>$((function(){$("#_ts").on("change",(function(){$(this).is(":checked")?(localStorage.setItem("dark-mode","true"),$("body").addClass("dark-mode")):(localStorage.setItem("dark-mode","false"),$("body").removeClass("dark-mode"))}));var e=localStorage.getItem("dark-mode");null!=e&&("true"==e?($("#_ts").prop("checked",!0),$("body").addClass("dark-mode")):($("#_ts").prop("checked",!1),$("body").removeClass("dark-mode")))}));</script>
+    <script type="deferjs" src="{{ site.url }}/assets/js/bundle.min.js" defer="1"></script>
 </body>
 </html>
