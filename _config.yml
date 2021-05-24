@@ -10,8 +10,7 @@ url: 'https://tuanducdesign.com'
 google_analytics: 'UA-175649416-1'
 disqus: 'tuanducdesign'
 fanpage-chat: '121349286117840'
-include: ["_pages"]
-permalink: /:year/:month/:title.html/
+permalink: /:year/:month/:title.html
 twitter:
   username: tuanducdesign
   card: summary_large_image
@@ -60,11 +59,11 @@ jekyll-archives:
     - categories
   layout: archive
   permalinks:
-    category: '/category/:name/'
+    category: '/category/:name'
     
 # Pagination 
 paginate: 6
-paginate_path: /page/:num/
+paginate_path: /page/:num
     
 # Other
 markdown: kramdown
@@ -89,7 +88,7 @@ sass:
   style: compressed
   precision: 10
 
-include: ['.htaccess']
+include: [.htaccess, _pages]
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
 
