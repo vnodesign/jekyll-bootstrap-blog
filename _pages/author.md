@@ -1,5 +1,5 @@
 ---
 layout: author
 title: Author
-permalink: /author
+permalink: /author/
 ---
