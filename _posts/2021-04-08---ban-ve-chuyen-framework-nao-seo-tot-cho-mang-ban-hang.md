@@ -11,7 +11,7 @@ toc: true
 
 Bàn về chuyện Framework nào seo tốt cho mảng bán hàng, hiện nay có rất nhiều Framework được tạo ra kể đến có Shopify, Pretashop, Ecshop, và Laravel.
 
-{% include image.html src="ban-ve-chuyen-framework-nao-seo-tot-cho-mang-ban-hang.png" alt="Bàn về chuyện Framework nào seo tốt cho mảng bán hàng" %}
+{% include image.html src="ban-ve-chuyen-framework-nao-seo-tot-cho-mang-ban-hang.png" webp="ban-ve-chuyen-framework-nao-seo-tot-cho-mang-ban-hang.webp" type="png" alt="Bàn về chuyện Framework nào seo tốt cho mảng bán hàng" %}
 
 ## Framework nào seo tốt cho mảng bán hàng
 

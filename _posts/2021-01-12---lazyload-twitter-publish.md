@@ -11,17 +11,17 @@ toc: false
 
 Ở bài viết trước thì chúng ta đã tìm hiểu về cách Lazy Load Facebook Customize Chat. Thì ở bài viết tiếp theo mình sẽ hướng dẫn các bạn cách Lazyload Twitter Publish để trang tải nhanh hơn.
 
-{% include image.html src="lazyload-twitter-publish.jpg" alt="Lazyload Twitter Publish" %}
+{% include image.html src="lazyload-twitter-publish.jpg" webp="lazyload-twitter-publish.webp" type="jpg" alt="Lazyload Twitter Publish" %}
 
 Đầu tiên các bạn truy cập vào trang: {% include external-link.html href="https://publish.twitter.com" title="https://publish.twitter.com" %}
 
 Tiếp theo các bạn nhập đường dẫn đến trang profile của mình trên Twitter.
 
-![Twitter Publish]({{ site.url }}/static/media/twitter-publish.jpg)
+{% include image.html src="twitter-publish.jpg" webp="twitter-publish.webp" type="jpg" alt="Twitter Publish" %}
 
 Sau đó chọn loại bố cục mà bạn cần dùng sau đó lấy mã.
 
-![Twitter Layout]({{ site.url }}/static/media/twitter-layout.jpg)
+{% include image.html src="twitter-layout.jpg" webp="twitter-layout.webp" type="jpg" alt="Twitter Layout" %}
 
 Rồi bây giờ chúng ta cùng xem cấu trúc đoạn code nó như nào nhé!
 

@@ -11,7 +11,7 @@ toc: true
 
 Google Map có thể nói là cái quan trọng nhất với mọi người, không chỉ tìm kiếm vị trí, mà nó còn là cái giúp mọi người tìm kiếm đến doanh nghiệp của bạn.
 
-{% include image.html src="google-maps-logo.png" alt="Lazyload Google Map" %}
+{% include image.html src="google-maps-logo.png" webp="google-maps-logo.webp" type="png" alt="Lazyload Google Map" %}
 
 ## Làm thế nào để lazyload Google Map?
 

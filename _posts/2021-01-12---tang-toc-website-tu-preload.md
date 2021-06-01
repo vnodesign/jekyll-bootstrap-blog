@@ -11,7 +11,7 @@ toc: false
 
 Ngày nay khi tối ưu website thì người ta quan trọng nhất là tốc độ và trải nghiệm của người dùng. Bạn có thể áp dụng nội dung trong bài viết này với các đoạn script của bài trước để tối ưu thêm.
 
-{% include image.html src="speed-website-from-preload.jpg" alt="Tăng Tốc Website Từ Preload" %}
+{% include image.html src="speed-website-from-preload.jpg" webp="speed-website-from-preload.webp" type="jpg" alt="Tăng Tốc Website Từ Preload" %}
 
 Để hiểu rõ hơn về cả thẻ link các bạn tìm hiểu tại trang sau: {% include external-link.html href="https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content" title="https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content" %}
 

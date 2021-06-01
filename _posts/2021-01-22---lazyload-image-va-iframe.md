@@ -11,7 +11,7 @@ toc: true
 
 Ở các bài trước mình đã hướng dẫn các bạn lazyload các script, ở bài này mình sẽ hướng dẫn cách lazyload image và iframe.
 
-{% include image.html src="lazyload-image-va-iframe.jpg" alt="Lazyload Image Và Iframe" %}
+{% include image.html src="lazyload-image-va-iframe.jpg" webp="lazyload-image-va-iframe.webp" type="jpg" alt="Lazyload Image Và Iframe" %}
 
 ## Sử dụng Jquery
 

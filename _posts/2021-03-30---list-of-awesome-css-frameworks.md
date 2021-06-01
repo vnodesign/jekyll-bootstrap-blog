@@ -14,7 +14,7 @@ toc: true
 
 In this article I would like to share with you the list of CSS Frameworks that support Website design.
 
-{% include image.html src="css-frameworks.jpg" alt="List of awesome CSS frameworks" %}
+{% include image.html src="css-frameworks.jpg" webp="css-frameworks.webp" type="jpg" alt="List of awesome CSS frameworks" %}
 
 ## Base / Reset / Normalize
 

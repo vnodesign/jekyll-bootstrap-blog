@@ -11,7 +11,7 @@ toc: true
 
 Bài viết ngày hôm nay mình sẽ tổng hợp bộ ba thư viện thần thành giúp website của bạn tối ưu hơn. Vậy các công cụ mà mình muốn nhắc đến là gì? Hãy cùng mình theo dõi hết bài viết ngày hôm nay nhé.
 
-{% include image.html src="bo-ba-thu-vien-than-thanh-giup-website-toi-uu.jpg" alt="Bộ Ba Thư Viện Thần Thánh Giúp Website Tối Ưu" %}
+{% include image.html src="bo-ba-thu-vien-than-thanh-giup-website-toi-uu.jpg" webp="bo-ba-thu-vien-than-thanh-giup-website-toi-uu.webp" type="jpg" alt="Bộ Ba Thư Viện Thần Thánh Giúp Website Tối Ưu" %}
 
 ## DeferJS của tác giả Mai Nhựt Tân
 

@@ -11,7 +11,7 @@ toc: true
 
 Theo mình tìm hiểu thì Staticaly khá hay khi sử dụng nó bạn sẽ cảm thấy website của mình nhanh hơn.
 
-{% include image.html src="so-requests-tren-website.jpg" alt="Tăng Tốc Website Bằng Cách Sử Dụng Staticaly" %}
+{% include image.html src="tang-toc-website-bang-cach-su-dung-staticaly.jpg" webp="tang-toc-website-bang-cach-su-dung-staticaly.webp" type="jpg" alt="Tăng Tốc Website Bằng Cách Sử Dụng Staticaly" %}
 
 Trang chủ Staticaly: {% include external-link.html href="https://statically.io" title="https://statically.io" %}
 
@@ -35,7 +35,7 @@ Bất cứ URL ảnh nào bạn chỉ cần nhập vào thông tin trên website
 
 Tiếp theo bạn kéo xuống cuối trang sau đó dán đường dẫn hình ảnh của bạn vào.
 
-{% include image.html src="mien-phi-cdn-cho-hinh-anh.jpg" alt="Miễn Phí CDN Cho Hình Ảnh" %}
+{% include image.html src="mien-phi-cdn-cho-hinh-anh.jpg" webp="mien-phi-cdn-cho-hinh-anh.webp" type="jpg" alt="Miễn Phí CDN Cho Hình Ảnh" %}
 
 Sau khi dán thành công bạn sẽ được URL tương tự như này:
 

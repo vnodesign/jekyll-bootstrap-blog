@@ -11,7 +11,7 @@ toc: true
 
 Về vấn đề dùng nhiều scripts bên ba thì bạn sẽ không tránh khỏi được có nhiều requests được tải cùng website, Bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách kiểm tra xem có bao nhiêu requests trên Website.
 
-{% include image.html src="cach-kiem-tra-xem-co-bao-nhieu-requests-tren-website.jpg" alt="Cách Kiểm Tra Xem Có Bao Nhiêu Requests Trên Website" %}
+{% include image.html src="cach-kiem-tra-xem-co-bao-nhieu-requests-tren-website.jpg" webp="cach-kiem-tra-xem-co-bao-nhieu-requests-tren-website.webp" type="jpg" alt="Cách Kiểm Tra Xem Có Bao Nhiêu Requests Trên Website" %}
 
 ## Requests là gì
 
@@ -35,19 +35,15 @@ Finish: 7.63 s
 DOMContentLoaded: 1.12 s
 ```
 
-{% include image.html src="so-requests-tren-website.jpg" alt="Số requests trên website" %}
+{% include image.html src="so-requests-tren-website.jpg" webp="so-requests-tren-website.webp" type="jpg" alt="Số requests trên website" %}
 
 ## Tìm kiếm và tối ưu các requests
 
 Bên trên có khung Fillter bạn gõ vào đó tên domain hoặc đuôi mở rộng mà bạn cần check để kiểm tra.
 
-Ở đây mình sẽ check với Google Fonts để kiểm tra xem Google Fonts load những thành phần nào ra.
+{% include image.html src="so-requests-tren-website.jpg" webp="so-requests-tren-website.webp" type="jpg" alt="Số requests trên website" %}
 
-{% include image.html src="so-requests-tren-website.jpg" alt="Kiểm tra số requests từ Google Fonts" %}
-
-Kết quả hiển thị ra như vậy là bạn đã biết là có bao nhiêu requests trên Website rồi nhé.
-
-Bây giờ chúng ta tiến hành áp dụng các kiến thức từ bài [Tăng Tốc Website Từ Preload]({{ site.url }}/2021/01/tang-toc-website-tu-preload.html) để áp dụng vào bài này.
+Bây giờ chúng ta tiến hành áp dụng các kiến thức từ bài {% include internal-link.html href="2021/01/tang-toc-website-tu-preload.html" title="Tăng Tốc Website Từ Preload" %} để áp dụng vào bài này.
 
 Cú pháp quen thuộc mà mình muốn nhắc đến đó chính là:
 

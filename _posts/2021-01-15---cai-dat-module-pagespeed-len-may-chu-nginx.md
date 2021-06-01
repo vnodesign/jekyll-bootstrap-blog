@@ -14,7 +14,7 @@ toc: true
 
 ngx_pagespeed tăng tốc website của bạn và giảm thời gian load đáng kể bằng cách tự động áp dụng các kỹ thuật tối ưu hóa page và các thành phần tĩnh như CSS, Javascript và Image.
 
-{% include image.html src="install-module-page-speed-on-server-nginx.jpg" alt="Cài đặt Module PageSpeed lên máy chủ Nginx" %}
+{% include image.html src="install-module-page-speed-on-server-nginx.jpg" webp="install-module-page-speed-on-server-nginx.webp" type="jpg" alt="Cài đặt Module PageSpeed lên máy chủ Nginx" %}
 
 Để hiểu rõ hơn về Module PageSpeed các bạn tìm hiểu tại trang sau: {% include external-link.html href="https://developers.google.com/speed/pagespeed/module" title="https://developers.google.com/speed/pagespeed/module" %}
 
@@ -28,7 +28,9 @@ Trước khi cài đặt Module PageSpeed trên máy chủ Nginx thì các bạn
 
 ## Đăng nhập vào SSH
 
-{% include image.html src="applications-termius.jpg" alt="Ứng dụng Termius" %}
+Bạn tải ứng dụng **Termius** về để sử dụng nhé.
+
+{% include image.html src="applications-termius.jpg" webp="applications-termius.webp" type="jpg" alt="Ứng dụng Termius" %}
 
 Để cài đặt cũng như cấu hình Module PageSpeed thì bạn phải truy cập vào SSH với quyền root.
 Chúng ta cần các thông tin sau đây để có thể đăng nhập vào SSH:
@@ -268,7 +270,7 @@ pagespeed EnableFilters lazyload_images;
 pagespeed EnableFilters insert_dns_prefetch;
 ```
 
-Ngoài ra bạn có thể xem thêm toàn bộ danh sách filter có trong CoreFilters: [https://developers.google.com/speed/pagespeed/module/config_filters](https://developers.google.com/speed/pagespeed/module/config_filters)
+Ngoài ra bạn có thể xem thêm toàn bộ danh sách filter có trong CoreFilters: % include external-link.html href="https://developers.google.com/speed/pagespeed/module/config_filters" title="https://developers.google.com/speed/pagespeed/module/config_filters" %}
 
 Với các bạn đã có nhiều kiến thức, trải nghiệm thì nên sử dụng PassThrough. Khi đó sẽ cần tự kích hoạt những filter cần dùng.
 
@@ -298,11 +300,11 @@ service nginx restart
 
 Sau đó bấm chuột phải chọn kiểm tra phần tử, tiếp theo chuyển qua tab Network.
 
-{% include image.html src="check-module-page-speed.jpg" alt="Kiểm tra Module PageSpeed" %}
+{% include image.html src="check-module-page-speed.jpg" webp="check-module-page-speed.webp" type="jpg" alt="Kiểm tra Module PageSpeed" %}
 
 Kế tiếp bạn reload lại trang rồi lựa chọn domain của mình.
 
-{% include image.html src="check-module-page-speed-headers.jpg" alt="Kiểm tra Module PageSpeed Headers" %}
+{% include image.html src="check-module-page-speed-headers.jpg" webp="check-module-page-speed-headers.webp" type="jpg" alt="Kiểm tra Module PageSpeed Headers" %}
 
 Nếu hiện ra dòng: x-page-speed: 1.13.35.2-0 tức có nghĩa là đã thành công, còn nếu ngược lại thì bạn phải kiểm tra lại.
 

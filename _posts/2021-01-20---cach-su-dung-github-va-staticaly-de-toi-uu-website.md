@@ -11,7 +11,7 @@ toc: true
 
 Ở bài trước mình đã hướng dẫn các bạn tăng tốc Website bằng cách sử dụng Staticaly nhưng ở mức độ cơ bản, Bài viết ngày hôm nay mình sẽ hướng dẫn cách tạo và cấu hình Github để sử dụng Staticaly.
 
-{% include image.html src="cach-su-dung-github-va-staticaly-de-toi-uu-website.jpg" alt="Cách Sử Dụng Github và Staticaly Để Tối Ưu Website" %}
+{% include image.html src="cach-su-dung-github-va-staticaly-de-toi-uu-website.jpg" webp="cach-su-dung-github-va-staticaly-de-toi-uu-website.webp" type="jpg" alt="Cách Sử Dụng Github và Staticaly Để Tối Ưu Website" %}
 
 ## Github là gì
 
@@ -25,21 +25,21 @@ GitHub cung cấp chức năng social networking như feeds, followers và netwo
 
 Sau đó nhập đầy đủ thông tin và bấm vào Create account.
 
-{% include image.html src="tao-tai-khoan-github.jpg" alt="Tạo tài khoản Github" %}
+{% include image.html src="tao-tai-khoan-github.jpg" webp="tao-tai-khoan-github.webp" type="jpg" alt="Tạo tài khoản Github" %}
 
 Tiếp theo bạn chọn công việc hiện tại của bạn và các thông tin phía dưới rồi bấm vào Complete setup để hoàn tất.
 
-{% include image.html src="hoan-tat-thong-tin-tao-tai-khoan-github.jpg" alt="Hoàn tất thông tin tạo tài khoản Github" %}
+{% include image.html src="hoan-tat-thong-tin-tao-tai-khoan-github.jpg" webp="hoan-tat-thong-tin-tao-tai-khoan-github.webp" type="jpg" alt="Hoàn tất thông tin tạo tài khoản Github" %}
 
 Sau khi đã hoàn tất đầy đủ các thông tin phía trên xong bạn cần vào email để xác minh tài khoản của mình.
 
 Xác minh tài khoản thành công xong bạn tạo một project mới.
 
-{% include image.html src="tao-project-moi-tren-github.jpg" alt="Tạo một project mới trên Github" %}
+{% include image.html src="tao-project-moi-tren-github.jpg" webp="tao-project-moi-tren-github.webp" type="jpg" alt="Tạo một project mới trên Github" %}
 
 Sau đó nhập tên cho repository đó.
 
-{% include image.html src="nhap-mot-ten-moi-cho-repository.jpg" alt="Nhập một tên mới cho repository" %}
+{% include image.html src="nhap-mot-ten-moi-cho-repository.jpg" webp="nhap-mot-ten-moi-cho-repository.webp" type="jpg" alt="Nhập một tên mới cho repository" %}
 
 Với Add .gitignore bạn tắt nó đi và Choose a license bạn để là MIT License nhé! Rồi bấm vào Create repository để hoàn tất quá trình khởi tạo project.
 
@@ -51,7 +51,7 @@ Bạn bấm vào Download for Mac hoặc Windows tùy theo hệ điều hành m�
 
 Sau khi đăng nhập thành công bạn bấm vào Current Repository rồi bấm vào nút Add, bấm tiếp vào Clone a Repository rồi chọn repository mà bạn đã tạo trên Github.
 
-{% include image.html src="clone-repository-tren-github-desktop.jpg" alt="Clone repository trên Github Desktop" %}
+{% include image.html src="clone-repository-tren-github-desktop.jpg" webp="clone-repository-tren-github-desktop.webp" type="jpg" alt="Clone repository trên Github Desktop" %}
 
 Tới chỗ Local Path bạn chọn khu vực để lưu! Tiếp theo mở thư mục của dự án mà bạn vừa clone về để bắt đầu làm việc nhé.
 
@@ -59,15 +59,15 @@ Tới chỗ Local Path bạn chọn khu vực để lưu! Tiếp theo mở thư 
 
 Bạn mở thư mục dự án mà bạn vừa clone để bắt đầu tạo folder và file để sử dụng Staticaly.
 
-{% include image.html src="thu-muc-du-an-vua-clone-ve.jpg" alt="Thư mục dự án vừa clone về" %}
+{% include image.html src="thu-muc-du-an-vua-clone-ve.jpg" webp="thu-muc-du-an-vua-clone-ve.webp" type="jpg" alt="Thư mục dự án vừa clone về" %}
 
 Tại đây bạn tạo một folder bên trong folder đó bạn tạo các folder con khác để tí nữa mình copy file vào.
 
-{% include image.html src="tao-thu-muc-de-luu-tru-file.jpg" alt="Tạo thư mục để lưu trữ file" %}
+{% include image.html src="tao-thu-muc-de-luu-tru-file.jpg" webp="tao-thu-muc-de-luu-tru-file.webp" type="jpg" alt="Tạo thư mục để lưu trữ file" %}
 
 Kế tiếp bạn copy các file của bạn vào từng folder tương ứng mà bạn đã tạo, sau khi tạo xong bạn quay lại ứng dụng Github Desktop để tiến hành deploy lên Github.
 
-{% include image.html src="deploy-du-an-sau-khi-hoan-tat.jpg" alt="Deploy dự án sau khi hoàn tất" %}
+{% include image.html src="deploy-du-an-sau-khi-hoan-tat.jpg" webp="deploy-du-an-sau-khi-hoan-tat.webp" type="jpg" alt="Deploy dự án sau khi hoàn tất" %}
 
 Nếu không có gì thay đổi thì bạn bấm vào Commit to main rồi ấn Push origin để hoàn tất, bây giờ chúng ta truy cập vào profile trên Github để lấy đường dẫn của file vừa deploy.
 
@@ -85,7 +85,7 @@ Tiếp theo bạn truy cập vào trang {% include external-link.html href="http
 
 Bạn cần lưu ý các bước sau khi sử dụng công cụ này.
 
-{% include image.html src="cac-buoc-can-luu-y-khi-su-dung-cong-cu-nay.jpg" alt="Các bước cần lưu ý khi sử dụng công cụ này" %}
+{% include image.html src="cac-buoc-can-luu-y-khi-su-dung-cong-cu-nay.jpg" webp="cac-buoc-can-luu-y-khi-su-dung-cong-cu-nay.webp" type="jpg" alt="Các bước cần lưu ý khi sử dụng công cụ này" %}
 
 Bạn đến ý hai khung bên trái và hai khung bên phải.
 

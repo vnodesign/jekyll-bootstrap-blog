@@ -11,21 +11,19 @@ toc: false
 
 Trong bài viết tiếp theo của ngày hôm nay mình sẽ hướng dẫn các bạn cách Lazyload script của Zalo để tải trang nhanh hơn.
 
-{% include image.html src="lazyload-zalo-plugins.jpg" alt="Lazyload Zalo Plugins" %}
+{% include image.html src="lazyload-zalo-plugins.jpg" webp="lazyload-zalo-plugins.webp" type="jpg" alt="Lazyload Zalo Plugins" %}
 
 Đầu tiên các bạn truy cập vào trang: {% include external-link.html href="https://developers.zalo.me/docs/social/share" title="https://developers.zalo.me/docs/social/share" %}
 
 Tiếp theo các bạn chọn plugins mà mình cần chèn vào website.
 
-{% include image.html src="zalo-plugins-share.jpg" alt="Zalo Plugins Share" %}
+{% include image.html src="zalo-plugins-share.jpg" webp="zalo-plugins-share.webp" type="jpg" alt="Zalo Plugins Share" %}
 
 Sau đó chọn loại bố cục và màu sắc mà bạn cần dùng sau đó lấy mã.
 
-{% include image.html src="zalo-layout-share.jpg" alt="Zalo Layout Share" %}
+{% include image.html src="zalo-layout-share.jpg" webp="zalo-layout-share.webp" type="jpg" alt="Zalo Layout Share" %}
 
-![Zalo Color Share]({{ site.url }}/static/media/zalo-color-share.jpg)
-
-{% include image.html src="zalo-color-share.jpg" alt="Zalo Color Share" %}
+{% include image.html src="zalo-color-share.jpg" webp="zalo-color-share.webp" type="jpg" alt="Zalo Color Share" %}
 
 Rồi bây giờ chúng ta cùng xem cấu trúc đoạn code nó như nào nhé!
 

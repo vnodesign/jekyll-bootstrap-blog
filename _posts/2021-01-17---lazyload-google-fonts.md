@@ -11,7 +11,7 @@ toc: false
 
 Tiếp nối các chuỗi Lazyload scripts bên ba thì hôm nay mình xin hướng dẫn các bạn cách Lazyload khi sử dụng Google Fonts.
 
-{% include image.html src="lazyload-google-fonts.jpg" alt="Lazyload Google Fonts" %}
+{% include image.html src="lazyload-google-fonts.jpg" webp="lazyload-google-fonts.webp" type="jpg" alt="Lazyload Google Fonts" %}
 
 Đầu tiên thì chúng ta cùng tìm hiểu về đoạn CSS mặc định mà Google cung cấp cho chúng ta khi thêm fonts vào website nhé.
 

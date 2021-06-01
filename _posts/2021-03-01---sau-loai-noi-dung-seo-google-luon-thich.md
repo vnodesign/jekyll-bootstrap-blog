@@ -11,7 +11,7 @@ toc: true
 
 Nắm vững sáu loại nội dung này, bạn sẽ có thể tạo ra vô số nội dung chất lượng vừa tốt cho người dùng, vừa tốt cho Google trên website của mình.
 
-{% include image.html src="sau-loai-noi-dung-seo-google-luon-thich.jpg" alt="Sáu loại nội dung SEO Google luôn thích" %}
+{% include image.html src="sau-loai-noi-dung-seo-google-luon-thich.jpg" webp="sau-loai-noi-dung-seo-google-luon-thich.webp" type="jpg" alt="Sáu loại nội dung SEO Google luôn thích" %}
 
 Với nhiều SEOer, một keyword, hay một nhóm key nhất định thường được làm 1 nội dung (99% là nội dung viết). Với mình thì khác, mình có thể làm tới 3-5 nội dung cho 1 nhóm key đó với những góc nhìn, định dạng và nội dung khác nhau hoàn toàn. Nó giúp mình gia tăng khả năng lên top và có thể chiếm nhiều thứ hạng trên trang nhất. Để làm được điều này, mình có 6 dạng nội dung để áp vô từng nhóm key.
 

@@ -11,7 +11,7 @@ toc: true
 
 Ở các bài viết trước mình đã hướng dẫn các bạn cách lazyload các scripts bên ba, ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Facebook plugins.
 
-{% include image.html src="meo-toi-uu-website-khi-su-dung-facebook-plugins.jpg" alt="Mẹo Tối Ưu Website Khi Sử Dụng Facebook Plugins" %}
+{% include image.html src="meo-toi-uu-website-khi-su-dung-facebook-plugins.jpg" webp="meo-toi-uu-website-khi-su-dung-facebook-plugins.webp" type="jpg" alt="Mẹo Tối Ưu Website Khi Sử Dụng Facebook Plugins" %}
 
 ## Truy cập vào đường dẫn tới file JS của Facebook
 

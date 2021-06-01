@@ -11,7 +11,7 @@ toc: true
 
 Có thể nói mã nguồn WordPress giờ quá phổ biến với người dùng từ các dự án từ bé đến lớn như bán hàng, blog, dịch vụ, công ty.
 
-{% include image.html src="tai-sao-theme-tren-wordpress-khong-duoc-toi-uu-san.jpg" alt="Tại sao theme trên WordPress không được tối ưu sẵn" %}
+{% include image.html src="tai-sao-theme-tren-wordpress-khong-duoc-toi-uu-san.jpg" webp="tai-sao-theme-tren-wordpress-khong-duoc-toi-uu-san.webp" type="jpg" alt="Tại sao theme trên WordPress không được tối ưu sẵn" %}
 
 ## Code chuẩn
 

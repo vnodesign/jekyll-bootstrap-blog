@@ -1,6 +1,15 @@
 <link rel="preload" href="{{ site.url }}/static/media/{{ include.src }}" as="image" />
+<link rel="preload" href="{{ site.url }}/static/media/{{ include.src.webp }}" as="image" />
 {% if site.lazyimages == "enabled" %}
-<img class="fade mx-auto d-block" data-src="{{ site.url }}/static/media/{{ include.src }}" alt="{{ include.alt }}" loading="lazy" decoding="async" />
+<picture class="multi-lazy">
+    <source srcset="{{ site.url }}/static/media/{{ include.webp }}" type="image/webp" />
+    <source srcset="{{ site.url }}/static/media/{{ include.src }}" type="image/{{ include.type }}" /> 
+    <img class="mx-auto d-block" src="{{ site.url }}/static/media/{{ include.src }}" alt="{{ include.alt }}" loading="lazy" decoding="async" />
+</picture>
 {% else %}
-<img class="mx-auto d-block" src="{{ site.url }}/static/media/{{ include.src }}" alt="{{ include.alt }}" />
+<picture>
+    <source srcset="{{ site.url }}/static/media/{{ include.webp }}" type="image/webp" />
+    <source srcset="{{ site.url }}/static/media/{{ include.src }}" type="image/{{ include.type }}" /> 
+    <img class="mx-auto d-block" src="{{ site.url }}/static/media/{{ include.src }}" alt="{{ include.alt }}" />
+</picture>
 {% endif %}

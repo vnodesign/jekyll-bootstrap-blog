@@ -11,7 +11,7 @@ toc: false
 
 Trong bài viết đầu tiên ngày hôm nay mình sẽ hướng dẫn các bạn cách Lazyload Facebook Customize Chat để trang tải nhanh hơn.
 
-{% include image.html src="lazyload-facebook-customize-chat.jpg" alt="Lazyload Facebook Customize Chat" %}
+{% include image.html src="lazyload-facebook-customize-chat.jpg" webp="lazyload-facebook-customize-chat.webp" type="jpg" alt="Lazyload Facebook Customize Chat" %}
 
 Đầu tiên thì chúng ta cùng tìm hiểu về đoạn Javascript mặc định mà Facebook cung cấp cho chúng ta khi cài plugins chat vào website nhé.
 

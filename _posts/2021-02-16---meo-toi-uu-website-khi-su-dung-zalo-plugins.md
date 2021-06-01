@@ -11,7 +11,7 @@ toc: true
 
 Ở bài viết trước mình đã hướng dẫn các bạn cách tối ưu website khi sử dụng Facebook Plugins, ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Zalo plugins.
 
-{% include image.html src="meo-toi-uu-website-khi-su-dung-zalo-plugins.jpg" alt="Mẹo Tối Ưu Website Khi Sử Dụng Zalo Plugins" %}
+{% include image.html src="meo-toi-uu-website-khi-su-dung-zalo-plugins.jpg" webp="meo-toi-uu-website-khi-su-dung-zalo-plugins.webp" type="jpg" alt="Mẹo Tối Ưu Website Khi Sử Dụng Zalo Plugins" %}
 
 ## Truy cập vào đường dẫn tới file JS của Zalo
 
