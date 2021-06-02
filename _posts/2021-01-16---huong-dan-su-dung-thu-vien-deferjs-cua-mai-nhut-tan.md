@@ -3,7 +3,7 @@ layout: post
 title:  "Hướng Dẫn Sử Dụng Thư Viện DeferJS của Mai Nhựt Tân"
 author: tuanducdesign
 categories: [ Library ]
-tags: [Preload, Font, Script, Style, Lazyload]
+tags: [Preload, Font, Script, Style, Lazyload, PHP, Composer, Laravel]
 image: static/media/user-guide-for-deferjs-library-by-mai-nhut-tan.jpg
 description: "Đây là một thư viện hiệu suất nguyên bản siêu nhỏ để tải JS, CSS, hình ảnh, iframe ... Trì hoãn hầu hết mọi thứ, dễ dàng tăng tốc trang web của bạn."
 featured: true
@@ -581,7 +581,7 @@ Bạn bật Minify HTML lên, chú ý nếu bạn có dùng plugins cache cùng 
 
 #### Optimizations for elements on the page
 
-{% include image.html src="optimizations-for-elements-on the-page-wordpress.png" webp="optimizations-for-elements-on the-page-wordpress.webp" type="png" alt="Optimizations for elements on the page" %}
+{% include image.html src="optimizations-for-elements-on-the-page-wordpress.png" webp="optimizations-for-elements-on-the-page-wordpress.webp" type="png" alt="Optimizations for elements on the page" %}
 
 Bạn giữ nguyên các giá trị ở đây.
 

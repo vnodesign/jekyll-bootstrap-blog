@@ -18,7 +18,7 @@ Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần 
 
 Nhập tên miền mà bạn muốn chặn vào khung Denylist như hình dưới đây, sau đó bấm phím Enter để tạo.
 
-{% include image.html src="cau-hinh-chuc-nang-chan-ten-mien-tren-nextdns.png" alt="Cấu hình chức năng chặn tên miền trên NextDNS" %}
+{% include image.html src="cau-hinh-chuc-nang-chan-ten-mien-tren-nextdns.png" webp="cau-hinh-chuc-nang-chan-ten-mien-tren-nextdns.webp" type="png" alt="Cấu hình chức năng chặn tên miền trên NextDNS" %}
 
 Bạn phải thật cẩn thận khi sử dụng chức năng này vì nó sẽ tự động từ chối tất cả các miền phụ của tên miền đó.
 

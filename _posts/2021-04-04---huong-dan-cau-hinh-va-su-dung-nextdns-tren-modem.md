@@ -14,7 +14,7 @@ Mình vừa tìm được một dịch vụ DNS khá hay, nên trước khi vi�
 
 Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
 
-{% include image.html src="huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg" alt="Hướng dẫn cấu hình và sử dụng NextDNS trên Modem" %}
+{% include image.html src="huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg" webp="huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.webp" type="jpeg" alt="Hướng dẫn cấu hình và sử dụng NextDNS trên Modem" %}
 
 ## NextDNS là gì
 
@@ -24,7 +24,7 @@ NextDNS là một DNS mạng tương tự như các DNS mạng khác, NextDNS s�
 
 ### Bảo vệ
 
-{% include image.html src="bao-ve.png" alt="Bảo vệ" %}
+{% include image.html src="bao-ve.png" webp="bao-ve.webp" type="png" alt="Bảo vệ" %}
 
 #### Bảo vệ bạn trước phần mềm độc hại và các cuộc tấn công lừa đảo, tấn công tiền điện tử và hơn thế nữa
 
@@ -34,7 +34,7 @@ Threat Intelligence Feeds, Google Safe Browsing, Cryptojacking, DNS Rebinding, I
 
 ### Riêng tư
 
-{% include image.html src="rieng-tu.png" alt="Riêng tư" %}
+{% include image.html src="rieng-tu.png" webp="rieng-tu.webp" type="png" alt="Riêng tư" %}
 
 #### Chặn quảng cáo và trình theo dõi trên các trang web và trong ứng dụng - bao gồm cả những quảng cáo và trình theo dõi khó hiểu nhất
 
@@ -42,7 +42,7 @@ Sử dụng danh sách chặn quảng cáo & trình theo dõi phổ biến nhấ
 
 ### Kiểm soát từ cha mẹ
 
-{% include image.html src="kiem-soat-tu-cha-me.jpg" alt="Kiểm soát từ cha mẹ" %}
+{% include image.html src="kiem-soat-tu-cha-me.jpg" webp="kiem-soat-tu-cha-me.webp" type="jpg" alt="Kiểm soát từ cha mẹ" %}
 
 #### Bảo vệ con bạn và kiểm soát những gì chúng có thể truy cập trực tuyến và khi nào
 
@@ -50,7 +50,7 @@ Chặn tất cả các trang web chứa nội dung khiêu dâm, bạo lực, vi 
 
 ### Phân tích & nhật ký theo dõi
 
-{% include image.html src="phan-tich-va-nhat-ky-theo-doi.jpg" alt="Phân tích & nhật ký theo dõi" %}
+{% include image.html src="phan-tich-va-nhat-ky-theo-doi.jpg" webp="phan-tich-va-nhat-ky-theo-doi.webp" type="jpg" alt="Phân tích & nhật ký theo dõi" %}
 
 #### Xem những gì đang xảy ra trên thiết bị của bạn bằng phân tích chuyên sâu và nhật ký thời gian thực
 
@@ -58,7 +58,7 @@ Chặn tất cả các trang web chứa nội dung khiêu dâm, bạo lực, vi 
 
 ### Cài đặt dễ dàng
 
-{% include image.html src="cai-dat-de-dang.jpg" alt="Cài đặt dễ dàng" %}
+{% include image.html src="cai-dat-de-dang.jpg" webp="cai-dat-de-dang.webp" type="jpg" alt="Cài đặt dễ dàng" %}
 
 #### Được hỗ trợ cố định trên tất cả các nền tảng chính - chỉ mất vài giây để thiết lập
 
@@ -108,7 +108,7 @@ Tiếp theo các bạn bấm vào đăng ký và điền đầy đủ thông tin
 
 Thông báo sẽ hiển thị như sau:
 
-{% include image.html src="cau-hinh-nextdns.png" alt="Cấu hình NextDNS" %}
+{% include image.html src="cau-hinh-nextdns.png" webp="cau-hinh-nextdns.webp" type="png" alt="Cấu hình NextDNS" %}
 
 Là bạn chưa sử dụng DNS mạng do NextDNS cung cấp, để sử dụng được DNS mạng do NextDNS cung cấp thì trước tiên bạn phải thay đổi DNS Servers.
 
@@ -128,7 +128,7 @@ Lưu ý: phần này vô cùng quan trọng.
 
 Tại đây bạn có một bảng thông tin như sau:
 
-{% include image.html src="linked-ip.png" alt="Linked IP" %}
+{% include image.html src="linked-ip.png" webp="linked-ip.webp" type="png" alt="Linked IP" %}
 
 Đây là thông tin bắt buộc mà bạn cần phải liên kết địa chỉ IP của mạng để sử dụng dịch vụ của NextDNS với 8 cách ở mục Setup Guide.
 
@@ -422,7 +422,7 @@ Lưu ý: Một số IP có thể khác nhau nên các bạn đừng thắc mắc
 
 Đây là kết quả mà mình đã làm được sau khi cấu hình thành công trên routers GPON ONT (Igate GW020).
 
-{% include image.html src="cau-hinh-thanh-cong-nextdns-tren-routers.png" alt="Cấu hình thành công NextDNS trên routers" %}
+{% include image.html src="cau-hinh-thanh-cong-nextdns-tren-routers.png" webp="cau-hinh-thanh-cong-nextdns-tren-routers.webp" type="png" alt="Cấu hình thành công NextDNS trên routers" %}
 
 ## Kết
 

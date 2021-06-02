@@ -14,7 +14,7 @@ toc: true
 
 Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
 
-{% include image.html src="tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.png" alt="Tìm hiểu các chức năng cài đặt trên NextDNS" %}
+{% include image.html src="tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.png" webp="tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.webp" type="png" alt="Tìm hiểu các chức năng cài đặt trên NextDNS" %}
 
 ## Các chức năng cài đặt trên NextDNS
 

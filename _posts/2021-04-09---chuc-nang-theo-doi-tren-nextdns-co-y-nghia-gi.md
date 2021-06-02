@@ -16,7 +16,7 @@ Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần 
 
 ## Các chức năng theo dõi trên NextDNS
 
-{% include image.html src="chuc-nang-theo-doi-tren-nextdns-co-y-nghia-gi.png" alt="Chức năng theo dõi trên NextDNS có ý nghĩa gì" %}
+{% include image.html src="chuc-nang-theo-doi-tren-nextdns-co-y-nghia-gi.png" webp="chuc-nang-theo-doi-tren-nextdns-co-y-nghia-gi.webp" type="png" alt="Chức năng theo dõi trên NextDNS có ý nghĩa gì" %}
 
 Tại đây thì bạn có một số chức năng như:
 
@@ -28,69 +28,67 @@ Tại đây thì bạn có một số chức năng như:
 
 ### Queries
 
-{% include image.html src="queries.png" alt="Queries" %}
+{% include image.html src="queries.png" webp="queries.webp" type="png" alt="Queries" %}
 
 Biểu đồ giúp kiểm tra số truy vấn theo ngày.
 
 ### Resolved Domains
 
-{% include image.html src="resolved-domains.png" alt="Resolved Domains" %}
+{% include image.html src="resolved-domains.png" webp="resolved-domains.webp" type="png" alt="Resolved Domains" %}
 
 Số miền được loại ra khỏi trình chặn quảng cáo, đây là các miền đã được giải quyết mà không bị chặn bởi bất kỳ cài đặt nào hoặc do chúng được cho phép theo cách thủ công.
 
 ### Blocked Domains
 
-![Blocked Domains]({{ site.url }}/static/media/blocked-domains.png)
-
-{% include image.html src="blocked-domains.png" alt="Blocked Domains" %}
+{% include image.html src="blocked-domainss.png" webp="blocked-domains.webp" type="png" alt="Blocked Domains" %}
 
 Số miền được chặn từ trình chặn quảng cáo, đây là các miền bị chặn bởi cài đặt Bảo mật, Quyền riêng tư và / hoặc Kiểm soát của phụ huynh hoặc do chúng bị từ chối theo cách thủ công.
 
 ### Blocked Reasons
 
-{% include image.html src="blocked-reasons.png" alt="Blocked Reasons" %}
+{% include image.html src="blocked-reasons.png" webp="blocked-reasons.webp" type="png" alt="Blocked Reasons" %}
 
 Các cài đặt Bảo mật, Quyền riêng tư và / hoặc Kiểm soát của phụ huynh đã chặn hầu hết các truy vấn từ trình chặn quảng cáo này.
 
 ### Devices
 
-{% include image.html src="devices.png" alt="Devices" %}
+{% include image.html src="devices.png" webp="devices.webp" type="png" alt="Devices" %}
 
 Danh sách được chặn theo thiết bị, đây là danh sách các thiết bị thực hiện các truy vấn.
 
 ### IPs
 
-{% include image.html src="ips.png" alt="Ips" %}
+{% include image.html src="ips.png" webp="ips.webp" type="png" alt="Ips" %}
 
 Danh sách địa chỉ IP thực hiện các truy vấn.
 
 ### Root Domains
 
-{% include image.html src="root-domains.png" alt="Root Domains" %}
+{% include image.html src="root-domains.png" webp="root-domains.webp" type="png" alt="Root Domains" %}
 
 Đây là danh sách tổng hợp tất cả các truy vấn được thực hiện cho các miền gốc và tất cả các miền phụ của chúng.
 
 ### GAFAM Dominance
 
-{% include image.html src="gafam-dominance.png" alt="GAFAM Dominance" %}
+{% include image.html src="gafam-dominance.png" webp="gafam-dominance.webp" type="png" alt="GAFAM Dominance" %}
 
 "GAFAM" (Google, Amazon, Facebook, Apple và Microsoft) là 5 công ty Internet thống trị sở hữu nhiều dịch vụ phổ biến, thường hoạt động dưới một tên khác, ví dụ: WhatsApp và Instagram cho Facebook. Đây là danh sách các truy vấn theo từng website.
 
 ### Encrypted DNS
 
-{% include image.html src="encrypted-dns.png" alt="Encrypted DNS" %}
+{% include image.html src="encrypted-dns.png" webp="encrypted-dns.webp" type="png" alt="Encrypted DNS" %}
 
 Phần trăm truy vấn được thực hiện bằng cách sử dụng phương tiện truyền tải được mã hóa (DNS-over-HTTPS, DNS-over-TLS hoặc các ứng dụng chính thức từ NextDNS).
 
 ### DNSSEC
 
-{% include image.html src="dnssec.png" alt="DNSSEC" %}
+{% include image.html src="dnssec.png" webp="dnssec.webp" type="png" alt="DNSSEC" %}
 
 Phần trăm truy vấn được xác thực bằng DNSSEC.
 
 ### Traffic Destination
 
-{% include image.html src="traffic-destination.png" alt="Traffic Destination" %}
+{% include image.html src="traffic-destination.png" webp="traffic-destination.webp" type="png" alt="Traffic Destination" %}
 
 Đây là bản đồ danh sách các quốc gia có lưu lượng truy cập Internet của bạn.
 

@@ -18,7 +18,7 @@ Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần 
 
 Nhập tên miền mà bạn muốn cho phép vào khung Allowlist như hình dưới đây, sau đó bấm phím Enter để tạo.
 
-{% include image.html src="cau-hinh-chuc-nang-cho-phep-ten-mien-tren-nextdns.png" alt="Cấu hình chức năng cho phép tên miền trên NextDNS" %}
+{% include image.html src="cau-hinh-chuc-nang-cho-phep-ten-mien-tren-nextdns.png" webp="cau-hinh-chuc-nang-cho-phep-ten-mien-tren-nextdns.webp" type="png" alt="Cấu hình chức năng cho phép tên miền trên NextDNS" %}
 
 Bạn phải thật cẩn thận khi sử dụng chức năng này vì nó sẽ tự động cho phép tất cả các miền phụ của nó. Cho phép được ưu tiên hơn mọi thứ khác, bao gồm cả các tính năng bảo mật.
 

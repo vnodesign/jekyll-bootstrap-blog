@@ -14,19 +14,19 @@ Thêm một chức năng nữa mà mình muốn nhắc đến đối với các 
 
 Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
 
-{% include image.html src="cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.png" alt="Cấu hình chức năng kiểm soát của cha mẹ trên NextDNS" %}
+{% include image.html src="cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.png" webp="cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.webp" type="png" alt="Cấu hình chức năng kiểm soát của cha mẹ trên NextDNS" %}
 
 ## Các chức năng kiểm soát của cha mẹ trên NextDNS
 
 ### Websites, Apps & Games
 
-{% include image.html src="websites-apps-games.png" alt="Websites, Apps & Games" %}
+{% include image.html src="websites-apps-games.png" webp="websites-apps-games.webp" type="png" alt="Websites, Apps & Games" %}
 
 Hạn chế quyền truy cập vào các trang web, ứng dụng và trò chơi cụ thể.
 
 ### Categories
 
-{% include image.html src="categories.png" alt="Categories" %}
+{% include image.html src="categories.png" webp="categories.webp" type="png" alt="Categories" %}
 
 Hạn chế quyền truy cập vào các danh mục trang web và ứng dụng cụ thể.
 
@@ -39,7 +39,7 @@ Chức năng này giống với chức năng **{% include internal-link.html hre
 
 ### Recreation Time
 
-{% include image.html src="recreation-time.png" alt="Recreation Time" %}
+{% include image.html src="recreation-time.png" webp="recreation-time.webp" type="png" alt="Recreation Time" %}
 
 Cái này rất hay mà mình mới tìm hiểu được đó là, đặt khoảng thời gian cho mỗi ngày trong tuần mà trong đó một số trang web, ứng dụng, trò chơi hoặc danh mục ở trên sẽ không bị chặn.
 
@@ -47,7 +47,7 @@ Ví dụ: cho phép ứng dụng Facebook vào Thứ Hai và Thứ Ba trong kho�
 
 ### SafeSearch
 
-{% include image.html src="safesearch.png" alt="SafeSearch" %}
+{% include image.html src="safesearch.png" webp="safesearch.webp" type="png" alt="SafeSearch" %}
 
 Lọc kết quả khiêu dâm trên tất cả các công cụ tìm kiếm chính, bao gồm cả hình ảnh và video. Điều này cũng sẽ chặn quyền truy cập vào các công cụ tìm kiếm không hỗ trợ tính năng này.
 
@@ -55,13 +55,13 @@ Chức năng này giống với chức năng **{% include internal-link.html hre
 
 ### YouTube Restricted Mode
 
-{% include image.html src="youtube-restricted-mode.png" alt="YouTube Restricted Mode" %}
+{% include image.html src="youtube-restricted-mode.png" webp="youtube-restricted-mode.webp" type="png" alt="YouTube Restricted Mode" %}
 
 Lọc ra các video dành cho người trưởng thành trên YouTube và chặn các video dành cho người lớn được nhúng không cho người lớn xem trên các trang web khác. Điều này cũng sẽ ẩn tất cả các bình luận.
 
 ### Block Bypass Methods
 
-{% include image.html src="block-bypass-methods.png" alt="Block Bypass Methods" %}
+{% include image.html src="block-bypass-methods.png" webp="block-bypass-methods.webp" type="png" alt="Block Bypass Methods" %}
 
 Ngăn chặn hoặc cản trở việc sử dụng các phương pháp có thể giúp bỏ qua lọc NextDNS trên mạng. Điều này bao gồm VPN, proxy, phần mềm liên quan đến Tor và các nhà cung cấp DNS được mã hóa.
 

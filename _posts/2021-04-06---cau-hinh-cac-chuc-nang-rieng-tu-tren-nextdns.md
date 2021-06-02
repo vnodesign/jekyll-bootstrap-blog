@@ -14,7 +14,7 @@ toc: true
 
 Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
 
-{% include image.html src="cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns.png" alt="Cấu hình các chức năng riêng tư trên NextDNS" %}
+{% include image.html src="cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns.png" webp="cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns.webp" type="png" alt="Cấu hình các chức năng riêng tư trên NextDNS" %}
 
 ## Các chức năng riêng tư trên NextDNS
 
@@ -22,7 +22,7 @@ Các bạn chú ý khi sử dụng **Blocklists**, vì nó sẽ chặn một s�
 
 ### Blocklists
 
-{% include image.html src="blocklists.png" alt="Blocklists" %}
+{% include image.html src="blocklists.png" webp="blocklists.webp" type="png" alt="Blocklists" %}
 
 Chặn quảng cáo & trình theo dõi bằng cách sử dụng các danh sách chặn phổ biến nhất hiện có - tất cả đều được cập nhật theo thời gian thực. Ở đây mặc định NextDNS đã sử dụng bộ chặn quảng cáo & trình theo dõi rồi.
 
@@ -30,7 +30,7 @@ Chức năng này rất mạnh các bạn lưu ý trước khi sử dụng nhé.
 
 ### Native Tracking Protection
 
-{% include image.html src="native-tracking-protection.png" alt="Native Tracking Protection" %}
+{% include image.html src="native-tracking-protection.png" webp="native-tracking-protection.webp" type="png" alt="Native Tracking Protection" %}
 
 Chặn các trình theo dõi phổ rộng - thường hoạt động ở cấp hệ điều hành - theo dõi hoạt động của bạn trên thiết bị. Điều này có thể bao gồm tất cả các trang web bạn truy cập, mọi thứ bạn nhập hoặc vị trí của bạn mọi lúc.
 
@@ -38,13 +38,13 @@ Chức năng này còn ở trong phiên bản BETA nên còn thiếu một số 
 
 ### Block Disguised Third-Party Trackers
 
-{% include image.html src="block-disguised-third-party-trackers.png" alt="Block Disguised Third-Party Trackers" %}
+{% include image.html src="block-disguised-third-party-trackers.png" webp="block-disguised-third-party-trackers.webp" type="png" alt="Block Disguised Third-Party Trackers" %}
 
 Tự động phát hiện và chặn các trình theo dõi của bên thứ ba giả dạng thành bên thứ nhất để phá vỡ các biện pháp bảo vệ quyền riêng tư của trình duyệt gần đây như ITP.
 
 ### Allow Affiliate & Tracking Links
 
-{% include image.html src="allow-affiliate-tracking-links.png" alt="Allow Affiliate & Tracking Links" %}
+{% include image.html src="allow-affiliate-tracking-links.png" webp="allow-affiliate-tracking-links.webp" type="png" alt="Allow Affiliate & Tracking Links" %}
 
 Cho phép tên miền liên kết & theo dõi phổ biến trên các trang web giao dịch, trong email hoặc trong kết quả tìm kiếm. Những người đó thường chỉ được gọi sau khi nhấp vào một liên kết theo cách thủ công.
 
@@ -52,7 +52,7 @@ Chức năng này mình chưa sử dụng nên chưa bên công dụng của nó
 
 ## Cấu hình danh sách chặn
 
-{% include image.html src="add-a-blocklist.png" alt="Add a blocklist" %}
+{% include image.html src="add-a-blocklist.png" webp="add-a-blocklist.webp" type="png" alt="Add a blocklist" %}
 
 Ở đây NextDNS đã chọn sẵn trình chặn quảng cáo của mình rồi, nếu bạn thấy như vậy vẫn chưa đủ thì có thể cấu hình thêm.
 

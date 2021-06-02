@@ -16,13 +16,13 @@ Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần 
 
 ## Cách theo dõi nhật ký trên NextDNS
 
-{% include image.html src="cach-theo-doi-nhat-ky-tren-nextdns.png" alt="Cách theo dõi nhật ký trên NextDNS" %}
+{% include image.html src="cach-theo-doi-nhat-ky-tren-nextdns.png" webp="cach-theo-doi-nhat-ky-tren-nextdns.webp" type="png" alt="Cách theo dõi nhật ký trên NextDNS" %}
 
 ### Tìm kiếm nhật ký
 
 Ở đây bạn có thể tìm kiếm một tên miền mà bạn nghi là nó bị trình chặn quảng cáo chặn, sau khi đã tìm ra được rồi thì bạn kiểm tra xem nó có bị như hình dưới không nhé!
 
-{% include image.html src="ten-mien-bi-trinh-chan-quang-cao-chan.png" alt="Tên miền bị trình chặn quảng cáo chặn" %}
+{% include image.html src="ten-mien-bi-trinh-chan-quang-cao-chan.png" webp="ten-mien-bi-trinh-chan-quang-cao-chan.webp" type="png" alt="Tên miền bị trình chặn quảng cáo chặn" %}
 
 Bạn đi chuột vào ⓘ để biết trình chặn quảng cáo nào đang chặn nó nhé.
 
@@ -30,7 +30,7 @@ Bạn đi chuột vào ⓘ để biết trình chặn quảng cáo nào đang ch
 
 Đây là chức năng rất hay giúp bạn lọc ra các tên miền bị chặn và các tên miền đang được cho phép, ngoài ra bạn cũng có thể xem được nhật ký DNS.
 
-{% include image.html src="bo-loc-nhat-ky.png" alt="Bộ lọc nhật ký" %}
+{% include image.html src="bo-loc-nhat-ky.png" webp="bo-loc-nhat-ky.webp" type="png" alt="Bộ lọc nhật ký" %}
 
 - Blocked Queries Only (Chỉ xem truy vấn bị chặn)
 - Raw DNS logs (Xem nhật ký DNS)
