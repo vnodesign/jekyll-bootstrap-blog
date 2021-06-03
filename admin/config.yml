@@ -3,12 +3,11 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 media_folder: 'static/media'
-public_media: '/media'
 
 collections:
   - name: 'blog'
     label: 'Blog'
-    folder: '_posts/'
+    folder: '_posts'
     create: true
     slug: '{{year}}-{{month}}-{{day}}---{{slug}}'
     editor:
