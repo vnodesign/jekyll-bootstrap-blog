@@ -256,169 +256,173 @@
     --tds-slow: 400ms
 }
 
+/* Transition light mode and dark mode */
+body {
+    transition: var(--tds-animation-enter-exit-in);
+}
+
 /* Dark mode */
-.dark-mode {
+body.dark-mode {
     background-color: var(--web-wash) !important;
     color: var(--always-white) !important
 }
 
-.dark-mode p,
-.dark-mode .mediumnavigation a
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode h3,
-.dark-mode h4,
-.dark-mode h5,
-.dark-mode h6,
-.dark-mode article .card .card-body .card-title a,
-.dark-mode article .card .card-body .card-text,
-.dark-mode article .card .card-footer .post-name a,
-.dark-mode article .card .card-footer .post-author,
-.dark-mode article .card .card-footer .post-date,
-.dark-mode article .card .card-footer .post-read,
-.dark-mode article .card .card-footer .post-read-more a,
-.dark-mode article .post-author,
-.dark-mode article .post-date,
-.dark-mode article .post-read,
-.dark-mode article .article-post .dark-mode article .post-cat,
-.dark-mode .footer a,
-.dark-mode .bottompagination .navigation a,
-.dark-mode .highlight .c,
-.dark-mode .highlight .cm,
-.dark-mode .highlight .cp,
-.dark-mode .highlight .c1,
-.dark-mode .highlight .cs,
-.dark-mode .highlight .gr,
-.dark-mode .highlight .gh,
-.dark-mode .highlight .go,
-.dark-mode .highlight .gp,
-.dark-mode .highlight .gu,
-.dark-mode .highlight .gt,
-.dark-mode .highlight .kt,
-.dark-mode .highlight .m,
-.dark-mode .highlight .s,
-.dark-mode .highlight .na,
-.dark-mode .highlight .nb,
-.dark-mode .highlight .nc,
-.dark-mode .highlight .no,
-.dark-mode .highlight .ni,
-.dark-mode .highlight .ne,
-.dark-mode .highlight .nf,
-.dark-mode .highlight .nn,
-.dark-mode .highlight .nt,
-.dark-mode .highlight .nv,
-.dark-mode .highlight .w,
-.dark-mode .highlight .mf,
-.dark-mode .highlight .mh,
-.dark-mode .highlight .mi,
-.dark-mode .highlight .mo,
-.dark-mode .highlight .sb,
-.dark-mode .highlight .sc,
-.dark-mode .highlight .sd,
-.dark-mode .highlight .s2,
-.dark-mode .highlight .se,
-.dark-mode .highlight .sh,
-.dark-mode .highlight .si,
-.dark-mode .highlight .sx,
-.dark-mode .highlight .sr,
-.dark-mode .highlight .s1,
-.dark-mode .highlight .ss,
-.dark-mode .highlight .bp,
-.dark-mode .highlight .vc,
-.dark-mode .highlight .vg,
-.dark-mode .highlight .vi,
-.dark-mode .highlight .il,
-.dark-mode .main-content .PageNavigation a,
-.dark-mode .article-post,
-.dark-mode .main-content .after-post-tags .tags a {
+body.dark-mode p,
+body.dark-mode .mediumnavigation a body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode article .card .card-body .card-title a,
+body.dark-mode article .card .card-body .card-text,
+body.dark-mode article .card .card-footer .post-name a,
+body.dark-mode article .card .card-footer .post-author,
+body.dark-mode article .card .card-footer .post-date,
+body.dark-mode article .card .card-footer .post-read,
+body.dark-mode article .card .card-footer .post-read-more a,
+body.dark-mode article .post-author,
+body.dark-mode article .post-date,
+body.dark-mode article .post-read,
+body.dark-mode article .article-post body.dark-mode article .post-cat,
+body.dark-mode .footer a,
+body.dark-mode .bottompagination .navigation a,
+body.dark-mode .highlight .c,
+body.dark-mode .highlight .cm,
+body.dark-mode .highlight .cp,
+body.dark-mode .highlight .c1,
+body.dark-mode .highlight .cs,
+body.dark-mode .highlight .gr,
+body.dark-mode .highlight .gh,
+body.dark-mode .highlight .go,
+body.dark-mode .highlight .gp,
+body.dark-mode .highlight .gu,
+body.dark-mode .highlight .gt,
+body.dark-mode .highlight .kt,
+body.dark-mode .highlight .m,
+body.dark-mode .highlight .s,
+body.dark-mode .highlight .na,
+body.dark-mode .highlight .nb,
+body.dark-mode .highlight .nc,
+body.dark-mode .highlight .no,
+body.dark-mode .highlight .ni,
+body.dark-mode .highlight .ne,
+body.dark-mode .highlight .nf,
+body.dark-mode .highlight .nn,
+body.dark-mode .highlight .nt,
+body.dark-mode .highlight .nv,
+body.dark-mode .highlight .w,
+body.dark-mode .highlight .mf,
+body.dark-mode .highlight .mh,
+body.dark-mode .highlight .mi,
+body.dark-mode .highlight .mo,
+body.dark-mode .highlight .sb,
+body.dark-mode .highlight .sc,
+body.dark-mode .highlight .sd,
+body.dark-mode .highlight .s2,
+body.dark-mode .highlight .se,
+body.dark-mode .highlight .sh,
+body.dark-mode .highlight .si,
+body.dark-mode .highlight .sx,
+body.dark-mode .highlight .sr,
+body.dark-mode .highlight .s1,
+body.dark-mode .highlight .ss,
+body.dark-mode .highlight .bp,
+body.dark-mode .highlight .vc,
+body.dark-mode .highlight .vg,
+body.dark-mode .highlight .vi,
+body.dark-mode .highlight .il,
+body.dark-mode .main-content .PageNavigation a,
+body.dark-mode .article-post,
+body.dark-mode .main-content .after-post-tags .tags a {
     color: var(--always-white) !important
 }
 
-.dark-mode .mediumnavigation {
+body.dark-mode .mediumnavigation {
     background: var(--nav-bar-background) !important;
     box-shadow: unset !important;
     color: var(--always-white) !important
 }
 
-.dark-mode .mediumnavigation .active>.nav-link,
-.dark-mode .mediumnavigation a:active,
-.dark-mode .mediumnavigation a:hover,
-.dark-mode article .card .card-body .card-title a:active,
-.dark-mode article .card .card-body .card-title a:hover,
-.dark-mode article .card .card-footer .post-name a:active,
-.dark-mode article .card .card-footer .post-name a:hover,
-.dark-mode article .card .card-footer .post-read-more a:active,
-.dark-mode article .card .card-footer .post-read-more a:hover,
-.dark-mode .footer a:active,
-.dark-mode .footer a:hover,
-.dark-mode .bottompagination .navigation a:active,
-.dark-mode .bottompagination .navigation a:hover {
+body.dark-mode .mediumnavigation .active>.nav-link,
+body.dark-mode .mediumnavigation a:active,
+body.dark-mode .mediumnavigation a:hover,
+body.dark-mode article .card .card-body .card-title a:active,
+body.dark-mode article .card .card-body .card-title a:hover,
+body.dark-mode article .card .card-footer .post-name a:active,
+body.dark-mode article .card .card-footer .post-name a:hover,
+body.dark-mode article .card .card-footer .post-read-more a:active,
+body.dark-mode article .card .card-footer .post-read-more a:hover,
+body.dark-mode .footer a:active,
+body.dark-mode .footer a:hover,
+body.dark-mode .bottompagination .navigation a:active,
+body.dark-mode .bottompagination .navigation a:hover {
     color: #fe2c55 !important
 }
 
-.dark-mode .mediumnavigation .form-control,
-.dark-mode article .article-post h2:before,
-.dark-mode .tags a,
-.dark-mode article .card .card-footer {
+body.dark-mode .mediumnavigation .form-control,
+body.dark-mode article .article-post h2:before,
+body.dark-mode .tags a,
+body.dark-mode article .card .card-footer {
     background: var(--comment-background) !important
 }
 
-.dark-mode .mediumnavigation .navbar-toggler-icon {
+body.dark-mode .mediumnavigation .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important
 }
 
-.dark-mode .mediumnavigation .search-icon svg {
+body.dark-mode .mediumnavigation .search-icon svg {
     fill: var(--always-white) !important
 }
 
-.dark-mode .section-title h2 {
+body.dark-mode .section-title h2 {
     border-color: var(--comment-background) !important
 }
 
-.dark-mode article .card {
+body.dark-mode article .card {
     background: var(--nav-bar-background) !important;
     border-color: var(--comment-background) !important;
     box-shadow: unset !important
 }
 
-.dark-mode article .prev-post,
-.dark-mode article .next-post,
-.dark-mode .highlight {
+body.dark-mode article .prev-post,
+body.dark-mode article .next-post,
+body.dark-mode .highlight {
     background: var(--nav-bar-background) !important
 }
 
-.dark-mode .footer {
+body.dark-mode .footer {
     background: var(--nav-bar-background) !important;
     border-color: var(--comment-background) !important;
     color: var(--always-white) !important
 }
 
-.dark-mode .bottompagination .navigation {
+body.dark-mode .bottompagination .navigation {
     border-color: var(--comment-background) !important;
     color: var(--always-white) !important
 }
 
-.dark-mode .tags a:active,
-.dark-mode .tags a:hover {
+body.dark-mode .tags a:active,
+body.dark-mode .tags a:hover {
     background: var(--nav-bar-background) !important;
     color: inherit
 }
 
-.dark-mode .highlight pre {
+body.dark-mode .highlight pre {
     color: var(--always-white) !important;
     border-color: var(--comment-background) !important;
     background: var(--nav-bar-background) !important
 }
 
-.dark-mode .highlight .err {
+body.dark-mode .highlight .err {
     color: #fe2c55 !important;
     background-color: unset !important
 }
 
-.dark-mode .highlight .gd,
-.dark-mode .highlight .gi,
-.dark-mode .highlight .gd .x,
-.dark-mode .highlight .gi .x {
+body.dark-mode .highlight .gd,
+body.dark-mode .highlight .gi,
+body.dark-mode .highlight .gd .x,
+body.dark-mode .highlight .gi .x {
     color: var(--always-white) !important;
     background-color: unset !important
 }
@@ -5762,8 +5766,7 @@
 .layout-post .main-content .article-post .PageNavigation a:focus,
 .layout-post .main-content .article-post .after-post-tags a:focus,
 .layout-post .main-content .article-post .PageNavigation a:hover,
-.layout-post .main-content .article-post .after-post-tags a:hover
- {
+.layout-post .main-content .article-post .after-post-tags a:hover {
     color: #fe2c55 !important
 }
 
@@ -5956,8 +5959,4 @@ article .card {
 .socials a:hover,
 .socials a:focus {
     color: #fe2c55
-}
-
-body {
-    transition: var(--tds-animation-enter-exit-in);
 }
