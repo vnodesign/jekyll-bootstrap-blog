@@ -328,9 +328,9 @@
 .dark-mode .highlight .vg,
 .dark-mode .highlight .vi,
 .dark-mode .highlight .il,
-.dark-mode .layout-post .main-content .article-post .PageNavigation a,
+.dark-mode .main-content .PageNavigation a,
 .dark-mode .article-post,
-.dark-mode .layout-post .main-content .article-post .after-post-tags a {
+.dark-mode .main-content .after-post-tags .tags a {
     color: var(--always-white) !important
 }
 
@@ -339,6 +339,7 @@
     box-shadow: unset !important;
     color: var(--always-white) !important
 }
+
 .dark-mode .mediumnavigation .active>.nav-link,
 .dark-mode .mediumnavigation a:active,
 .dark-mode .mediumnavigation a:hover,
@@ -357,7 +358,8 @@
 
 .dark-mode .mediumnavigation .form-control,
 .dark-mode article .article-post h2:before,
-.dark-mode .tags a {
+.dark-mode .tags a,
+.dark-mode article .card .card-footer {
     background: var(--comment-background) !important
 }
 
@@ -377,10 +379,6 @@
     background: var(--nav-bar-background) !important;
     border-color: var(--comment-background) !important;
     box-shadow: unset !important
-}
-
-.dark-mode article .card .card-footer {
-    background: var(--surface-background) !important
 }
 
 .dark-mode article .prev-post,
