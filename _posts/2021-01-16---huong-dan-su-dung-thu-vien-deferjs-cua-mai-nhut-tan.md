@@ -38,7 +38,7 @@ Bạn chỉ cần tải thư viện này một lần trên một trang, chèn ng
 </html>
 ```
 
-Bởi vì {% include external-link.html href="https://github.com/shinsenter/defer.js/blob/master/defer_plus.min.js" title="phiên bản rút gọn của defer.js" %} là siêu nhỏ, bạn có thể đưa nội dung của nó trực tiếp vào tài liệu HTML và tránh yêu cầu mạng.
+Bởi vì {% include external-link.html href="https://github.com/shinsenter/defer.js/blob/master/dist/defer_plus.min.js" title="phiên bản rút gọn của defer.js" %} là siêu nhỏ, bạn có thể đưa nội dung của nó trực tiếp vào tài liệu HTML và tránh yêu cầu mạng.
 
 ```html
 <html>
@@ -230,7 +230,7 @@ Bước này dành cho các bạn đang sử dụng mã nguồn PHP.
 
 ### Với PHP thuần
 
-Trang chủ thư viện DeferJS trên kho GitHub của Mai Nhựt Tân: {% include external-link.html href="https://github.com/shinsenter/defer.php" title="https://github.com/shinsenter/defer.js" %}
+Trang chủ của source code này trên kho GitHub của Mai Nhựt Tân: {% include external-link.html href="https://github.com/shinsenter/defer.php" title="https://github.com/shinsenter/defer.php" %}
 
 #### Tính năng nổi bật
 
