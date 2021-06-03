@@ -5,6 +5,8 @@ author: tuanducdesign
 categories: [ Javascript ]
 tags: [Lazyload, Google Fonts]
 image: static/media/lazyload-google-fonts.jpg
+type_img: jpg
+webp: static/media/lazyload-google-fonts.webp
 description: "Tiếp nối các chuỗi Lazyload scripts bên ba thì hôm nay mình xin hướng dẫn các bạn cách Lazyload khi sử dụng Google Fonts."
 toc: false
 ---

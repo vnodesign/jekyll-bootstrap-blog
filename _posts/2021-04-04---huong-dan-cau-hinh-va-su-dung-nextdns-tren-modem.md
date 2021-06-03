@@ -6,6 +6,8 @@ author: tuanducdesign
 categories: [ Series ]
 tags: [Network, Modem, Adblock, Module, Cloudflare, DNS, IOS, MacOS, Windows, Linux, Chrome OS, Browers, Routers, NextDNS]
 image: static/media/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg
+type_img: jpeg
+webp: static/media/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.webp
 description: "NextDNS là sự lựa chọn hoàn hảo để thay thế DNS Cloudflare, Khi sử dụng NextDNS thì bạn sẽ được bảo vệ toàn diện từ các chức năng nổi bật của NextDNS."
 toc: true
 ---

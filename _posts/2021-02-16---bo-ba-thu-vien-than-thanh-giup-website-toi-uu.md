@@ -5,6 +5,8 @@ author: tuanducdesign
 categories: [ Library ]
 tags: [Tối ưu, PageSpeed, Preload, Lazyload]
 image: static/media/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.jpg
+type_img: jpg
+webp: static/media/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.webp
 description: "Bài viết ngày hôm nay mình sẽ tổng hợp bộ ba thư viện thần thánh giúp website của bạn tối ưu hơn."
 toc: true
 ---

@@ -5,6 +5,8 @@ author: tuanducdesign
 categories: [ Javascript ]
 tags: [Lazyload, Image, Iframe]
 image: static/media/lazyload-image-va-iframe.jpg
+type_img: jpg
+webp: static/media/lazyload-image-va-iframe.webp
 description: "Ở các bài trước mình đã hướng dẫn các bạn lazyload các script, ở bài này mình sẽ hướng dẫn cách lazyload image và iframe."
 toc: true
 ---

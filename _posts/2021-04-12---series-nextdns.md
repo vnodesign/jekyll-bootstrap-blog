@@ -6,6 +6,8 @@ author: tuanducdesign
 categories: [ Series ]
 tags: [NextDNS, Network]
 image: static/media/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg
+type_img: jpeg
+webp: static/media/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.webp
 description: "Series hướng dẫn sử dụng NextDNS từ A đến Z. Từ cài đặt NextDNS đến cấu hình NextDNS và cuối cùng là bảo vệ gia đình bằng NextDNS."
 featured: true
 hidden: true
