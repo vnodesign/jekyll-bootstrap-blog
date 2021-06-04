@@ -66,14 +66,10 @@ paginate: 6
 paginate_path: /page/:num
     
 # Other
-markdown: kramdown
-
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true
+markdown: CommonMark
+commonmark:
+options: ["SMART", "FOOTNOTES"]
+extensions: ["strikethrough", "autolink", "table"]
 
 # Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
 adsense: "disabled"
@@ -84,13 +80,11 @@ adsense-data-ad-slot: "xxxxxxxxxx"
 lazyimages: "enabled"
 
 sass:
-  indentWidth: 4
   style: compressed
-  precision: 10
 
 include: [.htaccess, _pages]
 
-exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, .jekyll-cache]
 
 keep_files: [static]
 

@@ -6,6 +6,7 @@ _site
 .vscode
 ._*
 node_modules
+.jekyll-cache
 package-lock.json
 
 # Local Netlify folder
