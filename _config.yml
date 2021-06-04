@@ -49,6 +49,8 @@ authors:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-commonmark
+  - jekyll-include-cache
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives

@@ -1,0 +1,72 @@
+    <!-- Begin Menu Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down" role="navigation"
+        itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope">
+        <div class="container pr-0">
+            <!-- Begin Logo -->
+            <a class="navbar-brand" href="{{ site.url }}/" title="{{ site.name }}">
+                {% if site.lazyimages == "enabled" %}
+                <img src="{{ site.logo }}" alt="{{ site.name }}" loading="lazy" decoding="async" />
+                {% else %}
+                <img src="{{ site.logo }}" alt="{{ site.name }}" />
+                {% endif %}
+            </a>
+            <!-- End Logo -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMediumish">
+                <!-- Begin Menu -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.url }}" title="Home" itemprop="url">
+                            <span itemprop="name">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://about.tuanducdesign.com/" title="About" itemprop="url">
+                            <span itemprop="name">About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.url }}/pages/my-customer" title="My customer" itemprop="url">
+                            <span itemprop="name">My customer</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.url }}/pages/contacts" title="Contacts" itemprop="url">
+                            <span itemprop="name">Contacts</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.url }}/series" title="Series" itemprop="url">
+                            <span itemprop="name">Series</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.url }}/categories" title="Categories" itemprop="url">
+                            <span itemprop="name">Categories</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.url }}/tags" title="Tags" itemprop="url">
+                            <span itemprop="name">Tags</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.url }}/author" title="Author" itemprop="url">
+                            <span itemprop="name">Author</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://service.tuanducdesign.com/" title="Service" itemprop="url">
+                            <span itemprop="name">Service</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- End Menu -->
+                {% include search.html %}
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation  -->
