@@ -344,7 +344,7 @@ body.dark-mode .mediumnavigation {
     color: var(--always-white) !important
 }
 
-body.dark-mode .mediumnavigation .active>.nav-link,
+body.dark-mode .mediumnavigation .nav-item>.active,
 body.dark-mode .mediumnavigation a:active,
 body.dark-mode .mediumnavigation a:hover,
 body.dark-mode article .card .card-body .card-title a:active,
@@ -5838,11 +5838,11 @@ body.dark-mode .highlight .gi .x {
 }
 
 @media (min-width:992px) {
-    .navbar-nav>.active {
+    .nav-item>.active {
         position: relative
     }
 
-    .navbar-nav>.active:before {
+    .nav-item>.active:before {
         content: '';
         background-color: #fe2c55;
         width: 100%;
