@@ -50,7 +50,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-commonmark
-  - jekyll-include-cache
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
@@ -83,6 +82,13 @@ lazyimages: "enabled"
 
 sass:
   style: compressed
+
+  compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  startings: [html, head, body]
 
 include: [.htaccess, _pages]
 

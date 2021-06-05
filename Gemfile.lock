@@ -6,7 +6,7 @@ GEM
     colorator (1.1.0)
     commonmarker (0.21.2)
       ruby-enum (~> 0.5)
-    concurrent-ruby (1.1.8)
+    concurrent-ruby (1.1.9)
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -37,8 +37,6 @@ GEM
       commonmarker (~> 0.14)
       jekyll (>= 3.7, < 5.0)
     jekyll-feed (0.15.1)
-      jekyll (>= 3.7, < 5.0)
-    jekyll-include-cache (0.2.1)
       jekyll (>= 3.7, < 5.0)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (2.1.0)
@@ -83,7 +81,6 @@ DEPENDENCIES
   jekyll-archives
   jekyll-commonmark
   jekyll-feed
-  jekyll-include-cache
   jekyll-paginate
   jekyll-seo-tag
   jekyll-sitemap
