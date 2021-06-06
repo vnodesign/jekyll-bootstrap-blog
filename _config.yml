@@ -53,6 +53,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
+  - jekyll-toc
     
 # Archives
 jekyll-archives:
@@ -82,13 +83,6 @@ lazyimages: "enabled"
 
 sass:
   style: compressed
-
-  compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  profile: false
-  startings: [html, head, body]
 
 include: [.htaccess, _pages]
 
