@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head itemscope="itemscope" itemtype="https://schema.org/WebSite">
+  {% feed_meta %}
+  <title>{% if page.url == "/" %}{{site.name}} - {{site.subtitle}}{% else %}{{ page.title }} - {{site.name}}{% endif %}</title>
+  {% seo title=false %}
   {% include_cached head.html %}
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
