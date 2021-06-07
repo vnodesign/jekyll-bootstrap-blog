@@ -49,11 +49,9 @@ authors:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-commonmark
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
-  - jekyll-toc
     
 # Archives
 jekyll-archives:
@@ -68,10 +66,14 @@ paginate: 6
 paginate_path: /page/:num
     
 # Other
-markdown: CommonMark
-commonmark:
-options: ["SMART", "FOOTNOTES"]
-extensions: ["strikethrough", "autolink", "table"]
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 
 # Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
 adsense: "disabled"

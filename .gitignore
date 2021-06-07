@@ -8,6 +8,14 @@ _site
 node_modules
 .jekyll-cache
 package-lock.json
+_includes/._*
+_layouts/._*
+_pages/._*
+_post/._*
+_sass/._*
+site/._*
+static/._*
+static/media/._*
 
 # Local Netlify folder
 .netlify
