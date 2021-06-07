@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head itemscope="itemscope" itemtype="https://schema.org/WebSite">
-  {% include head.html %}
+  {% include_cached head.html %}
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}" itemscope="itemscope" itemtype="https://schema.org/WebPage">
-  {% include navigation.html %}
+  {% include_cached navigation.html %}
   <div class="site-content">
     <main class="container" role="main">
       <!-- Content  -->
@@ -13,7 +13,7 @@
         {{ content }}
       </div>
     </main>
-    {% include footer.html %}
+    {% include_cached footer.html %}
   </div>
   <!-- /.site-content -->
   {% if site.fanpage-chat %}

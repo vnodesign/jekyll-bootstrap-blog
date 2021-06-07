@@ -8,7 +8,8 @@ source "https://rubygems.org"
 #
 
 # If you have any plugins, put them here!
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+gem "jekyll", github: "jekyll/jekyll"
+gem "liquid-c"
 group :jekyll_plugins do
     gem 'jekyll-feed'
     gem 'jekyll-sitemap'
@@ -18,4 +19,5 @@ group :jekyll_plugins do
     gem 'kramdown'
     gem 'rouge'
     gem 'jekyll-webp'
+    gem 'jekyll-include-cache'
 end

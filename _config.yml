@@ -52,6 +52,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
+  - jekyll-include-cache
     
 # Archives
 jekyll-archives:
