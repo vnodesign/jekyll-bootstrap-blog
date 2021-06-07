@@ -17,7 +17,7 @@ title: Tuan Duc Design
     <div class="row">
         {% for post in site.posts %}
         {% if post.featured == true %}
-        {% include_cached featuredbox.html %}
+        {% include featuredbox.html %}
         {% endif %}
         {% endfor %}
     </div>
@@ -29,13 +29,13 @@ title: Tuan Duc Design
     </div>
     <div class="row listrecent">
         {% for post in paginator.posts %}
-        {% include_cached postbox.html %}
+        {% include postbox.html %}
         {% endfor %}
     </div>
 </section>
 <!-- Pagination -->
 <div class="bottompagination">
     <span class="navigation" role="navigation">
-        {% include_cached pagination.html %}
+        {% include pagination.html %}
     </span>
 </div>
