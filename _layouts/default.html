@@ -5,9 +5,6 @@
     {% feed_meta %}
     <title>{% if page.url == "/" %}{{site.name}} - {{site.subtitle}}{% else %}{{ page.title }} - {{site.name}}{% endif %}</title>
     {% seo title=false %}
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="{{ site.favicon }}" />
     {% if page.layout == 'archive' %}
       <script type="application/ld+json">
           {
@@ -154,6 +151,6 @@
     quicklink.listen();
   });
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" defer="1"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" defer="1" data-turbolinks-suppress-warning></script>
 </body>
 </html>
