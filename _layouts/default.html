@@ -148,5 +148,11 @@
   {% endif %}
   <!-- Javascript -->
   <script src="{{ site.url }}/assets/js/bundle.min.js" defer="1"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.1.0/quicklink.umd.js" defer="1"></script>
+  <script>
+  window.addEventListener('load', () => {
+    quicklink.listen();
+  });
+  </script>
 </body>
 </html>
