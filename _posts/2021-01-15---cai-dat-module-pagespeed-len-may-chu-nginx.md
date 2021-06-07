@@ -272,7 +272,7 @@ pagespeed EnableFilters lazyload_images;
 pagespeed EnableFilters insert_dns_prefetch;
 ```
 
-Ngoài ra bạn có thể xem thêm toàn bộ danh sách filter có trong CoreFilters: % include external-link.html href="https://developers.google.com/speed/pagespeed/module/config_filters" title="https://developers.google.com/speed/pagespeed/module/config_filters" %}
+Ngoài ra bạn có thể xem thêm toàn bộ danh sách filter có trong CoreFilters: {% include external-link.html href="https://developers.google.com/speed/pagespeed/module/config_filters" title="https://developers.google.com/speed/pagespeed/module/config_filters" %}
 
 Với các bạn đã có nhiều kiến thức, trải nghiệm thì nên sử dụng PassThrough. Khi đó sẽ cần tự kích hoạt những filter cần dùng.
 
