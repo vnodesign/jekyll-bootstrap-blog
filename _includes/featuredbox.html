@@ -7,7 +7,6 @@
                 <div class="h-100">
                     <div class="wrapthumbnail">
                         <a href="{{ post.url }}" title="{{ post.title }}" data-remote="true">
-                            <link rel="preload" href="{% if post.image contains "://" %}{{ post.image }}{% else %}/{{ post.image }}{% endif %}" as="image" />
                             {% if site.lazyimages == "enabled" %}
                             <picture class="multi-lazy">
                                 <source srcset="{% if post.webp contains "://" %}{{ post.webp }}{% else %}/{{ post.webp }}{% endif %}" type="image/webp" />

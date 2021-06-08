@@ -11,7 +11,13 @@ permalink: "/author"
         <div class="col-lg-6 mb-4">
             <div class="p-4 border rounded">
                 <div class="row">
-                    <div class="col-md-3 mb-4 mb-md-0"><img alt="{{ author[1].name }}" src="{{ author[1].photo }}" class="rounded-circle" height="80" width="80"></div>
+                    <div class="col-md-3 mb-4 mb-md-0">
+                    {% if site.lazyimages == "enabled" %}
+                    <img alt="{{ author[1].name }}" src="{{ author[1].photo }}" class="rounded-circle fade" height="80" width="80" loading="lazy" decoding="async" />
+                    {% else %}
+                    <img alt="{{ author[1].name }}" src="{{ author[1].photo }}" class="rounded-circle" height="80" width="80" />
+                    {% endif %}
+                    </div>
                     <div class="col-md-9">
                         <a href="/author/{{ author[1].username | slugify }}" title="{{ author[1].name }}" data-remote="true">
                             <h4 class="text-dark mb-0"> {{ author[1].name }} </h4>
