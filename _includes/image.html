@@ -1,14 +1,14 @@
-<link rel="preload" href="{{ site.url }}/static/media/{{ include.src }}" as="image" />
+<link rel="preload" href="/static/media/{{ include.src }}" as="image" />
 {% if site.lazyimages == "enabled" %}
 <picture class="multi-lazy">
-    <source srcset="{{ site.url }}/static/media/{{ include.webp }}" type="image/webp" />
-    <source srcset="{{ site.url }}/static/media/{{ include.src }}" type="image/{{ include.type }}" /> 
-    <img class="mx-auto d-block" src="{{ site.url }}/static/media/{{ include.src }}" alt="{{ include.alt }}" loading="lazy" decoding="async" />
+    <source srcset="/static/media/{{ include.webp }}" type="image/webp" />
+    <source srcset="/static/media/{{ include.src }}" type="image/{{ include.type }}" /> 
+    <img class="mx-auto d-block" src="/static/media/{{ include.src }}" alt="{{ include.alt }}" loading="lazy" decoding="async" />
 </picture>
 {% else %}
 <picture>
-    <source srcset="{{ site.url }}/static/media/{{ include.webp }}" type="image/webp" />
-    <source srcset="{{ site.url }}/static/media/{{ include.src }}" type="image/{{ include.type }}" /> 
-    <img class="mx-auto d-block" src="{{ site.url }}/static/media/{{ include.src }}" alt="{{ include.alt }}" />
+    <source srcset="/static/media/{{ include.webp }}" type="image/webp" />
+    <source srcset="/static/media/{{ include.src }}" type="image/{{ include.type }}" /> 
+    <img class="mx-auto d-block" src="/static/media/{{ include.src }}" alt="{{ include.alt }}" />
 </picture>
 {% endif %}

@@ -8,7 +8,7 @@
           "@context": "https://schema.org/",
           "@type": "WebSite",
           "name": "{{site.name}}",
-          "url": "{{ site.url }}/",
+          "url": "/",
           "potentialAction": {
             "@type": "SearchAction",
             "target": "https://cse.google.com/cse?cx=f8de27089149e0ecc&ie=UTF-8&q={search_term_string}",
@@ -17,7 +17,7 @@
         }
     </script>
     <!-- Preload file -->
-    <link href="{{ site.url }}/assets/js/bundle.min.js" rel="preload" as="script" />
+    <link href="/assets/js/bundle.min.js" rel="preload" as="script" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.1.0/quicklink.umd.js" rel="preload" as="script" />
     {% if site.fanpage-chat %}
     <link rel="preload" href="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" as="script" />
@@ -25,8 +25,8 @@
     {% if site.google_analytics %}
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/ga-lite@1/dist/ga-lite.min.js" as="script" />
     {% endif %}
-    <link rel="preload" href="{{ site.url }}/assets/fonts/bootstrap-icons.woff" as="font" crossorigin />
-    <link rel="preload" href="{{ site.url }}/assets/fonts/bootstrap-icons.woff2" type="font/woff2" as="font" crossorigin />
+    <link rel="preload" href="/assets/fonts/bootstrap-icons.woff" as="font" crossorigin />
+    <link rel="preload" href="/assets/fonts/bootstrap-icons.woff2" type="font/woff2" as="font" crossorigin />
     <link rel="preload" href="{{ site.logo }}" as="image" />
     <link rel="preload" href="https://static.cloudflareinsights.com/beacon.min.js" as="script" />
     <!-- Prefetch Domain -->
@@ -72,7 +72,7 @@
     <link rel="preconnect" href="https://static.cloudflareinsights.com" />
     <!-- Style -->
     {% capture app %}{% include_cached app.scss %}{% endcapture %}
-    <style type="text/css">{{ app | scssify }}@font-face{font-family:"bootstrap-icons";src:url("{{ site.url }}/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("{{ site.url }}/assets/fonts/bootstrap-icons.woff")format("woff");font-display:swap}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}</style>
+    <style type="text/css">{{ app | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:swap}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}</style>
     <!-- Scripts required -->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
     <script>'IntersectionObserver' in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');{% if site.lazyimages == "enabled" %}Defer.dom('img.fade',200,'loaded');Defer.dom('.multi-lazy',200,'loaded');{% endif %}{% if site.fanpage-chat %}Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})}});{% endif %}{% if site.google_analytics %}Defer.js('https://cdn.jsdelivr.net/npm/ga-lite@1/dist/ga-lite.min.js','galite-js',100,function(){var galite=galite||{};galite.UA='{{site.google_analytics}}'});{% endif %}</script>
