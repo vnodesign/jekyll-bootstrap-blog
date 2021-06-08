@@ -144,12 +144,13 @@
   <div class="fb-customerchat" attribution="biz_inbox" page_id="{{site.fanpage-chat}}" data-lazy="true"></div>
   {% endif %}
   <!-- Javascript -->
-  <script src="{{ site.url }}/assets/js/bundle.min.js" defer="1" data-turbolinks-track="reload"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.1.0/quicklink.umd.js" defer="1" data-turbolinks-track="reload"></script>
+  <script src="{{ site.url }}/assets/js/bundle.min.js" defer="1"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.1.0/quicklink.umd.js" defer="1"></script>
   <script>
   window.addEventListener('load', () => {
     quicklink.listen();
   });
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" defer="1" data-turbolinks-suppress-warning></script>
 </body>
 </html>
