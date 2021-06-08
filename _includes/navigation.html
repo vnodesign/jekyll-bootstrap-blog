@@ -28,7 +28,7 @@
                             <span itemprop="name">About</span>
                         </a>
                     </li>
-                    <li class="nav-item {% if page.url == "/" %}active{% endif %}">
+                    <li class="nav-item {% if page.url == "/pages/my-customer" %}active{% endif %}">
                         <a class="nav-link" href="{{ site.url }}/pages/my-customer" title="My customer" itemprop="url" data-remote="true">
                             <span itemprop="name">My customer</span>
                         </a>
@@ -65,7 +65,7 @@
                     </li>
                 </ul>
                 <!-- End Menu -->
-                {% include search.html %}
+                {% include_cached search.html %}
             </div>
         </div>
     </nav>
