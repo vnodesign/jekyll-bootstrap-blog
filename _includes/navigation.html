@@ -18,8 +18,8 @@
             <div class="collapse navbar-collapse" id="navbarMediumish">
                 <!-- Begin Menu -->
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link {% if page.url == "/" %}active{% endif %}" href="{{ site.url }}" title="Home" itemprop="url" data-remote="true">
+                    <li class="nav-item {% if page.url == "/" %}active{% endif %}">
+                        <a class="nav-link" href="{{ site.url }}" title="Home" itemprop="url" data-remote="true">
                             <span itemprop="name">Home</span>
                         </a>
                     </li>
@@ -28,33 +28,33 @@
                             <span itemprop="name">About</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if page.url == "/pages/my-customer" %}active{% endif %}" href="{{ site.url }}/pages/my-customer" title="My customer" itemprop="url" data-remote="true">
+                    <li class="nav-item {% if page.url == "/" %}active{% endif %}">
+                        <a class="nav-link" href="{{ site.url }}/pages/my-customer" title="My customer" itemprop="url" data-remote="true">
                             <span itemprop="name">My customer</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if page.url == "/pages/contacts" %}active{% endif %}" href="{{ site.url }}/pages/contacts" title="Contacts" itemprop="url" data-remote="true">
+                    <li class="nav-item {% if page.url == "/pages/contacts" %}active{% endif %}">
+                        <a class="nav-link" href="{{ site.url }}/pages/contacts" title="Contacts" itemprop="url" data-remote="true">
                             <span itemprop="name">Contacts</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if page.url == "/series" %}active{% endif %}" href="{{ site.url }}/series" title="Series" itemprop="url" data-remote="true">
+                    <li class="nav-item {% if page.url == "/series" %}active{% endif %}">
+                        <a class="nav-link" href="{{ site.url }}/series" title="Series" itemprop="url" data-remote="true">
                             <span itemprop="name">Series</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if page.url == "/categories" %}active{% endif %}" href="{{ site.url }}/categories" title="Categories" itemprop="url" data-remote="true">
+                    <li class="nav-item {% if page.url == "/categories" %}active{% endif %}">
+                        <a class="nav-link" href="{{ site.url }}/categories" title="Categories" itemprop="url" data-remote="true">
                             <span itemprop="name">Categories</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if page.url == "/tags" %}active{% endif %}" href="{{ site.url }}/tags" title="Tags" itemprop="url" data-remote="true">
+                    <li class="nav-item {% if page.url == "/tags" %}active{% endif %}">
+                        <a class="nav-link" href="{{ site.url }}/tags" title="Tags" itemprop="url" data-remote="true">
                             <span itemprop="name">Tags</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if page.url == "/author" %}active{% endif %}" href="{{ site.url }}/author" title="Author" itemprop="url" data-remote="true">
+                    <li class="nav-item {% if page.url == "/author" %}active{% endif %}">
+                        <a class="nav-link" href="{{ site.url }}/author" title="Author" itemprop="url" data-remote="true">
                             <span itemprop="name">Author</span>
                         </a>
                     </li>
