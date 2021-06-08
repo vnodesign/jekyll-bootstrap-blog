@@ -1,7 +1,7 @@
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-  <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Prev">
+  <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Prev" data-remote="true">
     Prev
   </a>
   {% else %}
@@ -15,18 +15,17 @@
     {{ page }}
   </span>
   {% elsif page == 1 %}
-  <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="{{ page }}">
+  <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="{{ page }}" data-remote="true">
     {{ page }}
   </a>
   {% else %}
-  <a class="ml-1 mr-1"
-    href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" title="{{ page }}">
+  <a class="ml-1 mr-1" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" title="{{ page }}" data-remote="true">
     {{ page }}
   </a>
   {% endif %}
   {% endfor %}
   {% if paginator.next_page %}
-  <a class="ml-1 mr-1" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next">
+  <a class="ml-1 mr-1" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next" data-remote="true">
     Next
   </a>
   {% else %}

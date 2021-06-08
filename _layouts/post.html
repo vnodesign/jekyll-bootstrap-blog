@@ -20,7 +20,7 @@ post_class: post-template
                 <!-- Post Author -->
                 {% if page.author %}
                 <span class="post-author">
-                    <a class="link-dark" href="{{ site.url }}/author/{{ author.username }}" title="{{ author.display_name }}">
+                    <a class="link-dark" href="{{ site.url }}/author/{{ author.username }}" title="{{ author.display_name }}" data-remote="true">
                         {{ author.display_name }}
                     </a>
                 </span>
@@ -46,7 +46,7 @@ post_class: post-template
                 <!-- Post Cat -->
                 <span class="post-cat">
                     {% for category in sortedCategories %}
-                    <a class="link-dark" href="{{ site.url }}/categories#{{ category | replace: " ","-" }}" title="{{ category }}" rel="tag">
+                    <a class="link-dark" href="{{ site.url }}/categories#{{ category | replace: " ","-" }}" title="{{ category }}" rel="tag" data-remote="true">
                     {{ category }}
                     </a>
                     {% endfor %}
@@ -87,7 +87,7 @@ post_class: post-template
                     {% assign sortedTags = page.tags | sort %}
                     {% for tag in sortedTags %}
                     <li>
-                        <a class="smoothscroll" href="{{ site.url }}/tags#{{ tag | replace: " ","-" }}" title="{{ tag }}" rel="tag">
+                        <a class="smoothscroll" href="{{ site.url }}/tags#{{ tag | replace: " ","-" }}" title="{{ tag }}" rel="tag" data-remote="true">
                             {{ tag }}
                         </a>
                     </li>
@@ -98,12 +98,12 @@ post_class: post-template
             <!-- Prev/Next -->
             <div class="PageNavigation">
             {% if page.previous.url %}
-            <a href="{{ site.url }}{{page.previous.url}}" rel="prev" class="btn prev-post" title="{{page.previous.title}}">
+            <a href="{{ site.url }}{{page.previous.url}}" rel="prev" class="btn prev-post" title="{{page.previous.title}}" data-remote="true">
 				<i class="bi bi-arrow-left"></i>
 			</a>
             {% endif %}
             {% if page.next.url %}
-            <a href="{{ site.url }}{{page.next.url}}" rel="next" class="btn next-post" title="{{page.next.title}}">
+            <a href="{{ site.url }}{{page.next.url}}" rel="next" class="btn next-post" title="{{page.next.title}}" data-remote="true">
 				<i class="bi bi-arrow-right"></i>
 			</a>
             {% endif %}
