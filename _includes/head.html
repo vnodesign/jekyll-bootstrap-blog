@@ -68,7 +68,10 @@
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="preconnect" href="https://static.cloudflareinsights.com" />
     <!-- Style -->
-    <link rel="stylesheet" media="all" href="/assets/css/bundle.css" data-turbolinks-track="reload" />
+    <link rel="preload" href="/assets/css/bundle.css" data-turbolinks-track="reload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/bundle.css" data-turbolinks-track="reload" />
+    </noscript>
     <style type="text/css">@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:swap}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}</style>
     <!-- Scripts required -->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js" data-turbolinks-track="reload"></script>
