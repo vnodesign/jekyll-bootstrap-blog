@@ -19,7 +19,7 @@ permalink: "/author"
                     {% endif %}
                     </div>
                     <div class="col-md-9">
-                        <a href="/author/{{ author[1].username | slugify }}" title="{{ author[1].name }}" data-remote="true">
+                        <a href="/author/{{ author[1].username | slugify }}" title="{{ author[1].name }}">
                             <h4 class="text-dark mb-0"> {{ author[1].name }} </h4>
                             <small class="d-inline-block mt-1 mb-3 font-weight-normal">(View Posts)</small>
                             <div class="excerpt">{{ author[1].description }}</div>

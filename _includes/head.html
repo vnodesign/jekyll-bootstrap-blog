@@ -24,7 +24,6 @@
     {% if site.google_analytics %}
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/ga-lite@1/dist/ga-lite.min.js" as="script" />
     {% endif %}
-    <link rel="preload" href="{{ site.logo }}" as="image" />
     <link rel="preload" href="https://static.cloudflareinsights.com/beacon.min.js" as="script" />
     <!-- Prefetch Domain -->
     {% if site.fanpage-chat %}
@@ -68,11 +67,8 @@
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="preconnect" href="https://static.cloudflareinsights.com" />
     <!-- Style -->
-    <link rel="preload" href="/assets/css/bundle.css" data-turbolinks-track="reload" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="/assets/css/bundle.css" data-turbolinks-track="reload" />
-    </noscript>
+    <link rel="stylesheet" href="/assets/css/bundle.css" data-turbolinks-track="reload" />
     <style type="text/css">@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:swap}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}</style>
     <!-- Scripts required -->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js" data-turbolinks-track="reload"></script>
-    <script>'IntersectionObserver' in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" data-turbolinks-track="reload"><\/script>');{% if site.lazyimages == "enabled" %}Defer.dom('img.fade',200,'loaded');Defer.dom('.multi-lazy',200,'loaded');{% endif %}{% if site.fanpage-chat %}Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})}});{% endif %}{% if site.google_analytics %}Defer.js('https://cdn.jsdelivr.net/npm/ga-lite@1/dist/ga-lite.min.js','galite-js',100,function(){var galite=galite||{};galite.UA='{{site.google_analytics}}'});{% endif %}</script>
+    <script>'IntersectionObserver' in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" data-turbolinks-track="reload" defer="1"><\/script>');{% if site.lazyimages == "enabled" %}Defer.dom('img.fade',200,'loaded');Defer.dom('.multi-lazy',200,'loaded');{% endif %}{% if site.fanpage-chat %}Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})}});{% endif %}{% if site.google_analytics %}Defer.js('https://cdn.jsdelivr.net/npm/ga-lite@1/dist/ga-lite.min.js','galite-js',100,function(){var galite=galite||{};galite.UA='{{site.google_analytics}}'});{% endif %}</script>

@@ -3,7 +3,7 @@
         itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope">
         <div class="container pr-0">
             <!-- Begin Logo -->
-            <a class="navbar-brand" href="/" title="{{ site.name }}" data-remote="true">
+            <a class="navbar-brand" href="/" title="{{ site.name }}">
                 {% if site.lazyimages == "enabled" %}
                 <img src="{{ site.logo }}" alt="{{ site.name }}" loading="lazy" decoding="async" />
                 {% else %}
@@ -19,7 +19,7 @@
                 <!-- Begin Menu -->
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item {% if page.url == "/" %}active{% endif %}">
-                        <a class="nav-link" href="/" title="Home" itemprop="url" data-remote="true">
+                        <a class="nav-link" href="/" title="Home" itemprop="url">
                             <span itemprop="name">Home</span>
                         </a>
                     </li>
@@ -29,32 +29,32 @@
                         </a>
                     </li>
                     <li class="nav-item {% if page.url == "/pages/my-customer" %}active{% endif %}">
-                        <a class="nav-link" href="/pages/my-customer" title="My customer" itemprop="url" data-remote="true">
+                        <a class="nav-link" href="/pages/my-customer" title="My customer" itemprop="url">
                             <span itemprop="name">My customer</span>
                         </a>
                     </li>
                     <li class="nav-item {% if page.url == "/pages/contacts" %}active{% endif %}">
-                        <a class="nav-link" href="/pages/contacts" title="Contacts" itemprop="url" data-remote="true">
+                        <a class="nav-link" href="/pages/contacts" title="Contacts" itemprop="url">
                             <span itemprop="name">Contacts</span>
                         </a>
                     </li>
                     <li class="nav-item {% if page.url == "/series" %}active{% endif %}">
-                        <a class="nav-link" href="/series" title="Series" itemprop="url" data-remote="true">
+                        <a class="nav-link" href="/series" title="Series" itemprop="url">
                             <span itemprop="name">Series</span>
                         </a>
                     </li>
                     <li class="nav-item {% if page.url == "/categories" %}active{% endif %}">
-                        <a class="nav-link" href="/categories" title="Categories" itemprop="url" data-remote="true">
+                        <a class="nav-link" href="/categories" title="Categories" itemprop="url">
                             <span itemprop="name">Categories</span>
                         </a>
                     </li>
                     <li class="nav-item {% if page.url == "/tags" %}active{% endif %}">
-                        <a class="nav-link" href="/tags" title="Tags" itemprop="url" data-remote="true">
+                        <a class="nav-link" href="/tags" title="Tags" itemprop="url">
                             <span itemprop="name">Tags</span>
                         </a>
                     </li>
                     <li class="nav-item {% if page.url == "/author" %}active{% endif %}">
-                        <a class="nav-link" href="/author" title="Author" itemprop="url" data-remote="true">
+                        <a class="nav-link" href="/author" title="Author" itemprop="url">
                             <span itemprop="name">Author</span>
                         </a>
                     </li>

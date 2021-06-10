@@ -3,7 +3,7 @@
 <article class="col-lg-4 col-md-4 col-sm-6 mb-30px card-group" itemscope itemtype="https://schema.org/Article">
     <div class="card h-100">
         <div class="maxthumb">
-            <a href="{{ post.url }}" title="{{ post.title }}" data-remote="true">
+            <a href="{{ post.url }}" title="{{ post.title }}">
                 {% if post.image %}
                 {% if site.lazyimages == "enabled" %}
                 <picture class="multi-lazy">
@@ -23,7 +23,7 @@
         </div>
         <div class="card-body">
             <h2 class="card-title" itemprop="name">
-                <a class="text-dark" href="{{ post.url }}" title="{{ post.title }}" itemprop="url" data-remote="true">{{ post.title }}</a>
+                <a class="text-dark" href="{{ post.url }}" title="{{ post.title }}" itemprop="url">{{ post.title }}</a>
                 {% if post.rating %}
                 <div class="mb-2 mt-2 font-weight-normal">
                 {% include star_rating_postbox.html %}
@@ -38,18 +38,14 @@
                 <span class="meta-footer-thumb">
                 {% if site.lazyimages == "enabled" %}
                 {% if author.photo %}
-                <link rel="preload" href="{{ author.photo }}" as="image" />
                 <img class="author-thumb fade" data-src="{{ author.photo }}" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" decoding="async" />
                 {% else %}
-                <link rel="preload" href="https://graph.facebook.com/100003178356978/picture" as="image" />
                 <img class="author-thumb fade" data-src="https://graph.facebook.com/100003178356978/picture" width="72" height="72" alt="{{ author.display_name }}" loading="lazy" decoding="async" />
                 {% endif %}
                 {% else %}
                 {% if author.photo %}
-                <link rel="preload" href="{{ author.photo }}" as="image" />
                 <img class="author-thumb" src="{{ author.photo }}" width="72" height="72" alt="{{ author.display_name }}" />
                 {% else %}
-                <link rel="preload" href="https://graph.facebook.com/100003178356978/picture" as="image" />
                 <img class="author-thumb" src="https://graph.facebook.com/100003178356978/picture" width="72" height="72" alt="{{ author.display_name }}" />
                 {% endif %}
                 {% endif %}
@@ -61,7 +57,7 @@
                 <span class="dot"></span>
                 <span class="eta" data-turbolinks-permanent></span>
                 </span>
-                <span class="post-read-more"><a href="{{ post.url }}" data-toggle="tooltip" data-placement="top" title="Read Story" data-remote="true"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 25 25"><path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"></path></svg></a></span>
+                <span class="post-read-more"><a href="{{ post.url }}" data-toggle="tooltip" data-placement="top" title="Read Story"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 25 25"><path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"></path></svg></a></span>
                 <div class="clearfix"></div>
             </div>
         </div>
