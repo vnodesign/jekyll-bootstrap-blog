@@ -1,7 +1,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="{{ site.favicon }}" />
-    <meta name="turbolinks-cache-control" content="no-cache" />
     <script type="application/ld+json">
         {
           "@context": "https://schema.org/",
@@ -67,7 +66,7 @@
     <link rel="preconnect" href="https://static.cloudflareinsights.com" />
     <!-- Style -->
     {% capture app %}{% include_cached app.scss %}{% endcapture %}
-    <style type="text/css">{{ app | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:swap}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}</style>
+    <style type="text/css" data-turbolinks-permanent="true">{{ app | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:swap}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}</style>
     <!-- Scripts required -->
     <script src="/assets/js/jquery.min.js" defer="1"></script>
     <script src="/assets/js/plugins.min.js" defer="1"></script>
