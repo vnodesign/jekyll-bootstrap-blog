@@ -70,7 +70,7 @@
   {% endif %}
   <!-- Javascript -->
   <script src="/assets/js/bundle.min.js" defer="1" data-turbolinks-suppress-warning></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.1.0/quicklink.umd.js" defer="1" data-turbolinks-track="reload"></script>
-  <script>window.addEventListener('load',()=>{quicklink.listen();});const prefersDarkScheme=window.matchMedia("(prefers-color-scheme:dark)");if(prefersDarkScheme.matches){document.body.classList.add("dark-mode");}else{document.body.classList.remove("dark-mode");}</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.1.0/quicklink.umd.js" defer="1" data-turbo-eval="false" data-turbolinks-eval="false"></script>
+  <script data-turbo-eval="false" data-turbolinks-eval="false">window.addEventListener('load',()=>{quicklink.listen();});const prefersDarkScheme=window.matchMedia("(prefers-color-scheme:dark)");if(prefersDarkScheme.matches){document.body.classList.add("dark-mode");}else{document.body.classList.remove("dark-mode");}</script>
 </body>
 </html>
