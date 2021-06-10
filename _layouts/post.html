@@ -41,14 +41,7 @@ post_class: post-template
                 {% endif %}
                 <span class="dot"></span>
                 <!-- Post Read -->
-                <span class="post-read eta" data-turbolinks-permanent>
-                    {% capture words %}
-                    {{ content | number_of_words | minus: 180 }}
-                    {% endcapture %}
-                    {% unless words contains '-' %}
-                    {{ words | plus: 150 | divided_by: 150 | append: ' minutes to read' }}
-                    {% endunless %}
-                </span>
+                <span class="post-read eta" data-turbolinks-permanent></span>
                 <span class="dot"></span>
                 <!-- Post Cat -->
                 <span class="post-cat">

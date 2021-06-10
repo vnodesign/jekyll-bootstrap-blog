@@ -66,14 +66,7 @@
                         {{ post.date | date_to_string }}
                     </span>
                     <span class="dot"></span>
-                    <span class="eta" data-turbolinks-permanent>
-                        {% capture words %}
-                        {{ content | number_of_words | minus: 180 }}
-                        {% endcapture %}
-                        {% unless words contains '-' %}
-                        {{ words | plus: 150 | divided_by: 150 | append: ' minutes to read' }}
-                        {% endunless %}
-                    </span>
+                    <span class="eta" data-turbolinks-permanent></span>
                 </span>
                 <span class="post-read-more">
                     <a href="{{ post.url }}" data-toggle="tooltip" data-placement="top" title="Read Story">
