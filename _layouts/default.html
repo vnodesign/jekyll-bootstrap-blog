@@ -49,7 +49,6 @@
       </script>
   {% endif %}
   {% include_cached head.html %}
-  <script>const prefersDarkScheme=window.matchMedia("(prefers-color-scheme:dark)");if(prefersDarkScheme.matches){document.body.classList.add("dark-mode");}else{document.body.classList.remove("dark-mode");}</script>
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}" itemscope="itemscope" itemtype="https://schema.org/WebPage">
@@ -73,5 +72,6 @@
   <script src="/assets/js/jquery.min.js" defer="1" data-turbolinks-track="reload"></script>
   <script src="/assets/js/plugins.min.js" defer="1" data-turbolinks-track="reload"></script>
   <script src="/assets/js/bundle.min.js" defer="1" data-turbolinks-suppress-warning></script>
+  <script data-turbolinks-track="reload">const prefersDarkScheme=window.matchMedia("(prefers-color-scheme:dark)");if(prefersDarkScheme.matches){document.body.classList.add("dark-mode");}else{document.body.classList.remove("dark-mode");}{% if site.lazyimages == "enabled" %}Defer.dom('img.fade',200,'loaded');Defer.dom('.multi-lazy',200,'loaded');{% endif %}{% if site.fanpage-chat %}Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})}});{% endif %}{% if site.google_analytics %}Defer.js('https://cdn.jsdelivr.net/npm/ga-lite@1/dist/ga-lite.min.js','galite-js',100,function(){var galite=galite||{};galite.UA='{{site.google_analytics}}'});{% endif %}</script>
 </body>
 </html>
