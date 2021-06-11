@@ -1,7 +1,6 @@
 {% if site.lazyimages == "enabled" %}
 <picture class="multi-lazy">
     <source srcset="/static/media/{{ include.webp }}" type="image/webp" />
-    <source srcset="/static/media/{{ include.src }}" type="image/{{ include.type }}" /> 
     <img class="mx-auto d-block" src="/static/media/{{ include.src }}" alt="{{ include.alt }}" loading="lazy" decoding="async" />
 </picture>
 {% else %}
