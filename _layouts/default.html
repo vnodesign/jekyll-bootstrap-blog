@@ -2,6 +2,7 @@
 <html lang="en">
 <head itemscope="itemscope" itemtype="https://schema.org/WebSite">
     <meta name="turbolinks-cache-control" content="no-cache" />
+    <meta name="turbolinks-visit-control" content="reload" />
     <!-- Meta tag seo -->
     {% feed_meta %}
     {% seo %}
@@ -71,8 +72,8 @@
   <div class="fb-customerchat" attribution="biz_inbox" page_id="{{site.fanpage-chat}}" data-lazy="true" greeting_dialog_display="icon" data-turbolinks-permanent="true"></div>
   {% endif %}
   <!-- Javascript -->
+  <script src="/assets/js/turbolinks.min.js" defer="1" data-turbolinks-suppress-warning></script>
   <script src="/assets/js/plugins.min.js" defer="1" data-turbolinks-track="reload"></script>
-  <script src="/assets/js/bundle.min.js" defer="1" data-turbolinks-suppress-warning></script>
   <script data-turbolinks-track="reload">{% if site.lazyimages == "enabled" %}Defer.dom('img.fade',200,'loaded');Defer.dom('.multi-lazy',200,'loaded');{% endif %}{% if site.fanpage-chat %}Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})}});{% endif %}{% if site.google_analytics %}Defer.js('https://cdn.jsdelivr.net/npm/ga-lite@1/dist/ga-lite.min.js','galite-js',100,function(){var galite=galite||{};galite.UA='{{site.google_analytics}}'});{% endif %}</script>
 </body>
 </html>
