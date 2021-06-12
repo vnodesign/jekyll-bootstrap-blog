@@ -74,6 +74,7 @@
   <!-- Javascript -->
   <script src="/assets/js/turbolinks.min.js" defer="1" data-turbolinks-suppress-warning></script>
   <script src="/assets/js/plugins.min.js" defer="1" data-turbolinks-track="reload"></script>
+  <script src="/assets/js/bootstrap.min.js" defer="1" data-turbolinks-track="reload"></script>
   <script data-turbolinks-track="reload">{% if site.lazyimages == "enabled" %}Defer.dom('img.fade',200,'loaded');Defer.dom('.multi-lazy',200,'loaded');{% endif %}{% if site.fanpage-chat %}Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})}});{% endif %}{% if site.google_analytics %}Defer.js('https://cdn.jsdelivr.net/npm/ga-lite@1/dist/ga-lite.min.js','galite-js',100,function(){var galite=galite||{};galite.UA='{{site.google_analytics}}'});{% endif %}</script>
 </body>
 </html>
