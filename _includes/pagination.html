@@ -1,13 +1,11 @@
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-  <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Prev">
+  <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Prev" aria-label="Prev">
     Prev
   </a>
   {% else %}
-  <span>
-    Prev
-  </span>
+  <a class="ml-1 mr-1" href="#" title="Prev" aria-label="Prev" data-turbolinks="false">Prev</a>
   {% endif %}
   {% for page in (1..paginator.total_pages) %}
   {% if page == paginator.page %}
@@ -15,23 +13,21 @@
     {{ page }}
   </span>
   {% elsif page == 1 %}
-  <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="{{ page }}">
+  <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="{{ page }}" aria-label="{{ page }}">
     {{ page }}
   </a>
   {% else %}
-  <a class="ml-1 mr-1" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" title="{{ page }}">
+  <a class="ml-1 mr-1" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" title="{{ page }}" aria-label="{{ page }}">
     {{ page }}
   </a>
   {% endif %}
   {% endfor %}
   {% if paginator.next_page %}
-  <a class="ml-1 mr-1" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next">
+  <a class="ml-1 mr-1" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next" aria-label="Next">
     Next
   </a>
   {% else %}
-  <span>
-    Next
-  </span>
+  <a class="ml-1 mr-1" href="#" title="Next" aria-label="Next" data-turbolinks="false">Next</a>
   {% endif %}
 </div>
 {% endif %}
