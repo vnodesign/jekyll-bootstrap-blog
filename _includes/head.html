@@ -1,6 +1,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="{{ site.favicon }}" />
+    <link rel="apple-touch-icon" href="{{ site.apple-touch-icon }}" />
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ site.apple-touch-icon-57x57 }}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ site.apple-touch-icon-72x72 }}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ site.apple-touch-icon-76x76 }}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.apple-touch-icon-114x114 }}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ site.apple-touch-icon-120x120 }}" />
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.apple-touch-icon-144x144 }}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.apple-touch-icon-152x152 }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.apple-touch-icon-180x180 }}" />
     <script type="application/ld+json">
         {
           "@context": "https://schema.org/",
@@ -19,9 +28,6 @@
     {% if site.fanpage-chat %}
     <link rel="preload" href="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" as="script" />
     {% endif %}
-    {% if site.google_analytics %}
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/ga-lite@1/dist/ga-lite.min.js" as="script" />
-    {% endif %}
     <!-- Prefetch Domain -->
     {% if site.fanpage-chat %}
     <link rel="dns-prefetch" href="//static.xx.fbcdn.net" />
@@ -34,7 +40,7 @@
     <link rel="dns-prefetch" href="//staticxx.facebook.com" />
     {% endif %}
     {% if site.google_analytics %}
-    <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="//www.google-analytics.com" />
     {% endif %}
     <link rel="dns-prefetch" href="//cdn.tuanducdesign.com" />
     {% if page.layout == 'post' %}
@@ -54,7 +60,7 @@
     <link rel="preconnect" href="https://staticxx.facebook.com" />
     {% endif %}
     {% if site.google_analytics %}
-    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
     {% endif %}
     <link rel="preconnect" href="https://cdn.tuanducdesign.com" />
     {% if page.layout == 'post' %}
@@ -65,7 +71,7 @@
     <link rel="preconnect" href="https://static.cloudflareinsights.com" />
     <!-- Style -->
     {% capture darkmode %}{% include darkmode.scss %}{% endcapture %}
-    <style type="text/css">{{ app | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:swap}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}</style>
+    <style type="text/css">{{ darkmode | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:swap}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}</style>
     <link rel="stylesheet" href="/assets/css/bundle.css" async="1" data-turbolinks-track="reload" />
     <!-- Scripts required -->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>

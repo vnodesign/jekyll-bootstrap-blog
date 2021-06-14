@@ -3,8 +3,17 @@ name: "Tuan Duc Design"
 title: "Tuan Duc Design"
 subtitle: "Specialist site to share knowledge of VPS and Website"
 description: "Specialist page sharing knowledge related to VPS development and Website optimization."
-logo: 'https://cdn.tuanducdesign.com/assets/images/tuanducdesign.jpg'
-favicon: 'https://cdn.tuanducdesign.com/assets/images/tuanducdesign.jpg'
+logo: '/static/tuanducdesign.jpg'
+favicon: '/static/tuanducdesign.jpg'
+apple-touch-icon: '/static/tuanducdesign.jpg'
+apple-touch-icon-57x57: '/static/apple-touch-icon-57x57.png'
+apple-touch-icon-72x72: '/static/apple-touch-icon-72x72.png'
+apple-touch-icon-76x76: '/static/apple-touch-icon-76x76.png'
+apple-touch-icon-114x114: '/static/apple-touch-icon-114x114.png'
+apple-touch-icon-120x120: '/static/apple-touch-icon-120x120.png'
+apple-touch-icon-144x144: '/static/apple-touch-icon-144x144.png'
+apple-touch-icon-152x152: '/static/apple-touch-icon-152x152.png'
+apple-touch-icon-180x180: '/static/apple-touch-icon-180x180.png'
 baseurl:
 url: 'https://tuanducdesign.com'
 google_analytics: 'UA-175649416-1'
@@ -29,7 +38,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: https://cdn.tuanducdesign.com/assets/images/CA0E67E9-AAD0-4D36-82D8-674C7504DFD1.jpg
+      image: /assets/images/CA0E67E9-AAD0-4D36-82D8-674C7504DFD1.jpg
 timezone: Asia/Ho_Chi_Minh
 # Authors
 authors:
@@ -37,7 +46,7 @@ authors:
     name: Tuan Duc Design
     username: tuanducdesign
     display_name: Tuan Duc Design
-    photo: https://cdn.tuanducdesign.com/assets/images/tuanducdesign.jpg
+    photo: /assets/images/tuanducdesign.jpg
     email: miumiu.official.56@gmail.com
     web: https://tuanducdesign.com
     facebook: tuanduc.support
