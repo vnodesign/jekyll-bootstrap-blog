@@ -38,7 +38,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/images/CA0E67E9-AAD0-4D36-82D8-674C7504DFD1.jpg
+      image: /static/CA0E67E9-AAD0-4D36-82D8-674C7504DFD1.jpg
 timezone: Asia/Ho_Chi_Minh
 # Authors
 authors:
@@ -46,7 +46,7 @@ authors:
     name: Tuan Duc Design
     username: tuanducdesign
     display_name: Tuan Duc Design
-    photo: /assets/images/tuanducdesign.jpg
+    photo: /static/tuanducdesign.jpg
     email: miumiu.official.56@gmail.com
     web: https://tuanducdesign.com
     facebook: tuanduc.support
