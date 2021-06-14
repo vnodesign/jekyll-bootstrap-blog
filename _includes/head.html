@@ -24,10 +24,19 @@
         }
     </script>
     <!-- Preload file -->
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js" as="script" />
+    <link rel="preload" href="/assets/js/defer.min.js" as="script" />
+    <link rel="preload" href="/assets/js/jquery.min.js" as="script" />
+    <link rel="preload" href="/assets/js/turbolinks.min.js" as="script" />
+    <link rel="preload" href="/assets/js/plugins.min.js" as="script" />
+    <link rel="preload" href="/assets/js/bootstrap.min.js" as="script" />
+    {% if site.google_analytics %}
+    <link rel="preload" href="/assets/js/ga-lite.min.js" as="script" />
+    {% endif %}
     {% if site.fanpage-chat %}
     <link rel="preload" href="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" as="script" />
     {% endif %}
+    <link rel="preload" href="/assets/fonts/bootstrap-icons.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/bootstrap-icons.woff" as="font" type="font/woff" crossorigin />
     <!-- Prefetch Domain -->
     {% if site.fanpage-chat %}
     <link rel="dns-prefetch" href="//static.xx.fbcdn.net" />
@@ -42,15 +51,7 @@
     {% if site.google_analytics %}
     <link rel="dns-prefetch" href="//www.google-analytics.com" />
     {% endif %}
-    <link rel="dns-prefetch" href="//cdn.tuanducdesign.com" />
-    {% if page.layout == 'post' %}
-    <link rel="dns-prefetch" href="//{{site.disqus}}.disqus.com" />
-    <link rel="dns-prefetch" href="//disqus.com" />
-    {% endif %}
-    <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
-    <link rel="dns-prefetch" href="//static.cloudflareinsights.com" />
     <!-- Preconnect Domain -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
     {% if site.fanpage-chat %}
     <link rel="preconnect" href="https://static.xx.fbcdn.net" />
     <link rel="preconnect" href="https://connect.facebook.net" />
@@ -62,18 +63,10 @@
     {% if site.google_analytics %}
     <link rel="preconnect" href="https://www.google-analytics.com" />
     {% endif %}
-    <link rel="preconnect" href="https://cdn.tuanducdesign.com" />
-    {% if page.layout == 'post' %}
-    <link rel="preconnect" href="https://{{site.disqus}}.disqus.com" />
-    <link rel="preconnect" href="https://disqus.com" />
-    {% endif %}
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-    <link rel="preconnect" href="https://static.cloudflareinsights.com" />
     <!-- Style -->
     {% capture darkmode %}{% include darkmode.scss %}{% endcapture %}
     <style type="text/css">{{ darkmode | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:swap}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}</style>
     <link rel="stylesheet" href="/assets/css/bundle.css" async="1" data-turbolinks-track="reload" />
     <!-- Scripts required -->
-    <script src="/assets/js/jquery.min.js" defer="1" data-turbolinks-track="reload"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@2.4.1/dist/defer.min.js"></script>
-    <script>'IntersectionObserver' in window||document.write('<link rel="dns-prefetch" href="//polyfill.io" \/><link rel="preconnect" href="https://polyfill.io" \/><link rel="preload" href="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" \/><script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"><\/script>');</script>
+    <script src="/assets/js/defer.min.js" data-turbolinks-track="reload"></script>
+    <script>'IntersectionObserver' in window||document.write('<link rel="preload" href="/assets/js/polyfill.min.js" as="script" \/><script src="/assets/js/polyfill.min.js"><\/script>');</script>

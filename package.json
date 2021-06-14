@@ -1,0 +1,19 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Specialist page sharing knowledge related to VPS development and Website optimization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuanducteam/blog.git"
+  },
+  "author": "Tuan Duc Design <miumiu.official.56@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tuanducteam/blog/issues"
+  },
+  "homepage": "https://github.com/tuanducteam/blog#readme"
+}

@@ -61,8 +61,8 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
-  - jekyll-include-cache
-    
+  - jekyll-include-cache  
+
 # Archives
 jekyll-archives:
   enabled:
