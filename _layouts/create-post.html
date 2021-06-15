@@ -1,0 +1,75 @@
+---
+title: "Create Post"
+layout: default
+permalink: "/create-post"
+---
+
+<div class="container">
+    <h4 class="font-weight-bold spanborder"><span>{{page.title}} (BETA)</span></h4>
+    <div class="row">
+        <div class="col-md-12">
+            <form name="create-post" method="POST" data-netlify="true">
+                <div class="form-group">
+                    <label for="email">Email <span style="color:red;">*</span></label>
+                    <input type="email" class="form-control" name="Email" required placeholder="Email" />
+                </div>
+                <div class="form-group">
+                    <label for="first-and-last-name">First and last name <span style="color:red;">*</span></label>
+                    <input type="text" class="form-control" name="first-and-last-name" required placeholder="First and last name" />
+                </div>
+                <div class="form-group">
+                    <label for="avatar-url">Avatar URL <span style="color:red;">*</span></label>
+                    <input type="url" class="form-control" name="avatar-url" required placeholder="Avatar URL" />
+                </div>
+                <div class="form-group">
+                    <label for="facebook-url">Facebook URL <span style="color:red;">*</span></label>
+                    <input type="url" class="form-control" name="facebook-url" required placeholder="Facebook URL" />
+                </div>
+                <div class="form-group">
+                    <label for="website-url">Website URL</label>
+                    <input type="url" class="form-control" name="website-url" placeholder="Website URL" />
+                </div>
+                <div class="form-group">
+                    <label for="post-title">Post title <span style="color:red;">*</span></label>
+                    <input type="text" class="form-control" name="post-title" required placeholder="Post title" />
+                </div>
+                <div class="form-group">
+                    <label for="category-select">Category select <span style="color:red;">*</span></label>
+                    <select class="form-control" id="category-select" required>
+                        <option selected>Choose...</option>
+                        {% assign categories_list = site.categories %}
+                        {% if categories_list.first[0] == null %}
+                        {% for category in categories_list %}
+                        <option>{{ category | camelcase }} ({{ site.tags[category].size }})</option>
+                        {% endfor %}
+                        {% else %}
+                        {% for category in categories_list %}
+                        <option>{{ category[0] | camelcase }} ({{ category[1].size }})</option>
+                        {% endfor %}
+                        {% endif %}
+                        {% assign categories_list = nil %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="image-url">Image URL <span style="color:red;">*</span></label>
+                    <input type="url" class="form-control" name="image-url" required placeholder="Image URL" />
+                </div>
+                <div class="form-group">
+                    <label for="description">Description <span style="color:red;">*</span></label>
+                    <textarea rows="5" class="form-control" name="description" required placeholder="Description" maxlength="150"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="tags">Tags <span style="color:red;">*</span></label>
+                    <input type="name" class="form-control" name="tags" required placeholder="Tags" />
+                </div>
+                <div class="form-group">
+                    <label for="content">Content <span style="color:red;">*</span></label>
+                    <textarea rows="5" class="form-control" name="content" required placeholder="Content" maxlength="99999"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
