@@ -16,7 +16,7 @@ post_class: post-template
                     {% if page.beforetoc %}
                         <p><em>{{page.beforetoc}}</em></p>
                     {% endif %}
-                    <div class="toc mt-4 mb-4 lead sticky-top sticky-top-80">
+                    <div class="toc lead sticky-top sticky-top-80">
                         <h3 class="font-weight-bold">Table of Contents</h3>
                         {% include_cached toc.html html=content %}
                     </div>
