@@ -10,7 +10,20 @@ post_class: post-template
         <!-- Post -->
         {% assign author = site.authors[page.author] %}
         {% assign sortedCategories = page.categories | sort %}
-        <div class="col-md-12 flex-first flex-md-unordered">
+        <div class="col-md-4 flex-first flex-md-unordered">
+                <!-- Toc if any -->
+                {% if page.toc %}
+                    {% if page.beforetoc %}
+                        <p><em>{{page.beforetoc}}</em></p>
+                    {% endif %}
+                    <div class="toc mt-4 mb-4 lead sticky-top sticky-top-80">
+                        <h3 class="font-weight-bold">Table of Contents</h3>
+                        {% include_cached toc.html html=content %}
+                    </div>
+                {% endif %}
+                <!-- End Toc -->
+        </div>
+        <div class="col-md-7 flex-first flex-md-unordered">
             <div class="mainheading text-center">
                 <!-- Post Title -->
                 <h1 class="posttitle" itemprop="name">
