@@ -8,65 +8,82 @@ permalink: "/create-post"
     <h4 class="font-weight-bold spanborder"><span>{{page.title}} (BETA)</span></h4>
     <div class="row">
         <div class="col-md-12">
-            <form name="create-post" method="POST" data-netlify="true">
-                <div class="form-group">
-                    <label for="email">Email <span style="color:red;">*</span></label>
-                    <input type="email" class="form-control" name="Email" required placeholder="Email" />
-                </div>
-                <div class="form-group">
-                    <label for="first-and-last-name">First and last name <span style="color:red;">*</span></label>
-                    <input type="text" class="form-control" name="first-and-last-name" required placeholder="First and last name" />
+            <div class="alert alert-warning" role="alert">
+                This functionality is currently in development! Errors may occur during use. If you find an error,
+                please notify us via the contact page.
+            </div>
+            <form name="create-post" action="#create-post" method="POST" netlify-honeypot="bot-field" data-netlify="true" id="form-create-post" onsubmit="alert('Successful post creation! Your post is waiting for admin approval.');">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="Email">Email <span style="color:red;">*</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="Email" required />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="first-and-last-name">First and last name <span style="color:red;">*</span></label>
+                        <input type="name" class="form-control" id="first-and-last-name"
+                            placeholder="First and last name" required />
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="avatar-url">Avatar URL <span style="color:red;">*</span></label>
-                    <input type="url" class="form-control" name="avatar-url" required placeholder="Avatar URL" />
+                    <input type="url" class="form-control" id="avatar-url" placeholder="Avatar URL" required />
                 </div>
                 <div class="form-group">
                     <label for="facebook-url">Facebook URL <span style="color:red;">*</span></label>
-                    <input type="url" class="form-control" name="facebook-url" required placeholder="Facebook URL" />
+                    <input type="url" class="form-control" id="facebook-url" placeholder="Facebook URL" required />
                 </div>
                 <div class="form-group">
                     <label for="website-url">Website URL</label>
-                    <input type="url" class="form-control" name="website-url" placeholder="Website URL" />
+                    <input type="url" class="form-control" id="website-url" placeholder="Website URL" />
                 </div>
-                <div class="form-group">
-                    <label for="post-title">Post title <span style="color:red;">*</span></label>
-                    <input type="text" class="form-control" name="post-title" required placeholder="Post title" />
-                </div>
-                <div class="form-group">
-                    <label for="category-select">Category select <span style="color:red;">*</span></label>
-                    <select class="form-control" id="category-select" required>
-                        <option selected>Choose...</option>
-                        {% assign categories_list = site.categories %}
-                        {% if categories_list.first[0] == null %}
-                        {% for category in categories_list %}
-                        <option>{{ category | camelcase }} ({{ site.tags[category].size }})</option>
-                        {% endfor %}
-                        {% else %}
-                        {% for category in categories_list %}
-                        <option>{{ category[0] | camelcase }} ({{ category[1].size }})</option>
-                        {% endfor %}
-                        {% endif %}
-                        {% assign categories_list = nil %}
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="image-url">Image URL <span style="color:red;">*</span></label>
-                    <input type="url" class="form-control" name="image-url" required placeholder="Image URL" />
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="post-title">Post title <span style="color:red;">*</span></label>
+                        <input type="text" class="form-control" id="post-title" placeholder="Post title" required />
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="category-select">Category select <span style="color:red;">*</span></label>
+                        <select id="category-select" class="form-control">
+                            <option selected>Choose...</option>
+                            {% assign categories_list = site.categories %}
+                            {% if categories_list.first[0] == null %}
+                            {% for category in categories_list %}
+                            <option>{{ category | camelcase }} ({{ site.tags[category].size }})</option>
+                            {% endfor %}
+                            {% else %}
+                            {% for category in categories_list %}
+                            <option>{{ category[0] | camelcase }} ({{ category[1].size }})</option>
+                            {% endfor %}
+                            {% endif %}
+                            {% assign categories_list = nil %}
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="image-url">Image URL <span style="color:red;">*</span></label>
+                        <input type="url" class="form-control" id="image-url" placeholder="Image URL" required />
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="description">Description <span style="color:red;">*</span></label>
-                    <textarea rows="5" class="form-control" name="description" required placeholder="Description" maxlength="150"></textarea>
+                    <textarea rows="5" class="form-control" id="description" placeholder="Description" required
+                        maxlength="150"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="tags">Tags <span style="color:red;">*</span></label>
-                    <input type="name" class="form-control" name="tags" required placeholder="Tags" />
+                    <input type="name" class="form-control" id="tags"
+                        placeholder="Enter keywords for the post separated by commas" required />
                 </div>
                 <div class="form-group">
                     <label for="content">Content <span style="color:red;">*</span></label>
-                    <textarea rows="5" class="form-control" name="content" required placeholder="Content" maxlength="99999"></textarea>
+                    <textarea rows="5" class="form-control" id="content"
+                        placeholder="Enter content for the article, in the article you can insert an image link so that the administrator can recognize the location of the image on that content."
+                        required></textarea>
+                </div>
+                <div class="from-group d-none">
+                    <label>Don’t fill this out: <input type="hidden" name="bot-field"></label>
                 </div>
                 <div class="form-group">
+                    <input type="hidden" name="create-post" value="create-post" />
                     <button type="submit" class="btn btn-primary">Create</button>
                 </div>
             </form>
