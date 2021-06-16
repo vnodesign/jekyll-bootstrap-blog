@@ -6,50 +6,6 @@
     <!-- Meta tag seo -->
     {% feed_meta %}
     {% seo %}
-    {% if page.layout == 'post' %}
-    {% if page.rating %}
-      <!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: https://search.google.com/structured-data/testing-tool/u/0/ -->
-      <script type="application/ld+json">
-          {
-              "@context": "http://schema.org/",
-              "@type": "Review",
-              "itemReviewed": {
-                  "@type": "Thing",
-                  "name": "{{ page.title }}"
-              },
-              "author": {
-                  "@type": "Person",
-                  "name": "{{ author.display_name }}"
-              },
-              "datePublished": "{{ page.date | date:" %Y - %m - %d " }}",
-              "reviewRating": {
-                  "@type": "Rating",
-                  "ratingValue": "{{ page.rating }}",
-                  "bestRating": "5"
-              }
-          }
-      </script>
-    {% endif %}
-  {% endif %}
-  {% if page.layout == 'tags' %}
-      <script type="application/ld+json">
-          {
-            "@context": "https://schema.org/", 
-            "@type": "BreadcrumbList", 
-            "itemListElement": [{
-              "@type": "ListItem", 
-              "position": 1, 
-              "name": "Home",
-              "item": "{{ site.url }}/"  
-            },{
-              "@type": "ListItem", 
-              "position": 2, 
-              "name": "{{ page.title }}",
-              "item": "{{ page.url | absolute_url }}"  
-            }]
-          }
-      </script>
-  {% endif %}
   {% include_cached head.html %}
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
@@ -74,7 +30,7 @@
   <script src="/assets/js/jquery.min.js" defer="1" data-turbolinks-track="reload"></script>
   <script src="/assets/js/turbolinks.min.js" defer="1" data-turbolinks-suppress-warning></script>
   <script src="/assets/js/plugins.min.js" defer="1" data-turbolinks-track="reload"></script>
-  <script src="/assets/js/bootstrap.min.js" defer="1" data-turbolinks-track="reload"></script>
+  <script src="/assets/js/bootstrap.bundle.min.js" defer="1" data-turbolinks-track="reload"></script>
   {% if site.google_analytics %}
   <script src="/assets/js/ga-lite.min.js" defer="1" data-turbolinks-track="reload"></script>
   <script>var galite=galite||{};galite.UA='{{site.google_analytics}}'</script>
