@@ -9,6 +9,7 @@
                 {% else %}
                 <img src="{{ site.logo }}" alt="{{ site.name }}" />
                 {% endif %}
+                <h1 class="d-none">{{ site.name }}</h1>
             </a>
             <!-- End Logo -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish"
@@ -21,11 +22,6 @@
                     <li class="nav-item {% if page.url == "/" %}active{% endif %}">
                         <a class="nav-link" href="/" title="Home" itemprop="url">
                             <span itemprop="name">Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://about.tuanducdesign.com/" title="About" itemprop="url" target="_blank" rel="noopener">
-                            <span itemprop="name">About</span>
                         </a>
                     </li>
                     <li class="nav-item {% if page.url == "/pages/my-customer" %}active{% endif %}">
@@ -51,11 +47,6 @@
                     <li class="nav-item {% if page.url == "/tags" %}active{% endif %}">
                         <a class="nav-link" href="/tags" title="Tags" itemprop="url">
                             <span itemprop="name">Tags</span>
-                        </a>
-                    </li>
-                    <li class="nav-item {% if page.url == "/author" %}active{% endif %}">
-                        <a class="nav-link" href="/author" title="Author" itemprop="url">
-                            <span itemprop="name">Author</span>
                         </a>
                     </li>
                     <li class="nav-item">

@@ -11,7 +11,7 @@ post_class: post-template
         {% assign author = site.authors[page.author] %}
         {% assign sortedCategories = page.categories | sort %}
         <div class="col-md-12 flex-first flex-md-unordered">
-            <div class="mainheading text-center">
+            <div class="mainheading mt-4 mb-4 text-center">
                 <!-- Post Title -->
                 <h1 class="posttitle" itemprop="name">
                     {{ page.title }}
@@ -53,24 +53,28 @@ post_class: post-template
                 </span>
                 </p>
             </div>
+        </div>
+        <div class="col-md-4 flex-first flex-md-unordered">
+                <!-- Toc if any -->
+                {% if page.toc %}
+                    {% if page.beforetoc %}
+                        <p><em>{{page.beforetoc}}</em></p>
+                    {% endif %}
+                    <div class="toc mt-4 mb-4 lead sticky-top sticky-top-80">
+                        <h3 class="font-weight-bold">Table of Contents</h3>
+                        {% include_cached toc.html html=content %}
+                    </div>
+                {% endif %}
+                <!-- End Toc -->
+        </div>
+        <div class="col-md-8 flex-first flex-md-unordered">
             {% if site.adsense == "enabled" %}
             <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
                 {% include_cached adsense-under-header.html %}
             <!-- End Adsense -->
             {% endif %}
             <!-- Post Content -->
-            <div class="article-post" itemprop="articleBody">
-                <!-- Toc if any -->
-                {% if page.toc %}
-                    {% if page.beforetoc %}
-                        <p><em>{{page.beforetoc}}</em></p>
-                    {% endif %}
-                    <div class="toc mt-4 mb-4 lead">
-                        <h3 class="font-weight-bold">Table of Contents</h3>
-                        {% include_cached toc.html html=content %}
-                    </div>
-                {% endif %}
-                <!-- End Toc -->
+            <div class="mt-4 mb-4 article-post" itemprop="articleBody">
                 {{content}}
             <!-- Rating -->
             {% if page.rating %}

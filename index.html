@@ -4,11 +4,6 @@ title: Home
 ---
 
 {% if page.url == "/" %}
-<!-- Site Title -->
-<div class="mainheading">
-    <h1 class="sitetitle" itemprop="name">{{ site.name }}</h1>
-    <p class="lead" itemprop="description">{{ site.description }}</p>
-</div>
 <!-- Featured  -->
 <section class="featured-posts">
     <div class="section-title">
@@ -35,7 +30,7 @@ title: Home
 </section>
 <!-- Pagination -->
 <div class="bottompagination">
-    <span class="navigation" role="pagination" aria-label="pagination">
+    <span class="navigation" role="pagination">
         {% include pagination.html %}
     </span>
 </div>
