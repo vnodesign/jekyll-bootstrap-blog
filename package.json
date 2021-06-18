@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tuanducteam/blog/issues"
   },
-  "homepage": "https://github.com/tuanducteam/blog#readme"
+  "homepage": "https://github.com/tuanducteam/blog#readme",
+  "devDependencies": {
+    "@architect/sandbox": "^3.6.0"
+  }
 }
