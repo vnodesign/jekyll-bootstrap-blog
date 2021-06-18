@@ -97,7 +97,7 @@ lazyimages: "enabled"
 sass:
   style: compressed
 
-include: [.htaccess, _pages]
+include: [.htaccess, _pages, manifest.json]
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, .jekyll-cache]
 
