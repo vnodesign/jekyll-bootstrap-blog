@@ -7,11 +7,15 @@ post_class: post-template
 <!-- Begin Article -->
 <article class="container" itemscope itemtype="https://schema.org/Article">
     <div class="row">
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            {% include_cached share.html %}
+        </div>
         <!-- Post -->
         {% assign author = site.authors[page.author] %}
         {% assign sortedCategories = page.categories | sort %}
-        <div class="col-md-12 flex-first flex-md-unordered">
-            <div class="mainheading mt-4 mb-4 text-center">
+        <div class="col-md-8 flex-first flex-md-unordered">
+            <div class="mainheading text-center">
                 <!-- Post Title -->
                 <h1 class="posttitle" itemprop="name">
                     {{ page.title }}
@@ -53,21 +57,6 @@ post_class: post-template
                 </span>
                 </p>
             </div>
-        </div>
-        <div class="col-md-4 flex-first flex-md-unordered">
-                <!-- Toc if any -->
-                {% if page.toc %}
-                    {% if page.beforetoc %}
-                        <p><em>{{page.beforetoc}}</em></p>
-                    {% endif %}
-                    <div class="toc mt-4 mb-4 lead sticky-top sticky-top-80">
-                        <h3 class="font-weight-bold">Table of Contents</h3>
-                        {% include_cached toc.html html=content %}
-                    </div>
-                {% endif %}
-                <!-- End Toc -->
-        </div>
-        <div class="col-md-8 flex-first flex-md-unordered">
             {% if site.adsense == "enabled" %}
             <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
                 {% include_cached adsense-under-header.html %}
@@ -75,6 +64,17 @@ post_class: post-template
             {% endif %}
             <!-- Post Content -->
             <div class="mt-4 mb-4 article-post" itemprop="articleBody">
+                <!-- Toc if any -->
+                {% if page.toc %}
+                    {% if page.beforetoc %}
+                        <p><em>{{page.beforetoc}}</em></p>
+                    {% endif %}
+                    <div class="toc mt-4 mb-4 lead">
+                        <h3 class="font-weight-bold">Table of Contents</h3>
+                        {% include_cached toc.html html=content %}
+                    </div>
+                {% endif %}
+                <!-- End Toc -->
                 {{content}}
             <!-- Rating -->
             {% if page.rating %}
@@ -103,12 +103,16 @@ post_class: post-template
             <div class="PageNavigation">
             {% if page.previous.url %}
             <a href="{{page.previous.url}}" rel="prev" class="btn prev-post" title="{{page.previous.title}}">
-				<i class="bi bi-arrow-left"></i>
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                  </svg>
 			</a>
             {% endif %}
             {% if page.next.url %}
             <a href="{{page.next.url}}" rel="next" class="btn next-post" title="{{page.next.title}}">
-				<i class="bi bi-arrow-right"></i>
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  </svg>
 			</a>
             {% endif %}
             </div>
@@ -126,4 +130,28 @@ post_class: post-template
     </div>
 </article>
 <!-- End Article -->
-{% include_cached share.html %}
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+{% if page.rating %}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Thing",
+    "name": "{{ page.title }}"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "{{ author.display_name }}"
+  },
+  "datePublished": "{{ page.date | date:"%Y-%m-%d" }}",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "{{ page.rating }}",
+    "bestRating": "5"
+  }
+}
+</script>
+{% endif %}
