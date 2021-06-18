@@ -85,7 +85,7 @@
     <link rel="preconnect" href="https://www.google-analytics.com" />
     {% endif %}
     <!-- Style -->
-    <link rel="stylesheet" media="all" href="/assets/css/bundle.css" async="1" data-turbolinks-track="reload" />
+    <link rel="stylesheet" href="/assets/css/bundle.css" async="1" data-turbolinks-track="reload" />
     {% capture darkmode %}{% include darkmode.scss %}{% endcapture %}
     {% capture main %}{% include main.scss %}{% endcapture %}
     <style type="text/css">{{ darkmode | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:swap}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}{{ main | scssify }}</style>
