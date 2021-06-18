@@ -8,13 +8,13 @@ post_class: post-template
 <article class="container" itemscope itemtype="https://schema.org/Article">
     <div class="row">
         <!-- Post Share -->
-        <div class="col-md-2 pl-0">
+        <!-- <div class="col-md-2 pl-0">
             {% include_cached share.html %}
-        </div>
+        </div> -->
         <!-- Post -->
         {% assign author = site.authors[page.author] %}
         {% assign sortedCategories = page.categories | sort %}
-        <div class="col-md-8 flex-first flex-md-unordered">
+        <div class="col-md-12 flex-first flex-md-unordered">
             <div class="mainheading text-center">
                 <!-- Post Title -->
                 <h1 class="posttitle" itemprop="name">
@@ -24,7 +24,7 @@ post_class: post-template
                 <!-- Post Author -->
                 {% if page.author %}
                 <span class="post-author">
-                    <a class="link-dark" href="/author/{{ author.username }}" title="{{ author.display_name }}">
+                    <a class="link-dark" href="/author/{{ author.username }}" title="{{ author.display_name }}" data-remote="true">
                         {{ author.display_name }}
                     </a>
                 </span>
@@ -50,7 +50,7 @@ post_class: post-template
                 <!-- Post Cat -->
                 <span class="post-cat">
                     {% for category in sortedCategories %}
-                    <a class="link-dark" href="/categories#{{ category | replace: " ","-" }}" title="{{ category }}" rel="tag">
+                    <a class="link-dark" href="/categories#{{ category | replace: " ","-" }}" title="{{ category }}" rel="tag" data-remote="true">
                     {{ category }}
                     </a>
                     {% endfor %}
@@ -91,7 +91,7 @@ post_class: post-template
                     {% assign sortedTags = page.tags | sort %}
                     {% for tag in sortedTags %}
                     <li>
-                        <a class="smoothscroll" href="/tags#{{ tag | replace: " ","-" }}" title="{{ tag }}" rel="tag">
+                        <a class="smoothscroll" href="/tags#{{ tag | replace: " ","-" }}" title="{{ tag }}" rel="tag" data-remote="true">
                             {{ tag }}
                         </a>
                     </li>
@@ -102,14 +102,14 @@ post_class: post-template
             <!-- Prev/Next -->
             <div class="PageNavigation">
             {% if page.previous.url %}
-            <a href="{{page.previous.url}}" rel="prev" class="btn prev-post" title="{{page.previous.title}}">
+            <a href="{{page.previous.url}}" rel="prev" class="btn prev-post" title="{{page.previous.title}}" data-remote="true">
 				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
                   </svg>
 			</a>
             {% endif %}
             {% if page.next.url %}
-            <a href="{{page.next.url}}" rel="next" class="btn next-post" title="{{page.next.title}}">
+            <a href="{{page.next.url}}" rel="next" class="btn next-post" title="{{page.next.title}}" data-remote="true">
 				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                   </svg>
