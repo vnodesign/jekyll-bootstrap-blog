@@ -159,21 +159,21 @@ section {
         padding-left: 0
     }
 
-    h2.card-title {
+    .card-title {
         font-size: 1.3rem;
         font-weight: 700;
         line-height: 1.25
     }
 }
 
-.listrecent h2.card-title {
+.listrecent .card-title {
     font-size: 1.3rem;
     font-weight: 700;
     line-height: 1.25;
 }
 
-.listfeaturedtag h4.card-text,
-.listrecent h4.card-text {
+.listfeaturedtag .card-text,
+.listrecent .card-text {
     color: rgba(0, 0, 0, .44);
     font-size: .95rem;
     line-height: 1.6;
