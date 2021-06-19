@@ -38,5 +38,6 @@
   <script>var galite=galite||{};galite.UA='{{site.google_analytics}}'</script>
   {% endif %}
   <script data-turbolinks-track="reload">{% if site.lazyimages == "enabled" %}Defer.dom('img.fade',200,'loaded');Defer.dom('.multi-lazy',200,'loaded');{% endif %} {% if site.facebook == "enabled" %}{% if site.fanpage-chat %}Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})}});{% endif %}{% endif %}</script>
+  <script src="/assets/js/instantpage.min.js" type="module" defer="1" data-turbolinks-track="reload"></script>
 </body>
 </html>

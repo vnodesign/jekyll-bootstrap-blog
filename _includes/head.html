@@ -44,6 +44,7 @@
     <link rel="preload" href="/assets/js/turbolinks.min.js" as="script" />
     <link rel="preload" href="/assets/js/plugins.min.js" as="script" />
     <link rel="preload" href="/assets/js/bootstrap.bundle.min.js" as="script" />
+    <link rel="preload" href="/assets/js/instantpage.min.js" as="script" />
     {% if site.google_analytics %}
     <link rel="preload" href="/assets/js/ga-lite.min.js" as="script" />
     {% endif %}
@@ -88,7 +89,7 @@
     <link rel="stylesheet" href="/assets/css/bundle.css" async="1" data-turbolinks-track="reload" />
     {% capture darkmode %}{% include darkmode.scss %}{% endcapture %}
     {% capture main %}{% include main.scss %}{% endcapture %}
-    <style type="text/css">{{ darkmode | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:swap}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}{{ main | scssify }}</style>
+    <style type="text/css" data-turbolinks-track="reload">{{ darkmode | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:swap}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}{{ main | scssify }}</style>
     <!-- Scripts required -->
     <script src="/assets/js/defer.min.js" data-turbolinks-track="reload"></script>
-    <script>'IntersectionObserver' in window||document.write('<link rel="preload" href="/assets/js/polyfill.min.js" as="script" \/><script src="/assets/js/polyfill.min.js"><\/script>');</script>
+    <script data-turbolinks-track="reload">'IntersectionObserver' in window||document.write('<link rel="preload" href="/assets/js/polyfill.min.js" as="script" \/><script src="/assets/js/polyfill.min.js"><\/script>');</script>
