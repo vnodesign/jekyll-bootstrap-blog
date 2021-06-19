@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head itemscope="itemscope" itemtype="https://schema.org/WebSite">
-    <meta name="turbolinks-cache-control" content="no-cache" />
-    <meta name="turbolinks-visit-control" content="reload" />
     <!-- Meta tag seo -->
     {% feed_meta %}
     {% seo %}
@@ -10,8 +8,8 @@
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}" itemscope="itemscope" itemtype="https://schema.org/WebPage">
-  {% include navigation.html %}
-  <div class="site-content" tabindex="0">
+  <div class="site-content" tabindex="0" itemprop="mainContentOfPage" itemscope="" itemtype="https://schema.org/WebPageElement">
+    {% include navigation.html %}
     <main class="container" role="main">
       <!-- Content  -->
       <div class="main-content">
@@ -19,6 +17,7 @@
       </div>
     </main>
     {% include_cached footer.html %}
+  </div>
   </div>
   <!-- /.site-content -->
   {% if site.facebook == "enabled" %}
