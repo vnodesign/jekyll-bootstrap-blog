@@ -11,7 +11,7 @@
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}" itemscope="itemscope" itemtype="https://schema.org/WebPage">
   {% include navigation.html %}
-  <div class="site-content">
+  <div class="site-content" tabindex="0">
     <main class="container" role="main">
       <!-- Content  -->
       <div class="main-content">
