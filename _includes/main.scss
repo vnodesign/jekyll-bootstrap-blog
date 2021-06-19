@@ -126,7 +126,12 @@ section {
     .wrapthumbnail {
         height: 290px;
         flex: 0 0 auto;
-        height: 100%
+        height: 100%;
+
+        img,
+        source {
+        aspect-ratio: 16/9
+        }
     }
 }
 
@@ -134,7 +139,8 @@ section {
     max-height: 300px;
     overflow: hidden;
 
-    img {
+    img,
+    source {
         aspect-ratio: 16/9
     }
 }
