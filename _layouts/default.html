@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head itemscope="itemscope" itemtype="https://schema.org/WebSite">
+  <meta name="turbolinks-cache-control" content="no-cache" />
     <!-- Meta tag seo -->
     {% feed_meta %}
     {% seo %}
@@ -29,15 +30,15 @@
   <!-- All In One Support -->
   <div id="arcontactus" data-turbolinks-permanent="true"></div>
   <!-- Javascript -->
-  <script src="/assets/js/jquery.min.js" defer="1" data-turbolinks-track="reload"></script>
-  <script src="/assets/js/turbolinks.min.js" defer="1" data-turbolinks-suppress-warning></script>
-  <script src="/assets/js/plugins.min.js" defer="1" data-turbolinks-track="reload"></script>
-  <script src="/assets/js/bootstrap.bundle.min.js" defer="1" data-turbolinks-track="reload"></script>
+  <script type="deferjs" src="/assets/js/jquery.min.js" defer="1" data-turbolinks-track="reload"></script>
+  <script type="deferjs" src="/assets/js/turbolinks.min.js" defer="1" data-turbolinks-suppress-warning></script>
+  <script type="deferjs" src="/assets/js/plugins.min.js" async="1" data-turbolinks-track="reload"></script>
+  <script type="deferjs" src="/assets/js/bootstrap.bundle.min.js" async="1" data-turbolinks-track="reload"></script>
   {% if site.google_analytics %}
-  <script src="/assets/js/ga-lite.min.js" defer="1" data-turbolinks-track="reload"></script>
-  <script>var galite=galite||{};galite.UA='{{site.google_analytics}}'</script>
+  <script type="deferjs" src="/assets/js/ga-lite.min.js" async="1" data-turbolinks-track="reload"></script>
+  <script data-turbolinks-track="reload">var galite=galite||{};galite.UA='{{site.google_analytics}}'</script>
   {% endif %}
   <script data-turbolinks-track="reload">{% if site.lazyimages == "enabled" %}Defer.dom('img.fade',200,'loaded');Defer.dom('.multi-lazy',200,'loaded');{% endif %} {% if site.facebook == "enabled" %}{% if site.fanpage-chat %}Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})}});{% endif %}{% endif %}</script>
-  <script src="/assets/js/instantpage.min.js" type="module" defer="1" data-turbolinks-track="reload"></script>
+  <script type="deferjs" src="/assets/js/instantpage.min.js" type="module" async="1" data-turbolinks-track="reload"></script>
 </body>
 </html>
