@@ -20,4 +20,5 @@ group :jekyll_plugins do
     gem 'rouge'
     gem 'jekyll-webp'
     gem 'jekyll-include-cache'
+    gem 'jekyll-minifier'
 end
