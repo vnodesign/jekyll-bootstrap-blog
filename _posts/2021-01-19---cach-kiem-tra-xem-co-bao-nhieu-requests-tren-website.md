@@ -5,8 +5,7 @@ author: tuanducdesign
 categories: [ Website ]
 tags: [Requests, Tăng tốc]
 image: static/media/cach-kiem-tra-xem-co-bao-nhieu-requests-tren-website.jpg
-type_img: jpg
-webp: static/media/cach-kiem-tra-xem-co-bao-nhieu-requests-tren-website.webp
+webp: static/webp/cach-kiem-tra-xem-co-bao-nhieu-requests-tren-website.webp
 description: "Về vấn đề dùng nhiều scripts bên ba thì bạn sẽ không tránh khỏi được có nhiều requests được tải cùng website."
 toc: true
 ---

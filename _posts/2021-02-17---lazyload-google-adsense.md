@@ -5,8 +5,7 @@ author: tuanducdesign
 categories: [ Javascript ]
 tags: [Lazyload, Adsense]
 image: static/media/lazyload-google-adsense.jpg
-type_img: jpg
-webp: static/media/lazyload-google-adsense.webp
+webp: static/webp/lazyload-google-adsense.webp
 description: "Đây là bài viết thứ sáu liên quan đến Lazyload mà mình viết. Ở bài viết này mình sẽ hướng dẫn các bạn sử dụng Lazyload với Google Adsense."
 toc: false
 ---

@@ -5,8 +5,7 @@ author: tuanducdesign
 categories: [ CSS ]
 tags: [Frameworks, CSS, SCSS, Sass, Stylus, LESS, PostCSS]
 image: static/media/css-frameworks.jpg
-type_img: jpg
-webp: static/media/css-frameworks.webp
+webp: static/webp/css-frameworks.webp
 description: "In this article I would like to share with you the list of CSS Frameworks that support Website design."
 featured: true
 hidden: true

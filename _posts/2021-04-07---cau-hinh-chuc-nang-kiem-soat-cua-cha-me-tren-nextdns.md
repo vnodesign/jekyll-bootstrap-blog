@@ -6,8 +6,7 @@ author: tuanducdesign
 categories: [ Series ]
 tags: [Parental Control, Restrict, Websites, Games, Apps, NextDNS]
 image: static/media/cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.png
-type_img: png
-webp: static/media/cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.webp
+webp: static/webp/cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.webp
 description: "Cấu hình chức năng kiểm soát của cha mẹ trên NextDNS. Bảo vệ con cái của bạn dễ dàng hơn với các cấu hình từ cơ bản tới nâng cao."
 toc: true
 ---

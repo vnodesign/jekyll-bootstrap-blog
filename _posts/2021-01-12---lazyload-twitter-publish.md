@@ -5,8 +5,7 @@ author: tuanducdesign
 categories: [ Javascript ]
 tags: [Lazyload, Twitter]
 image: static/media/lazyload-twitter-publish.jpg
-type_img: jpg
-webp: static/media/lazyload-twitter-publish.webp
+webp: static/web/lazyload-twitter-publish.webp
 description: "Trong bài viết tiếp theo của ngày hôm nay mình sẽ hướng dẫn các bạn cách Lazyload script của Twitter để tải trang nhanh hơn."
 toc: false
 ---

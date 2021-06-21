@@ -7,24 +7,24 @@
     <meta name="msapplication-starturl" content="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="theme-color" content="#fe2c55" />
-    <link rel="icon" href="{{ site.favicon }}" />
+    <link rel="icon" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.favicon }}" />
     <link rel="apple-touch-icon" href="{{ site.apple-touch-icon }}" />
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ site.apple-touch-icon-57x57 }}" />
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ site.apple-touch-icon-72x72 }}" />
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ site.apple-touch-icon-76x76 }}" />
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.apple-touch-icon-114x114 }}" />
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ site.apple-touch-icon-120x120 }}" />
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.apple-touch-icon-144x144 }}" />
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.apple-touch-icon-152x152 }}" />
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.apple-touch-icon-180x180 }}" />
-    <link rel="icon" type="image/png" sizes="57x57" href="{{ site.apple-touch-icon-57x57 }}" />
-    <link rel="icon" type="image/png" sizes="72x72" href="{{ site.apple-touch-icon-72x72 }}" />
-    <link rel="icon" type="image/png" sizes="76x76" href="{{ site.apple-touch-icon-76x76 }}" />
-    <link rel="icon" type="image/png" sizes="114x114" href="{{ site.apple-touch-icon-114x114 }}" />
-    <link rel="icon" type="image/png" sizes="120x120" href="{{ site.apple-touch-icon-120x120 }}" />
-    <link rel="icon" type="image/png" sizes="144x144" href="{{ site.apple-touch-icon-144x144 }}" />
-    <link rel="icon" type="image/png" sizes="152x152" href="{{ site.apple-touch-icon-152x152 }}" />
-    <link rel="icon" type="image/png" sizes="180x180" href="{{ site.apple-touch-icon-180x180 }}" />
+    <link rel="apple-touch-icon" sizes="57x57" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-57x57 }}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-72x72 }}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-76x76 }}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-114x114 }}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-120x120 }}" />
+    <link rel="apple-touch-icon" sizes="144x144" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-144x144 }}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-152x152 }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-180x180 }}" />
+    <link rel="icon" type="image/png" sizes="57x57" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-57x57 }}" />
+    <link rel="icon" type="image/png" sizes="72x72" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-72x72 }}" />
+    <link rel="icon" type="image/png" sizes="76x76" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-76x76 }}" />
+    <link rel="icon" type="image/png" sizes="114x114" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-114x114 }}" />
+    <link rel="icon" type="image/png" sizes="120x120" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-120x120 }}" />
+    <link rel="icon" type="image/png" sizes="144x144" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-144x144 }}" />
+    <link rel="icon" type="image/png" sizes="152x152" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-152x152 }}" />
+    <link rel="icon" type="image/png" sizes="180x180" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-180x180 }}" />
     <!-- Preload file -->
     <link rel="preload" href="/assets/js/defer.min.js" as="script" />
     <link rel="preload" href="/assets/js/jquery.min.js" as="script" />

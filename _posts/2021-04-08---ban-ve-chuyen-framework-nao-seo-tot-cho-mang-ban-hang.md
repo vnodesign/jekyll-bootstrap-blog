@@ -5,8 +5,7 @@ author: tuanducdesign
 categories: [ SEO ]
 tags: [Framework, Layout, Title, Image]
 image: static/media/ban-ve-chuyen-framework-nao-seo-tot-cho-mang-ban-hang.png
-type_img: png
-webp: static/media/ban-ve-chuyen-framework-nao-seo-tot-cho-mang-ban-hang.webp
+webp: static/webp/ban-ve-chuyen-framework-nao-seo-tot-cho-mang-ban-hang.webp
 description: "Bàn về chuyện Framework nào seo tốt cho mảng bán hàng, hiện nay có rất nhiều Framework được tạo ra kể đến có Shopify, Pretashop, Ecshop và Laravel."
 toc: true
 ---

@@ -6,8 +6,7 @@ author: tuanducdesign
 categories: [ Series ]
 tags: [bảo mật, NextDNS, tlds, Google, dgas, nrds]
 image: static/media/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.png
-type_img: png
-webp: static/media/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.webp
+webp: static/webp/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.webp
 description: "Trong bài viết kế tiếp này chúng ta cùng tìm hiểu và kích hoạt các chức năng bảo mật trên NextDNS."
 toc: true
 ---

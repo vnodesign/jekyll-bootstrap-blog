@@ -18,7 +18,6 @@ group :jekyll_plugins do
     gem 'jekyll-archives'
     gem 'kramdown'
     gem 'rouge'
-    gem 'jekyll-webp'
     gem 'jekyll-include-cache'
     gem 'jekyll-minifier'
 end

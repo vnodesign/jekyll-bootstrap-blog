@@ -5,8 +5,7 @@ author: tuanducdesign
 categories: [ Library ]
 tags: [Preload, Font, Script, Style, Lazyload, PHP, Composer, Laravel]
 image: static/media/user-guide-for-deferjs-library-by-mai-nhut-tan.jpg
-type_img: jpg
-webp: static/media/user-guide-for-deferjs-library-by-mai-nhut-tan.webp
+webp: static/webp/user-guide-for-deferjs-library-by-mai-nhut-tan.webp
 description: "Đây là một thư viện hiệu suất nguyên bản siêu nhỏ để tải JS, CSS, hình ảnh, iframe ... Trì hoãn hầu hết mọi thứ, dễ dàng tăng tốc trang web của bạn."
 featured: true
 hidden: true

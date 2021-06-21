@@ -6,8 +6,7 @@ author: tuanducdesign
 categories: [ Series ]
 tags: [Blocklists, Adblock, NextDNS]
 image: static/media/cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns.png
-type_img: png
-webp: static/media/cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns.webp
+webp: static/webp/cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns.webp
 description: "Trong bài viết này mình sẽ hướng dẫn các bạn cách cấu hình các chức năng riêng tư trên NextDNS."
 toc: true
 ---

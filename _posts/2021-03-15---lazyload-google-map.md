@@ -5,8 +5,7 @@ author: tuanducdesign
 categories: [ Javascript ]
 tags: [Lazyload, Google, Map, Requests]
 image: static/media/google-maps-logo.png
-type_img: png
-webp: static/media/google-maps-logo.webp
+webp: static/webp/google-maps-logo.webp
 description: "Google Map có thể nói là cái quan trọng nhất với mọi người, không chỉ tìm kiếm vị trí, mà nó còn là cái giúp mọi người tìm kiếm đến doanh nghiệp của bạn."
 toc: true
 ---

@@ -5,8 +5,7 @@ author: tuanducdesign
 categories: [ Server ]
 tags: [Pagespeed, Module, Nginx]
 image: static/media/install-module-page-speed-on-server-nginx.jpg
-type_img: jpg
-webp: static/media/install-module-page-speed-on-server-nginx.webp
+webp: static/webp/install-module-page-speed-on-server-nginx.webp
 description: "ngx_pagespeed tăng tốc website của bạn và giảm thời gian load đáng kể bằng cách tự động áp dụng các kỹ thuật tối ưu hóa page và các thành phần tĩnh."
 featured: true
 hidden: true

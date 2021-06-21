@@ -5,8 +5,7 @@ author: tuanducdesign
 categories: [ Website ]
 tags: [Github, Staticaly, CDN]
 image: static/media/cach-su-dung-github-va-staticaly-de-toi-uu-website.jpg
-type_img: jpg
-webp: static/media/cach-su-dung-github-va-staticaly-de-toi-uu-website.webp
+webp: static/webp/cach-su-dung-github-va-staticaly-de-toi-uu-website.webp
 description: "Ở bài trước mình đã hướng dẫn các bạn tăng tốc Website bằng cách sử dụng Staticaly nhưng ở mức độ cơ bản."
 toc: true
 ---

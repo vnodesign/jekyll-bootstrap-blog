@@ -5,8 +5,7 @@ author: tuanducdesign
 categories: [ HTML ]
 tags: [Preload, Font, Script, Style]
 image: static/media/speed-website-from-preload.jpg
-type_img: jpg
-webp: static/media/speed-website-from-preload.webp
+webp: static/webp/speed-website-from-preload.webp
 description: "Ngày nay khi tối ưu website thì người ta quan trọng nhất là tốc độ và trải nghiệm của người dùng."
 toc: false
 ---

@@ -6,8 +6,7 @@ author: tuanducdesign
 categories: [ Series ]
 tags: [Logs, Ads, NextDNS]
 image: static/media/cach-theo-doi-nhat-ky-tren-nextdns.png
-type_img: png
-webp: static/media/cach-theo-doi-nhat-ky-tren-nextdns.webp
+webp: static/webp/cach-theo-doi-nhat-ky-tren-nextdns.webp
 description: "Cách theo dõi nhật ký trên NextDNS để kiểm tra xem tên miền nào đang bị chặn, và nguyên nhân nó bị chặn do trình chặn quảng cáo nào."
 toc: true
 ---
