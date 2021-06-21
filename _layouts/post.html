@@ -5,7 +5,7 @@ archive: false
 post_class: post-template
 ---
 <!-- Begin Article -->
-<article class="container" itemscope itemtype="https://schema.org/Article">
+<article class="container">
     <div class="row">
         <!-- Post Share -->
         <!-- <div class="col-md-2 pl-0">
@@ -17,14 +17,14 @@ post_class: post-template
         <div class="col-md-12 flex-first flex-md-unordered">
             <div class="mainheading text-center">
                 <!-- Post Title -->
-                <h1 class="posttitle" itemprop="name">
+                <h1 class="posttitle">
                     {{ page.title }}
                 </h1>
                 <p>
                 <!-- Post Author -->
                 {% if page.author %}
                 <span class="post-author">
-                    <a class="link-dark" href="/author/{{ author.username }}" title="{{ author.display_name }}" data-remote="true">
+                    <a class="link-dark" href="/author/{{ author.username }}" title="{{ author.display_name }}" data-remote="true" rel="author">
                         {{ author.display_name }}
                     </a>
                 </span>
@@ -39,7 +39,7 @@ post_class: post-template
                 {% if page.last_modified_at %}
                 <span class="dot"></span>
                 <!-- Post Updated -->
-                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">
                     {{ page.last_modified_at | date: "%b %-d, %Y" }}
                 </time>)
                 {% endif %}
@@ -63,7 +63,7 @@ post_class: post-template
             <!-- End Adsense -->
             {% endif %}
             <!-- Post Content -->
-            <div class="mt-4 mb-4 article-post" itemprop="articleBody">
+            <div class="mt-4 mb-4 article-post">
                 <!-- Toc if any -->
                 {% if page.toc %}
                     {% if page.beforetoc %}
@@ -130,28 +130,3 @@ post_class: post-template
     </div>
 </article>
 <!-- End Article -->
-<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
-https://search.google.com/structured-data/testing-tool/u/0/
-================================================== -->
-{% if page.rating %}
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org/",
-  "@type": "Review",
-  "itemReviewed": {
-    "@type": "Thing",
-    "name": "{{ page.title }}"
-  },
-  "author": {
-    "@type": "Person",
-    "name": "{{ author.display_name }}"
-  },
-  "datePublished": "{{ page.date | date:"%Y-%m-%d" }}",
-  "reviewRating": {
-    "@type": "Rating",
-    "ratingValue": "{{ page.rating }}",
-    "bestRating": "5"
-  }
-}
-</script>
-{% endif %}

@@ -1,6 +1,6 @@
 <!-- begin post -->
 {% assign author = site.authors[post.author] %}
-<article class="col-lg-4 col-md-4 col-sm-6 mb-30px card-group" itemscope itemtype="https://schema.org/Article">
+<article class="col-lg-4 col-md-4 col-sm-6 mb-30px card-group">
     <div class="card h-100">
         <div class="maxthumb">
             <a href="{{ post.url }}" title="{{ post.title }}" data-remote="true">
@@ -8,12 +8,12 @@
                     {% if site.lazyimages == "enabled" %}
                     <picture class="multi-lazy">
                         <source srcset="{% if post.webp contains "://" %}{{ post.webp }}{% else %}/{{ post.webp }}{% endif %}" type="image/webp" />
-                        <img class="img-fluid" src="{% if post.image contains "://" %}{{ post.image }}{% else %}/{{ post.image }}{% endif %}" alt="{{ post.title }}" loading="lazy" decoding="async" itemprop="image" />
+                        <img class="img-fluid" src="{% if post.image contains "://" %}{{ post.image }}{% else %}/{{ post.image }}{% endif %}" alt="{{ post.title }}" loading="lazy" decoding="async" />
                     </picture>
                     {% else %}
                     <picture>
                         <source srcset="{% if post.webp contains "://" %}{{ post.webp }}{% else %}/{{ post.webp }}{% endif %}" type="image/webp" />
-                        <img class="img-fluid" src="{% if post.image contains "://" %}{{ post.image }}{% else %}/{{ post.image }}{% endif %}" alt="{{ post.title }}" itemprop="image" />
+                        <img class="img-fluid" src="{% if post.image contains "://" %}{{ post.image }}{% else %}/{{ post.image }}{% endif %}" alt="{{ post.title }}" />
                     </picture>
                     {% endif %}
                 {% endif %}
@@ -21,7 +21,7 @@
         </div>
         <div class="card-body">
             <h2 class="card-title" itemprop="name">
-                <a class="text-dark" href="{{ post.url }}" title="{{ post.title }}" itemprop="url" data-remote="true">
+                <a class="text-dark" href="{{ post.url }}" title="{{ post.title }}" data-remote="true">
                     {{ post.title }}
                 </a>
                 {% if post.rating %}
@@ -54,7 +54,7 @@
                 </span>
                 <span class="author-meta">
                     <span class="post-name">
-                        <a href="/author/{{ author.username }}" title="{{ author.display_name }}" data-remote="true">
+                        <a href="/author/{{ author.username }}" title="{{ author.display_name }}" data-remote="true" rel="author">
                             {{ author.display_name }}
                         </a>
                     </span>

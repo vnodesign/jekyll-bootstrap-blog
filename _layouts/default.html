@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" data-no-turbolink="true" data-turbolinks="false">
-<head itemscope="itemscope" itemtype="https://schema.org/WebSite">
+<html lang="en">
+<head itemscope itemtype="https://schema.org/WebSite">
   <meta name="turbolinks-cache-control" content="no-cache" />
     <!-- Meta tag seo -->
     {% feed_meta %}
@@ -8,8 +8,8 @@
   {% include_cached head.html %}
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
-<body class="{{layout}}" itemscope="itemscope" itemtype="https://schema.org/WebPage">
-  <div class="site-content" tabindex="0" itemprop="mainContentOfPage" itemscope="" itemtype="https://schema.org/WebPageElement" data-no-turbolink="true" data-turbolinks="false">
+<body class="{{layout}}" itemscope itemtype="https://schema.org/WebPage">
+  <div class="site-content" tabindex="0">
     {% include navigation.html %}
     <main class="container" role="main">
       <!-- Content  -->
@@ -20,23 +20,21 @@
     {% include_cached footer.html %}
   </div>
   <!-- /.site-content -->
-  {% if site.facebook == "enabled" %}
   {% if site.fanpage-chat %}
   <!-- Messenger Plugin chat -->
   <div id="fb-root" data-turbolinks-permanent="true"></div>
   <div class="fb-customerchat" attribution="biz_inbox" page_id="{{site.fanpage-chat}}" data-lazy="true" greeting_dialog_display="icon" data-turbolinks-permanent="true"></div>
   {% endif %}
-  {% endif %}
   <!-- Javascript -->
-  <script type="deferjs" src="/assets/js/jquery.min.js" defer="1" data-turbolinks-track="reload"></script>
-  <script type="deferjs" src="/assets/js/turbolinks.min.js" defer="1" data-turbolinks-suppress-warning></script>
+  <script src="/assets/js/jquery.min.js" defer="1" data-turbolinks-track="reload"></script>
+  <script src="/assets/js/turbolinks.min.js" defer="1" data-turbolinks-suppress-warning></script>
   <script src="/assets/js/plugins.min.js" defer="1" data-turbolinks-track="reload"></script>
   <script src="/assets/js/bootstrap.bundle.min.js" defer="1" data-turbolinks-track="reload"></script>
   {% if site.google_analytics %}
-  <script type="deferjs" src="/assets/js/ga-lite.min.js" async="1" data-turbolinks-track="reload"></script>
+  <script src="/assets/js/ga-lite.min.js" async="1" data-turbolinks-track="reload"></script>
   <script data-turbolinks-track="reload">var galite=galite||{};galite.UA='{{site.google_analytics}}'</script>
   {% endif %}
-  <script data-turbolinks-track="reload">{% if site.lazyimages == "enabled" %}Defer.dom('img.fade',200,'loaded');Defer.dom('.multi-lazy',200,'loaded');{% endif %} {% if site.facebook == "enabled" %}{% if site.fanpage-chat %}Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})}});{% endif %}{% endif %}</script>
-  <script type="deferjs" src="/assets/js/instantpage.min.js" type="module" async="1" data-turbolinks-track="reload"></script>
+  <script data-turbolinks-track="reload">{% if site.lazyimages == "enabled" %}Defer.dom('img.fade',200,'loaded');Defer.dom('.multi-lazy',200,'loaded');{% endif %}{% if site.fanpage-chat %}Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})}});{% endif %}</script>
+  <script src="/assets/js/instantpage.min.js" type="module" async="1" data-turbolinks-track="reload"></script>
 </body>
 </html>

@@ -25,19 +25,6 @@
     <link rel="icon" type="image/png" sizes="144x144" href="{{ site.apple-touch-icon-144x144 }}" />
     <link rel="icon" type="image/png" sizes="152x152" href="{{ site.apple-touch-icon-152x152 }}" />
     <link rel="icon" type="image/png" sizes="180x180" href="{{ site.apple-touch-icon-180x180 }}" />
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org/",
-          "@type": "WebSite",
-          "name": "{{site.name}}",
-          "url": "/",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://cse.google.com/cse?cx=f8de27089149e0ecc&ie=UTF-8&q={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        }
-    </script>
     <!-- Preload file -->
     <link rel="preload" href="/assets/js/defer.min.js" as="script" />
     <link rel="preload" href="/assets/js/jquery.min.js" as="script" />
@@ -48,15 +35,12 @@
     {% if site.google_analytics %}
     <link rel="preload" href="/assets/js/ga-lite.min.js" as="script" />
     {% endif %}
-    {% if site.facebook == "enabled" %}
     {% if site.fanpage-chat %}
     <link rel="preload" href="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" as="script" />
-    {% endif %}
     {% endif %}
     <link rel="preload" href="/assets/fonts/bootstrap-icons.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/assets/fonts/bootstrap-icons.woff" as="font" type="font/woff" crossorigin />
     <!-- Prefetch Domain -->
-    {% if site.facebook == "enabled" %}
     {% if site.fanpage-chat %}
     <link rel="dns-prefetch" href="//static.xx.fbcdn.net" />
     <link rel="dns-prefetch" href="//scontent.fhan3-2.fna.fbcdn.net" />
@@ -67,12 +51,10 @@
     <link rel="dns-prefetch" href="//static.xx.fbcdn.net" />
     <link rel="dns-prefetch" href="//staticxx.facebook.com" />
     {% endif %}
-    {% endif %}
     {% if site.google_analytics %}
     <link rel="dns-prefetch" href="//www.google-analytics.com" />
     {% endif %}
     <!-- Preconnect Domain -->
-    {% if site.facebook == "enabled" %}
     {% if site.fanpage-chat %}
     <link rel="preconnect" href="https://static.xx.fbcdn.net" />
     <link rel="preconnect" href="https://connect.facebook.net" />
@@ -81,14 +63,13 @@
     <link rel="preconnect" href="https://static.xx.fbcdn.net" />
     <link rel="preconnect" href="https://staticxx.facebook.com" />
     {% endif %}
-    {% endif %}
     {% if site.google_analytics %}
     <link rel="preconnect" href="https://www.google-analytics.com" />
     {% endif %}
     <!-- Style -->
     <link rel="stylesheet" href="/assets/css/bundle.css" async="1" data-turbolinks-track="reload" />
-    {% capture darkmode %}{% include darkmode.scss %}{% endcapture %}
-    {% capture main %}{% include main.scss %}{% endcapture %}
+    {% capture darkmode %}{% include_cached darkmode.scss %}{% endcapture %}
+    {% capture main %}{% include_cached main.scss %}{% endcapture %}
     <style type="text/css" data-turbolinks-track="reload">{{ darkmode | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:swap}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}{{ main | scssify }}</style>
     <!-- Scripts required -->
     <script src="/assets/js/defer.min.js" data-turbolinks-track="reload"></script>
