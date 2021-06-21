@@ -1,169 +1,139 @@
-# Site
-name: "Tuan Duc Design"
-title: "Tuan Duc Design"
-subtitle: "Specialist site to share knowledge of VPS and Website"
-description: "Specialist page sharing knowledge related to VPS development and Website optimization."
-logo: '/static/tuanducdesign.jpg'
-favicon: '/static/tuanducdesign.jpg'
-apple-touch-icon: '/static/tuanducdesign.jpg'
-apple-touch-icon-57x57: '/static/apple-touch-icon-57x57.png'
-apple-touch-icon-72x72: '/static/apple-touch-icon-72x72.png'
-apple-touch-icon-76x76: '/static/apple-touch-icon-76x76.png'
-apple-touch-icon-114x114: '/static/apple-touch-icon-114x114.png'
-apple-touch-icon-120x120: '/static/apple-touch-icon-120x120.png'
-apple-touch-icon-144x144: '/static/apple-touch-icon-144x144.png'
-apple-touch-icon-152x152: '/static/apple-touch-icon-152x152.png'
-apple-touch-icon-180x180: '/static/apple-touch-icon-180x180.png'
-baseurl:
-url: 'https://tuanducdesign.com'
-google_analytics: 'UA-175649416-1'
-disqus: 'tuanducdesign'
-facebook: 'enabled'
-fanpage-chat: '121349286117840'
-permalink: /:year/:month/:title.html
+---
+name: Tuan Duc Design
+title: Tuan Duc Design
+subtitle: Specialist site to share knowledge of VPS and Website
+description: Specialist page sharing knowledge related to VPS development and Website
+  optimization.
+logo: https://res.cloudinary.com/td-blog/image/upload/v1624277540/static/tuanducdesign.jpg
+favicon: https://res.cloudinary.com/td-blog/image/upload/v1624277540/static/tuanducdesign.jpg
+apple-touch-icon: https://res.cloudinary.com/td-blog/image/upload/v1624277540/static/tuanducdesign.jpg
+apple-touch-icon-57x57: https://res.cloudinary.com/td-blog/image/upload/v1624277540/static/apple-touch-icon-57x57.png
+apple-touch-icon-72x72: https://res.cloudinary.com/td-blog/image/upload/v1624277540/static/apple-touch-icon-72x72.png
+apple-touch-icon-76x76: https://res.cloudinary.com/td-blog/image/upload/v1624277540/static/apple-touch-icon-76x76.png
+apple-touch-icon-114x114: https://res.cloudinary.com/td-blog/image/upload/v1624277540/static/apple-touch-icon-114x114.png
+apple-touch-icon-120x120: https://res.cloudinary.com/td-blog/image/upload/v1624277540/static/apple-touch-icon-120x120.png
+apple-touch-icon-144x144: https://res.cloudinary.com/td-blog/image/upload/v1624277540/static/apple-touch-icon-144x144.png
+apple-touch-icon-152x152: https://res.cloudinary.com/td-blog/image/upload/v1624277540/static/apple-touch-icon-152x152.png
+apple-touch-icon-180x180: https://res.cloudinary.com/td-blog/image/upload/v1624277540/static/apple-touch-icon-180x180.png
+baseurl: 
+url: https://tuanducdesign.com
+google_analytics: UA-175649416-1
+disqus: tuanducdesign
+facebook:
+  app_id: "294587991860787"
+  publisher: "121349286117840"
+  admins: "100005485267478"
+fanpage-chat: "121349286117840"
+permalink: "/:year/:month/:title.html"
 twitter:
   username: tuanducdesign
   card: summary_large_image
-facebook:
-  app_id: 294587991860787
-  publisher: 121349286117840
-  admins: 100005485267478
 social:
   name: Tuan Duc Design
   links:
-    - https://twitter.com/tuanducdesign
-    - https://www.facebook.com/tuanduc.support
-    - https://www.instagram.com/mi.profile.56
-    - https://github.com/tuanducdesign
+  - https://twitter.com/tuanducdesign
+  - https://www.facebook.com/tuanduc.support
+  - https://www.instagram.com/mi.profile.56
+  - https://github.com/tuanducdesign
 defaults:
-  - scope:
-      path: ""
-    values:
-      image: /static/CA0E67E9-AAD0-4D36-82D8-674C7504DFD1.jpg
+- scope:
+    path: ''
+  values:
+    image: "/static/CA0E67E9-AAD0-4D36-82D8-674C7504DFD1.jpg"
 timezone: Asia/Ho_Chi_Minh
-# Authors
 authors:
   tuanducdesign:
     name: Tuan Duc Design
     username: tuanducdesign
     display_name: Tuan Duc Design
-    photo: /static/tuanducdesign.jpg
+    photo: https://res.cloudinary.com/td-blog/image/upload/v1624277540/static/tuanducdesign.jpg
     email: miumiu.official.56@gmail.com
     web: https://tuanducdesign.com
     facebook: tuanduc.support
     twitter: tuanducdesign
     instagram: mi.profile.56
-    description: "Ask me about Optimize Website, Install VPS, Hosting Selection..."
-
-# Plugins
+    description: Ask me about Optimize Website, Install VPS, Hosting Selection...
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-archives
-  - jekyll-include-cache  
-  - jekyll-minifier
-
-# Archives
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-archives
+- jekyll-include-cache
+- jekyll-minifier
 jekyll-archives:
   enabled:
-    - categories
+  - categories
   layout: archive
   permalinks:
-    category: '/category/:name/'
-    
-# Pagination 
-paginate: 6
-paginate_path: /page/:num/
-    
-# Other
+    category: "/category/:name/"
+paginate: "6"
+paginate_path: "/page/:num/"
 markdown: kramdown
-
 kramdown:
   input: GFM
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     block:
       line_numbers: true
-
-# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
-adsense: "disabled"
-adsense-data-ad-client: "ca-pub-xxxxxxxxxxxxxxxx"
-adsense-data-ad-slot: "xxxxxxxxxx"
-
-# Lazy Images ("enabled" or "disabled")
-lazyimages: "enabled"
-
+adsense: disabled
+adsense-data-ad-client: ca-pub-xxxxxxxxxxxxxxxx
+adsense-data-ad-slot: xxxxxxxxxx
+lazyimages: enabled
 sass:
   style: compressed
-
-include: [.htaccess, _pages, manifest.json]
-
-exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, .jekyll-cache]
-
-keep_files: [static]
-
-############################################################
-# Site configuration for the WebP Generator Plugin
-# The values here represent the defaults if nothing is set
+include:
+- ".htaccess"
+- _pages
+- manifest.json
+exclude:
+- changelog.md
+- LICENSE.txt
+- README.md
+- Gemfile
+- Gemfile.lock
+- ".jekyll-cache"
+keep_files:
+- static
 webp:
   enabled: true
-  
-  # The quality of the webp conversion 0 to 100 (where 100 is least lossy)
-  quality: 75
-
-  # List of directories containing images to optimize, nested directories will only be checked if `nested` is true
-  # By default the generator will search for a folder called `/img` under the site root and process all jpg, png and tiff image files found there.
-  img_dir: ["/static/media"]
-
-  # Whether to search in nested directories or not
+  quality: "75"
+  img_dir:
+  - "/static/media"
   nested: false
-
-  # add ".gif" to the format list to generate webp for animated gifs as well
-  formats: [".jpeg", ".jpg", ".png", ".tiff"]
-
-  # File extensions for animated gif files 
-  gifs: [".gif"]
-
-  # Set to true to always regenerate existing webp files
+  formats:
+  - ".jpeg"
+  - ".jpg"
+  - ".png"
+  - ".tiff"
+  gifs:
+  - ".gif"
   regenerate: false
-
-  # Local path to the WebP utilities to use (relative or absolute)
-  # Omit or leave as nil to use the utilities shipped with the gem, override only to use your local install
-  webp_path: /static/media
-
-  # List of files or directories to exclude
-  # e.g. custom or hand generated webp conversion files
+  webp_path: "/static/media"
   exclude: []
-
-  # append '.webp' to filename after original extension rather than replacing it.
-  # Default transforms `image.png` to `image.webp`, while changing to true transforms `image.png` to `image.png.webp`
   append_ext: true
-############################################################
-
 jekyll-minifier:
-  exclude: 'feed.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
-  preserve_php: true                # Default: false
-  remove_spaces_inside_tags: true   # Default: true
-  remove_multi_spaces: true         # Default: true
-  remove_comments: true             # Default: true
-  remove_intertag_spaces: true      # Default: false
-  remove_quotes: true              # Default: false
-  compress_css: true                # Default: true
-  compress_javascript: true         # Default: true
-  compress_json: true               # Default: true
-  simple_doctype: true             # Default: false
-  remove_script_attributes: false   # Default: false
-  remove_style_attributes: false    # Default: false
-  remove_link_attributes: false     # Default: false
-  remove_form_attributes: false     # Default: false
-  remove_input_attributes: false    # Default: false
-  remove_javascript_protocol: false # Default: false
-  remove_http_protocol: false       # Default: false
-  remove_https_protocol: false      # Default: false
-  preserve_line_breaks: true       # Default: false
-  simple_boolean_attributes: false  # Default: false
-  compress_js_templates: false      # Default: false
-  preserve_patterns:                # Default: (empty)
-  uglifier_args:                    # Default: (empty)
+  exclude: feed.xml
+  preserve_php: true
+  remove_spaces_inside_tags: true
+  remove_multi_spaces: true
+  remove_comments: true
+  remove_intertag_spaces: true
+  remove_quotes: true
+  compress_css: true
+  compress_javascript: true
+  compress_json: true
+  simple_doctype: true
+  remove_script_attributes: false
+  remove_style_attributes: false
+  remove_link_attributes: false
+  remove_form_attributes: false
+  remove_input_attributes: false
+  remove_javascript_protocol: false
+  remove_http_protocol: false
+  remove_https_protocol: false
+  preserve_line_breaks: true
+  simple_boolean_attributes: false
+  compress_js_templates: false
+  preserve_patterns: 
+  uglifier_args: 
