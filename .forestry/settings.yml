@@ -5,7 +5,7 @@ admin_path: admin
 webhook_url: 
 sections:
 - type: document
-  path: ''
+  path: "*"
   label: Root
 - type: directory
   path: ''
