@@ -494,30 +494,5 @@
                 opacity: 1
             }
         }
-
-        .arcontactus-widget {
-            .arcontactus-prompt {
-                background-color: var(--nav-bar-background) !important;
-                color: #fff !important;
-
-                &::before {
-                    border-left: 8px solid var(--nav-bar-background) !important
-                }
-            }
-
-            .messangers-block {
-                background-color: var(--nav-bar-background) !important;
-
-                &::before {
-                    border-top: 8px solid var(--nav-bar-background) !important
-                }
-            }
-
-            .messanger {
-                &:hover {
-                    background-color: var(--comment-background) !important
-                }
-            }
-        }
     }
 }
