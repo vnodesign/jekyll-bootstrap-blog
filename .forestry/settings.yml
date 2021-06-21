@@ -8,7 +8,7 @@ sections:
   path: ''
   label: File Manager
   create: all
-  match: "*/"
+  match: "*"
 - type: jekyll-posts
   label: Posts
   create: all
