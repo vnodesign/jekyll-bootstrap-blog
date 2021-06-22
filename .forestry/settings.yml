@@ -4,9 +4,6 @@ auto_deploy: false
 admin_path: admin
 webhook_url: 
 sections:
-- type: document
-  path: "*"
-  label: Root
 - type: directory
   path: ''
   label: File Manager
