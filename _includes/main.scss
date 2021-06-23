@@ -109,11 +109,6 @@ section {
         -moz-column-count: 2;
         column-count: 2
     }
-    .card-columns.listrecenttag {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2
-    }
 }
 
 @media (min-width:992px) {
@@ -123,8 +118,7 @@ section {
     }
 }
 
-.listfeaturedtag,
-.listrecenttag {
+.listfeaturedtag {
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem;
     transition: all .3s cubic-bezier(.25, .8, .25, 1);
@@ -152,13 +146,11 @@ section {
 }
 
 .listfeaturedtag .card,
-.listrecenttag .card,
 .card-footer {
     border: 0;
 }
 
-.listfeaturedtag,
-.listrecenttag {
+.listfeaturedtag {
     .thumbnail {
         background-size: cover;
         height: 100%;
@@ -187,7 +179,6 @@ section {
 }
 
 .listfeaturedtag .card-text,
-.listrecenttag .card-text,
 .listrecent .card-text {
     color: rgba(0, 0, 0, .44);
     font-size: .95rem;
@@ -493,8 +484,7 @@ blockquote {
         border-radius: 0
     }
 
-    .listfeaturedtag,
-    .listrecenttag {
+    .listfeaturedtag {
         .card {
             height: auto
         }
