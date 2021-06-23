@@ -2,7 +2,6 @@
 layout: default
 title: Home
 ---
-
 {% if page.url == "/" %}
 <!-- Featured  -->
 <section class="featured-posts">
@@ -18,19 +17,58 @@ title: Home
     </div>
 </section>
 {% endif %}
-<section class="recent-posts">
-    <div class="section-title">
-        <h2><span>Recent Posts</span></h2>
+<div class="row">
+    <div class="article col-md-8 col-lg-8 col-sm-8">
+        <section class="recent-posts">
+            <div class="section-title">
+                <h2><span>Recent Posts</span></h2>
+            </div>
+            <div class="row">
+                {% for post in paginator.posts %}
+                {% include postbox.html %}
+                {% endfor %}
+            </div>
+        </section>
+        <!-- Pagination -->
+        <div class="bottompagination">
+            <span class="navigation">
+                {% include pagination.html %}
+            </span>
+        </div>
     </div>
-    <div class="row listrecent">
-        {% for post in paginator.posts %}
-        {% include postbox.html %}
-        {% endfor %}
-    </div>
-</section>
-<!-- Pagination -->
-<div class="bottompagination">
-    <span class="navigation">
-        {% include pagination.html %}
-    </span>
+    <aside class="sidebar col-md-4 col-lg-4 col-sm-4" role="complementary" itemscope itemtype="https://schema.org/WPSideBar">
+        <!-- Follow categories -->
+        <div class="section-title">
+            <h3><span>Follow categories</span></h3>
+        </div>
+        <div class="row">
+            {% assign categories_list = site.categories %}
+            {% if categories_list.first[0] == null %}
+            {% for category in categories_list %}
+            <div class="col-md-3 col-lg-3 col-sm-3 categories">
+                <a class="btn follow" href="/categories#{{ category | url_escape | strip | replace: ' ', '-' }}" title="{{ category | camelcase }}">{{ category | camelcase }}</a>
+            </div>
+            {% endfor %}
+            {% else %}
+            {% for category in categories_list %}
+            <div class="col-md-3 col-lg-3 col-sm-3 categories">
+                <a class="btn follow" href="/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}" title="{{ category[0] | camelcase }}">{{ category[0] | camelcase }}</a>
+            </div>
+            {% endfor %}
+            {% endif %}
+            {% assign categories_list = nil %}
+        </div>
+        <!-- Follow author -->
+        <div class="section-title">
+            <h3><span>Follow author</span></h3>
+        </div>
+        <div class="row">
+            {% for author in site.authors %}
+            <div class="col-md-3 authors">
+                <a href="/author/{{ author[1].username | slugify }}" title="{{ author[1].name }}">{{ author[1].name }}</a>
+                <span class="small"><a class="btn follow" href="https://www.facebook.com/{{ author[1].facebook }}" title="Follow" target="_blank" rel="nofollow noopener">Follow</a></span>
+            </div>
+            {% endfor %}
+        </div>
+    </aside>
 </div>

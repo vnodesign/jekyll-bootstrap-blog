@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head itemscope itemtype="https://schema.org/WebSite">
-  <meta name="turbolinks-cache-control" content="no-cache" />
     <!-- Meta tag seo -->
     {% feed_meta %}
     {% seo %}
-  {% include_cached head.html %}
+  {% include head.html %}
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}" itemscope itemtype="https://schema.org/WebPage">
