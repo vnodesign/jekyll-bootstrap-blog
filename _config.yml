@@ -5,7 +5,7 @@ subtitle: Specialist site to share knowledge of VPS and Website
 description: Specialist page sharing knowledge related to VPS development and Website
   optimization.
 cdn: "enabled"
-cdn-cloudinary: "https://res.cloudinary.com/td-blog/image/upload/dpr_1.0,e_improve,f_auto,q_auto:good/v1624277540"
+cdn-cloudinary: "https://res.cloudinary.com/td-blog/image/upload/dpr_1.0,e_improve,f_auto,q_auto:good"
 cdn-s3:
 cdn-netlify:
 logo: /static/tuanducdesign.jpg
