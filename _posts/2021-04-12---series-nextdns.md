@@ -14,7 +14,7 @@ rating: 5
 toc: true
 ---
 
-Đây là danh sách các series hướng dẫn sử dụng NextDNS có trên [Tuan Duc Design]({{ site.url }}/). Từ cài đặt NextDNS đến cấu hình NextDNS và cuối cùng là bảo vệ gia đình bằng NextDNS.
+Chào mừng bạn đến với chuỗi Series hướng dẫn sử dụng NextDNS, đây là danh sách các series hướng dẫn sử dụng NextDNS có trên [Tuan Duc Design]({{ site.url }}/). Từ cài đặt NextDNS đến cấu hình NextDNS và cuối cùng là bảo vệ gia đình bằng NextDNS.
 
 ## Hướng dẫn cấu hình và sử dụng NextDNS
 
@@ -113,3 +113,13 @@ Những gì có được sau khi hoàn thành bước này:
 - Biết cách thay đổi tên của cấu hình.
 
 {% include internal-link.html href="series/tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.html" title="Xem thêm →" %}
+
+## Hướng dẫn cấu hình NOIP để hoạt động với NextDNS
+
+{% include image.html src="huong-dan-cau-hinh-noip-de-hoat-dong-voi-nextdns.png" webp="huong-dan-cau-hinh-noip-de-hoat-dong-voi-nextdns.webp" type="png" alt="Hướng dẫn cấu hình NOIP để hoạt động với NextDNS" %}
+
+Những gì có được sau khi hoàn thành bước này:
+
+- Biết cách cấu hình DDNS nói chung và NOIP nói riêng.
+
+{% include internal-link.html href="series/huong-dan-cau-hinh-noip-de-hoat-dong-voi-nextdns.html" title="Xem thêm →" %}

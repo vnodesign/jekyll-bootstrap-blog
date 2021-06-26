@@ -13,7 +13,7 @@ toc: true
 
 Thêm một chức năng nữa mà mình muốn nhắc đến đối với các bậc làm, làm mẹ đó chính là chức năng kiểm soát của cha mẹ. Chức năng này sẽ giúp bạn quản lý con cái dễ dàng hơn.
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
 
 {% include image.html src="cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.png" webp="cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.webp" type="png" alt="Cấu hình chức năng kiểm soát của cha mẹ trên NextDNS" %}
 

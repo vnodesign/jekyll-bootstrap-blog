@@ -67,7 +67,7 @@ Bước 5: Tạo tên đăng nhập cho tài khoản bạn vào link này: {% in
 
 Chúng ta điền **Username** muốn tạo rồi nhấn **Save** để tạo tài khoản cho tên miền bạn. Nhiều modem yêu cầu tài khoản nên chúng ta bắt buộc phải dùng tài khoản này, dùng email nó sẽ không nhận.
 
-### Cấu hình NOIP lên router
+## Cấu hình NOIP lên router
 
 Chú ý: cách này mình làm với router GPON ONT (Igate GW020). Những bạn dùng thiết bị khác, thì có thể lên Google để tìm cách cấu hình NOIP trên thiết bị đó.
 
@@ -85,7 +85,7 @@ Tìm Advanced Features → DNS bên trong giao diện, tìm tiếp Dynamic DNS. 
 
 Sau đó bấm **Apply/Save** là được.
 
-### Cấu hình DDNS hostname của NOIP qua Linked IP
+## Cấu hình DDNS hostname của NOIP qua Linked IP
 
 Trong mục **Linked IP**, bạn bấm vào **Show advanced options**. Tiếp theo bạn bấm vào **Configure DDNS** trong Configure DDNS, bạn nhập tên miền bạn cần kết nối (tương tự như ở mục Hostname, khi cấu hình NOIP trên router).
 

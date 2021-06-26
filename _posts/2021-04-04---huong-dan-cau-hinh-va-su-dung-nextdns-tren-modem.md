@@ -13,7 +13,7 @@ toc: true
 
 Mình vừa tìm được một dịch vụ DNS khá hay, nên trước khi viết bài này mình cũng đã thử áp dụng và đã thành công. Dịch vụ mà mình muốn nhắc đến ở đây đó là {% include external-link.html href="https://nextdns.io/" title="NextDNS" %}.
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 9 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
 
 {% include image.html src="huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg" webp="huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.webp" type="jpeg" alt="Hướng dẫn cấu hình và sử dụng NextDNS trên Modem" %}
 
@@ -119,7 +119,7 @@ Là bạn chưa sử dụng DNS mạng do NextDNS cung cấp, để sử dụng 
 
 Tại đây bạn có một bảng thông tin như sau:
 
-{% include image.html src="endpoints.png" alt="Endpoints" %}
+{% include image.html src="endpoints.png" webp="endpoints.webp" type="png" alt="Endpoints" %}
 
 Đây là thông tin trên NextDNS của bạn, với ID thì nó sẽ được sử dụng trong 7 cách, sử dụng thiết bị chạy hệ điều hành **Android**, **IOS**, **Windows**, **MacOS**, **Linux**, **ChromeOS** và sử dụng trên **trình duyệt**. IPv6 cũng là thông tin tuỳ chọn để cấu hình trong 8 cách trên.
 
@@ -168,7 +168,7 @@ Chú ý: Mạng của bạn không hỗ trợ IPv6
 - Nhấn và giữ mạng bạn đã kết nối, sau đó nhấn vào Modify Network.
 - Trên một số thiết bị, bạn có thể cần chọn hộp Advanced để xem các cài đặt khác. Để điều chỉnh cài đặt DNS của mình, bạn sẽ cần chuyển cài đặt IP từ DHCP sang Tĩnh.
 - Nhập 2a07:a8c0::af:1fd7 cho DNS 1 và 2a07:a8c1::af:1fd7 cho DNS 2
-- Sau nó nhấn Save.
+- Sau đó nhấn Save.
 
 #### Thêm IPv4 vào mạng trên Android với IP được liên kết
 
@@ -176,7 +176,7 @@ Chú ý: Mạng của bạn không hỗ trợ IPv6
 - Nhấn và giữ mạng bạn đã kết nối, sau đó nhấn vào Modify Network.
 - Trên một số thiết bị, bạn có thể cần chọn hộp Advanced để xem các cài đặt khác. Để điều chỉnh cài đặt DNS của mình, bạn sẽ cần chuyển cài đặt IP từ DHCP sang Static.
 - Nhập 45.90.28.16 cho DNS 1 và 45.90.30.16 cho DNS 2.
-- Sau nó nhấn Save.
+- Sau đó nhấn Save.
 
 ### Với IOS
 
@@ -205,7 +205,7 @@ Chú ý: Mạng của bạn không hỗ trợ IPv6
 - Trong phần DNS, chuyển đến Configure DNS.
 - Chọn Manual.
 - Trong danh sách DNS SERVERS, hãy xóa tất cả địa chỉ (nếu có), sau đó thêm 2a07:a8c0::af:1fd7 và 2a07:a8c1::af:1fd7.
-- Sau nó nhấn Save.
+- Sau đó nhấn Save.
 
 #### Thêm IPv4 vào mạng trên IOS với IP được liên kết
 
@@ -214,7 +214,7 @@ Chú ý: Mạng của bạn không hỗ trợ IPv6
 - Trong phần DNS, chuyển đến Configure DNS.
 - Chọn Manual.
 - Trong danh sách DNS SERVERS, hãy xóa tất cả địa chỉ (nếu có), sau đó thêm 45.90.28.16 và 45.90.30.16.
-- Sau nó nhấn Save.
+- Sau đó nhấn Save.
 
 ### Với Windows
 
