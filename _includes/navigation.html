@@ -13,40 +13,40 @@
                     <h1 class="d-none" itemprop="name">{{ site.name }}</h1>
                 </a>
                 <!-- End Logo -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish"
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarMediumish">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Begin Menu -->
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item {% if page.url == "/" %}active{% endif %}">
+                        <li class="nav-item{% if page.url == "/" %} active{% endif %}">
                             <a class="nav-link" href="/" title="Home" itemprop="url"{% if page.url == "/" %}aria-current="page"{% endif %} onClick="ga('send', 'event', 'navigation', 'click', 'home');">
                                 <span itemprop="name">Home</span>
                             </a>
                         </li>
-                        <li class="nav-item {% if page.url == "/pages/my-customer" %}active{% endif %}">
-                            <a class="nav-link" href="/pages/my-customer" title="My customer" itemprop="url" {% if page.url == "/pages/my-customer" %}aria-current="page"{% endif %} onClick="ga('send', 'event', 'navigation', 'click', 'my-customer');">
+                        <li class="nav-item{% if page.url == "/pages/my-customer" %} active{% endif %}">
+                            <a class="nav-link" href="/pages/my-customer" title="My customer" itemprop="url"{% if page.url == "/pages/my-customer" %} aria-current="page"{% endif %} onClick="ga('send', 'event', 'navigation', 'click', 'my-customer');">
                                 <span itemprop="name">My customer</span>
                             </a>
                         </li>
-                        <li class="nav-item {% if page.url == "/pages/contacts" %}active{% endif %}">
-                            <a class="nav-link" href="/pages/contacts" title="Contacts" itemprop="url" {% if page.url == "/pages/contacts" %}aria-current="page"{% endif %} onClick="ga('send', 'event', 'navigation', 'click', 'contacts');">
+                        <li class="nav-item{% if page.url == "/pages/contacts" %} active{% endif %}">
+                            <a class="nav-link" href="/pages/contacts" title="Contacts" itemprop="url"{% if page.url == "/pages/contacts" %} aria-current="page"{% endif %} onClick="ga('send', 'event', 'navigation', 'click', 'contacts');">
                                 <span itemprop="name">Contacts</span>
                             </a>
                         </li>
-                        <li class="nav-item {% if page.url == "/series" %}active{% endif %}">
-                            <a class="nav-link" href="/series" title="Series" itemprop="url" {% if page.url == "/series" %}aria-current="page"{% endif %} onClick="ga('send', 'event', 'navigation', 'click', 'series');">
+                        <li class="nav-item{% if page.url == "/series" %} active{% endif %}">
+                            <a class="nav-link" href="/series" title="Series" itemprop="url"{% if page.url == "/series" %} aria-current="page"{% endif %} onClick="ga('send', 'event', 'navigation', 'click', 'series');">
                                 <span itemprop="name">Series</span>
                             </a>
                         </li>
-                        <li class="nav-item {% if page.url == "/categories" %}active{% endif %}">
-                            <a class="nav-link" href="/categories" title="Categories" itemprop="url" {% if page.url == "/categories" %}aria-current="page"{% endif %} onClick="ga('send', 'event', 'navigation', 'click', 'categories');">
+                        <li class="nav-item{% if page.url == "/categories" %} active{% endif %}">
+                            <a class="nav-link" href="/categories" title="Categories" itemprop="url"{% if page.url == "/categories" %} aria-current="page"{% endif %} onClick="ga('send', 'event', 'navigation', 'click', 'categories');">
                                 <span itemprop="name">Categories</span>
                             </a>
                         </li>
-                        <li class="nav-item {% if page.url == "/tags" %}active{% endif %}">
-                            <a class="nav-link" href="/tags" title="Tags" itemprop="url" {% if page.url == "/tags" %}aria-current="page"{% endif %} onClick="ga('send', 'event', 'navigation', 'click', 'tags');">
+                        <li class="nav-item{% if page.url == "/tags" %} active{% endif %}">
+                            <a class="nav-link" href="/tags" title="Tags" itemprop="url"{% if page.url == "/tags" %} aria-current="page"{% endif %} onClick="ga('send', 'event', 'navigation', 'click', 'tags');">
                                 <span itemprop="name">Tags</span>
                             </a>
                         </li>
