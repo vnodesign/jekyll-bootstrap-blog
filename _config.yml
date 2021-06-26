@@ -25,7 +25,7 @@ google_analytics: UA-175649416-1
 disqus: tuanducdesign
 facebook:
   app_id: "294587991860787"
-  publisher: "121349286117840"
+  publisher: "https://www.facebook.com/121349286117840"
   admins: "100005485267478"
 fanpage-chat: "121349286117840"
 permalink: "/:year/:month/:title.html"
@@ -71,7 +71,7 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: "/category/:name/"
-paginate: "10"
+paginate: "9"
 paginate_path: "/page/:num/"
 markdown: kramdown
 kramdown:

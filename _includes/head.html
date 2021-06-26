@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="theme-color" content="#fe2c55" />
     <link rel="icon" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.favicon }}" />
-    <link rel="apple-touch-icon" href="{{ site.apple-touch-icon }}" />
+    <link rel="apple-touch-icon" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon }}" />
     <link rel="apple-touch-icon" sizes="57x57" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-57x57 }}" />
     <link rel="apple-touch-icon" sizes="72x72" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-72x72 }}" />
     <link rel="apple-touch-icon" sizes="76x76" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-76x76 }}" />
