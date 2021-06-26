@@ -70,7 +70,7 @@ Những gì có được sau khi hoàn thành bước này:
 
 - Biết cách chặn tên miền.
 
-{% include internal-link.html href="series/cau-hinh-chan-ten-mien-tren-nextdns.html" title="Xem thêm →" %}
+{% include internal-link.html href="series/cau-hinh-chuc-nang-chan-ten-mien-tren-nextdns.html" title="Xem thêm →" %}
 
 ## Cấu hình chức năng cho phép tên miền
 
