@@ -32,17 +32,17 @@
   &.disabled,
   &:disabled {
     opacity: $btn-disabled-opacity;
-    @include box-shadow(none);
+    // @include box-shadow(none);
   }
 
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active {
-    @include box-shadow($btn-active-box-shadow);
+  // &:not(:disabled):not(.disabled):active,
+  // &:not(:disabled):not(.disabled).active {
+  //   // @include box-shadow($btn-active-box-shadow);
 
-    &:focus {
-      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
-    }
-  }
+  //   &:focus {
+  //     // @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+  //   }
+  // }
 }
 
 // Future-proof disabling of clicks on `<a>` elements

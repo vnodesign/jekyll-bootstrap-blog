@@ -28,7 +28,7 @@
     color: $custom-control-indicator-checked-color;
     border-color: $custom-control-indicator-checked-border-color;
     @include gradient-bg($custom-control-indicator-checked-bg);
-    @include box-shadow($custom-control-indicator-checked-box-shadow);
+    // @include box-shadow($custom-control-indicator-checked-box-shadow);
   }
 
   &:focus ~ .custom-control-label::before {
@@ -48,7 +48,7 @@
     color: $custom-control-indicator-active-color;
     background-color: $custom-control-indicator-active-bg;
     border-color: $custom-control-indicator-active-border-color;
-    @include box-shadow($custom-control-indicator-active-box-shadow);
+    // @include box-shadow($custom-control-indicator-active-box-shadow);
   }
 
   &:disabled {
@@ -83,7 +83,7 @@
     content: "";
     background-color: $custom-control-indicator-bg;
     border: $custom-control-indicator-border-color solid $custom-control-indicator-border-width;
-    @include box-shadow($custom-control-indicator-box-shadow);
+    // @include box-shadow($custom-control-indicator-box-shadow);
   }
 
   // Foreground (icon)
@@ -119,7 +119,7 @@
     &::before {
       border-color: $custom-checkbox-indicator-indeterminate-border-color;
       @include gradient-bg($custom-checkbox-indicator-indeterminate-bg);
-      @include box-shadow($custom-checkbox-indicator-indeterminate-box-shadow);
+      // @include box-shadow($custom-checkbox-indicator-indeterminate-box-shadow);
     }
     &::after {
       background-image: $custom-checkbox-indicator-icon-indeterminate;
@@ -224,7 +224,7 @@
   background-color: $custom-select-bg;
   border: $custom-select-border-width solid $custom-select-border-color;
   @include border-radius($custom-select-border-radius, 0);
-  @include box-shadow($custom-select-box-shadow);
+  // @include box-shadow($custom-select-box-shadow);
   appearance: none;
 
   &:focus {
@@ -337,7 +337,7 @@
   background-color: $custom-file-bg;
   border: $custom-file-border-width solid $custom-file-border-color;
   @include border-radius($custom-file-border-radius);
-  @include box-shadow($custom-file-box-shadow);
+  // @include box-shadow($custom-file-box-shadow);
 
   &::after {
     position: absolute;
@@ -391,7 +391,7 @@
     @include gradient-bg($custom-range-thumb-bg);
     border: $custom-range-thumb-border;
     @include border-radius($custom-range-thumb-border-radius);
-    @include box-shadow($custom-range-thumb-box-shadow);
+    // @include box-shadow($custom-range-thumb-box-shadow);
     @include transition($custom-forms-transition);
     appearance: none;
 
@@ -408,7 +408,7 @@
     background-color: $custom-range-track-bg;
     border-color: transparent;
     @include border-radius($custom-range-track-border-radius);
-    @include box-shadow($custom-range-track-box-shadow);
+    // @include box-shadow($custom-range-track-box-shadow);
   }
 
   &::-moz-range-thumb {
@@ -417,7 +417,7 @@
     @include gradient-bg($custom-range-thumb-bg);
     border: $custom-range-thumb-border;
     @include border-radius($custom-range-thumb-border-radius);
-    @include box-shadow($custom-range-thumb-box-shadow);
+    // @include box-shadow($custom-range-thumb-box-shadow);
     @include transition($custom-forms-transition);
     appearance: none;
 
@@ -434,7 +434,7 @@
     background-color: $custom-range-track-bg;
     border-color: transparent; // Firefox specific?
     @include border-radius($custom-range-track-border-radius);
-    @include box-shadow($custom-range-track-box-shadow);
+    // @include box-shadow($custom-range-track-box-shadow);
   }
 
   &::-ms-thumb {
@@ -446,7 +446,7 @@
     @include gradient-bg($custom-range-thumb-bg);
     border: $custom-range-thumb-border;
     @include border-radius($custom-range-thumb-border-radius);
-    @include box-shadow($custom-range-thumb-box-shadow);
+    // @include box-shadow($custom-range-thumb-box-shadow);
     @include transition($custom-forms-transition);
     appearance: none;
 
@@ -463,7 +463,7 @@
     background-color: transparent;
     border-color: transparent;
     border-width: $custom-range-thumb-height / 2;
-    @include box-shadow($custom-range-track-box-shadow);
+    // @include box-shadow($custom-range-track-box-shadow);
   }
 
   &::-ms-fill-lower {
