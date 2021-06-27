@@ -4,7 +4,9 @@
     <!-- Meta tag seo -->
     {% feed_meta %}
     {% seo %}
-  {% include head.html %}
+    <meta name="turbolinks-cache-control" content="no-cache" />
+    <style>.turbolinks-progress-bar{background-color:#fe2c55}</style>
+    {% include head.html %}
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}" itemscope itemtype="https://schema.org/WebPage">
