@@ -67,10 +67,10 @@
     <link rel="preconnect" href="https://www.google-analytics.com" />
     {% endif %}
     <!-- Style -->
-    <link rel="stylesheet" href="/assets/css/bundle.css" async="1" data-turbolinks-track="reload" />
+    {% capture bundle %}{% include_cached bundle.scss %}{% endcapture %}
     {% capture darkmode %}{% include_cached darkmode.scss %}{% endcapture %}
     {% capture main %}{% include_cached main.scss %}{% endcapture %}
-    <style type="text/css" data-turbolinks-track="reload">{{ darkmode | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:swap}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}{{ main | scssify }}</style>
+    <style type="text/css" data-turbolinks-track="reload">{{ bundle | scssify }}{{ darkmode | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:swap}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}{{ main | scssify }}</style>
     <!-- Scripts required -->
     <script src="/assets/js/defer.min.js" data-turbolinks-track="reload"></script>
     <script data-turbolinks-track="reload">'IntersectionObserver' in window||document.write('<link rel="preload" href="/assets/js/polyfill.min.js" as="script" \/><script src="/assets/js/polyfill.min.js"><\/script>');</script>
