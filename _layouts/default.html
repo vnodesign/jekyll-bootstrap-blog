@@ -29,9 +29,6 @@ layout: minify
   <div id="fb-root" data-turbolinks-permanent="true"></div>
   <div class="fb-customerchat" attribution="biz_inbox" page_id="{{site.fanpage-chat}}" data-lazy="true" greeting_dialog_display="icon" data-turbolinks-permanent="true"></div>
   {% endif %}
-  <!-- Style -->
-  {% capture bundle %}{% include_cached bundle.scss %}{% endcapture %}
-  <style type="text/css" data-turbolinks-track="reload">{{ bundle | scssify }}</style>
   <!-- Javascript -->
   <script src="/assets/js/jquery.min.js" defer="1" data-turbolinks-track="reload"></script>
   <script src="/assets/js/turbolinks.min.js" defer="1" data-turbolinks-suppress-warning></script>
