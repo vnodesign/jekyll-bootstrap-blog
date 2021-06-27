@@ -64,7 +64,6 @@ plugins:
 - jekyll-seo-tag
 - jekyll-archives
 - jekyll-include-cache
-- jekyll-minifier
 jekyll-archives:
   enabled:
   - categories
@@ -99,28 +98,8 @@ exclude:
 - ".jekyll-cache"
 keep_files:
 - static
-jekyll-minifier:
-  exclude: feed.xml
-  preserve_php: true
-  remove_spaces_inside_tags: true
-  remove_multi_spaces: true
-  remove_comments: true
-  remove_intertag_spaces: true
-  remove_quotes: true
-  compress_css: true
-  compress_javascript: true
-  compress_json: true
-  simple_doctype: true
-  remove_script_attributes: false
-  remove_style_attributes: false
-  remove_link_attributes: false
-  remove_form_attributes: false
-  remove_input_attributes: false
-  remove_javascript_protocol: false
-  remove_http_protocol: false
-  remove_https_protocol: false
-  preserve_line_breaks: true
-  simple_boolean_attributes: false
-  compress_js_templates: false
-  preserve_patterns: 
-  uglifier_args: 
+compress_html:
+  clippings: all
+  comments:  ["<!-- ", " -->"]
+  endings:   all
+  

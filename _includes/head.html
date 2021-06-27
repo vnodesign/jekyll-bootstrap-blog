@@ -66,9 +66,8 @@
     {% if site.google_analytics %}
     <link rel="preconnect" href="https://www.google-analytics.com" />
     {% endif %}
-    <!-- Style -->
-    {% capture bundle %}{% include_cached bundle.scss %}{% endcapture %}
-    <style type="text/css" data-turbolinks-track="reload">{{ bundle | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:swap}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}</style>
+    <!-- Style required -->
+    <style type="text/css" data-turbolinks-track="reload">@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:optional}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}</style>
     <!-- Scripts required -->
     <script src="/assets/js/defer.min.js" data-turbolinks-track="reload"></script>
     <script data-turbolinks-track="reload">'IntersectionObserver' in window||document.write('<link rel="preload" href="/assets/js/polyfill.min.js" as="script" \/><script src="/assets/js/polyfill.min.js"><\/script>');</script>
