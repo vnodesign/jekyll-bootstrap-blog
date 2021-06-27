@@ -99,12 +99,12 @@ exclude:
 keep_files:
 - static
 compress_html:
-  clippings: [all]
-  comments: ["<!-- ", " -->"]
-  endings: [all]
-  ignore:
+    clippings: [all]
+    comments: [all]
+    endings: []
+    ignore:
     envs: [local]
-  blanklines: false
-  profile: false
-  startings: []
+    blanklines: true
+    profile: false
+    startings: []
   
