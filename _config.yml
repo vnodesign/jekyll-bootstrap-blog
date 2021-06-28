@@ -100,11 +100,11 @@ keep_files:
 - static
 compress_html:
     clippings: [all]
-    comments: []
+    comments: [all]
     endings: []
     ignore:
     envs: []
-    blanklines: true
+    blanklines: false
     profile: false
     startings: []
   
