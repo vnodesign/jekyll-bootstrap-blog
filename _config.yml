@@ -99,7 +99,7 @@ exclude:
 keep_files:
 - static
 compress_html:
-    clippings: [all]
+    clippings: []
     comments: [all]
     endings: []
     ignore:
