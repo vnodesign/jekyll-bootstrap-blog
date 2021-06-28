@@ -23,7 +23,7 @@ Cách nhanh nhất và đơn giản nhất để chèn Video Youtube vào trang 
 - Nhấp vào nút Nhúng trong cửa sổ bật lên.
 - Sao chép và dán mã vào tài liệu của bạn.
 
-{% include image.html src="lam-the-nao-de-nhung-video-youtube-vao-website.jpg" alt="Làm thế nào để nhúng video Youtube vào Website" %}
+{% include image.html src="lam-the-nao-de-nhung-video-youtube-vao-website.jpg" webp="lam-the-nao-de-nhung-video-youtube-vao-website.webp" type="jpg" alt="Làm thế nào để nhúng video Youtube vào Website" %}
 
 ### Vấn đề xảy ra khi nhúng video từ Youtube vào Website
 

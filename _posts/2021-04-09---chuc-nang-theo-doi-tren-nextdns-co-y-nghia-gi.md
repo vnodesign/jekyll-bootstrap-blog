@@ -41,7 +41,7 @@ Số miền được loại ra khỏi trình chặn quảng cáo, đây là các
 
 ### Blocked Domains
 
-{% include image.html src="blocked-domainss.png" webp="blocked-domains.webp" type="png" alt="Blocked Domains" %}
+{% include image.html src="blocked-domains.png" webp="blocked-domains.webp" type="png" alt="Blocked Domains" %}
 
 Số miền được chặn từ trình chặn quảng cáo, đây là các miền bị chặn bởi cài đặt Bảo mật, Quyền riêng tư và / hoặc Kiểm soát của phụ huynh hoặc do chúng bị từ chối theo cách thủ công.
 
