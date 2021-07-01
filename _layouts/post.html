@@ -145,7 +145,7 @@ post_class: post-template
             "@type": "ListItem",
             "position": "2",
             "name": "{{ page.title }}",
-            "item": "{{ page.url }}"
+            "item": "{{ site.url }}/{{ page.url }}"
         }
         ]
     }
@@ -162,7 +162,7 @@ post_class: post-template
         "@type": "Offer",
         "priceCurrency": "VND",
         "price": "0.00",
-        "url": "{{ page.url }}"
+        "url": "{{ site.url }}/{{ page.url }}"
       },
       "aggregateRating": {
         "@type": "AggregateRating",
