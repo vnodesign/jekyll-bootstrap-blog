@@ -20,3 +20,23 @@ permalink: "/tags"
     {% assign group = nil %}
     {% endfor %}
 </div>
+<script type='application/ld+json'>
+    {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+            "@type": "ListItem",
+            "position": "1",
+            "name": "Home",
+            "item": "{{ site.url }}/"
+        },
+        {
+            "@type": "ListItem",
+            "position": "2",
+            "name": "{{ page.title }}",
+            "item": "{{ page.url }}"
+        }
+        ]
+    }
+</script>
