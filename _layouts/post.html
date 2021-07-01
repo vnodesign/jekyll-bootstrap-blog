@@ -130,3 +130,28 @@ post_class: post-template
     </div>
 </article>
 <!-- End Article -->
+{% if page.rating %}
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "Product",
+      "name": "{{ page.title }}",
+      "image": "{{ site.url }}/{{ page.image }}",
+      "description": "{{ page.description }}",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "VND",
+        "price": "0.00",
+        "url": "{{ page.url }}"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue" : "{{ page.rating }}",
+        "ratingCount" : "1",
+        "reviewCount" : "1",
+        "worstRating" : "1",
+        "bestRating" : "5"
+      }
+    }
+    </script>
+{% endif %}
