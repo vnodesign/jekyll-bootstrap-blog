@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Chức năng theo dõi trên NextDNS có ý nghĩa gì"
-permalink: /series/chuc-nang-theo-doi-tren-nextdns-co-y-nghia-gi.html
+permalink: /series/chuc-nang-theo-doi-tren-nextdns-co-y-nghia-gi
 author: tuanducdesign
 categories: [ Series ]
 tags: [Queries, Resolved Domains, Blocked Domains, Blocked Reasons, Devices, IPs, Root Domains, GAFAM Dominance, Encrypted DNS, Traffic Destination, NextDNS]
@@ -13,7 +13,7 @@ toc: true
 
 Với chức năng theo dõi trên NextDNS, thì bạn có thể theo dõi được các hoạt động đang diễn ra trên các trình chặn quảng cáo mà bạn đã thêm.
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns" title="Series hướng dẫn sử dụng NextDNS" %}
 
 ## Các chức năng theo dõi trên NextDNS
 

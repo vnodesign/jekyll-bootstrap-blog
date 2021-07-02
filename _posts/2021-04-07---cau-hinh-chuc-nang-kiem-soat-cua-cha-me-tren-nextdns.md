@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Cấu hình chức năng kiểm soát của cha mẹ trên NextDNS"
-permalink: /series/cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.html
+permalink: /series/cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns
 author: tuanducdesign
 categories: [ Series ]
 tags: [Parental Control, Restrict, Websites, Games, Apps, NextDNS]
@@ -13,7 +13,7 @@ toc: true
 
 Thêm một chức năng nữa mà mình muốn nhắc đến đối với các bậc làm, làm mẹ đó chính là chức năng kiểm soát của cha mẹ. Chức năng này sẽ giúp bạn quản lý con cái dễ dàng hơn.
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns" title="Series hướng dẫn sử dụng NextDNS" %}
 
 {% include image.html src="cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.png" webp="cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.webp" type="png" alt="Cấu hình chức năng kiểm soát của cha mẹ trên NextDNS" %}
 
@@ -31,7 +31,7 @@ Hạn chế quyền truy cập vào các trang web, ứng dụng và trò chơi 
 
 Hạn chế quyền truy cập vào các danh mục trang web và ứng dụng cụ thể.
 
-Chức năng này giống với chức năng **{% include internal-link.html href="series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.html#block-child-sexual-abuse-material" title="Block Child Sexual Abuse Material" %}** nhưng nó nhiều tuỳ chọn hơn như:
+Chức năng này giống với chức năng **{% include internal-link.html href="series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns#block-child-sexual-abuse-material" title="Block Child Sexual Abuse Material" %}** nhưng nó nhiều tuỳ chọn hơn như:
 
 - Gambling (Chặn nội dung cờ bạc)
 - Dating (Chặn tất cả các trang web và ứng dụng hẹn hò)

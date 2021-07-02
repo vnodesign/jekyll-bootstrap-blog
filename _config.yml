@@ -21,14 +21,14 @@ apple-touch-icon-152x152: /static/apple-touch-icon-152x152.png
 apple-touch-icon-180x180: /static/apple-touch-icon-180x180.png
 baseurl: 
 url: https://tuanducdesign.com
-google_analytics: UA-175649416-1
+google_analytics: G-JLS45PZZXS
 disqus: tuanducdesign
 facebook:
   app_id: "294587991860787"
   publisher: "https://www.facebook.com/121349286117840"
   admins: "100005485267478"
 fanpage-chat: "121349286117840"
-permalink: "/:year/:month/:title.html"
+permalink: "/:year/:month/:title"
 twitter:
   username: tuanducdesign
   card: summary_large_image

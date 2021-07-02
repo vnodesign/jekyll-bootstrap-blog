@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Cách theo dõi nhật ký trên NextDNS"
-permalink: /series/cach-theo-doi-nhat-ky-tren-nextdns.html
+permalink: /series/cach-theo-doi-nhat-ky-tren-nextdns
 author: tuanducdesign
 categories: [ Series ]
 tags: [Logs, Ads, NextDNS]
@@ -13,7 +13,7 @@ toc: true
 
 Cách theo dõi nhật ký trên NextDNS để kiểm tra xem tên miền nào đang bị chặn, và nguyên nhân nó bị chặn do trình chặn quảng cáo nào.
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns" title="Series hướng dẫn sử dụng NextDNS" %}
 
 ## Cách theo dõi nhật ký trên NextDNS
 
@@ -46,4 +46,4 @@ Sau khi đã thực hiện đủ các bước trên, bạn xem lại ảnh ở n
 
 ## Kết
 
-Qua bài viết này bạn cũng đã biết cách kiểm tra, theo dõi nhật ký tên miền trên NextDNS. Ở phần sau cũng là phần cuối của series này, mình sẽ hướng dẫn các bạn cấu hình một số chức năng trong cài đặt nhé.
+Qua bài viết này bạn cũng đã biết cách kiểm tra, theo dõi nhật ký tên miền trên NextDNS. Ở phần sau mình sẽ hướng dẫn các bạn cấu hình một số chức năng trong cài đặt nhé.

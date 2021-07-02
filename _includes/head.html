@@ -4,9 +4,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="application-name" content="{{ site.name }}" />
     <meta name="apple-mobile-web-app-title" content="{{ site.name }}" />
-    <meta name="msapplication-starturl" content="/" />
+    <meta name="msapplication-starturl" content="{{ site.url }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="theme-color" content="#fe2c55" />
+    <meta name="turbolinks-cache-control" content="no-cache" />
     <link rel="icon" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.favicon }}" />
     <link rel="apple-touch-icon" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon }}" />
     <link rel="apple-touch-icon" sizes="57x57" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-57x57 }}" />
@@ -33,7 +34,7 @@
     <link rel="preload" href="/assets/js/bootstrap.bundle.min.js" as="script" />
     <link rel="preload" href="/assets/js/instantpage.min.js" as="script" />
     {% if site.google_analytics %}
-    <link rel="preload" href="/assets/js/ga-lite.min.js" as="script" />
+    <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}" as="script" />
     {% endif %}
     {% if site.fanpage-chat %}
     <link rel="preload" href="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" as="script" />
@@ -43,8 +44,6 @@
     <!-- Prefetch Domain -->
     {% if site.fanpage-chat %}
     <link rel="dns-prefetch" href="//static.xx.fbcdn.net" />
-    <link rel="dns-prefetch" href="//scontent.fhan3-2.fna.fbcdn.net" />
-    <link rel="dns-prefetch" href="//scontent.fhan4-1.fna.fbcdn.net" />
     <link rel="dns-prefetch" href="//connect.facebook.net" />
     <link rel="dns-prefetch" href="//www.facebook.com" />
     <link rel="dns-prefetch" href="//graph.facebook.com" />
@@ -53,6 +52,7 @@
     {% endif %}
     {% if site.google_analytics %}
     <link rel="dns-prefetch" href="//www.google-analytics.com" />
+    <link rel="dns-prefetch" href="//www.googletagmanager.com" />
     {% endif %}
     <!-- Preconnect Domain -->
     {% if site.fanpage-chat %}
@@ -65,6 +65,7 @@
     {% endif %}
     {% if site.google_analytics %}
     <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
     {% endif %}
     <!-- Style -->
     {% capture bundle %}{% include_cached bundle.scss %}{% endcapture %}
@@ -72,7 +73,8 @@
     {{ bundle | scssify }}
     @font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:optional}
     {% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}
+    .turbolinks-progress-bar{background-color:#fe2c55}
     </style>
     <!-- Scripts required -->
     <script src="/assets/js/defer.min.js" data-turbolinks-track="reload"></script>
-    <script data-turbolinks-track="reload">'IntersectionObserver' in window||document.write('<link rel="preload" href="/assets/js/polyfill.min.js" as="script" \/><script src="/assets/js/polyfill.min.js"><\/script>');</script>
+    <script>'IntersectionObserver' in window||document.write('<link rel="preload" href="/assets/js/polyfill.min.js" as="script" \/><script src="/assets/js/polyfill.min.js"><\/script>');{% if site.lazyimages == "enabled" %}Defer.dom('img.fade',200,'loaded');Defer.dom('.multi-lazy',200,'loaded');{% endif %}{% if site.fanpage-chat %}Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})}});{% endif %}{% if site.google_analytics %}Defer.js('https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}','gtag-js',100,function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{site.google_analytics}}')});{% endif %}</script>

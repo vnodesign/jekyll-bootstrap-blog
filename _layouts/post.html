@@ -118,7 +118,6 @@ post_class: post-template
             </div>
             <!-- Begin Comments -->
             {% if page.comments != false %}
-            <link rel="preload" href="//{{site.disqus}}.disqus.com/embed.js" as="script" />
                 <div id="comments" class="justify-content-center mb-5">
                     {% include_cached disqus.html %}
                 </div>
@@ -130,6 +129,7 @@ post_class: post-template
     </div>
 </article>
 <!-- End Article -->
+<!-- Begin Schema BreadcrumbList -->
 <script type='application/ld+json'>
     {
         "@context": "http://schema.org",
@@ -150,7 +150,9 @@ post_class: post-template
         ]
     }
 </script>
+<!-- End Schema BreadcrumbList -->
 {% if page.rating %}
+<!-- Begin Schema Rating Product -->
 <script type="application/ld+json">
     {
       "@context": "http://schema.org/",
@@ -173,5 +175,6 @@ post_class: post-template
         "bestRating" : "5"
       }
     }
-    </script>
+</script>
+<!-- End Schema Rating Product -->
 {% endif %}

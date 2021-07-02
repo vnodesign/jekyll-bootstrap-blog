@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Cấu hình chức năng cho phép tên miền trên NextDNS"
-permalink: /series/cau-hinh-chuc-nang-cho-phep-ten-mien-tren-nextdns.html
+permalink: /series/cau-hinh-chuc-nang-cho-phep-ten-mien-tren-nextdns
 author: tuanducdesign
 categories: [ Series ]
 tags: [Allowlist, Analytics, NextDNS]
@@ -13,7 +13,7 @@ toc: true
 
 NextDNS ngày càng trở nên phổ biến hơn đặc biết là hỗ trợ khách hàng cho phép và không cho phép một tên miền bất kì được hoạt động và không được hoạt động.
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns" title="Series hướng dẫn sử dụng NextDNS" %}
 
 ## Cấu hình cho phép tên miền
 
