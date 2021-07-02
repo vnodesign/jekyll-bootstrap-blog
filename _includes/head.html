@@ -27,6 +27,7 @@
     <link rel="icon" type="image/png" sizes="152x152" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-152x152 }}" />
     <link rel="icon" type="image/png" sizes="180x180" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-180x180 }}" />
     <!-- Preload file -->
+    <link rel="preload" href="/assets/css/bundle.css" as="style" />
     <link rel="preload" href="/assets/js/defer.min.js" as="script" />
     <link rel="preload" href="/assets/js/jquery.min.js" as="script" />
     <link rel="preload" href="/assets/js/turbolinks.min.js" as="script" />
@@ -68,7 +69,7 @@
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     {% endif %}
     <!-- Style -->
-    {% capture bundle %}{% include_cached bundle.scss %}{% endcapture %}
+    <link rel="stylesheet" href="/assets/css/bundle.css" async="1" data-turbolinks-track="reload" />
     <style type="text/css" data-turbolinks-track="reload">
     {{ bundle | scssify }}
     @font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:optional}
