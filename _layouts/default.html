@@ -3,7 +3,7 @@
 <head itemscope itemtype="https://schema.org/WebSite">
     <!-- Meta tag seo -->
     {% feed_meta %}
-    <title>{{ page.title }} - {{site.name}}</title>
+    <title>{% if page.tag or page.title %}{% if page.tag %}{{ page.tag | escape }}{% else %}{{ page.title | escape }}{% endif %} - {% endif %}{% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}Page {{ paginator.page }} of {{ paginator.total_pages }} - {% endif %}{{ site.name | escape }}{% unless page.tag or page.title %} - {{ site.description | escape }}{% endunless %}</title>
     {% seo title=false %}
     {% include head.html %}
 </head>
