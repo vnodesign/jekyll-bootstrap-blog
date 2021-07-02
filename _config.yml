@@ -98,3 +98,10 @@ exclude:
 - ".jekyll-cache"
 keep_files:
 - static
+top_articles: 
+  - url: /2021/01/cai-dat-module-pagespeed-len-may-chu-nginx
+    title: Cài đặt Module PageSpeed lên máy chủ Nginx
+    category: Server
+  - url: /2021/01/huong-dan-su-dung-thu-vien-deferjs-cua-mai-nhut-tan
+    title: Hướng Dẫn Sử Dụng Thư Viện DeferJS của Mai Nhựt Tân
+    category: Library
