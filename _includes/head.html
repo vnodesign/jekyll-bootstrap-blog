@@ -26,8 +26,8 @@
     <link rel="icon" type="image/png" sizes="152x152" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-152x152 }}" />
     <link rel="icon" type="image/png" sizes="180x180" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-180x180 }}" />
     <!-- Preload file -->
-    <link rel="preload" href="/assets/css/bundle.css" as="style" />
-    <link rel="preload" href="/assets/js/bundle.js" as="script" />
+    <link rel="preload" href="/assets/css/bundle-75f5c4d7366372bba5b630f296b5a7794dc1a847.css" as="style" />
+    <link rel="preload" href="/assets/js/bundle-75f5c4d7366372bba5b630f296b5a7794dc1a847.js" as="script" />
     <link rel="preload" href="/assets/js/instantpage.min.js" as="script" />
     {% if site.google_analytics %}
     <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}" as="script" />
@@ -64,5 +64,5 @@
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     {% endif %}
     <!-- Style -->
-    <link rel="stylesheet" href="/assets/css/bundle.css"/>
+    <link rel="stylesheet" href="/assets/css/bundle-75f5c4d7366372bba5b630f296b5a7794dc1a847.css" data-turbolinks-track="reload" />
     <style type="text/css">@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:optional}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}.turbolinks-progress-bar{background-color:#fe2c55}</style>
