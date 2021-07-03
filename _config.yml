@@ -111,3 +111,8 @@ top_articles:
   - url: /2021/04/series-nextdns
     title: Series hướng dẫn sử dụng NextDNS
     category: Series
+compress_html:
+  clippings: "all"
+  comments: "all"
+  ignore:
+    envs: "development"

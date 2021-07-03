@@ -24,7 +24,7 @@ post_class: post-template
                 <!-- Post Author -->
                 {% if page.author %}
                 <span class="post-author">
-                    <a class="link-dark" href="/author/{{ author.username }}" title="{{ author.display_name }}" data-remote="true" rel="author">
+                    <a class="link-dark" href="/author/{{ author.username }}" title="{{ author.display_name }}" rel="author">
                         {{ author.display_name }}
                     </a>
                 </span>
@@ -45,12 +45,12 @@ post_class: post-template
                 {% endif %}
                 <span class="dot"></span>
                 <!-- Post Read -->
-                <span class="post-read eta" data-turbolinks-permanent></span>
+                <span class="post-read eta"></span>
                 <span class="dot"></span>
                 <!-- Post Cat -->
                 <span class="post-cat">
                     {% for category in sortedCategories %}
-                    <a class="link-dark" href="/categories#{{ category | replace: " ","-" }}" title="{{ category }}" rel="tag" data-remote="true">
+                    <a class="link-dark" href="/categories#{{ category | replace: " ","-" }}" title="{{ category }}" rel="tag">
                     {{ category }}
                     </a>
                     {% endfor %}
@@ -71,7 +71,7 @@ post_class: post-template
                     {% endif %}
                     <div class="toc mt-4 mb-4 lead">
                         <h3 class="font-weight-bold">Table of Contents</h3>
-                        {% include_cached toc.html html=content %}
+                        {% include toc.html html=content %}
                     </div>
                 {% endif %}
                 <!-- End Toc -->
@@ -82,7 +82,7 @@ post_class: post-template
                 <strong class="mr-1">
                     Rating by author:
                 </strong> 
-                {% include_cached star_rating.html %}
+                {% include star_rating.html %}
             </div>
             {% endif %}
             <!-- Post Tags -->
@@ -91,7 +91,7 @@ post_class: post-template
                     {% assign sortedTags = page.tags | sort %}
                     {% for tag in sortedTags %}
                     <li>
-                        <a class="smoothscroll" href="/tags#{{ tag | replace: " ","-" }}" title="{{ tag }}" rel="tag" data-remote="true">
+                        <a class="smoothscroll" href="/tags#{{ tag | replace: " ","-" }}" title="{{ tag }}" rel="tag">
                             {{ tag }}
                         </a>
                     </li>
@@ -102,14 +102,14 @@ post_class: post-template
             <!-- Prev/Next -->
             <div class="PageNavigation">
             {% if page.previous.url %}
-            <a href="{{page.previous.url}}" rel="prev" class="btn prev-post" title="{{page.previous.title}}" data-remote="true" aria-label="{{page.previous.title}}">
+            <a href="{{page.previous.url}}" rel="prev" class="btn prev-post" title="{{page.previous.title}}" aria-label="{{page.previous.title}}">
 				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
                   </svg>
 			</a>
             {% endif %}
             {% if page.next.url %}
-            <a href="{{page.next.url}}" rel="next" class="btn next-post" title="{{page.next.title}}" data-remote="true" aria-label="{{page.next.title}}">
+            <a href="{{page.next.url}}" rel="next" class="btn next-post" title="{{page.next.title}}" aria-label="{{page.next.title}}">
 				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                   </svg>

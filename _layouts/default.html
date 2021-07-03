@@ -1,3 +1,6 @@
+---
+layout: "compress"
+---
 <!DOCTYPE html>
 <html lang="en">
 <head itemscope itemtype="https://schema.org/WebSite">
@@ -22,12 +25,12 @@
   <!-- /.site-content -->
   {% if site.fanpage-chat %}
   <!-- Messenger Plugin chat -->
-  <div id="fb-root" data-turbolinks-permanent></div>
+  <div id="fb-root"></div>
   <div class="fb-customerchat" attribution="biz_inbox" page_id="{{site.fanpage-chat}}" data-lazy="true" greeting_dialog_display="icon"></div>
   {% endif %}
   <!-- Javascript -->
-  <script src="/assets/js/bundle.js" data-turbolinks-track="reload"></script>
-  <script data-turbolinks-track="reload">{% if site.lazyimages == "enabled" %}Defer.dom('img.fade',200,'loaded');Defer.dom('.multi-lazy',200,'loaded');{% endif %}{% if site.fanpage-chat %}Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})}});{% endif %}{% if site.google_analytics %}Defer.js('https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}','gtag-js',100,function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{site.google_analytics}}')});{% endif %}</script>
-  <script src="/assets/js/instantpage.min.js" type="module" data-turbolinks-track="reload"></script>
+  <script src="/assets/js/bundle.js"></script>
+  <script>{% if site.lazyimages == "enabled" %}Defer.dom('img.fade',200,'loaded');Defer.dom('.multi-lazy',200,'loaded');{% endif %}{% if site.fanpage-chat %}Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})}});{% endif %}{% if site.google_analytics %}Defer.js('https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}','gtag-js',100,function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{site.google_analytics}}')});{% endif %}</script>
+  <script src="/assets/js/instantpage.min.js" type="module"></script>
 </body>
 </html>

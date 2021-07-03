@@ -6,7 +6,7 @@
             <div class="col-12 col-md-12 col-lg-5 pr-lg-0">
                 <div class="h-100">
                     <div class="wrapthumbnail">
-                        <a href="{{ post.url }}" title="{{ post.title }}" data-remote="true">
+                        <a href="{{ post.url }}" title="{{ post.title }}">
                             {% if site.lazyimages == "enabled" %}
                             <picture class="multi-lazy">
                                 <source srcset="{% if post.webp contains "://" %}{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ post.webp }}{% else %}{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}/{{ post.webp }}{% endif %}" type="image/webp" />
@@ -27,10 +27,10 @@
                     <div class="card">
                         <div class="card-body">
                             <h2 class="card-title" itemprop="name">
-                                <a class="text-dark" href="{{ post.url }}" title="{{ post.title }}" data-remote="true" rel="bookmark">{{ post.title }}</a>
+                                <a class="text-dark" href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
                                 {% if post.rating %}
                                 <div class="mb-2 mt-2 font-weight-normal">
-                                {% include_cached star_rating_postbox.html %}
+                                {% include star_rating_postbox.html %}
                                 </div>
                                 {% endif %}
                             </h2>
@@ -57,13 +57,13 @@
                                     {% endif %}
                                 </span>
                                 <span class="author-meta">
-                                <span class="post-name"><a href="/author/{{ author.username }}" title="{{ author.display_name }}" data-remote="true" rel="author">{{ author.display_name }}</a></span><br/>
+                                <span class="post-name"><a href="/author/{{ author.username }}" title="{{ author.display_name }}" rel="author">{{ author.display_name }}</a></span><br/>
                                 {% endif %}
                                 <span class="post-date">{{ post.date | date_to_string }}</span>
                                 <span class="dot"></span>
-                                <span class="eta" data-turbolinks-permanent></span>
+                                <span class="eta"></span>
                                 </span>
-                                <span class="post-read-more"><a href="{{ post.url }}" data-toggle="tooltip" data-placement="top" title="Read Story" data-remote="true" aria-label="Read Story" onClick="ga('send', 'event', 'post-read-more', 'click', 'read-story');"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 25 25"><path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"></path></svg></a></span>
+                                <span class="post-read-more"><a href="{{ post.url }}" data-toggle="tooltip" data-placement="top" title="Read Story" aria-label="Read Story" onClick="ga('send', 'event', 'post-read-more', 'click', 'read-story');"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 25 25"><path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"></path></svg></a></span>
                                 <div class="clearfix"></div>
                             </div>
                         </div>

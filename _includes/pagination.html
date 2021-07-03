@@ -5,7 +5,7 @@
     Prev
   </a>
   {% else %}
-  <a class="ml-1 mr-1" href="#" title="Prev" aria-label="Prev" data-turbolinks="false">Prev</a>
+  <a class="ml-1 mr-1" href="#" title="Prev" aria-label="Prev">Prev</a>
   {% endif %}
   {% for page in (1..paginator.total_pages) %}
   {% if page == paginator.page %}
@@ -27,7 +27,7 @@
     Next
   </a>
   {% else %}
-  <a class="ml-1 mr-1" href="#" title="Next" aria-label="Next" data-turbolinks="false">Next</a>
+  <a class="ml-1 mr-1" href="#" title="Next" aria-label="Next">Next</a>
   {% endif %}
 </div>
 {% endif %}
