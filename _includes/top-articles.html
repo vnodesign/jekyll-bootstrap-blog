@@ -1,4 +1,4 @@
-<div class="row py-2">
+<div class="row py-2 ">
     <!--Breaking box-->
     <div class="col-1 col-md-3 col-lg-2 py-1 pr-md-0 mb-md-1">
         <div class="d-inline-block d-md-block bg-primary text-white text-center breaking-caret py-1 px-2">
@@ -9,12 +9,12 @@
         </div>
     </div>
     <!--Breaking content-->
-    <div class="col-11 col-md-9 col-lg-10 pl-1 pl-md-2">
+    <div class="col-11 col-md-9 col-lg-10 pl-auto pl-md-auto">
         <div class="breaking-box pt-2 pb-1">
             <!--marque-->
             <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseleave="this.start();">
                 {% for article in site.top_articles %}
-                <a class="h6 font-weight-light" href="{{article.url}}" title="{{{article.title}}"><span class="position-relative mx-2 badge badge-primary rounded-0">{{article.category}}</span> {{article.title}}</a>
+                <a data-remote="true" class="h6 font-weight-light" href="{{article.url}}" title="{{{article.title}}"><span class="position-relative mx-2 badge badge-primary rounded-0">{{article.category}}</span> {{article.title}}</a>
                 {% endfor %}
             </marquee>
         </div>
