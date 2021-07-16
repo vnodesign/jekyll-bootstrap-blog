@@ -113,11 +113,11 @@ top_articles:
     title: Series hướng dẫn sử dụng NextDNS
     category: Series
 compress_html:
-  clippings: []
-  comments: ["<!-- ", " -->"]
-  endings: [all]
-  ignore:
+    clippings: []
+    comments: [all]
+    endings: []
+    ignore:
     envs: [local]
-  blanklines: false
-  profile: false
-  startings: []
+    blanklines: true
+    profile: false
+    startings: []
