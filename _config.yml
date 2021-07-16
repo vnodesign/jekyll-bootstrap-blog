@@ -73,6 +73,7 @@ jekyll-archives:
 paginate: "9"
 paginate_path: "/page/:num/"
 markdown: kramdown
+highlighter: rouge
 # kramdown:
 #   input: GFM
 #   syntax_highlighter: rouge
@@ -112,7 +113,7 @@ top_articles:
     title: Series hướng dẫn sử dụng NextDNS
     category: Series
 compress_html:
-  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  clippings: []
   comments: ["<!-- ", " -->"]
   endings: [all]
   ignore:

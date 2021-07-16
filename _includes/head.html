@@ -2,8 +2,8 @@
     <link rel="manifest" href="/manifest.json" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="application-name" content="{{ site.name }}" />
-    <meta name="apple-mobile-web-app-title" content="{{ site.name }}" />
+    <meta name="application-name" content="{{ site.title }}" />
+    <meta name="apple-mobile-web-app-title" content="{{ site.title }}" />
     <meta name="msapplication-starturl" content="{{ site.url }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="theme-color" content="#fe2c55" />
@@ -27,7 +27,8 @@
     <link rel="icon" type="image/png" sizes="180x180" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-180x180 }}" />
     <!-- Preload file -->
     <link rel="preload" href="/assets/js/jquery.min.js" as="script" />
-    <link rel="preload" href="/assets/js/bootstrap.bundle.min.js" as="script" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/esm/popper.min.js" as="script" />
+    <link rel="preload" href="/assets/js/bootstrap.min.js" as="script" />
     <link rel="preload" href="/assets/js/defer.min.js" as="script" />
     <link rel="preload" href="/assets/js/main.min.js" as="script" />
     <link rel="preload" href="/assets/js/turbolinks.min.js" as="script" />
@@ -40,6 +41,7 @@
     <link rel="preload" href="/assets/fonts/bootstrap-icons.woff2" as="font" type="font/woff2" crossorigin="crossorigin" />
     <link rel="preload" href="/assets/fonts/bootstrap-icons.woff" as="font" type="font/woff" crossorigin="crossorigin" />
     <!-- Prefetch Domain -->
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
     {% if site.fanpage-chat %}
     <link rel="dns-prefetch" href="//static.xx.fbcdn.net" />
     <link rel="dns-prefetch" href="//connect.facebook.net" />
@@ -53,6 +55,7 @@
     <link rel="dns-prefetch" href="//www.googletagmanager.com" />
     {% endif %}
     <!-- Preconnect Domain -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
     {% if site.fanpage-chat %}
     <link rel="preconnect" href="https://static.xx.fbcdn.net" />
     <link rel="preconnect" href="https://connect.facebook.net" />
@@ -70,4 +73,3 @@
     {% include main.scss %}
     {% endcapture %}
     <style type="text/css">{{ styles | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:optional}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}.turbolinks-progress-bar{background-color:#fe2c55}</style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" async />
