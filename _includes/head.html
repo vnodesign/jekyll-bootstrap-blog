@@ -26,7 +26,7 @@
     <link rel="icon" type="image/png" sizes="152x152" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-152x152 }}" />
     <link rel="icon" type="image/png" sizes="180x180" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-180x180 }}" />
     <!-- Preload file -->
-    <link rel="preload" href="/assets/css/main.css"
+    <link rel="preload" href="/assets/css/main.css" as="style" />
     <link rel="preload" href="/assets/js/jquery.min.js" as="script" />
     <link rel="preload" href="/assets/js/bootstrap.bundle.min.js" as="script" />
     <link rel="preload" href="/assets/js/defer.min.js" as="script" />
