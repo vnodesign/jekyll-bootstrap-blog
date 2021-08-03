@@ -67,7 +67,8 @@
     {% endif %}
     <!-- Style -->
     <style type="text/css">
-    {% capture include_to_scssify %}{% include main.scss %}{% endcapture %}{{ include_to_scssify | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:optional}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}.turbolinks-progress-bar{background-color:#fe2c55}</style>
+    {% capture include_to_scssify %}{% include main.scss %}{% endcapture %}{{ include_to_scssify | scssify }}
+    @font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:optional}{% if site.lazyimages == "enabled" %}img.fade{transition:opacity 500ms ease-in-out;opacity:0;}img.fade.loaded{background:none;opacity:1}{% endif %}.turbolinks-progress-bar{background-color:#fe2c55}</style>
     <!-- Script -->
     <script src="/assets/js/defer.min.js" data-turbolinks-track="reload"></script>
     <script src="/assets/js/main.js" data-turbolinks-track="reload"></script>
