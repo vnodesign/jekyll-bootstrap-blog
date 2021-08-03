@@ -115,10 +115,18 @@ post_class: post-template
             {% endif %}
             </div>
             <!-- Begin Comments -->
-            {% if page.comments != false %}
-                <div id="comments" class="justify-content-center mb-5">
-                    {% include_cached disqus.html %}
+            {% if site.disquscmt == "enabled" %}
+            <div id="comments" class="justify-content-center mb-5">
+                {% include_cached disqus.html %}
+            </div>
+            {% else %}
+            <div id="comments" class="justify-content-center mb-5">
+                {% for alertcmt in site.notification_cmt %}
+                <div class="alert alert-warning" role="alert">
+                    {{alertcmt.name}}
                 </div>
+                {% endfor %}
+            </div>
             {% endif %}
             <!--End Comments -->
             </div>

@@ -22,6 +22,7 @@ apple-touch-icon-180x180: /static/apple-touch-icon-180x180.png
 baseurl: 
 url: https://tuanducdesign.com
 google_analytics: G-JLS45PZZXS
+disquscmt: "disabled"
 disqus: tuanducdesign
 facebook:
   app_id: "294587991860787"
@@ -99,6 +100,8 @@ exclude:
 - ".jekyll-cache"
 keep_files:
 - static
+notification_cmt:
+  - name: Due to the influence of AAG cables, we temporarily disable commenting until the cable is stable.
 top_articles: 
   - url: /2021/01/cai-dat-module-pagespeed-len-may-chu-nginx
     title: Cài đặt Module PageSpeed lên máy chủ Nginx

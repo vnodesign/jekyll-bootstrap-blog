@@ -8,13 +8,6 @@ layout: default
     <div class="article-post">
         {{content}}
     </div>
-    {% if page.comments == true %}
-    <div id="comments" class="row mb-5">
-        <div class="col-md-8">
-            {% include_cached disqus.html %}
-        </div>
-    </div>
-    {% endif %}
 </section>
 <!-- Begin Schema BreadcrumbList -->
 <script type='application/ld+json'>
