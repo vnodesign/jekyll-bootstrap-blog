@@ -4,7 +4,7 @@ title: Tuan Duc Design
 subtitle: Specialist site to share knowledge of VPS and Website
 description: Specialist page sharing knowledge related to VPS development and Website
   optimization.
-cdn: "enabled"
+cdn: "disabled"
 cdn-cloudinary: "https://res.cloudinary.com/td-blog/image/upload/f_auto,q_auto"
 cdn-s3:
 cdn-netlify:
