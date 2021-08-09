@@ -84,7 +84,7 @@ highlighter: rouge
 adsense: disabled
 adsense-data-ad-client: ca-pub-xxxxxxxxxxxxxxxx
 adsense-data-ad-slot: xxxxxxxxxx
-lazyimages: enabled
+lazyimages: disabled
 sass:
   style: compressed
 include:
