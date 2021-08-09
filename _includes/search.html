@@ -1,4 +1,4 @@
-<form class="my-auto my-lg-0" method="get" action="https://www.google.com/cse" target="_blank">
+<form class="my-auto my-lg-0" method="get" action="https://www.google.com/cse" target="_blank" {% if site.turbolinks == "enabled" %}data-remote="true"{% endif %}>
     <input type="hidden" name="cx" value="f8de27089149e0ecc"/>
     <input type="hidden" name="ie" value="UTF-8"/>
     <input type="text" name="q" class="form-control mr-sm-2" maxlength="255" value="" placeholder="Search"/>

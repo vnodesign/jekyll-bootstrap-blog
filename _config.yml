@@ -4,7 +4,7 @@ title: Tuan Duc Design
 subtitle: Specialist site to share knowledge of VPS and Website
 description: Specialist page sharing knowledge related to VPS development and Website
   optimization.
-cdn: "disabled"
+cdn: "enabled"
 cdn-cloudinary: "https://res.cloudinary.com/td-blog/image/upload/f_auto,q_auto"
 cdn-s3:
 cdn-netlify:
@@ -21,13 +21,15 @@ apple-touch-icon-152x152: /static/apple-touch-icon-152x152.png
 apple-touch-icon-180x180: /static/apple-touch-icon-180x180.png
 baseurl: 
 url: https://tuanducdesign.com
+analytics: "enabled"
 google_analytics: G-JLS45PZZXS
-disquscmt: "disabled"
+disquscmt: "enabled"
 disqus: tuanducdesign
 facebook:
   app_id: "294587991860787"
   publisher: "https://www.facebook.com/121349286117840"
   admins: "100005485267478"
+chat: "enabled"
 fanpage-chat: "121349286117840"
 permalink: "/:year/:month/:title"
 twitter:
@@ -71,7 +73,7 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: "/category/:name/"
-paginate: "100"
+paginate: "9"
 paginate_path: "/page/:num/"
 markdown: kramdown
 highlighter: rouge
@@ -84,7 +86,8 @@ highlighter: rouge
 adsense: disabled
 adsense-data-ad-client: ca-pub-xxxxxxxxxxxxxxxx
 adsense-data-ad-slot: xxxxxxxxxx
-lazyimages: disabled
+lazyimages: enabled
+turbolinks: enabled
 sass:
   style: compressed
 include:

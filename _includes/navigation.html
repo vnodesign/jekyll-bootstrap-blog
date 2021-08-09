@@ -5,11 +5,7 @@
             <div class="container pr-0">
                 <!-- Begin Logo -->
                 <a class="navbar-brand" href="/" title="{{ site.name }}">
-                    {% if site.lazyimages == "enabled" %}
-                    <img src="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.logo }}" alt="{{ site.name }}" loading="lazy" decoding="async" />
-                    {% else %}
                     <img src="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.logo }}" alt="{{ site.name }}" />
-                    {% endif %}
                     <h1 class="d-none" itemprop="name">{{ site.name }}</h1>
                 </a>
                 <!-- End Logo -->
@@ -21,37 +17,37 @@
                     <!-- Begin Menu -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item{% if page.url == "/" %} active{% endif %}">
-                            <a class="nav-link" href="/" title="Home" itemprop="url"{% if page.url == "/" %} aria-current="page"{% endif %} onClick="ga('send', 'event', 'navigation', 'click', 'home');">
+                            <a class="nav-link" href="/" title="Home" itemprop="url"{% if page.url == "/" %} aria-current="page"{% endif %} {% if site.analytics == "enabled" %}{% if site.google_analytics %}onClick="ga('send', 'event', 'navigation', 'click', 'home');"{% endif %}{% endif %}>
                                 <span itemprop="name">Home</span>
                             </a>
                         </li>
                         <li class="nav-item{% if page.url == "/pages/my-customer" %} active{% endif %}">
-                            <a class="nav-link" href="/pages/my-customer" title="My customer" itemprop="url"{% if page.url == "/pages/my-customer" %} aria-current="page"{% endif %} onClick="ga('send', 'event', 'navigation', 'click', 'my-customer');">
+                            <a class="nav-link" href="/pages/my-customer" title="My customer" itemprop="url"{% if page.url == "/pages/my-customer" %} aria-current="page"{% endif %} {% if site.analytics == "enabled" %}{% if site.google_analytics %}onClick="ga('send', 'event', 'navigation', 'click', 'my-customer');"{% endif %}{% endif %}>
                                 <span itemprop="name">My customer</span>
                             </a>
                         </li>
                         <li class="nav-item{% if page.url == "/pages/contacts" %} active{% endif %}">
-                            <a class="nav-link" href="/pages/contacts" title="Contacts" itemprop="url"{% if page.url == "/pages/contacts" %} aria-current="page"{% endif %} onClick="ga('send', 'event', 'navigation', 'click', 'contacts');">
+                            <a class="nav-link" href="/pages/contacts" title="Contacts" itemprop="url"{% if page.url == "/pages/contacts" %} aria-current="page"{% endif %} {% if site.analytics == "enabled" %}{% if site.google_analytics %}onClick="ga('send', 'event', 'navigation', 'click', 'contacts');"{% endif %}{% endif %}>
                                 <span itemprop="name">Contacts</span>
                             </a>
                         </li>
                         <li class="nav-item{% if page.url == "/series" %} active{% endif %}">
-                            <a class="nav-link" href="/series" title="Series" itemprop="url"{% if page.url == "/series" %} aria-current="page"{% endif %} onClick="ga('send', 'event', 'navigation', 'click', 'series');">
+                            <a class="nav-link" href="/series" title="Series" itemprop="url"{% if page.url == "/series" %} aria-current="page"{% endif %} {% if site.analytics == "enabled" %}{% if site.google_analytics %}onClick="ga('send', 'event', 'navigation', 'click', 'series');"{% endif %}{% endif %}>
                                 <span itemprop="name">Series</span>
                             </a>
                         </li>
                         <li class="nav-item{% if page.url == "/categories" %} active{% endif %}">
-                            <a class="nav-link" href="/categories" title="Categories" itemprop="url"{% if page.url == "/categories" %} aria-current="page"{% endif %} onClick="ga('send', 'event', 'navigation', 'click', 'categories');">
+                            <a class="nav-link" href="/categories" title="Categories" itemprop="url"{% if page.url == "/categories" %} aria-current="page"{% endif %} {% if site.analytics == "enabled" %}{% if site.google_analytics %}onClick="ga('send', 'event', 'navigation', 'click', 'categories');"{% endif %}{% endif %}>
                                 <span itemprop="name">Categories</span>
                             </a>
                         </li>
                         <li class="nav-item{% if page.url == "/tags" %} active{% endif %}">
-                            <a class="nav-link" href="/tags" title="Tags" itemprop="url"{% if page.url == "/tags" %} aria-current="page"{% endif %} onClick="ga('send', 'event', 'navigation', 'click', 'tags');">
+                            <a class="nav-link" href="/tags" title="Tags" itemprop="url"{% if page.url == "/tags" %} aria-current="page"{% endif %} {% if site.analytics == "enabled" %}{% if site.google_analytics %}onClick="ga('send', 'event', 'navigation', 'click', 'tags');"{% endif %}{% endif %}>
                                 <span itemprop="name">Tags</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://service.tuanducdesign.com/" title="Service" itemprop="url" target="_blank" rel="noopener" onClick="ga('send', 'event', 'navigation', 'click', 'service');">
+                            <a class="nav-link" href="https://service.tuanducdesign.com/" title="Service" itemprop="url" target="_blank" rel="noopener" {% if site.analytics == "enabled" %}{% if site.google_analytics %}onClick="ga('send', 'event', 'navigation', 'click', 'service');"{% endif %}{% endif %}>
                                 <span itemprop="name">Service</span>
                             </a>
                         </li>
