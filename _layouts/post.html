@@ -43,7 +43,7 @@ post_class: post-template
                 {% endif %}
                 <span class="dot"></span>
                 <!-- Post Read -->
-                <span class="post-read eta"></span>
+                <span class="post-read eta" {% if site.turbolinks == "enabled" %}data-turbolinks-permanent{% endif %}></span>
                 <span class="dot"></span>
                 <!-- Post Cat -->
                 <span class="post-cat">
