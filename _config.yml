@@ -77,12 +77,12 @@ paginate: "9"
 paginate_path: "/page/:num/"
 markdown: kramdown
 highlighter: rouge
-# kramdown:
-#   input: GFM
-#   syntax_highlighter: rouge
-#   syntax_highlighter_opts:
-#     block:
-#       line_numbers: true
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 adsense: disabled
 adsense-data-ad-client: ca-pub-xxxxxxxxxxxxxxxx
 adsense-data-ad-slot: xxxxxxxxxx

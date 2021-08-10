@@ -5,7 +5,7 @@
             <div class="container pr-0">
                 <!-- Begin Logo -->
                 <a class="navbar-brand" href="/" title="{{ site.name }}">
-                    <img src="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.logo }}" alt="{{ site.name }}" />
+                    <img src="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.logo }}" alt="{{ site.name }}" {% if site.lazyimages == "enabled" %}loading="lazy"{% endif %} />
                     <h1 class="d-none" itemprop="name">{{ site.name }}</h1>
                 </a>
                 <!-- End Logo -->
