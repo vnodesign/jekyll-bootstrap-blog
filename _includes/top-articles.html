@@ -14,7 +14,7 @@
             <!--marque-->
             <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseleave="this.start();">
                 {% for article in site.top_articles %}
-                <a {% if site.turbolinks == "enabled" %}data-remote="true"{% endif %} class="h6 font-weight-light" href="{{article.url}}" title="{{{article.title}}"><span class="position-relative mx-2 badge badge-primary rounded-0">{{article.category}}</span> {{article.title}}</a>
+                <a data-remote="true" class="h6 font-weight-light" href="{{article.url}}" title="{{{article.title}}"><span class="position-relative mx-2 badge badge-primary rounded-0">{{article.category}}</span> {{article.title}}</a>
                 {% endfor %}
             </marquee>
         </div>
