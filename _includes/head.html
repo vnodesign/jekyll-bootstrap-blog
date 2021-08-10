@@ -78,28 +78,5 @@
     <!-- Style -->
     <style type="text/css">{% capture include_to_scssify %}{% include main.scss %}{% endcapture %}{{ include_to_scssify | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:optional}.turbolinks-progress-bar{background-color:#fe2c55}</style>
     <!-- Script -->
-    <script src="/assets/js/main.js" data-turbolinks-track="true"></script>
-    <script src="/assets/js/instantpage.min.js" type="module" data-turbolinks-track="true" defer></script>
-    <script data-turbolinks-track="true">
-    $(document).on("page:change",function(){
-    {% if page.layout == 'post' %}
-    {% if site.disquscmt == "enabled" %}
-    function td_disqus(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="//{{site.disqus}}.disqus.com/embed.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_disqus,!1):window.attachEvent?window.attachEvent("onload",td_disqus):window.onload=td_disqus;
-    {% endif %}
-    {% if site.adsense == "enabled" %}
-    (adsbygoogle=window.adsbygoogle||[]).push({});function td_adsense(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_adsense,!1):window.attachEvent?window.attachEvent("onload",td_adsense):window.onload=td_adsense;
-    {% endif %}
-    {% endif %}
-    {% if site.chat == "enabled" %}
-    {% if site.fanpage-chat %}
-    window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};function td_customerchat(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_customerchat,!1):window.attachEvent?window.attachEvent("onload",td_customerchat):window.onload=td_customerchat;
-    {% endif %}
-    {% endif %}
-    {% if site.analytics == "enabled" %}
-    {% if site.google_analytics %}
-    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{site.google_analytics}}');function td_gtag(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_gtag,!1):window.attachEvent?window.attachEvent("onload",td_gtag):window.onload=td_gtag;
-    {% endif %}
-    {% endif %}
-    $(function(){$("article").each(function(){const n=$(this);n.readingTime({readingTimeTarget:n.find(".eta")})})});jQuery(document).ready((function(t){t(document).ready((function(){t("a[href*='#']:not([href='#])").click((function(){let e=t(this).attr("href");t("html,body").stop().animate({scrollTop:t(e).offset().top},1e3),event.preventDefault()}))})),t(document).on("click",".spoiler",(function(){t(this).removeClass("spoiler")}))})),$(document).ready((function(){$('[data-toggle="tooltip"]').tooltip()}));
-    });
-    </script>
+    <script src="/assets/js/main.js" data-turbo-eval="false" data-turbolinks-eval="false"></script>
+    <script src="/assets/js/instantpage.min.js" type="module" defer></script>

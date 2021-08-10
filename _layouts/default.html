@@ -11,7 +11,7 @@
 <body class="{{layout}}" itemscope itemtype="https://schema.org/WebPage">
   <div class="site-content" tabindex="0">
     {% include navigation.html %}
-    <main class="container" role="main">
+    <main class="container" role="main" data-pjax-container>
       <!-- Content  -->
       <div class="main-content">
         {{ content }}
@@ -23,8 +23,8 @@
   {% if site.chat == "enabled" %}
   {% if site.fanpage-chat %}
   <!-- Messenger Plugin chat -->
-  <div id="fb-root" {% if site.turbolinks == "enabled" %}data-turbolinks-permanent{% endif %}></div>
-  <div class="fb-customerchat" {% if site.turbolinks == "enabled" %}data-turbolinks-no-cache{% endif %} attribution="biz_inbox" page_id="{{site.fanpage-chat}}" data-lazy="true" greeting_dialog_display="icon"></div>
+  <div id="fb-root" data-turbolinks-permanent></div>
+  <div class="fb-customerchat" data-turbolinks-no-cache attribution="biz_inbox" page_id="{{site.fanpage-chat}}" data-lazy="true" greeting_dialog_display="icon"></div>
   {% endif %}
   {% endif %}
 </body>
