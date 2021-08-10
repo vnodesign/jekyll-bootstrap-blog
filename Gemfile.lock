@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/jekyll/jekyll.git
-  revision: 76517175e700d80706c9139989053f1c53d9b956
+  revision: dc5e39fad9bc21310c3cfe33eae0113c617e3aaf
   specs:
     jekyll (4.2.0)
       addressable (~> 2.4)
@@ -30,7 +30,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7)
-    ffi (1.15.1)
+    ffi (1.15.3)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
     i18n (1.8.10)
@@ -57,7 +57,7 @@ GEM
     liquid (4.0.3)
     liquid-c (4.0.0)
       liquid (>= 3.0.0)
-    listen (3.5.1)
+    listen (3.6.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
@@ -79,8 +79,6 @@ GEM
 
 PLATFORMS
   x86_64-darwin-19
-  x86_64-darwin-20
-  x86_64-linux
 
 DEPENDENCIES
   jekyll!
