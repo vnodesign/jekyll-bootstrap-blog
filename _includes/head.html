@@ -26,7 +26,7 @@
     <link rel="icon" type="image/png" sizes="152x152" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-152x152 }}" />
     <link rel="icon" type="image/png" sizes="180x180" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-180x180 }}" />
     <!-- Preload file -->
-    <link rel="preload" href="/assets/js/app.js" as="script" />
+    <link rel="preload" href="/assets/js/app.bundle.min.js" as="script" />
     <link rel="preload" href="/assets/js/instantpage.min.js" as="script" />
     {% if site.analytics == "enabled" %}
     {% if site.google_analytics %}
@@ -78,5 +78,29 @@
     <!-- Style -->
     <style type="text/css">{% capture include_to_scssify %}{% include main.scss %}{% endcapture %}{{ include_to_scssify | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:optional}.turbolinks-progress-bar{background-color:#fe2c55}</style>
     <!-- Script -->
-    <script src="/assets/js/main.js" data-turbo-eval="false" data-turbolinks-eval="false"></script>
+    <script src="/assets/js/app.bundle.min.js" data-turbo-track="true"></script>
+    <script>
+    {% if page.layout == 'post' %}
+    {% if site.disquscmt == "enabled" %}
+    /* Disqus Comments */
+    function td_disqus(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="//{{site.disqus}}.disqus.com/embed.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_disqus,!1):window.attachEvent?window.attachEvent("onload",td_disqus):window.onload=td_disqus;
+    {% endif %}
+    {% if site.adsense == "enabled" %}
+    /* Google Adsense */
+    (adsbygoogle=window.adsbygoogle||[]).push({});function td_adsense(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_adsense,!1):window.attachEvent?window.attachEvent("onload",td_adsense):window.onload=td_adsense;
+    {% endif %}
+    {% endif %}
+    {% if site.chat == "enabled" %}
+    {% if site.fanpage-chat %}
+    /* Facebook Customize Chat */
+    window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};function td_customerchat(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_customerchat,!1):window.attachEvent?window.attachEvent("onload",td_customerchat):window.onload=td_customerchat;
+    {% endif %}
+    {% endif %}
+    {% if site.analytics == "enabled" %}
+    {% if site.google_analytics %}
+    /* Google Analytics */
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{site.google_analytics}}');function td_gtag(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_gtag,!1):window.attachEvent?window.attachEvent("onload",td_gtag):window.onload=td_gtag;
+    {% endif %}
+    {% endif %}
+    </script>
     <script src="/assets/js/instantpage.min.js" type="module" defer></script>
