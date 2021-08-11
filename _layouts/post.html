@@ -2,6 +2,16 @@
 layout: default
 post_class: post-template
 ---
+<script>
+{% if site.disquscmt == "enabled" %}
+/* Disqus Comments */
+function td_disqus(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="//{{site.disqus}}.disqus.com/embed.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_disqus,!1):window.attachEvent?window.attachEvent("onload",td_disqus):window.onload=td_disqus;
+{% endif %}
+{% if site.adsense == "enabled" %}
+/* Google Adsense */
+(adsbygoogle=window.adsbygoogle||[]).push({});function td_adsense(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_adsense,!1):window.attachEvent?window.attachEvent("onload",td_adsense):window.onload=td_adsense;
+{% endif %}
+</script>
 <!-- Begin Article -->
 <article class="container">
     <div class="row">

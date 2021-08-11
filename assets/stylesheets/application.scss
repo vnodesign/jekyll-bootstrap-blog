@@ -1,0 +1,33 @@
+@import "bootstrap-sass/functions";
+@import "bootstrap-sass/variables";
+@import "bootstrap-sass/mixins";
+@import "bootstrap-sass/root";
+@import "bootstrap-sass/reboot";
+@import "bootstrap-sass/type";
+@import "bootstrap-sass/images";
+@import "bootstrap-sass/code";
+@import "bootstrap-sass/grid";
+@import "bootstrap-sass/forms";
+@import "bootstrap-sass/buttons";
+@import "bootstrap-sass/transitions";
+@import "bootstrap-sass/nav";
+@import "bootstrap-sass/navbar";
+@import "bootstrap-sass/card";
+@import "bootstrap-sass/pagination";
+@import "bootstrap-sass/badge";
+@import "bootstrap-sass/alert";
+@import "bootstrap-sass/media";
+@import "bootstrap-sass/tooltip";
+@import "bootstrap-sass/utilities";
+@import "bootstrap-sass/print";
+@import "bootstrap-sass/bootstrap-icon";
+@import "bootstrap-sass/darkmode";
+@import "bootstrap-sass/main";
+@font-face {
+    font-family: "bootstrap-icons";
+    src: url("../fonts/bootstrap-icons.woff2")format("woff2"), url("../fonts/bootstrap-icons.woff")format("woff");
+    font-display: optional
+}
+.turbolinks-progress-bar {
+    background-color: #fe2c55
+}
