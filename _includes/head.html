@@ -78,7 +78,7 @@
     <!-- Style -->
     <style type="text/css">{% capture include_to_scssify %}{% include main.scss %}{% endcapture %}{{ include_to_scssify | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:optional}.turbolinks-progress-bar{background-color:#fe2c55}</style>
     <!-- Script -->
-    <script src="/assets/js/app.bundle.min.js" data-turbo-track="true"></script>
+    <script src="/assets/js/app.bundle.min.js" data-turbo-track="reload"></script>
     <script>
     {% if page.layout == 'post' %}
     {% if site.disquscmt == "enabled" %}
