@@ -93,7 +93,6 @@ include:
 - ".htaccess"
 - _pages
 - manifest.json
-- node_modules
 exclude:
 - changelog.md
 - LICENSE.txt
