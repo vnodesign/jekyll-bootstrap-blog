@@ -1,4 +1,4 @@
-import Turbolinks from 'turbolinks';
+import 'turbolinks';
 import 'jquery';
 import 'pjax';
 import 'bootstrap';
