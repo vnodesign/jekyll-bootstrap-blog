@@ -85,7 +85,6 @@ highlighter: rouge
 #       line_numbers: true
 adsense: enabled
 adsense-data-ad-client: ca-pub-4183134625750063
-adsense-data-ad-slot: 4183134625750063
 lazyimages: enabled
 sass:
   style: compressed
