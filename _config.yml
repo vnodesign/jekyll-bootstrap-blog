@@ -83,9 +83,9 @@ highlighter: rouge
 #   syntax_highlighter_opts:
 #     block:
 #       line_numbers: true
-adsense: disabled
-adsense-data-ad-client: ca-pub-xxxxxxxxxxxxxxxx
-adsense-data-ad-slot: xxxxxxxxxx
+adsense: enabled
+adsense-data-ad-client: ca-pub-4183134625750063
+adsense-data-ad-slot: 4183134625750063
 lazyimages: enabled
 sass:
   style: compressed
