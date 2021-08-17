@@ -40,6 +40,9 @@
     {% endif %}
     <link rel="preload" href="/assets/fonts/bootstrap-icons.woff2" as="font" type="font/woff2" crossorigin="crossorigin" />
     <link rel="preload" href="/assets/fonts/bootstrap-icons.woff" as="font" type="font/woff" crossorigin="crossorigin" />
+    {% if site.adsense == "enabled" %}
+    <link rel="preload" href="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{site.adsense-data-ad-client}}" as="script" />
+    {% endif %}
     <!-- Prefetch Domain -->
     {% if site.chat == "enabled" %}
     {% if site.fanpage-chat %}
@@ -50,6 +53,9 @@
     <link rel="dns-prefetch" href="//static.xx.fbcdn.net" />
     <link rel="dns-prefetch" href="//staticxx.facebook.com" />
     {% endif %}
+    {% endif %}
+    {% if site.adsense == "enabled" %}
+    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com" />
     {% endif %}
     {% if site.analytics == "enabled" %}
     {% if site.google_analytics %}
@@ -74,6 +80,9 @@
     <link rel="preconnect" href="https://www.google-analytics.com" />
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     {% endif %}
+    {% endif %}
+    {% if site.adsense == "enabled" %}
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
     {% endif %}
     <!-- Style -->
     <style type="text/css">{% capture include_to_scssify %}{% include main.scss %}{% endcapture %}{{ include_to_scssify | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:optional}.turbolinks-progress-bar{background-color:#fe2c55}</style>
