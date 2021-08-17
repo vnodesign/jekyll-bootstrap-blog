@@ -93,6 +93,7 @@ include:
 - ".htaccess"
 - _pages
 - manifest.json
+- ads.txt
 exclude:
 - changelog.md
 - LICENSE.txt
