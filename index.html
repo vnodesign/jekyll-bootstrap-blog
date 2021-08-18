@@ -19,9 +19,16 @@ layout: default
     </div>
 </section>
 {% endif %}
-{% if site.adsense == "enabled" %}
-    {% include_cached adsense-under-header.html %}
-{% endif %}
+<!-- Box Ads -->
+<section class="box-ads">
+    <div class="row">
+        <div class="col-sm-12">
+            {% if site.adsense == "enabled" %}
+                {% include_cached adsense-under-header.html %}
+            {% endif %}
+        </div>
+    </div>
+</section>
 <!-- Recent Posts -->
 <section class="recent-posts">
     <div class="section-title">
