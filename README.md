@@ -1,6 +1,4 @@
-# Mediumish - Jekyll Theme
-
-![Mediumish](assets/images/screen-my-website.png)
+![Blog](assets/images/screen-my-website.png)
 
 - Production: https://tuanducdesign.com/
 - Github Page Mirror: https://tuanducteam.github.io/blog
@@ -44,7 +42,7 @@ Mediumish requires 2 plugins:
 ```
 gem install jekyll-paginate
 ```
-
+And
 ```
 gem install jekyll-archives
 ```
@@ -56,10 +54,15 @@ Start by adding your ``.md`` files in ``_posts``. Mediumish already has a few as
 YAML front matter:
 
 Post featured - ``featured:true``
+
 Post featured image - ``image: static/media/lazyload-facebook-customize-chat.jpg``
+
 Post featured image (version webp) - ``webp: static/webp/lazyload-facebook-customize-chat.webp``
+
 Post toc+ - ``toc: true``
+
 Post hidden from recent posts - ``hidden: true``
+
 Post rating move from 1 to 5 - ``rating: 1``
 
 ### YAML Post Example:
@@ -92,7 +95,7 @@ permalink: /pages/contacts
 ```
 
 ## Credits
-Redesign by [Tuan Duc Tran](https://www.facebook.com/tuanduc.support) &nbsp; | &nbsp; Original design by [Sal](https://www.wowthemes.net) and it is *free* under MIT license.
+Redesign by [Tuan Duc Tran](https://www.facebook.com/tuanduc.support) | Original design by [Sal](https://www.wowthemes.net) and it is *free* under MIT license.
 
 ## License
 The MIT License (MIT)
