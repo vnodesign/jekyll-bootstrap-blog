@@ -6,13 +6,13 @@ post_class: post-template
 <article class="container">
     <div class="row">
         <!-- Post Share -->
-        <!-- <div class="col-md-2 pl-0">
+        <div class="col-md-2 pl-0">
             {% include_cached share.html %}
-        </div> -->
+        </div>
         <!-- Post -->
         {% assign author = site.authors[page.author] %}
         {% assign sortedCategories = page.categories | sort %}
-        <div class="col-md-12 flex-first flex-md-unordered">
+        <div class="col-md-10 flex-first flex-md-unordered">
             <div class="mainheading text-center">
                 <!-- Post Title -->
                 <h2 class="posttitle">

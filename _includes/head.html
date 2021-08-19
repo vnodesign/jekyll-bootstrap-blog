@@ -26,6 +26,7 @@
     <link rel="icon" type="image/png" sizes="152x152" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-152x152 }}" />
     <link rel="icon" type="image/png" sizes="180x180" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-180x180 }}" />
     <!-- Preload file -->
+    <link rel="preload" href="/assets/stylesheets/application.css" as="style" />
     <link rel="preload" href="/assets/javascripts/application.js" as="script" />
     <link rel="preload" href="/assets/javascripts/instantpage.min.js" as="script" />
     {% if site.analytics == "enabled" %}
@@ -85,7 +86,8 @@
     <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
     {% endif %}
     <!-- Style -->
-    <style type="text/css">{% capture include_to_scssify %}{% include main.scss %}{% endcapture %}{{ include_to_scssify | scssify }}@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:optional}.turbolinks-progress-bar{background-color:#fe2c55}</style>
+    <link rel="stylesheet" href="/assets/stylesheets/application.css" data-turbolinks-track="true" defer />
+    <style type="text/css">@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:optional}.turbolinks-progress-bar{background-color:#fe2c55}</style>
     <!-- Script -->
-    <script src="/assets/javascripts/application.js" data-turbolinks-track="true"></script>
+    <script src="/assets/javascripts/application.js" data-turbolinks-track="true" defer></script>
     <script src="/assets/javascripts/instantpage.min.js" type="module" defer></script>
