@@ -77,12 +77,12 @@ paginate: "9"
 paginate_path: "/page/:num/"
 markdown: kramdown
 highlighter: rouge
-# kramdown:
-#   input: GFM
-#   syntax_highlighter: rouge
-#   syntax_highlighter_opts:
-#     block:
-#       line_numbers: true
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 adsense: enabled
 adsense-data-ad-client: "ca-pub-4183134625750063"
 adsense-data-ad-slot: "5639974067"
@@ -118,12 +118,3 @@ top_articles:
   - url: /2021/04/series-nextdns
     title: Series hướng dẫn sử dụng NextDNS
     category: Series
-compress_html:
-    clippings: []
-    comments: [all]
-    endings: []
-    ignore:
-    envs: [local]
-    blanklines: false
-    profile: false
-    startings: []
