@@ -498,12 +498,16 @@
         .share {
             color: var(--always-white) !important;
             fill: var(--always-white) !important;
-            .share a {
+
+            a {
                 color: var(--always-white) !important;
                 fill: var(--always-white) !important;
-                .share svg {
+                svg {
                     color: var(--always-white) !important;
                     fill: var(--always-white) !important;
+                    .bi {
+                        border: unset !important
+                    }
                 }
             }
         }
