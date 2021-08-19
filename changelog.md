@@ -1,5 +1,10 @@
 # Mediumish Jekyll Theme - Change Log
 
+## 2021-08-19, v1.0.37
+- turbolinks
+- dark mode
+- reading time
+
 ## 2019-05-16, v1.0.36
 - docker-composer.yml
 - better responsiveness for 1920x1080 resolution
