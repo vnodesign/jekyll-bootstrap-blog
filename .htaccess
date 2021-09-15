@@ -19,4 +19,5 @@ RewriteCond %{REQUEST_FILENAME} (.*)\.(jpe?g|png)$
 RewriteCond %1\.webp -f
 RewriteRule (.+)\.(jpe?g|png)$ $1.webp [T=image/webp,E=accept:1]
 AddType image/webp .webp
+RewriteRule ^(.*)$ /_site/$1/
 # End

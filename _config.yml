@@ -31,7 +31,7 @@ facebook:
   admins: "100005485267478"
 chat: "enabled"
 fanpage-chat: "121349286117840"
-permalink: "/:year/:month/:title"
+permalink: "/:year/:month/:title.html"
 twitter:
   username: tuanducdesign
   card: summary_large_image
@@ -72,9 +72,9 @@ jekyll-archives:
   - categories
   layout: archive
   permalinks:
-    category: "/category/:name/"
+    category: "/category/:name.html/"
 paginate: "9"
-paginate_path: "/page/:num/"
+paginate_path: "/page/:num.html/"
 markdown: kramdown
 highlighter: rouge
 kramdown:
@@ -106,15 +106,15 @@ keep_files:
 notification_cmt:
   - name: Due to the influence of AAG cables, we temporarily disable commenting until the cable is stable.
 top_articles: 
-  - url: /2021/01/cai-dat-module-pagespeed-len-may-chu-nginx
+  - url: /2021/01/cai-dat-module-pagespeed-len-may-chu-nginx.html
     title: Cài đặt Module PageSpeed lên máy chủ Nginx
     category: Server
-  - url: /2021/01/huong-dan-su-dung-thu-vien-deferjs-cua-mai-nhut-tan
+  - url: /2021/01/huong-dan-su-dung-thu-vien-deferjs-cua-mai-nhut-tan.html
     title: Hướng Dẫn Sử Dụng Thư Viện DeferJS của Mai Nhựt Tân
     category: Library
-  - url: /2021/02/bo-ba-thu-vien-than-thanh-giup-website-toi-uu
+  - url: /2021/02/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.html
     title: Bộ Ba Thư Viện Thần Thánh Giúp Website Tối Ưu
     category: Library
-  - url: /2021/04/series-nextdns
+  - url: /2021/04/series-nextdns.html
     title: Series hướng dẫn sử dụng NextDNS
     category: Series
