@@ -3,7 +3,7 @@ layout: post
 title:  "Mẹo Tối Ưu Website Khi Sử Dụng Zalo Plugins"
 author: tuanducdesign
 categories: [ Javascript ]
-tags: [Preload, Zalo]
+tags: [Preload, Zalo, Javascript]
 image: static/media/meo-toi-uu-website-khi-su-dung-zalo-plugins.jpg
 webp: static/webp/meo-toi-uu-website-khi-su-dung-zalo-plugins.webp
 description: "Ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Zalo plugins."

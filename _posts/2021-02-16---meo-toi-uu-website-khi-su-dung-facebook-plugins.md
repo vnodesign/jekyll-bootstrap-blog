@@ -3,7 +3,7 @@ layout: post
 title:  "Mẹo Tối Ưu Website Khi Sử Dụng Facebook Plugins"
 author: tuanducdesign
 categories: [ Javascript ]
-tags: [Preload, Facebook]
+tags: [Preload, Facebook, Javascript]
 image: static/media/meo-toi-uu-website-khi-su-dung-facebook-plugins.jpg
 webp: static/webp/meo-toi-uu-website-khi-su-dung-facebook-plugins.webp
 description: "Ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Facebook plugins."

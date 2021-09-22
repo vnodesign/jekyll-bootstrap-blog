@@ -3,7 +3,7 @@ layout: post
 title:  "Lazyload Youtube và Responsive Video"
 author: tuanducdesign
 categories: [ Javascript ]
-tags: [Lazyload, Video, Responsive]
+tags: [Lazyload, Video, Responsive, Javascript]
 image: static/media/lazyload-youtube-va-responsive-video.jpg
 webp: static/webp/lazyload-youtube-va-responsive-video.webp
 description: "Ở các bài viết trước mình đã hướng dẫn các bạn lazyload các script, ở bài này mình sẽ hướng dẫn cách lazyload Youtube và responsive video."
@@ -224,10 +224,8 @@ Tổng hợp lại thì ta có như sau:
 
 Dựa vào các kiến thức vốn có từ các bài trước, bạn có thể tối ưu thêm khi chèn video Youtube vào website.
 
-- {% include internal-link.html href="2021/02/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.html" title="Bộ Ba Thư Viện Thần Thánh Giúp Website Tối Ưu" %}
-- {% include internal-link.html href="2021/01/tang-toc-website-tu-preload.html" title="Tăng Tốc Website Từ Preload" %}
-
-Demo: {% include external-link.html href="https://tuanducdesign.github.io/bootstrap-4-landing-page/#baihat" title="https://tuanducdesign.github.io/bootstrap-4-landing-page/#baihat" %}
+- {% include internal-link.html href="article/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.html" title="Bộ Ba Thư Viện Thần Thánh Giúp Website Tối Ưu" %}
+- {% include internal-link.html href="article/tang-toc-website-tu-preload.html" title="Tăng Tốc Website Từ Preload" %}
 
 Nếu bố cục của khung video quá to hoặc ảnh bị mờ thì bạn chỉnh lại các đoạn sau trong css nhé!
 

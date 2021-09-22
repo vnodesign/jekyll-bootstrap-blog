@@ -3,7 +3,7 @@ layout: post
 title:  "Lazyload Zalo Plugins"
 author: tuanducdesign
 categories: [ Javascript ]
-tags: [Lazyload, Zalo]
+tags: [Lazyload, Zalo, Javascript]
 image: static/media/lazyload-zalo-plugins.jpg
 webp: static/webp/lazyload-zalo-plugins.webp
 description: "Trong bài viết tiếp theo của ngày hôm nay mình sẽ hướng dẫn các bạn cách Lazyload script của Zalo để tải trang nhanh hơn."

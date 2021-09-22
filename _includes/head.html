@@ -91,3 +91,8 @@
     <!-- Script -->
     <script src="/assets/javascripts/application.js" data-turbolinks-track="true" defer></script>
     <script src="/assets/javascripts/instantpage.min.js" type="module" defer></script>
+    <script type="text/javascript">
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/sw.js")
+    }
+    </script>

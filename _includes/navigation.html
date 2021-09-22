@@ -2,7 +2,7 @@
     <header id="master" class="site-header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
         <!-- Begin Menu Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-            <div class="container pr-0">
+            <div class="container">
                 <!-- Begin Logo -->
                 <a class="navbar-brand" href="/" title="{{ site.name }}">
                     <img src="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.logo }}" alt="{{ site.name }}" {% if site.lazyimages == "enabled" %}loading="lazy"{% endif %} />
@@ -21,28 +21,28 @@
                                 <span itemprop="name">Home</span>
                             </a>
                         </li>
-                        <li class="nav-item{% if page.url == "/pages/my-customer" %} active{% endif %}">
-                            <a class="nav-link" href="/pages/my-customer" title="My customer" itemprop="url"{% if page.url == "/pages/my-customer" %} aria-current="page"{% endif %} {% if site.analytics == "enabled" %}{% if site.google_analytics %}onClick="ga('send', 'event', 'navigation', 'click', 'my-customer');"{% endif %}{% endif %}>
+                        <li class="nav-item{% if page.url == "/pages/my-customer.html" %} active{% endif %}">
+                            <a class="nav-link" href="/pages/my-customer.html" title="My customer" itemprop="url"{% if page.url == "/pages/my-customer.html" %} aria-current="page"{% endif %} {% if site.analytics == "enabled" %}{% if site.google_analytics %}onClick="ga('send', 'event', 'navigation', 'click', 'my-customer');"{% endif %}{% endif %}>
                                 <span itemprop="name">My customer</span>
                             </a>
                         </li>
-                        <li class="nav-item{% if page.url == "/pages/contacts" %} active{% endif %}">
-                            <a class="nav-link" href="/pages/contacts" title="Contacts" itemprop="url"{% if page.url == "/pages/contacts" %} aria-current="page"{% endif %} {% if site.analytics == "enabled" %}{% if site.google_analytics %}onClick="ga('send', 'event', 'navigation', 'click', 'contacts');"{% endif %}{% endif %}>
+                        <li class="nav-item{% if page.url == "/pages/contacts.html" %} active{% endif %}">
+                            <a class="nav-link" href="/pages/contacts.html" title="Contacts" itemprop="url"{% if page.url == "/pages/contacts.html" %} aria-current="page"{% endif %} {% if site.analytics == "enabled" %}{% if site.google_analytics %}onClick="ga('send', 'event', 'navigation', 'click', 'contacts');"{% endif %}{% endif %}>
                                 <span itemprop="name">Contacts</span>
                             </a>
                         </li>
-                        <li class="nav-item{% if page.url == "/series" %} active{% endif %}">
-                            <a class="nav-link" href="/series" title="Series" itemprop="url"{% if page.url == "/series" %} aria-current="page"{% endif %} {% if site.analytics == "enabled" %}{% if site.google_analytics %}onClick="ga('send', 'event', 'navigation', 'click', 'series');"{% endif %}{% endif %}>
+                        <li class="nav-item{% if page.url == "/series.html" %} active{% endif %}">
+                            <a class="nav-link" href="/series.html" title="Series" itemprop="url"{% if page.url == "/series.html" %} aria-current="page"{% endif %} {% if site.analytics == "enabled" %}{% if site.google_analytics %}onClick="ga('send', 'event', 'navigation', 'click', 'series');"{% endif %}{% endif %}>
                                 <span itemprop="name">Series</span>
                             </a>
                         </li>
-                        <li class="nav-item{% if page.url == "/categories" %} active{% endif %}">
-                            <a class="nav-link" href="/categories" title="Categories" itemprop="url"{% if page.url == "/categories" %} aria-current="page"{% endif %} {% if site.analytics == "enabled" %}{% if site.google_analytics %}onClick="ga('send', 'event', 'navigation', 'click', 'categories');"{% endif %}{% endif %}>
+                        <li class="nav-item{% if page.url == "/categories.html" %} active{% endif %}">
+                            <a class="nav-link" href="/categories.html" title="Categories" itemprop="url"{% if page.url == "/categories.html" %} aria-current="page"{% endif %} {% if site.analytics == "enabled" %}{% if site.google_analytics %}onClick="ga('send', 'event', 'navigation', 'click', 'categories');"{% endif %}{% endif %}>
                                 <span itemprop="name">Categories</span>
                             </a>
                         </li>
-                        <li class="nav-item{% if page.url == "/tags" %} active{% endif %}">
-                            <a class="nav-link" href="/tags" title="Tags" itemprop="url"{% if page.url == "/tags" %} aria-current="page"{% endif %} {% if site.analytics == "enabled" %}{% if site.google_analytics %}onClick="ga('send', 'event', 'navigation', 'click', 'tags');"{% endif %}{% endif %}>
+                        <li class="nav-item{% if page.url == "/tags.html" %} active{% endif %}">
+                            <a class="nav-link" href="/tags.html" title="Tags" itemprop="url"{% if page.url == "/tags.html" %} aria-current="page"{% endif %} {% if site.analytics == "enabled" %}{% if site.google_analytics %}onClick="ga('send', 'event', 'navigation', 'click', 'tags');"{% endif %}{% endif %}>
                                 <span itemprop="name">Tags</span>
                             </a>
                         </li>

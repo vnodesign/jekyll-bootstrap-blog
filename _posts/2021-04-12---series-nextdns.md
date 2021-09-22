@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Series hướng dẫn sử dụng NextDNS"
-permalink: /series-nextdns
+permalink: /series-nextdns.html
 author: tuanducdesign
 categories: [ Series ]
 tags: [NextDNS, Network]
@@ -25,7 +25,7 @@ Những gì có được sau khi hoàn thành bước này:
 - Biết cách cấu hình NextDNS trên các thiết bị.
 - Biết cách sử dụng NextDNS.
 
-{% include internal-link.html href="series/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem" title="Xem thêm →" %}
+{% include internal-link.html href="series/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.html" title="Xem thêm →" %}
 
 ## Tìm hiểu và kích hoạt các chức năng bảo mật
 
@@ -37,7 +37,7 @@ Những gì có được sau khi hoàn thành bước này:
 - Mạng được bảo mật hơn.
 - Biết cách bảo vệ thành viên trong gia đình khi truy cập mạng.
 
-{% include internal-link.html href="series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns" title="Xem thêm →" %}
+{% include internal-link.html href="series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.html" title="Xem thêm →" %}
 
 ## Cấu hình các chức năng riêng tư
 
@@ -48,7 +48,7 @@ Những gì có được sau khi hoàn thành bước này:
 - Truy cập mạng an toàn hơn.
 - Biết cách xử lý các lỗi khi gặp phải với NextDNS.
 
-{% include internal-link.html href="series/cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns" title="Xem thêm →" %}
+{% include internal-link.html href="series/cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns.html" title="Xem thêm →" %}
 
 ## Cấu hình chức năng kiểm soát của cha mẹ
 
@@ -60,7 +60,7 @@ Những gì có được sau khi hoàn thành bước này:
 - Lên thời gian sử dụng ứng dụng bất kì cho con cái.
 - Bảo vệ con cái khỏi các trang có nội dung khiêu đâm.
 
-{% include internal-link.html href="series/cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns" title="Xem thêm →" %}
+{% include internal-link.html href="series/cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.html" title="Xem thêm →" %}
 
 ## Cấu hình chức năng chặn tên miền
 
@@ -70,7 +70,7 @@ Những gì có được sau khi hoàn thành bước này:
 
 - Biết cách chặn tên miền.
 
-{% include internal-link.html href="series/cau-hinh-chuc-nang-chan-ten-mien-tren-nextdns" title="Xem thêm →" %}
+{% include internal-link.html href="series/cau-hinh-chuc-nang-chan-ten-mien-tren-nextdns.html" title="Xem thêm →" %}
 
 ## Cấu hình chức năng cho phép tên miền
 
@@ -80,7 +80,7 @@ Những gì có được sau khi hoàn thành bước này:
 
 - Biết cách bỏ chặn tên miền, nếu như nó đang bị trình chặn quảng cáo chặn.
 
-{% include internal-link.html href="series/cau-hinh-chuc-nang-cho-phep-ten-mien-tren-nextdns" title="Xem thêm →" %}
+{% include internal-link.html href="series/cau-hinh-chuc-nang-cho-phep-ten-mien-tren-nextdns.html" title="Xem thêm →" %}
 
 ## Chức năng theo dõi
 
@@ -91,7 +91,7 @@ Những gì có được sau khi hoàn thành bước này:
 - Biết cách kiểm tra xem những miền nào đang bị chặn.
 - Biết cách kiểm tra số truy vấn.
 
-{% include internal-link.html href="series/chuc-nang-theo-doi-tren-nextdns-co-y-nghia-gi" title="Xem thêm →" %}
+{% include internal-link.html href="series/chuc-nang-theo-doi-tren-nextdns-co-y-nghia-gi.html" title="Xem thêm →" %}
 
 ## Cách theo dõi nhật ký
 
@@ -102,7 +102,7 @@ Những gì có được sau khi hoàn thành bước này:
 - Biết cách kiểm tra xem những miền nào đang bị chặn.
 - Biết cách gỡ bỏ một miền đang bị chặn.
 
-{% include internal-link.html href="series/cach-theo-doi-nhat-ky-tren-nextdns" title="Xem thêm →" %}
+{% include internal-link.html href="series/cach-theo-doi-nhat-ky-tren-nextdns.html" title="Xem thêm →" %}
 
 ## Tìm hiểu các chức năng cài đặt
 
@@ -112,7 +112,7 @@ Những gì có được sau khi hoàn thành bước này:
 
 - Biết cách thay đổi tên của cấu hình.
 
-{% include internal-link.html href="series/tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns" title="Xem thêm →" %}
+{% include internal-link.html href="series/tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.html" title="Xem thêm →" %}
 
 ## Hướng dẫn cấu hình NOIP để hoạt động với NextDNS
 
@@ -122,4 +122,4 @@ Những gì có được sau khi hoàn thành bước này:
 
 - Biết cách cấu hình DDNS nói chung và NOIP nói riêng.
 
-{% include internal-link.html href="series/huong-dan-cau-hinh-noip-de-hoat-dong-voi-nextdns" title="Xem thêm →" %}
+{% include internal-link.html href="series/huong-dan-cau-hinh-noip-de-hoat-dong-voi-nextdns.html" title="Xem thêm →" %}

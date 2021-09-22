@@ -6,7 +6,7 @@ layout: default
         <h2><span>{{ page.title }}</span></h2>
     </div>
     {% if site.adsense == "enabled" %}
-        {% include_cached adsense-under-header.html %}
+        {% include adsense-under-header.html %}
     {% endif %}
     <div class="article-post">
         {{content}}

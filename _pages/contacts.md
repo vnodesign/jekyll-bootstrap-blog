@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contacts
-permalink: /pages/contacts
+permalink: /pages/contacts.html
 ---
 
 Do you have problems related to VPS development and Website optimization? Please contact me to help you.

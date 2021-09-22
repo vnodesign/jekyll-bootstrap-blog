@@ -1,3 +1,5 @@
+<link rel="preload" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}/static/media/{{ include.webp }}" as="image" />
+<link rel="preload" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}/static/media/{{ include.src }}" as="image" />
 <picture>
     <source srcset="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}/static/media/{{ include.webp }}" type="image/webp" />
     <img class="mx-auto d-block" src="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}/static/media/{{ include.src }}" alt="{{ include.alt }}" {% if site.lazyimages == "enabled" %}loading="lazy"{% endif %} />

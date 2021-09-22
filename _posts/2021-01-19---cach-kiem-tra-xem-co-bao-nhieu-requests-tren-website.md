@@ -44,7 +44,7 @@ Bên trên có khung Fillter bạn gõ vào đó tên domain hoặc đuôi mở 
 
 {% include image.html src="so-requests-tren-website.jpg" webp="so-requests-tren-website.webp" type="jpg" alt="Số requests trên website" %}
 
-Bây giờ chúng ta tiến hành áp dụng các kiến thức từ bài {% include internal-link.html href="2021/01/tang-toc-website-tu-preload.html" title="Tăng Tốc Website Từ Preload" %} để áp dụng vào bài này.
+Bây giờ chúng ta tiến hành áp dụng các kiến thức từ bài {% include internal-link.html href="article/tang-toc-website-tu-preload.html" title="Tăng Tốc Website Từ Preload" %} để áp dụng vào bài này.
 
 Cú pháp quen thuộc mà mình muốn nhắc đến đó chính là:
 

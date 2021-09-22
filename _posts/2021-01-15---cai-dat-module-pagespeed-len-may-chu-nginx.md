@@ -3,7 +3,7 @@ layout: post
 title:  "Cài đặt Module PageSpeed lên máy chủ Nginx"
 author: tuanducdesign
 categories: [ Server ]
-tags: [Pagespeed, Module, Nginx]
+tags: [Pagespeed, Module, Nginx, Server, Linux]
 image: static/media/install-module-page-speed-on-server-nginx.jpg
 webp: static/webp/install-module-page-speed-on-server-nginx.webp
 description: "ngx_pagespeed tăng tốc website của bạn và giảm thời gian load đáng kể bằng cách tự động áp dụng các kỹ thuật tối ưu hóa page và các thành phần tĩnh."
@@ -125,10 +125,10 @@ Bạn cần di chuyển vào thư mục /usr/local/src với bash sau:
 cd /usr/local/src
 ```
 
-Ở đây bạn tải phiên bản mới nhất của Nginx: [https://nginx.org/download/nginx-1.18.0.tar.gz](https://nginx.org/download/nginx-1.18.0.tar.gz)
+Ở đây bạn tải phiên bản mới nhất của Nginx: [https://nginx.org/download/nginx-1.20.1.tar.gz](https://nginx.org/download/nginx-1.20.1.tar.gz)
 
 ```bash
-wget https://nginx.org/download/nginx-1.18.0.tar.gz && tar -xzvf nginx-1.18.0.tar.gz
+wget https://nginx.org/download/nginx-1.20.1.tar.gz && tar -xzvf nginx-1.20.1.tar.gz
 ```
 
 Bên cạnh đó bạn cần tải thêm OpenSSL: [https://www.openssl.org/source/openssl-1.1.1g.tar.gz](https://www.openssl.org/source/openssl-1.1.1g.tar.gz)
@@ -139,7 +139,7 @@ wget https://www.openssl.org/source/openssl-1.1.1g.tar.gz && tar -xzvf openssl-1
 
 Nếu bạn dùng bash script của HocVPS thì phải chú ý một điều là:
 
-- HocVPS sử dụng dòng Stable 1.1x.x (Bản mới nhất hiện tại là 1.18.0) không phải dòng Mainline 1.1x.x (Bản mới nhất hiện tại của dòng này là 1.19.0)
+- HocVPS sử dụng dòng Stable 1.2x.x (Bản mới nhất hiện tại là 1.20.1) không phải dòng Mainline 1.2x.x (Bản mới nhất hiện tại của dòng này là 1.21.3)
 - Đối với OpenSSL có thể sử dụng phiên bản 1.0.2x hoặc dòng Stable 1.1.0x
 
 Cái cuối cùng cũng là cái quan trọng nhất đó chính là Source Code PageSpeed.
@@ -167,14 +167,14 @@ Tiếp theo chúng ta tiến hành biên dịch lại Nginx bằng cách giữ n
 Di chuyển vào thư mục mã nguồn Nginx vừa tải:
 
 ```bash
-cd /usr/local/src/nginx-1.18.0
+cd /usr/local/src/nginx-1.20.1
 ```
 
 Lưu các thông tin sau để tí nữa chúng ta biên dịch lại Nginx:
 
 ```bash
 nginx -V
-nginx version: nginx/1.18.0
+nginx version: nginx/1.20.1
 built by gcc 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) 
 built with OpenSSL 1.1.1g  21 Apr 2020
 TLS SNI support enabled
@@ -198,7 +198,7 @@ make && make install
 Nếu xuất hiện ra thông báo:
 
 ```text
-make[1]: Leaving directory `/usr/local/src/nginx-1.18.0'
+make[1]: Leaving directory `/usr/local/src/nginx-1.20.1'
 ```
 
 Mà không hiển thị ra lỗi là OK.
@@ -212,7 +212,7 @@ Lưu ý thêm là:
 ```bash
 service nginx restart && nginx -V
 Redirecting to /bin/systemctl restart nginx.service
-nginx version: nginx/1.18.0
+nginx version: nginx/1.20.1
 built by gcc 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) 
 built with OpenSSL 1.1.1g  21 Apr 2020
 TLS SNI support enabled
@@ -271,7 +271,7 @@ pagespeed EnableFilters lazyload_images;
 pagespeed EnableFilters insert_dns_prefetch;
 ```
 
-Ngoài ra bạn có thể xem thêm toàn bộ danh sách filter có trong CoreFilters: {% include external-link.html href="https://developers.google.com/speed/pagespeed/module/config_filters" title="https://developers.google.com/speed/pagespeed/module/config_filters" %}
+Ngoài ra bạn có thể xem thêm toàn bộ danh sách filter có trong CoreFilters: {% include external-link.html href="https://developers.google.com/speed/pagespeed/module/config_filters" title="tại đây" %}
 
 Với các bạn đã có nhiều kiến thức, trải nghiệm thì nên sử dụng PassThrough. Khi đó sẽ cần tự kích hoạt những filter cần dùng.
 

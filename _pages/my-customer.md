@@ -1,7 +1,7 @@
 ---
 layout: page
 title: My customer
-permalink: /pages/my-customer
+permalink: /pages/my-customer.html
 ---
 
 Regardless of any designer who needs clients with me, here is a list of clients that I have saved in the process of building website for clients.

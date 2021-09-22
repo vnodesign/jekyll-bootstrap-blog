@@ -3,7 +3,7 @@ layout: post
 title:  "Hướng Dẫn Sử Dụng Thư Viện DeferJS của Mai Nhựt Tân"
 author: tuanducdesign
 categories: [ Library ]
-tags: [Preload, Font, Script, Style, Lazyload, PHP, Composer, Laravel]
+tags: [Preload, Font, Script, Style, Lazyload, PHP, Composer, Laravel, WordPress, DeferJS]
 image: static/media/user-guide-for-deferjs-library-by-mai-nhut-tan.jpg
 webp: static/webp/user-guide-for-deferjs-library-by-mai-nhut-tan.webp
 description: "Đây là một thư viện hiệu suất nguyên bản siêu nhỏ để tải JS, CSS, hình ảnh, iframe ... Trì hoãn hầu hết mọi thứ, dễ dàng tăng tốc trang web của bạn."
@@ -74,34 +74,6 @@ Sau khi chuyển:
 ```
 
 Bạn có thể sử dụng Công cụ dành cho nhà phát triển của trình duyệt (nhấn phím F12) để xem các yêu cầu được gửi như thế nào.
-
-Bạn có thể xem demo có sẵn của thư viện này tại đây: {% include external-link.html href="https://appseeds.net/defer.js/wp/optimized" title="phiên bản demo trên WordPress" %}
-
-Rồi từ từ cuộn xuống để xem hình ảnh được tải như thế nào.
-
-Trình duyệt của bạn đã tải nó sau 3 giây kể từ khi trang của bạn kích hoạt sự kiện 'tải'. Có một tiện ích Facebook ở dưới cùng. Đây là cách tải chúng mà không chặn tốc độ tải trang:
-
-```html
-<script type="text/javascript">
-Defer.js('https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js','customerchat-js',100,function(){window.fbAsyncInit=function(){FB.init({xfbml:!0,version:"v10.0"})};});
-</script>
-```
-
-Bạn có thể tải lại trang và tự tìm hiểu.
-
-Kết hợp với các chức năng Defer khác. Trì hoãn tải thư viện highlightjs trong 1000ms. Sau đó, khi bạn cuộn đến bất kỳ thẻ mã nào, hãy bật đánh dấu mã cho thẻ đó
-
-```html
-<script type="text/javascript">
-var base = 'https://cdn.jsdelivr.net/npm/highlightjs@9.12.0';
-Defer.css(base + '/styles/rainbow.css', 'hljs-css', 1000);
-Defer.js(base + '/highlight.pack.min.js', 'hljs-js', 1000, function () {
-    Defer.dom('pre code', 0, 'ide-loaded', function (block) {
-        hljs.highlightBlock(block);
-    });
-});
-</script>
-```
 
 ## Tiến hành lazyload ảnh và video
 
@@ -638,8 +610,6 @@ php artisan vendor:publish --tag="defer-laravel"
 Xem tệp mẫu cấu hình defer-laravel.php sau để biết thêm chi tiết.
 
 ```php
-<?php
-
 /**
  * 🚀 A Laravel package that focuses on minimizing payload size of HTML document
  *    and optimizing processing on the browser when rendering the web page.

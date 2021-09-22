@@ -19,7 +19,6 @@ apple-touch-icon-120x120: /static/apple-touch-icon-120x120.png
 apple-touch-icon-144x144: /static/apple-touch-icon-144x144.png
 apple-touch-icon-152x152: /static/apple-touch-icon-152x152.png
 apple-touch-icon-180x180: /static/apple-touch-icon-180x180.png
-baseurl: 
 url: https://tuanducdesign.com
 analytics: "enabled"
 google_analytics: G-JLS45PZZXS
@@ -31,7 +30,7 @@ facebook:
   admins: "100005485267478"
 chat: "enabled"
 fanpage-chat: "121349286117840"
-permalink: "/:year/:month/:title.html"
+permalink: "/article/:title.html"
 twitter:
   username: tuanducdesign
   card: summary_large_image
@@ -72,9 +71,9 @@ jekyll-archives:
   - categories
   layout: archive
   permalinks:
-    category: "/category/:name.html/"
-paginate: "9"
-paginate_path: "/page/:num.html/"
+    category: "/category/:name"
+paginate: "12"
+paginate_path: "/page/:num"
 markdown: kramdown
 highlighter: rouge
 kramdown:
@@ -90,7 +89,7 @@ lazyimages: enabled
 sass:
   style: compressed
 include:
-- ".htaccess"
+- "nginx.conf"
 - _pages
 - manifest.json
 - ads.txt
@@ -106,15 +105,15 @@ keep_files:
 notification_cmt:
   - name: Due to the influence of AAG cables, we temporarily disable commenting until the cable is stable.
 top_articles: 
-  - url: /2021/01/cai-dat-module-pagespeed-len-may-chu-nginx.html
+  - url: /article/cai-dat-module-pagespeed-len-may-chu-nginx.html
     title: Cài đặt Module PageSpeed lên máy chủ Nginx
     category: Server
-  - url: /2021/01/huong-dan-su-dung-thu-vien-deferjs-cua-mai-nhut-tan.html
+  - url: /article/huong-dan-su-dung-thu-vien-deferjs-cua-mai-nhut-tan.html
     title: Hướng Dẫn Sử Dụng Thư Viện DeferJS của Mai Nhựt Tân
     category: Library
-  - url: /2021/02/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.html
+  - url: /article/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.html
     title: Bộ Ba Thư Viện Thần Thánh Giúp Website Tối Ưu
     category: Library
-  - url: /2021/04/series-nextdns.html
+  - url: /series-nextdns.html
     title: Series hướng dẫn sử dụng NextDNS
     category: Series
