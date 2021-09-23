@@ -19,7 +19,7 @@ jobs:
         KEY: ${{ secrets.SSHKEY }}
       with:
         source: "."
-        target: "/www/wwwroot/tuanducdesign.com/blog"
+        target: ${{ secrets.DOCUMENT_ROOT }}
 
     - name: Executing remote command
       uses: appleboy/ssh-action@master
@@ -31,6 +31,5 @@ jobs:
         script: ls
     - name: Build
       run: |
-        rm -rf Gemfile.lock
-        bundle install && jekyll build
+        jekyll build
    
