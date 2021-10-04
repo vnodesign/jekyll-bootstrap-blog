@@ -39,7 +39,7 @@ pre {
     margin-bottom: -rem;
 }
 
-.mediumnavigation {
+.vnodesign {
     background: rgba(255, 255, 255, .97);
     box-shadow: 0 2px 20px #abbbcc24;
     transition: top .2s ease-in-out;
@@ -288,7 +288,7 @@ span {
     margin-right: 3px;
 }
 
-.mediumnavigation {
+.vnodesign {
     .form-control {
         background: #f0f2f5;
         font-size: .8rem;
@@ -333,7 +333,7 @@ span {
     font-size: .9rem;
 }
 
-.mediumnavigation {
+.vnodesign {
     .search-icon {
         margin-left: -40px;
         display: inline-block;
@@ -728,7 +728,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: inherit;
 }
 
 .article-post {
@@ -757,7 +757,7 @@ h6 {
 }
 
 .layout-page .article-post {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: inherit;
     font-size: 1rem;
 
     p {

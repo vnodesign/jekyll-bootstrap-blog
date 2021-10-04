@@ -16,6 +16,7 @@ _sass/._*
 site/._*
 static/._*
 static/media/._*
+.user.ini
 
 # Local Netlify folder
 .netlify

@@ -3,7 +3,7 @@
     "short_name": "Tuan Duc Design",
     "description": "Specialist page sharing knowledge related to VPS development and Website optimization",
     "lang": "en-US",
-    "start_url": "/",
+    "start_url": "https://tuanducdesign.com/",
     "display": "standalone",
     "icons": [
       {

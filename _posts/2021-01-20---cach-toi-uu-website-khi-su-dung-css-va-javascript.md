@@ -5,7 +5,7 @@ author: tuanducdesign
 categories: [ Website ]
 tags: [CSS, Javascript, PageSpeed]
 image: static/media/cach-toi-uu-website-khi-su-dung-css-va-javascript.jpg
-webp: static/webp/cach-toi-uu-website-khi-su-dung-css-va-javascript.webp
+webp: static/media/cach-toi-uu-website-khi-su-dung-css-va-javascript.webp
 description: "Khi lập trình một trang web chắc hẳn bạn đã từng nghe đến thuật toán tối ưu CSS và Javascript rồi chứ."
 toc: true
 ---

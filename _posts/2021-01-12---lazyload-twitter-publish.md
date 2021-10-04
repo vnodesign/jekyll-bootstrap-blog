@@ -3,9 +3,9 @@ layout: post
 title:  "Lazyload Twitter Publish"
 author: tuanducdesign
 categories: [ Javascript ]
-tags: [Lazyload, Twitter]
+tags: [Lazyload, Twitter, Javascript]
 image: static/media/lazyload-twitter-publish.jpg
-webp: static/webp/lazyload-twitter-publish.webp
+webp: static/media/lazyload-twitter-publish.webp
 description: "Trong bài viết tiếp theo của ngày hôm nay mình sẽ hướng dẫn các bạn cách Lazyload script của Twitter để tải trang nhanh hơn."
 toc: false
 ---

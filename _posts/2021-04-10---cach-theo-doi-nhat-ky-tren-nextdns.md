@@ -1,19 +1,19 @@
 ---
 layout: post
 title:  "Cách theo dõi nhật ký trên NextDNS"
-permalink: /series/cach-theo-doi-nhat-ky-tren-nextdns
+permalink: /series/cach-theo-doi-nhat-ky-tren-nextdns/
 author: tuanducdesign
 categories: [ Series ]
 tags: [Logs, Ads, NextDNS]
 image: static/media/cach-theo-doi-nhat-ky-tren-nextdns.png
-webp: static/webp/cach-theo-doi-nhat-ky-tren-nextdns.webp
+webp: static/media/cach-theo-doi-nhat-ky-tren-nextdns.webp
 description: "Cách theo dõi nhật ký trên NextDNS để kiểm tra xem tên miền nào đang bị chặn, và nguyên nhân nó bị chặn do trình chặn quảng cáo nào."
 toc: true
 ---
 
 Cách theo dõi nhật ký trên NextDNS để kiểm tra xem tên miền nào đang bị chặn, và nguyên nhân nó bị chặn do trình chặn quảng cáo nào.
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns" title="Series hướng dẫn sử dụng NextDNS" %}
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns/" title="Series hướng dẫn sử dụng NextDNS" %}
 
 ## Cách theo dõi nhật ký trên NextDNS
 

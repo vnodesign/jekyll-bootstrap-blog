@@ -3,9 +3,9 @@ layout: post
 title:  "Lazyload Facebook Customize Chat"
 author: tuanducdesign
 categories: [ Javascript ]
-tags: [Lazyload, Facebook]
+tags: [Lazyload, Facebook, Javascript]
 image: static/media/lazyload-facebook-customize-chat.jpg
-webp: static/webp/lazyload-facebook-customize-chat.webp
+webp: static/media/lazyload-facebook-customize-chat.webp
 description: "Trong bài viết đầu tiên ngày hôm nay mình sẽ hướng dẫn các bạn cách Lazyload Facebook Customize Chat để trang tải nhanh hơn."
 toc: false
 ---
