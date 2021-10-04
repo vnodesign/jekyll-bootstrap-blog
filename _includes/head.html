@@ -5,30 +5,32 @@
     <meta name="application-name" content="{{ site.title }}" />
     <meta name="apple-mobile-web-app-title" content="{{ site.title }}" />
     <meta name="msapplication-starturl" content="{{ site.url }}" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
     <meta name="theme-color" content="#fe2c55" />
-    <link rel="icon" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.favicon }}" />
-    <link rel="apple-touch-icon" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon }}" />
-    <link rel="apple-touch-icon" sizes="57x57" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-57x57 }}" />
-    <link rel="apple-touch-icon" sizes="72x72" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-72x72 }}" />
-    <link rel="apple-touch-icon" sizes="76x76" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-76x76 }}" />
-    <link rel="apple-touch-icon" sizes="114x114" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-114x114 }}" />
-    <link rel="apple-touch-icon" sizes="120x120" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-120x120 }}" />
-    <link rel="apple-touch-icon" sizes="144x144" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-144x144 }}" />
-    <link rel="apple-touch-icon" sizes="152x152" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-152x152 }}" />
-    <link rel="apple-touch-icon" sizes="180x180" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-180x180 }}" />
-    <link rel="icon" type="image/png" sizes="57x57" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-57x57 }}" />
-    <link rel="icon" type="image/png" sizes="72x72" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-72x72 }}" />
-    <link rel="icon" type="image/png" sizes="76x76" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-76x76 }}" />
-    <link rel="icon" type="image/png" sizes="114x114" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-114x114 }}" />
-    <link rel="icon" type="image/png" sizes="120x120" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-120x120 }}" />
-    <link rel="icon" type="image/png" sizes="144x144" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-144x144 }}" />
-    <link rel="icon" type="image/png" sizes="152x152" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-152x152 }}" />
-    <link rel="icon" type="image/png" sizes="180x180" href="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ site.apple-touch-icon-180x180 }}" />
+    <link rel="icon" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ site.favicon }}{% else %}{{ site.favicon }}{% endif %}" />
+    <link rel="apple-touch-icon" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}{% endif %}{{ site.apple-touch-icon }}" />
+    <link rel="apple-touch-icon" sizes="57x57" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ site.apple-touch-icon-57x57 }}{% else %}{{ site.apple-touch-icon-57x57 }}{% endif %}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ site.apple-touch-icon-72x72 }}{% else %}{{ site.apple-touch-icon-72x72 }}{% endif %}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ site.apple-touch-icon-76x76 }}{% else %}{{ site.apple-touch-icon-76x76 }}{% endif %}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ site.apple-touch-icon-114x114 }}{% else %}{{ site.apple-touch-icon-114x114 }}{% endif %}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ site.apple-touch-icon-120x120 }}{% else %}{{ site.apple-touch-icon-120x120 }}{% endif %}" />
+    <link rel="apple-touch-icon" sizes="144x144" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ site.apple-touch-icon-144x144 }}{% else %}{{ site.apple-touch-icon-144x144 }}{% endif %}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ site.apple-touch-icon-152x152 }}{% else %}{{ site.apple-touch-icon-152x152 }}{% endif %}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ site.apple-touch-icon-180x180 }}{% else %}{{ site.apple-touch-icon-180x180 }}{% endif %}" />
+    <link rel="icon" type="image/png" sizes="57x57" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ site.apple-touch-icon-57x57 }}{% else %}{{ site.apple-touch-icon-57x57 }}{% endif %}" />
+    <link rel="icon" type="image/png" sizes="72x72" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ site.apple-touch-icon-72x72 }}{% else %}{{ site.apple-touch-icon-72x72 }}{% endif %}" />
+    <link rel="icon" type="image/png" sizes="76x76" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ site.apple-touch-icon-76x76 }}{% else %}{{ site.apple-touch-icon-76x76 }}{% endif %}" />
+    <link rel="icon" type="image/png" sizes="114x114" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ site.apple-touch-icon-114x114 }}{% else %}{{ site.apple-touch-icon-114x114 }}{% endif %}" />
+    <link rel="icon" type="image/png" sizes="120x120" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ site.apple-touch-icon-120x120 }}{% else %}{{ site.apple-touch-icon-120x120 }}{% endif %}" />
+    <link rel="icon" type="image/png" sizes="144x144" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ site.apple-touch-icon-144x144 }}{% else %}{{ site.apple-touch-icon-144x144 }}{% endif %}" />
+    <link rel="icon" type="image/png" sizes="152x152" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ site.apple-touch-icon-152x152 }}{% else %}{{ site.apple-touch-icon-152x152 }}{% endif %}" />
+    <link rel="icon" type="image/png" sizes="180x180" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ site.apple-touch-icon-180x180 }}{% else %}{{ site.apple-touch-icon-180x180 }}{% endif %}" />
     <!-- Preload file -->
-    <link rel="preload" href="/assets/stylesheets/application.css" as="style" />
-    <link rel="preload" href="/assets/javascripts/application.js" as="script" />
-    <link rel="preload" href="/assets/javascripts/instantpage.min.js" as="script" />
+    <link rel="preload" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}/assets/stylesheets/application.css{% else %}assets/stylesheets/application.css{% endif %}" as="style" />
+    <link rel="preload" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}/assets/javascripts/jquery.min.js{% else %}/assets/javascripts/jquery.min.js{% endif %}" as="script" />
+    <link rel="preload" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}/assets/javascripts/bootstrap.bundle.min.js{% else %}/assets/javascripts/bootstrap.bundle.min.js{% endif %}" as="script" />
+    <link rel="preload" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}/assets/javascripts/plugins.min.js{% else %}/assets/javascripts/plugins.min.js{% endif %}" as="script" />
+    <link rel="preload" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}/assets/javascripts/instantpage.min.js{% else %}/assets/javascripts/instantpage.min.js{% endif %}" as="script" />
     {% if site.analytics == "enabled" %}
     {% if site.google_analytics %}
     <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}" as="script" />
@@ -39,8 +41,8 @@
     <link rel="preload" href="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" as="script" />
     {% endif %}
     {% endif %}
-    <link rel="preload" href="/assets/fonts/bootstrap-icons.woff2" as="font" type="font/woff2" crossorigin="crossorigin" />
-    <link rel="preload" href="/assets/fonts/bootstrap-icons.woff" as="font" type="font/woff" crossorigin="crossorigin" />
+    <link rel="preload" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}/assets/fonts/bootstrap-icons.woff2{% else %}/assets/fonts/bootstrap-icons.woff2{% endif %}" as="font" type="font/woff2" crossorigin="crossorigin" />
+    <link rel="preload" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}/assets/fonts/bootstrap-icons.woff2{% else %}/assets/fonts/bootstrap-icons.woff{% endif %}" as="font" type="font/woff" crossorigin="crossorigin" />
     {% if site.adsense == "enabled" %}
     <link rel="preload" href="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{site.adsense-data-ad-client}}" as="script" />
     {% endif %}
@@ -64,6 +66,9 @@
     <link rel="dns-prefetch" href="//www.googletagmanager.com" />
     {% endif %}
     {% endif %}
+    {% if site.cdn == "enabled" %}
+    <link rel="dns-prefetch" href="//cdn.tuanducdesign.com" />
+    {% endif %}
     <!-- Preconnect Domain -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
     {% if site.chat == "enabled" %}
@@ -86,13 +91,10 @@
     <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
     {% endif %}
     <!-- Style -->
-    <link rel="stylesheet" href="/assets/stylesheets/application.css" data-turbolinks-track="true" defer />
-    <style type="text/css">@font-face{font-family:"bootstrap-icons";src:url("/assets/fonts/bootstrap-icons.woff2")format("woff2"),url("/assets/fonts/bootstrap-icons.woff")format("woff");font-display:optional}.turbolinks-progress-bar{background-color:#fe2c55}</style>
-    <!-- Script -->
-    <script src="/assets/javascripts/application.js" data-turbolinks-track="true" defer></script>
-    <script src="/assets/javascripts/instantpage.min.js" type="module" defer></script>
-    <script type="text/javascript">
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/sw.js")
-    }
-    </script>
+    <link rel="stylesheet" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}/assets/stylesheets/application.css{% else %}/assets/stylesheets/application.css{% endif %}" async />
+    <style type="text/css">
+        @font-face{font-family:"bootstrap-icons";src:url("{% if site.cdn == "enabled" %}{{site.cdn-url}}/assets/fonts/bootstrap-icons.woff2{% else %}/assets/fonts/bootstrap-icons.woff2{% endif %}")format("woff2"),url("{% if site.cdn == "enabled" %}{{site.cdn-url}}/assets/fonts/bootstrap-icons.woff2{% else %}/assets/fonts/bootstrap-icons.woff{% endif %}")format("woff");font-display:optional}
+    </style>
+    {% if site.lazyimages == "enabled" %}<style id="defer-css">img.fade{transition:opacity500ms ease-in-out;opacity:0}img.fade.loaded{background:none;opacity:1}</style>{% endif %}
+    <script id="defer-js">!function(r,i,t){var u,o=/^data-(.+)/,a='IntersectionObserver',c=/p/.test(i.readyState),s=[],f=s.slice,l='lazied',n='load',e='pageshow',d='forEach',h='hasAttribute',m='shift';function v(e){i.head.appendChild(e)}function p(e,n){f.call(e.attributes)[d](n)}function y(e,n,t,o){return o=(o=n?i.getElementById(n):o)||i.createElement(e),n&&(o.id=n),t&&(o.onload=t),o}function b(e,n){return f.call((n||i).querySelectorAll(e))}function I(t,e){b('source',t)[d](I),p(t,function(e,n){(n=o.exec(e.name))&&(t[n[1]]=e.value)}),e&&(t.className+=' '+e),n in t&&t[n]()}function g(e){u(function(o){o=b(e||'[type=deferjs]'),function e(n,t){(n=o[m]())&&(n.parentNode.removeChild(n),(t=y(n.nodeName)).text=n.text,p(n,function(e){'type'!=e.name&&(t[e.name]=e.value)}),t.src&&!t[h]('async')?(t.onload=t.onerror=e,v(t)):(v(t),e()))}()})}(u=function(e,n){c?t(e,n):s.push(e,n)}).all=g,u.js=function(n,t,e,o){u(function(e){(e=y('SCRIPT',t,o)).src=n,v(e)},e)},u.css=function(n,t,e,o){u(function(e){(e=y('LINK',t,o)).rel='stylesheet',e.href=n,v(e)},e)},u.dom=function(e,n,t,o,i){function c(e){o&&!1===o(e)||I(e,t)}u(function(t){t=a in r&&new r[a](function(e){e[d](function(e,n){e.isIntersecting&&(n=e.target)&&(t.unobserve(n),c(n))})},i),b(e||'[data-src]')[d](function(e){e[h](l)||(e.setAttribute(l,''),t?t.observe(e):c(e))})},n)},u.reveal=I,r.Defer=u,r.addEventListener('on'+e in r?e:n,function(){for(g();s[0];t(s[m](),s[m]()))c=1})}(this,document,setTimeout);</script>
+    <script id="polyfill-js">'IntersectionObserver'in window||document.write('<script src="https://tuanducdesign.com/assets/javascripts/polyfill.min.js"><\/script>');</script>

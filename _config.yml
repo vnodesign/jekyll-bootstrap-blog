@@ -1,13 +1,11 @@
 ---
 name: Tuan Duc Design
 title: Tuan Duc Design
-subtitle: Specialist site to share knowledge of VPS and Website
+subtitle: Share your experience of optimizing VPS and Website
 description: Specialist page sharing knowledge related to VPS development and Website
   optimization.
-cdn: "enabled"
-cdn-cloudinary: "https://res.cloudinary.com/td-blog/image/upload/f_auto,q_auto"
-cdn-s3:
-cdn-netlify:
+cdn: "disabled"
+cdn-url: "https://cdn.tuanducdesign.com"
 logo: /static/tuanducdesign.jpg
 favicon: /static/tuanducdesign.jpg
 apple-touch-icon: /static/tuanducdesign.jpg
@@ -22,7 +20,7 @@ apple-touch-icon-180x180: /static/apple-touch-icon-180x180.png
 url: https://tuanducdesign.com
 analytics: "enabled"
 google_analytics: G-JLS45PZZXS
-disquscmt: "enabled"
+disquscmt: "disabled"
 disqus: tuanducdesign
 facebook:
   app_id: "294587991860787"
@@ -30,7 +28,7 @@ facebook:
   admins: "100005485267478"
 chat: "enabled"
 fanpage-chat: "121349286117840"
-permalink: "/article/:title.html"
+permalink: "/:year/:month/:title/"
 twitter:
   username: tuanducdesign
   card: summary_large_image
@@ -71,7 +69,7 @@ jekyll-archives:
   - categories
   layout: archive
   permalinks:
-    category: "/category/:name"
+    category: "/cat/:name/"
 paginate: "12"
 paginate_path: "/page/:num"
 markdown: kramdown
@@ -89,7 +87,9 @@ lazyimages: enabled
 sass:
   style: compressed
 include:
-- "nginx.conf"
+#- ".htaccess"
+#- "nginx.conf"
+- settings
 - _pages
 - manifest.json
 - ads.txt
@@ -100,20 +100,60 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - ".jekyll-cache"
+- package.json
 keep_files:
 - static
 notification_cmt:
-  - name: Due to the influence of AAG cables, we temporarily disable commenting until the cable is stable.
+  - name: The blog is currently closed for commenting because I need to focus on updating the article. Comments will stay open until I'm ready.
 top_articles: 
-  - url: /article/cai-dat-module-pagespeed-len-may-chu-nginx.html
+  - url: /2021/01/cai-dat-module-pagespeed-len-may-chu-nginx/
     title: Cài đặt Module PageSpeed lên máy chủ Nginx
     category: Server
-  - url: /article/huong-dan-su-dung-thu-vien-deferjs-cua-mai-nhut-tan.html
+  - url: /2021/01/huong-dan-su-dung-thu-vien-deferjs-cua-mai-nhut-tan/
     title: Hướng Dẫn Sử Dụng Thư Viện DeferJS của Mai Nhựt Tân
     category: Library
-  - url: /article/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.html
+  - url: /2021/02/bo-ba-thu-vien-than-thanh-giup-website-toi-uu/
     title: Bộ Ba Thư Viện Thần Thánh Giúp Website Tối Ưu
     category: Library
-  - url: /series-nextdns.html
+  - url: /series-nextdns/
     title: Series hướng dẫn sử dụng NextDNS
     category: Series
+regenerate: true
+incremental: true
+  ############################################################
+# Site configuration for the WebP Generator Plugin
+# The values here represent the defaults if nothing is set
+webp:
+  enabled: true
+  
+  # The quality of the webp conversion 0 to 100 (where 100 is least lossy)
+  quality: 75
+
+  # List of directories containing images to optimize, nested directories will only be checked if `nested` is true
+  # By default the generator will search for a folder called `/img` under the site root and process all jpg, png and tiff image files found there.
+  img_dir: ["/static/media"]
+
+  # Whether to search in nested directories or not
+  nested: false
+
+  # add ".gif" to the format list to generate webp for animated gifs as well
+  formats: [".jpeg", ".jpg", ".png", ".tiff"]
+
+  # File extensions for animated gif files 
+  gifs: [".gif"]
+
+  # Set to true to always regenerate existing webp files
+  regenerate: false
+
+  # Local path to the WebP utilities to use (relative or absolute)
+  # Omit or leave as nil to use the utilities shipped with the gem, override only to use your local install
+  webp_path: nil
+
+  # List of files or directories to exclude
+  # e.g. custom or hand generated webp conversion files
+  exclude: []
+
+  # append '.webp' to filename after original extension rather than replacing it.
+  # Default transforms `image.png` to `image.webp`, while changing to true transforms `image.png` to `image.png.webp`
+  append_ext: true
+############################################################

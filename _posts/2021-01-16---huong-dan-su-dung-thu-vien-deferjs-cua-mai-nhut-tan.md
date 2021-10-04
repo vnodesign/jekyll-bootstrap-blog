@@ -5,7 +5,7 @@ author: tuanducdesign
 categories: [ Library ]
 tags: [Preload, Font, Script, Style, Lazyload, PHP, Composer, Laravel, WordPress, DeferJS]
 image: static/media/user-guide-for-deferjs-library-by-mai-nhut-tan.jpg
-webp: static/webp/user-guide-for-deferjs-library-by-mai-nhut-tan.webp
+webp: static/media/user-guide-for-deferjs-library-by-mai-nhut-tan.webp
 description: "Đây là một thư viện hiệu suất nguyên bản siêu nhỏ để tải JS, CSS, hình ảnh, iframe ... Trì hoãn hầu hết mọi thứ, dễ dàng tăng tốc trang web của bạn."
 featured: true
 hidden: true
@@ -256,7 +256,7 @@ Nó khuyến nghị rằng máy chủ đang chạy phiên bản **PHP 7.3+** tr�
 
 #### Cách sử dụng cơ bản
 
-Trong thư mục dự án của bạn, bạn chèn đoạn code sau vào file vừa tìm lúc nãy ở bước {% include internal-link.html href="2021/01/huong-dan-su-dung-thu-vien-deferjs-cua-mai-nhut-tan#tải-thư-viện-vào-chương-trình-của-bạn" title="Tải thư viện vào chương trình của bạn" %}:
+Trong thư mục dự án của bạn, bạn chèn đoạn code sau vào file vừa tìm lúc nãy ở bước {% include internal-link.html href="/huong-dan-su-dung-thu-vien-deferjs-cua-mai-nhut-tan/#tải-thư-viện-vào-chương-trình-của-bạn" title="Tải thư viện vào chương trình của bạn" %}:
 
 ```php
 // Include the library
@@ -534,7 +534,7 @@ Chỉ một số tùy chọn của thư viện này có thể áp dụng cho cá
 
 ### Với WordPress
 
-Nếu bạn dùng Server thì nên kết hợp plugins này với {% include internal-link.html href="2021/01/cai-dat-module-pagespeed-len-may-chu-nginx" title="Module Google PageSpeed" %}, để tăng khả năng tối ưu hơn.
+Nếu bạn dùng Server thì nên kết hợp plugins này với {% include internal-link.html href="2021/01/15/cai-dat-module-pagespeed-len-may-chu-nginx/" title="Module Google PageSpeed" %}, để tăng khả năng tối ưu hơn.
 
 #### Truy cập vào bảng quản trị
 

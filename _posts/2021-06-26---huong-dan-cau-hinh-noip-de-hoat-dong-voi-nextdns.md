@@ -1,19 +1,19 @@
 ---
 layout: post
 title:  "Hướng dẫn cấu hình NOIP để hoạt động với NextDNS"
-permalink: /series/huong-dan-cau-hinh-noip-de-hoat-dong-voi-nextdns.html
+permalink: /series/huong-dan-cau-hinh-noip-de-hoat-dong-voi-nextdns/
 author: tuanducdesign
 categories: [ Series ]
 tags: [NOIP, NextDNS]
 image: static/media/huong-dan-cau-hinh-noip-de-hoat-dong-voi-nextdns.png
-webp: static/webp/huong-dan-cau-hinh-noip-de-hoat-dong-voi-nextdns.webp
+webp: static/media/huong-dan-cau-hinh-noip-de-hoat-dong-voi-nextdns.webp
 description: "Để tự động cập nhật địa chỉ IP khi sử dụng NextDNS, thì bạn cần cấu hình DDNS trên cả router và NextDNS."
 toc: true
 ---
 
 Sau hơn hai tháng tìm hiểu về NextDNS và chức năng DDNS trên NextDNS, hôm nay mình sẽ hướng dẫn các bạn cách cấu hình NOIP để hoạt động với NextDNS.
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns/" title="Series hướng dẫn sử dụng NextDNS" %}
 
 {% include image.html src="huong-dan-cau-hinh-noip-de-hoat-dong-voi-nextdns.png" webp="huong-dan-cau-hinh-noip-de-hoat-dong-voi-nextdns.webp" type="png" alt="Hướng dẫn cấu hình NOIP để hoạt động với NextDNS" %}
 

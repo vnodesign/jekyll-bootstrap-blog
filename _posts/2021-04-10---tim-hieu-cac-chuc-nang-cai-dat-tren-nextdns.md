@@ -1,19 +1,19 @@
 ---
 layout: post
 title:  "Tìm hiểu các chức năng cài đặt trên NextDNS"
-permalink: /series/tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.html
+permalink: /series/tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns/
 author: tuanducdesign
 categories: [ Series ]
 tags: [Settings, NextDNS]
 image: static/media/tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.png
-webp: static/webp/tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.webp
+webp: static/media/tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.webp
 description: "Để tăng thêm mức độ bảo mật cho tài khoản và mạng của mình, thì bạn cần phải tìm hiểu thêm về các chức năng cài đặt trên NextDNS."
 toc: true
 ---
 
 Để tăng thêm mức độ bảo mật cho tài khoản và mạng của mình, thì bạn cần phải tìm hiểu thêm về các chức năng cài đặt trên NextDNS.
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns/" title="Series hướng dẫn sử dụng NextDNS" %}
 
 {% include image.html src="tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.png" webp="tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.webp" type="png" alt="Tìm hiểu các chức năng cài đặt trên NextDNS" %}
 

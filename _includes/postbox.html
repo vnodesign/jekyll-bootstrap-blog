@@ -3,18 +3,18 @@
 <article class="col-lg-4 col-md-4 col-sm-6 mb-30px card-group">
     <div class="card h-100">
         <div class="maxthumb">
-            <a data-remote="true" href="{{ post.url }}" title="{{ post.title }}">
+            <a href="{{ post.url }}" title="{{ post.title }}">
                 {% if post.image %}
-                <picture>
-                    <source srcset="{% if post.webp contains "://" %}{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ post.webp }}{% else %}/{{ post.webp }}{% endif %}" type="image/webp" />
-                    <img class="img-fluid" src="{% if post.image contains "://" %}{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ post.image }}{% else %}{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}/{{ post.image }}{% endif %}" alt="{{ post.title }}" {% if site.lazyimages == "enabled" %}loading="lazy"{% endif %} />
+                <picture{% if site.lazyimages == "enabled" %} class="multi-lazy"{% endif %}>
+                     <source{% if site.lazyimages == "enabled" %} data-srcset{% else %} srcset{% endif %}="{% if post.webp contains "://" %}{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ post.webp }}{% else %}{{ post.webp }}{% endif %}{% else %}{% if site.cdn == "enabled" %}{{site.cdn-url}}/{{ post.webp }}{% else %}/{{ post.webp }}{% endif %}{% endif %}" type="image/webp" />
+                     <img class="featured-box-img-cover"{% if site.lazyimages == "enabled" %} data-src{% else %} src{% endif %}="{% if post.image contains "://" %}{% if site.cdn == "enabled" %}{{site.cdn-url}}{% endif %}{{ post.image }}{% else %}{% if site.cdn == "enabled" %}{{site.cdn-url}}{% endif %}/{{ post.image }}{% endif %}" alt="{{ post.title }}" />
                 </picture>
                 {% endif %}
             </a>
         </div>
         <div class="card-body">
             <h2 class="card-title">
-                <a data-remote="true" class="text-dark" href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+                <a class="text-dark" href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
                 {% if post.rating %}
                 <div class="mb-2 mt-2 font-weight-normal">
                 {% include star_rating_postbox.html %}
@@ -28,19 +28,19 @@
                 {% if post.author %}
                 <span class="meta-footer-thumb">
                 {% if author.photo %}
-                <img class="author-thumb" src="{% if site.cdn == "enabled" %}{{site.cdn-cloudinary}}{% endif %}{{ author.photo }}" width="72" height="72" alt="{{ author.display_name }}" {% if site.lazyimages == "enabled" %}loading="lazy"{% endif %} />
+                <img{% if site.lazyimages == "enabled" %} class="author-thumb fade"{% else %}lass="author-thumb"{% endif %}{% if site.lazyimages == "enabled" %} data-src{% else %} src{% endif %}="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ author.photo }}{% else %}{{ author.photo }}{% endif %}" width="72" height="72" alt="{{ author.display_name }}" {% if site.lazyimages == "enabled" %}loading="lazy"{% endif %} />
                 {% else %}
-                <img class="author-thumb" src="https://graph.facebook.com/100003178356978/picture" width="72" height="72" alt="{{ author.display_name }}" {% if site.lazyimages == "enabled" %}loading="lazy"{% endif %} />
+                <img{% if site.lazyimages == "enabled" %} class="author-thumb fade"{% else %}lass="author-thumb"{% endif %}{% if site.lazyimages == "enabled" %} data-src{% else %} src{% endif %}="https://graph.facebook.com/100003178356978/picture" width="72" height="72" alt="{{ author.display_name }}" {% if site.lazyimages == "enabled" %}loading="lazy"{% endif %} />
                 {% endif %}
                 </span>
                 <span class="author-meta">
-                <span class="post-name"><a data-remote="true" href="/author/{{ author.username }}" title="{{ author.display_name }}" rel="author">{{ author.display_name }}</a></span><br/>
+                <span class="post-name"><a href="/author/{{ author.username }}" title="{{ author.display_name }}" rel="author">{{ author.display_name }}</a></span><br/>
                 {% endif %}
                 <span class="post-date">{{ post.date | date_to_string }}</span>
                 <span class="dot"></span>
-                <span class="eta" data-turbolinks-permanent></span>
+                <span class="eta"></span>
                 </span>
-                <span class="post-read-more"><a data-remote="true" href="{{ post.url }}" data-toggle="tooltip" data-placement="top" title="Read Story" aria-label="Read Story" {% if site.analytics == "enabled" %}{% if site.google_analytics %}onClick="ga('send', 'event', 'post-read-more', 'click', 'read-story');"{% endif %}{% endif %}><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 25 25"><path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"></path></svg></a></span>
+                <span class="post-read-more"><a href="{{ post.url }}" data-toggle="tooltip" data-placement="top" title="Read Story" aria-label="Read Story" {% if site.analytics == "enabled" %}{% if site.google_analytics %}onClick="ga('send', 'event', 'post-read-more', 'click', 'read-story');"{% endif %}{% endif %}><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 25 25"><path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"></path></svg></a></span>
                 <div class="clearfix"></div>
             </div>
         </div>

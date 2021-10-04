@@ -1,19 +1,19 @@
 ---
 layout: post
 title:  "Tìm hiểu và kích hoạt các chức năng bảo mật trên NextDNS"
-permalink: /series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.html
+permalink: /series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns/
 author: tuanducdesign
 categories: [ Series ]
 tags: [bảo mật, NextDNS, tlds, Google, dgas, nrds]
 image: static/media/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.png
-webp: static/webp/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.webp
+webp: static/media/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.webp
 description: "Trong bài viết kế tiếp này chúng ta cùng tìm hiểu và kích hoạt các chức năng bảo mật trên NextDNS."
 toc: true
 ---
 
 Ở bài viết trước mình đã hướng dẫn các bạn cấu hình và sử dụng NextDNS trên Modem, ở bài viết kế tiếp này chúng ta cùng tìm hiểu và kích hoạt các chức năng bảo mật trên NextDNS nhé.
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns/" title="Series hướng dẫn sử dụng NextDNS" %}
 
 {% include image.html src="tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.png" webp="tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.webp" type="png" alt="Tìm hiểu và kích hoạt các chức năng bảo mật trên NextDNS" %}
 

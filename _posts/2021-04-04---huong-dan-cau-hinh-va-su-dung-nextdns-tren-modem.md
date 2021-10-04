@@ -1,19 +1,19 @@
 ---
 layout: post
 title:  "Hướng dẫn cấu hình và sử dụng NextDNS trên Modem"
-permalink: /series/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.html
+permalink: /series/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem/
 author: tuanducdesign
 categories: [ Series ]
 tags: [Network, Modem, Adblock, Module, Cloudflare, DNS, IOS, MacOS, Windows, Linux, Chrome OS, Browers, Routers, NextDNS]
 image: static/media/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg
-webp: static/webp/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.webp
+webp: static/media/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.webp
 description: "NextDNS là sự lựa chọn hoàn hảo để thay thế DNS Cloudflare, Khi sử dụng NextDNS thì bạn sẽ được bảo vệ toàn diện từ các chức năng nổi bật của NextDNS."
 toc: true
 ---
 
 Mình vừa tìm được một dịch vụ DNS khá hay, nên trước khi viết bài này mình cũng đã thử áp dụng và đã thành công. Dịch vụ mà mình muốn nhắc đến ở đây đó là {% include external-link.html href="https://nextdns.io/" title="NextDNS" %}.
 
-Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns.html" title="Series hướng dẫn sử dụng NextDNS" %}
+Lưu ý: Đây là danh sách hướng dẫn sử dụng NextDNS gồm 10 phần xem danh sách series ở đây: {% include internal-link.html href="series-nextdns/" title="Series hướng dẫn sử dụng NextDNS" %}
 
 {% include image.html src="huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg" webp="huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.webp" type="jpeg" alt="Hướng dẫn cấu hình và sử dụng NextDNS trên Modem" %}
 

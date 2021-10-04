@@ -5,7 +5,7 @@ author: tuanducdesign
 categories: [ Javascript ]
 tags: [Preload, Facebook, Javascript]
 image: static/media/meo-toi-uu-website-khi-su-dung-facebook-plugins.jpg
-webp: static/webp/meo-toi-uu-website-khi-su-dung-facebook-plugins.webp
+webp: static/media/meo-toi-uu-website-khi-su-dung-facebook-plugins.webp
 description: "Ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Facebook plugins."
 toc: true
 ---

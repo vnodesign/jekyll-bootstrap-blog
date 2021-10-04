@@ -5,7 +5,7 @@ author: tuanducdesign
 categories: [ Library ]
 tags: [Tối ưu, PageSpeed, Preload, Lazyload, Javascript, DeferJS]
 image: static/media/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.jpg
-webp: static/webp/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.webp
+webp: static/media/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.webp
 description: "Bài viết ngày hôm nay mình sẽ tổng hợp bộ ba thư viện thần thánh giúp website của bạn tối ưu hơn."
 toc: true
 ---
@@ -30,7 +30,7 @@ Nhưng trong nhiều trường hợp khác nhau, việc sử dụng thuộc tín
 
 Mình đã có một bài viết đầy đủ hướng dẫn sử dụng thư viện này. Bạn có thể đọc bài viết sau để biết cách sử dụng nhé!
 
-{% include internal-link.html href="article/huong-dan-su-dung-thu-vien-deferjs-cua-mai-nhut-tan.html" title="Hướng Dẫn Sử Dụng Thư Viện DeferJS của Mai Nhựt Tân" %}
+{% include internal-link.html href="2021/01/huong-dan-su-dung-thu-vien-deferjs-cua-mai-nhut-tan/" title="Hướng Dẫn Sử Dụng Thư Viện DeferJS của Mai Nhựt Tân" %}
 
 ## Lazysizes của tác giả aFarkas
 
@@ -44,7 +44,7 @@ Nó cũng có thể trở thành công cụ số một của bạn để tích h
 
 Mình đã có một bài viết đầy đủ hướng dẫn sử dụng thư viện này. Bạn có thể đọc bài viết sau để biết cách sử dụng nhé!
 
-{% include internal-link.html href="article/lazyload-image-va-iframe.html" title="Lazyload Image Và Iframe" %}
+{% include internal-link.html href="2021/01/lazyload-image-va-iframe/" title="Lazyload Image Và Iframe" %}
 
 ## Thư viện hỗ trợ Lazyload các script của mình
 
@@ -56,10 +56,10 @@ Khi nói đến việc tối ưu hóa tốc độ trang, theo nguyên tắc chun
 
 Mình đã có một số bài viết hướng dẫn sử dụng thư viện này. Bạn có thể đọc các bài viết sau để biết cách sử dụng nhé!
 
-- {% include internal-link.html href="article/lazyload-facebook-customize-chat.html" title="Lazyload Facebook Customize Chat" %}
-- {% include internal-link.html href="article/lazyload-twitter-publish.html" title="Lazyload Twitter Publish" %}
-- {% include internal-link.html href="article/lazyload-zalo-plugins.html" title="Lazyload Zalo Plugins" %}
-- {% include internal-link.html href="article/lazyload-google-fonts.html" title="Lazyload Google Fonts" %}
-- {% include internal-link.html href="article/lazyload-image-va-iframe.html" title="Lazyload Image Và Iframe" %}
+- {% include internal-link.html href="2021/01/lazyload-facebook-customize-chat/" title="Lazyload Facebook Customize Chat" %}
+- {% include internal-link.html href="2021/01/lazyload-twitter-publish/" title="Lazyload Twitter Publish" %}
+- {% include internal-link.html href="2021/01/lazyload-zalo-plugins/" title="Lazyload Zalo Plugins" %}
+- {% include internal-link.html href="2021/01/lazyload-google-fonts/" title="Lazyload Google Fonts" %}
+- {% include internal-link.html href="2021/01/lazyload-image-va-iframe/" title="Lazyload Image Và Iframe" %}
 
 Chúc các bạn thành công

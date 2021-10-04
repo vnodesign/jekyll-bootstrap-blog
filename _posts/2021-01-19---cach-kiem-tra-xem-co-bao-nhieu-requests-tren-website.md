@@ -5,7 +5,7 @@ author: tuanducdesign
 categories: [ Website ]
 tags: [Requests, Tăng tốc]
 image: static/media/cach-kiem-tra-xem-co-bao-nhieu-requests-tren-website.jpg
-webp: static/webp/cach-kiem-tra-xem-co-bao-nhieu-requests-tren-website.webp
+webp: static/media/cach-kiem-tra-xem-co-bao-nhieu-requests-tren-website.webp
 description: "Về vấn đề dùng nhiều scripts bên ba thì bạn sẽ không tránh khỏi được có nhiều requests được tải cùng website."
 toc: true
 ---
@@ -44,7 +44,7 @@ Bên trên có khung Fillter bạn gõ vào đó tên domain hoặc đuôi mở 
 
 {% include image.html src="so-requests-tren-website.jpg" webp="so-requests-tren-website.webp" type="jpg" alt="Số requests trên website" %}
 
-Bây giờ chúng ta tiến hành áp dụng các kiến thức từ bài {% include internal-link.html href="article/tang-toc-website-tu-preload.html" title="Tăng Tốc Website Từ Preload" %} để áp dụng vào bài này.
+Bây giờ chúng ta tiến hành áp dụng các kiến thức từ bài {% include internal-link.html href="2021/01/12/tang-toc-website-tu-preload/" title="Tăng Tốc Website Từ Preload" %} để áp dụng vào bài này.
 
 Cú pháp quen thuộc mà mình muốn nhắc đến đó chính là:
 

@@ -5,7 +5,7 @@ author: tuanducdesign
 categories: [ CDN ]
 tags: [Staticaly, Tăng tốc, Image, Style, JavaScript]
 image: static/media/tang-toc-website-bang-cach-su-dung-staticaly.jpg
-webp: static/webp/tang-toc-website-bang-cach-su-dung-staticaly.webp
+webp: static/media/tang-toc-website-bang-cach-su-dung-staticaly.webp
 description: "Staticaly là một trang hoàn toàn miễn phí nó giúp bạn đẩy các file tĩnh như ảnh,font,css và js của bạn thông qua URL cdn của họ."
 toc: true
 ---

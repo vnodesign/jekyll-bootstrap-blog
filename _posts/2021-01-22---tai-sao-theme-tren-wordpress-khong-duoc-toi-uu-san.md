@@ -5,7 +5,7 @@ author: tuanducdesign
 categories: [ Website ]
 tags: [WordPress, Theme, Tối ưu, PageSpeed]
 image: static/media/tai-sao-theme-tren-wordpress-khong-duoc-toi-uu-san.jpg
-webp: static/webp/tai-sao-theme-tren-wordpress-khong-duoc-toi-uu-san.webp
+webp: static/media/tai-sao-theme-tren-wordpress-khong-duoc-toi-uu-san.webp
 description: "Có thể nói mã nguồn WordPress giờ quá phổ biến với người dùng từ các dự án từ bé đến lớn như bán hàng, blog, dịch vụ, công ty."
 toc: true
 ---

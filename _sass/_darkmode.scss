@@ -1,5 +1,4 @@
-@media screen and (prefers-color-scheme:dark) {
-    :root {
+:root {
         --tds-black: black;
         --tds-black-alpha-05: rgba(0, 0, 0, .05);
         --tds-black-alpha-10: rgba(0, 0, 0, .1);
@@ -227,9 +226,8 @@
         --tds-fast: 200ms;
         --tds-slow: 400ms
     }
-
+@media (prefers-color-scheme: dark) {
     body {
-        transition: var(--tds-animation-enter-exit-in);
         background-color: var(--web-wash) !important;
         color: var(--always-white) !important;
 
@@ -334,7 +332,7 @@
             color: var(--always-white) !important
         }
 
-        .mediumnavigation {
+        .vnodesign {
             background: var(--nav-bar-background) !important;
             box-shadow: unset !important;
             color: var(--always-white) !important;
@@ -409,7 +407,7 @@
             background: var(--comment-background) !important
         }
 
-        .mediumnavigation {
+        .vnodesign {
             .navbar-toggler-icon {
                 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important
             }
@@ -487,12 +485,7 @@
         }
 
         img {
-            opacity: .75;
-            transition: opacity .5s ease-in-out;
-
-            &:hover {
-                opacity: 1
-            }
+            filter: brightness(70%);
         }
 
         .share {
