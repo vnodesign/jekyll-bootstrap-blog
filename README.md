@@ -1,7 +1,6 @@
 ![Blog](app/assets/images/screen-my-website.png)
 
 - Production: https://tuanducdesign.com/
-- Github Page Mirror: https://tuanducteam.github.io/blog
 
 #### Access Locally
 
@@ -19,14 +18,12 @@ $ bundle exec jekyll serve
 ## Mediumish Jekyll Template - Features
 
 - [x] Built for Jekyll
-- [x] Compatible with Github pages
 - [x] Featured Posts
 - [x] Index Pagination
 - [x] Post Share
 - [x] Post Categories
 - [x] Prev/Next Link
-- [x] Turbolinks/P-Jax
-- [x] Lazysizes
+- [x] Turbolinks
 - [x] Category Archives (this is not yet compatible with github pages though)
 - [x] Disqus Comments
 - [x] Facebook Customize Chat
@@ -57,7 +54,7 @@ Post featured - ``featured:true``
 
 Post featured image - ``image: static/media/lazyload-facebook-customize-chat.jpg``
 
-Post featured image (version webp) - ``webp: static/webp/lazyload-facebook-customize-chat.webp``
+Post featured image (version webp) - ``webp: static/media/lazyload-facebook-customize-chat.webp``
 
 Post toc+ - ``toc: true``
 
@@ -75,7 +72,7 @@ author: tuanducdesign
 categories: [ CSS ]
 tags: [Frameworks, CSS, SCSS, Sass, Stylus, LESS, PostCSS]
 image: static/media/css-frameworks.jpg
-webp: static/webp/css-frameworks.webp
+webp: static/media/css-frameworks.webp
 description: "In this article I would like to share with you the list of CSS Frameworks that support Website design."
 featured: true
 hidden: true
