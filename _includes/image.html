@@ -1,4 +1,4 @@
-<picture{% if site.lazyimages == "enabled" %} class="multi-lazy"{% endif %}>
-    <source{% if site.lazyimages == "enabled" %} data-srcset{% else %} srcset{% endif %}="{% if site.cdn == "enabled" %}{{site.cdn-url}}/static/media/{{ include.webp }}{% else %}/static/media/{{ include.webp }}{% endif %}" type="image/webp" />
-    <img class="mx-auto d-block"{% if site.lazyimages == "enabled" %} data-src{% else %} src{% endif %}="{% if site.cdn == "enabled" %}{{site.cdn-url}}/static/media/{{ include.src }}{% else %}/static/media/{{ include.src }}{% endif %}" alt="{{ include.alt }}" />
+<picture>
+    <source srcset="{% if site.cdn == "enabled" %}{{site.cdn-url}}/static/media/{{ include.webp }}{% else %}/static/media/{{ include.webp }}{% endif %}" type="image/webp" />
+    <img class="mx-auto d-block" src="{% if site.cdn == "enabled" %}{{site.cdn-url}}/static/media/{{ include.src }}{% else %}/static/media/{{ include.src }}{% endif %}" alt="{{ include.alt }}" />
 </picture>

@@ -63,7 +63,7 @@ Sau khi đã chạy các dòng lệnh cơ bản để kiểm tra hệ thống xo
 
 ## Tiến hành cài đặt Server, Nginx và Module PageSpeed
 
-Để không mất thời gian ngồi cài đặt VPS bằng Lempp hay Lampp thì chúng ta dùng các bash script có sẵn ở trên mạng để cài đặt.
+Để không mất thời gian ngồi cài đặt VPS bằng LEMP hay LAMP thì chúng ta dùng các bash script có sẵn ở trên mạng để cài đặt.
 
 Ở đây mình lựa chọn bash script của **HocVPS** để cài đặt lên VPS sử dụng hệ điều hành CentOS 7.
 

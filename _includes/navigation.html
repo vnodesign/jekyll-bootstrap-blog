@@ -5,7 +5,7 @@
             <div class="container">
                 <!-- Begin Logo -->
                 <a class="navbar-brand" href="/" title="{{ site.name }}">
-                    <img{% if site.lazyimages == "enabled" %} class="fade"{% endif %}{% if site.lazyimages == "enabled" %} data-src{% else %} src{% endif %}="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ site.logo }}{% else %}{{ site.logo }}{% endif %}" alt="{{ site.name }}" {% if site.lazyimages == "enabled" %}loading="lazy"{% endif %} />
+                    <img src="{% if site.cdn == "enabled" %}{{site.cdn-url}}{{ site.logo }}{% else %}{{ site.logo }}{% endif %}" alt="{{ site.name }}" {% if site.lazyimages == "enabled" %}loading="lazy"{% endif %} />
                     <h1 class="d-none" itemprop="name">{{ site.name }}</h1>
                 </a>
                 <!-- End Logo -->

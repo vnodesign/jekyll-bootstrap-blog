@@ -11,5 +11,8 @@
   "main": "index.html",
   "repository": "https://github.com/tuanducteam/blog",
   "author": "Tuan Duc Design <nguoisoidangyeu@outlook.com.vn>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "turbolinks": "^5.2.0"
+  }
 }
