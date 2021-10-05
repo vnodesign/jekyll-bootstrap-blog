@@ -1,4 +1,4 @@
-![Blog](assets/images/screen-my-website.png)
+![Blog](app/assets/images/screen-my-website.png)
 
 - Production: https://tuanducdesign.com/
 - Github Page Mirror: https://tuanducteam.github.io/blog
