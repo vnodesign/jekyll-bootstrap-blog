@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "jekyll server",
     "clean": "jekyll clean",
-    "build": "jekyll build",
+    "product": "jekyll build",
     "bundle": "bundle install"
   },
   "main": "index.html",
