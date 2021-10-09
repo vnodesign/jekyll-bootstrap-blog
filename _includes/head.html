@@ -36,8 +36,8 @@
     <link rel="preload" href="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js" as="script" />
     {% endif %}
     {% endif %}
-    <link rel="preload" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}/app/assets/fonts/bootstrap-icons.woff2{% else %}/app/assets/fonts/bootstrap-icons.woff2{% endif %}" as="font" type="font/woff2" crossorigin="crossorigin" />
-    <link rel="preload" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}/app/assets/fonts/bootstrap-icons.woff2{% else %}/app/assets/fonts/bootstrap-icons.woff{% endif %}" as="font" type="font/woff" crossorigin="crossorigin" />
+    <link rel="preload" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}/assets/fonts/bootstrap-icons.woff2{% else %}/assets/fonts/bootstrap-icons.woff2{% endif %}" as="font" type="font/woff2" crossorigin="crossorigin" />
+    <link rel="preload" href="{% if site.cdn == "enabled" %}{{site.cdn-url}}/assets/fonts/bootstrap-icons.woff2{% else %}/assets/fonts/bootstrap-icons.woff{% endif %}" as="font" type="font/woff" crossorigin="crossorigin" />
     {% if site.adsense == "enabled" %}
     <link rel="preload" href="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{site.adsense-data-ad-client}}" as="script" />
     {% endif %}
@@ -89,4 +89,4 @@
     {% capture app %}
       {% include app.scss %}
     {% endcapture %}
-     <style type="text/css">{{ app | scssify }}@font-face{font-family:"bootstrap-icons";src:url("{% if site.cdn == "enabled" %}{{site.cdn-url}}/app/assets/fonts/bootstrap-icons.woff2{% else %}/app/assets/fonts/bootstrap-icons.woff2{% endif %}")format("woff2"),url("{% if site.cdn == "enabled" %}{{site.cdn-url}}/app/assets/fonts/bootstrap-icons.woff2{% else %}/app/assets/fonts/bootstrap-icons.woff{% endif %}")format("woff");font-display:optional}</style>
+     <style type="text/css">{{ app | scssify }}@font-face{font-family:"bootstrap-icons";src:url("{% if site.cdn == "enabled" %}{{site.cdn-url}}/assets/fonts/bootstrap-icons.woff2{% else %}/assets/fonts/bootstrap-icons.woff2{% endif %}")format("woff2"),url("{% if site.cdn == "enabled" %}{{site.cdn-url}}/assets/fonts/bootstrap-icons.woff2{% else %}/assets/fonts/bootstrap-icons.woff{% endif %}")format("woff");font-display:optional}</style>

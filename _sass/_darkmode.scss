@@ -277,57 +277,6 @@
             color: var(--always-white) !important
         }
 
-        .highlight {
-
-            .c,
-            .cm,
-            .cp,
-            .c1,
-            .cs,
-            .gr,
-            .gh,
-            .go,
-            .gp,
-            .gu,
-            .gt,
-            .kt,
-            .m,
-            .s,
-            .na,
-            .nb,
-            .nc,
-            .no,
-            .ni,
-            .ne,
-            .nf,
-            .nn,
-            .nt,
-            .nv,
-            .w,
-            .mf,
-            .mh,
-            .mi,
-            .mo,
-            .sb,
-            .sc,
-            .sd,
-            .s2,
-            .se,
-            .sh,
-            .si,
-            .sx,
-            .sr,
-            .s1,
-            .ss,
-            .bp,
-            .vc,
-            .vg,
-            .vi,
-            .il {
-                color: var(--always-white) !important
-            }
-        }
-
         .article-post {
             color: var(--always-white) !important
         }
@@ -439,9 +388,6 @@
             }
         }
 
-        .highlight {
-            background: var(--nav-bar-background) !important
-        }
 
         .footer {
             background: var(--nav-bar-background) !important;
@@ -460,27 +406,6 @@
             &:hover {
                 background: var(--nav-bar-background) !important;
                 color: inherit
-            }
-        }
-
-        .highlight {
-            pre {
-                color: var(--always-white) !important;
-                border-color: var(--comment-background) !important;
-                background: var(--nav-bar-background) !important
-            }
-
-            .err {
-                color: #fe2c55 !important;
-                background-color: unset !important
-            }
-
-            .gd,
-            .gi,
-            .gd .x,
-            .gi .x {
-                color: var(--always-white) !important;
-                background-color: unset !important
             }
         }
 

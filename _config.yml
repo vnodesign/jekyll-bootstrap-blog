@@ -72,14 +72,6 @@ jekyll-archives:
     category: "/cat/:name/"
 paginate: "12"
 paginate_path: "/page/:num"
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true
 adsense: enabled
 adsense-data-ad-client: "ca-pub-4183134625750063"
 adsense-data-ad-slot: "5639974067"

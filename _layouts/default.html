@@ -42,7 +42,9 @@
   {% endif %}
   {% endif %}
       <!-- Script -->
-    <script src="{% if site.cdn == "enabled" %}{{site.cdn-url}}/app/assets/javascripts/application.js{% else %}/app/assets/javascripts/application.js{% endif %}" data-turbolinks-track="reload"></script>
-    <script src="{% if site.cdn == "enabled" %}{{site.cdn-url}}/app/assets/javascripts/instantpage.min.js{% else %}/app/assets/javascripts/instantpage.min.js{% endif %}" type="module" defer></script>
+    <script src="{% if site.cdn == "enabled" %}{{site.cdn-url}}/assets/javascripts/jquery.min.js{% else %}/assets/javascripts/jquery.min.js{% endif %}" type="module" defer></script>
+    <script src="{% if site.cdn == "enabled" %}{{site.cdn-url}}/assets/javascripts/bootstrap.bundle.min.js{% else %}/assets/javascripts/bootstrap.bundle.min.js{% endif %}" type="module" defer></script>
+    <script src="{% if site.cdn == "enabled" %}{{site.cdn-url}}/assets/javascripts/plugins.min.js{% else %}/assets/javascripts/plugins.min.js{% endif %}" type="module" defer></script>
+    <script src="{% if site.cdn == "enabled" %}{{site.cdn-url}}/assets/javascripts/instantpage.min.js{% else %}/assets/javascripts/instantpage.min.js{% endif %}" type="module" defer></script>
 </body>
 </html>

@@ -82,7 +82,6 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-sitemap
   jekyll-webp
-  kramdown
   liquid-c
 
 BUNDLED WITH
