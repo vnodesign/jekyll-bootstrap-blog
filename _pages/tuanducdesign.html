@@ -9,8 +9,7 @@ permalink: "/author/tuanducdesign/"
         <div class="col-md-8">
             <div class="row align-items-center mb-5">
                 <div class="col-md-12 text-center">
-                    <link rel="preload" href="{{ site.authors.tuanducdesign.photo }}" as="image" />
-                    <img class="rounded-circle" src="{{ site.authors.tuanducdesign.photo }}" alt="{{ site.authors.tuanducdesign.name }}" width="100" height="100" />
+                    <img class="rounded-circle" src="{{ site.authors.tuanducdesign.photo }}" alt="{{ site.authors.tuanducdesign.name }}" width="100" height="100" {% if site.lazyimages == "enabled" %}loading="lazy" decoding="async"{% endif %} style="background-size: cover; background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns=\'http%3A//www.w3.org/2000/svg\' xmlns%3Axlink=\'http%3A//www.w3.org/1999/xlink\' viewBox=\'0 0 1280 853\'%3E%3Cfilter id=\'b\' color-interpolation-filters=\'sRGB\'%3E%3CfeGaussianBlur stdDeviation=\'.5\'%3E%3C/feGaussianBlur%3E%3CfeComponentTransfer%3E%3CfeFuncA type=\'discrete\' tableValues=\'1 1\'%3E%3C/feFuncA%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Cimage filter=\'url(%23b)\' x=\'0\' y=\'0\' height=\'100%25\' width=\'100%25\' xlink%3Ahref=\'data%3Aimage/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAIAAACepSOSAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAs0lEQVQI1wGoAFf/AImSoJSer5yjs52ktp2luJuluKOpuJefsoCNowB+kKaOm66grL+krsCnsMGrt8m1u8mzt8OVoLIAhJqzjZ2tnLLLnLHJp7fNmpyjqbPCqLrRjqO7AIeUn5ultaWtt56msaSnroZyY4mBgLq7wY6TmwCRfk2Pf1uzm2WulV+xmV6rmGyQfFm3nWSBcEIAfm46jX1FkH5Djn5AmodGo49MopBLlIRBfG8yj/dfjF5frTUAAAAASUVORK5CYII=\'%3E%3C/image%3E%3C/svg%3E');" />
                     <h2 class="font-weight-bold">{{ site.authors.tuanducdesign.name }} <span class="small"><a class="btn follow" href="https://www.facebook.com/{{ site.authors.tuanducdesign.facebook }}" title="Follow" target="_blank" rel="nofollow noopener">Follow</a></span></h2>
                     <p><a href="{{ site.authors.tuanducdesign.web }}" title="{{ site.authors.tuanducdesign.web }}">{{ site.authors.tuanducdesign.web }}</a></p>
                     <p class="excerpt">{{ site.authors.tuanducdesign.description }}</p>
@@ -21,8 +20,8 @@ permalink: "/author/tuanducdesign/"
 </div>
 <!-- Recent Posts {{ site.authors.tuanducdesign.name }} -->
 <section class="recent-posts">
-    <div class="section-title">
-        <h2><span>Recent Posts from author {{ site.authors.tuanducdesign.name }}</span></h2>
+    <div class="section-title text-center">
+        <h2><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightning" viewBox="0 0 16 16"><path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1H6.374z"/></svg> Recent Posts from author {{ site.authors.tuanducdesign.name }}</span></h2>
     </div>
     <div class="row listrecent">
         {% assign posts = site.posts | where:"author","tuanducdesign" %}
