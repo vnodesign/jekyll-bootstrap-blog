@@ -56,28 +56,16 @@ pre {
     transition: all .4s;
 }
 
-section {
-    margin-bottom: 20px;
-
-    &.recent-posts {
-        margin-bottom: 0
-    }
-}
-
 .section-title {
     h2 {
-        border-bottom: 1px solid #efefef;
-        margin-bottom: 25px;
         font-weight: 700;
         font-size: 1.4rem;
-        margin-bottom: 27px
     }
 
     span {
         color: #fe2c55;
         display: inline-block;
-        padding-bottom: 20px;
-        margin-bottom: -1px;
+        padding: 20px 0 20px 0;
 
         a {
             color: inherit;
@@ -100,6 +88,12 @@ section {
     ul ul {
         list-style: disc;
         margin-bottom: 0
+    }
+    
+    img {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border-radius: .75rem;
     }
 }
 
@@ -395,11 +389,6 @@ blockquote {
 .share {
     text-align: center;
 
-    p {
-        margin-bottom: 10px;
-        font-size: .95rem
-    }
-
     ul {
         padding-left: 0;
         margin-left: 0;
@@ -409,7 +398,6 @@ blockquote {
             margin-bottom: 9px;
 
             svg.bi {
-                border: 1px solid #ddd;
                 width: 30px;
                 height: 30px;
                 line-height: 30px;
@@ -426,12 +414,6 @@ blockquote {
 
 .sticky-top-offset {
     top: 100px;
-}
-
-@media (min-width:1024px) {
-    .share ul li {
-        display: block
-    }
 }
 
 @media (max-width:999px) {
@@ -767,6 +749,8 @@ h6 {
 
 img {
     max-width: 100%;
+    height: auto;
+    content-visibility: auto;
 }
 
 .bottompagination span.navigation {
@@ -877,10 +861,9 @@ iframe {
     border-radius: 1.5625em;
     box-sizing: border-box;
 }
-
 .c-rating {
     button {
-        display: inline-block;
+        float: left;
         width: 1.25em;
         height: 1.25em;
         border: 0;
@@ -1147,7 +1130,19 @@ iframe {
             color: #fe9c55
         }
     }
-
+    
+    .share {
+        
+        a {
+         color: #4c5267;   
+        }
+        
+        &:focus,
+        &:hover {
+            color: #fe2c55
+        }
+    }
+    
     .article-post a {
 
         &:focus,
@@ -1340,7 +1335,7 @@ article .card {
 
         &:hover,
         &:focus {
-            color: #fe2c55
+            color: #fe2c55 !important;
         }
     }
 }
@@ -1348,5 +1343,45 @@ article .card {
 @media (min-width:1200px) {
     .socials {
         margin-left: auto
+    }
+}
+.hero-content {
+    
+    .socials {
+        margin: unset;
+        padding: unset;
+        font-size: unset;
+        text-align: center;
+        
+        a {
+            margin: 0 .75rem 0;
+            font-size: 1.5rem;
+        }
+    }
+    
+    h3 {
+        font-size: 1.875rem;
+        font-weight: 400;
+        padding: 20px 0 20px 0;
+        
+        strong {
+            font-weight: 600;
+        }
+    }
+    
+    h4 {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    
+    h2 {
+        font-size: 2.25rem;
+        font-weight: 700;
+    }
+}
+.layout-default {
+    
+    hr {
+        border-color: #efefef;
     }
 }
