@@ -1,4 +1,4 @@
-![Blog](app/assets/images/screen-my-website.png)
+![Blog](/assets/images/screen-my-website.png)
 
 - Production: https://tuanducdesign.com/
 
